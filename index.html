@@ -1211,6 +1211,7 @@
         },
     };
     const today = new Date().toISOString().slice(0, 10);
+    console.log('Today date:', today, 'Puzzle found:', !!PUZZLES[today]);
     const P = PUZZLES[today] || null;
 
     // ── VALID WORDS (pre-computed for this puzzle) ─────────────────────────────
@@ -2288,8 +2289,11 @@
     // ── INIT ──────────────────────────────────────────────────────────────────────
     // Init after DOM ready
     function initGame() {
+        console.log('initGame called, P =', P ? P.theme : 'NULL');
+        if (!P || !P.theme) { showNoPuzzle(); return; }
         if (P && P.target) WORDBANK.add(P.target.toUpperCase());
         const _r = buildPuzzle();
+        if (!_r || !_r.grid) { console.error('buildPuzzle returned invalid result'); return; }
         grid = _r.grid;
         placements = _r.placements;
         freeLetters = _r.freeLetters;
