@@ -1358,19 +1358,7 @@
             freeLetters: shufl(free.map(([r, c]) => finalGrid[r][c]))
         };
     }
-    let grid,
-        placements,
-        freeLetters;
-    try {
-        const _r = buildPuzzle();
-        grid = _r.grid;
-        placements = _r.placements;
-        freeLetters = _r.freeLetters;
-    }
-    catch (e) {
-        document.body.innerHTML = '<p style="color:red;padding:20px;font-family:sans-serif">Error: ' + e.message + '</p>';
-        throw e;
-    }
+    let grid, placements, freeLetters;
 
     // ── STATE ────────────────────────────────────────────────────────────────────
     let stage = 1,
