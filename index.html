@@ -708,6 +708,7 @@
         display: none !important;
     }
 
+    /* ── INTRO MODAL ─────────────────────────────────────────────────────────── */
     #intro-modal { display:none; position:fixed; inset:0; z-index:9999; background:rgba(10,30,46,0.92); backdrop-filter:blur(4px); overflow-y:auto; cursor:pointer; }
     #intro-modal.visible { display:flex; align-items:flex-start; justify-content:center; }
     .intro-box { background:linear-gradient(160deg,#0d3349 0%,#1a5276 55%,#0d3349 100%); border:1px solid rgba(249,217,118,0.3); border-radius:16px; padding:16px; margin:16px; max-width:420px; width:100%; pointer-events:none; font-family:Georgia,serif; }
@@ -1209,8 +1210,6 @@
             lossText: "CHIME — to ring in harmony. BELLS was the pivot: village bells to perfect sound.",
         },
     };
-    const today = new Date().toISOString().slice(0, 10);
-    const P = PUZZLES[today] || null;
     const today = new Date().toISOString().slice(0, 10);
     const P = PUZZLES[today] || null;
 
@@ -2299,12 +2298,16 @@
         updateHintCostLabel();
     }
     function showNoPuzzle() {
-        document.body.innerHTML = `<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0d3349 0%,#1a5276 55%,#0d3349 100%);font-family:Georgia,serif;color:#f0ede6;text-align:center;padding:24px;"><div><div style="font-size:28px;color:#f9d976;letter-spacing:3px;margin-bottom:12px;">PIVOT</div><div style="font-size:16px;color:#a8c8e8;">No puzzle today — check back tomorrow!</div></div></div>`;
+        document.body.innerHTML = '<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0d3349 0%,#1a5276 55%,#0d3349 100%);font-family:Georgia,serif;color:#f0ede6;text-align:center;padding:24px;"><div><div style="font-size:28px;color:#f9d976;letter-spacing:3px;margin-bottom:12px;">PIVOT</div><div style="font-size:16px;color:#a8c8e8;">No puzzle today — check back tomorrow!</div></div></div>';
     }
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() { if (!P || !P.theme) { showNoPuzzle(); return; } initGame(); });
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!P || !P.theme) { showNoPuzzle(); return; }
+            initGame();
+        });
     } else {
-        if (!P || !P.theme) { showNoPuzzle(); } else { initGame(); }
+        if (!P || !P.theme) { showNoPuzzle(); }
+        else { initGame(); }
     }
     window.addEventListener('resize', renderGrid);
     </script>
@@ -2348,13 +2351,12 @@
     </div>
     <script>
     (function() {
-        const SEEN_KEY = 'pivot_seen_intro';
         const modal = document.getElementById('intro-modal');
-        if (modal && !localStorage.getItem(SEEN_KEY)) {
+        if (modal && !localStorage.getItem('pivot_seen_intro')) {
             modal.classList.add('visible');
             modal.addEventListener('click', function() {
                 modal.classList.remove('visible');
-                localStorage.setItem(SEEN_KEY, '1');
+                localStorage.setItem('pivot_seen_intro', '1');
             }, { once: true });
         }
     })();
