@@ -996,6 +996,7 @@
     let foundWords = new Set(),
         foundKeys = new Set(),
         pivotCellKeys = new Set();
+    let foundOrder = []; // tracks Part 1 words in the order they were found
     let selCells = [],
         hintKeys = new Set();
     let hintCount = 0; // total hints used across both stages — escalating cost
@@ -1017,7 +1018,8 @@
         timerInterval = null,
         timerStopped = false,
         elapsedSecs = 0,
-        hintPenalty = 0;
+        hintPenalty = 0,
+        p1HintPenalty = 0; // hint penalty accumulated in Part 1 only
 
     // ── HELPERS ───────────────────────────────────────────────────────────────────
     function ck(r, c) {
@@ -1224,6 +1226,7 @@
                 return;
             }
             foundWords.add(w);
+            foundOrder.push(w); // record order found for share report
             p.cells.forEach(([rr, cc]) => foundKeys.add(ck(rr, cc)));
             if (w === P.pivot) {
                 p.cells.forEach(([rr, cc]) => pivotCellKeys.add(ck(rr, cc)));
@@ -1345,6 +1348,7 @@
 
     function goStage2() {
         stage = 2;
+        p1HintPenalty = hintPenalty; // freeze Part 1 hint total
         document.getElementById('hintbtn').style.display = 'none';
         const instrCard = document.getElementById('instrcard');
         const instrEl = document.getElementById('instrtext');
@@ -1787,10 +1791,35 @@
 
     // ── SHARE ─────────────────────────────────────────────────────────────────────
     function buildShareText() {
-        const guessEmoji = pastGuesses.map(g => g.results.map(r => r === 'correct' ? '🟩' : r === 'present' ? '🟨' : '⬛').join('')).join('\n');
         const total = elapsedSecs + hintPenalty;
-        const timeStr = '⏱ ' + fmtTime(total) + (hintPenalty > 0 ? ' (+' + fmtTime(hintPenalty) + ' hints)' : '');
-        return 'PIVOT — ' + P.theme + '\n' + timeStr + '\n' + guessEmoji;
+        const p2HintPenalty = hintPenalty - p1HintPenalty;
+        const noHints = hintPenalty === 0;
+
+        let timeStr = '⏱ ' + fmtTime(total);
+        if (noHints) {
+            timeStr += ' — no hints 🎉';
+        } else {
+            const base = elapsedSecs;
+            timeStr += ' (' + fmtTime(base) + ' + ' + fmtTime(p1HintPenalty) + '/' + fmtTime(p2HintPenalty) + ' hints)';
+        }
+
+        // Part 1: circles in order found, magnifying glass for each unfound word
+        const totalWords = P.words.length;
+        let p1Emoji = '';
+        for (let i = 0; i < foundOrder.length; i++) {
+            p1Emoji += foundOrder[i] === P.pivot ? '🟠' : '🟢';
+        }
+        const unfoundCount = totalWords - foundOrder.length;
+        for (let i = 0; i < unfoundCount; i++) {
+            p1Emoji += '🔍';
+        }
+
+        // Part 2: one row per guess
+        const guessEmoji = pastGuesses.map(g =>
+            g.results.map(r => r === 'correct' ? '🟩' : r === 'present' ? '🟨' : '⬛').join('')
+        ).join('\n');
+
+        return 'PIVOT — ' + P.theme + '\n' + timeStr + '\n' + p1Emoji + '\n' + guessEmoji;
     }
     function showSharePrompt() {
         document.getElementById('shareresult').textContent = buildShareText();
