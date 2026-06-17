@@ -737,7 +737,7 @@
         <span id="sbpts" style="color:#f9d976;font-weight:bold;font-size:16px;font-family:Georgia,serif;"></span>
     </div>
     <div id="header">
-        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.14</span></p>
+        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.15</span></p>
         <h1>PIVOT<span style="color:#a8c8e8;font-size:16px;letter-spacing:2px;font-weight:normal;"> : </span><span id="theme-label" style="color:#fff;font-size:20px;letter-spacing:4px;">…</span></h1>
         <div class="badge-row">
             <span class="pts-badge" id="pts">⏱ 0:00</span>
@@ -1741,8 +1741,26 @@
         });
     }
 
+    function saveTodayResult(won) {
+        // Lets a same-day return visit show today's result instead of a fresh
+        // playable puzzle. Wrapped in try/catch so private-browsing or storage
+        // restrictions just mean this feature silently doesn't persist —
+        // never breaks the game itself.
+        try {
+            localStorage.setItem('pivot_result', JSON.stringify({
+                date: todayISO(),
+                won: won,
+                elapsedSecs: elapsedSecs,
+                hintPenalty: hintPenalty,
+                pastGuesses: pastGuesses
+            }));
+        } catch (e) {
+            // storage unavailable — nothing to do
+        }
+    }
     function showWin() {
         stopTimer();
+        saveTodayResult(true);
         document.getElementById('actcard').style.display = 'none';
         document.getElementById('wincard').classList.remove('hidden');
         document.getElementById('winword').textContent = P.target;
@@ -1759,6 +1777,7 @@
     }
     function showLoss() {
         stopTimer();
+        saveTodayResult(false);
         document.getElementById('actcard').style.display = 'none';
         document.getElementById('losscard').classList.remove('hidden');
         document.getElementById('lossword').textContent = 'The word was ' + P.target;
@@ -2138,6 +2157,33 @@
         if (themeLabel) themeLabel.textContent = P.theme;
     }
 
+    function showAlreadyPlayed(saved) {
+        // Restore just enough state to redisplay today's result, without
+        // touching the grid/pool/buildPuzzle code path at all.
+        pastGuesses = saved.pastGuesses || [];
+        elapsedSecs = saved.elapsedSecs || 0;
+        hintPenalty = saved.hintPenalty || 0;
+        gameOver = true;
+
+        const themeLabel = document.getElementById('theme-label');
+        if (themeLabel) themeLabel.textContent = P.theme;
+
+        const instrcard = document.getElementById('instrcard');
+        if (instrcard) instrcard.style.display = 'none';
+
+        const s2 = document.getElementById('s2');
+        if (s2) {
+            s2.style.display = '';
+            const note = document.createElement('p');
+            note.style.cssText = 'text-align:center;color:#a8c8e8;font-size:13px;margin:0 0 14px;line-height:1.5;';
+            note.textContent = "You've already played today's PIVOT — here's how it went. Come back tomorrow for a new puzzle.";
+            s2.insertBefore(note, s2.firstChild);
+        }
+
+        renderPastGuesses();
+        if (saved.won) showWin(); else showLoss();
+    }
+
     async function loadAndStart() {
         const loadEl = document.getElementById('loading-msg');
         try {
@@ -2147,7 +2193,18 @@
             P = FALLBACK_P;
         }
         if (loadEl) loadEl.style.display = 'none';
-        initGame();
+
+        let saved = null;
+        try {
+            saved = JSON.parse(localStorage.getItem('pivot_result') || 'null');
+        } catch (e) {
+            saved = null;
+        }
+        if (saved && saved.date === todayISO()) {
+            showAlreadyPlayed(saved);
+        } else {
+            initGame();
+        }
     }
 
     if (document.readyState === 'loading') {
