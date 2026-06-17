@@ -737,7 +737,7 @@
         <span id="sbpts" style="color:#f9d976;font-weight:bold;font-size:16px;font-family:Georgia,serif;"></span>
     </div>
     <div id="header">
-        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.17</span></p>
+        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.18</span></p>
         <h1>PIVOT<span style="color:#a8c8e8;font-size:16px;letter-spacing:2px;font-weight:normal;"> : </span><span id="theme-label" style="color:#fff;font-size:20px;letter-spacing:4px;">…</span></h1>
         <div class="badge-row">
             <span class="pts-badge" id="pts">⏱ 0:00</span>
@@ -2005,7 +2005,7 @@
             g.results.map(r => r === 'correct' ? '🟩' : r === 'present' ? '🟨' : '⬛').join('')
         ).join('\n');
 
-        return 'PIVOT — ' + P.theme + '\n' + timeStr + '\n' + p1Emoji + '\n' + guessEmoji + '\n\nPlay today\'s PIVOT: https://tinyurl.com/pivot-en';
+        return 'PIVOT — ' + P.theme + '\n' + timeStr + '\n' + p1Emoji + '\n' + guessEmoji + '\nhttps://tinyurl.com/pivot-en';
     }
     function showSharePrompt() {
         document.getElementById('shareresult').textContent = buildShareText();
