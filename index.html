@@ -12,6 +12,10 @@
         -webkit-tap-highlight-color: transparent;
     }
 
+    html {
+        overscroll-behavior-y: contain;
+    }
+
     body {
         min-height: 100vh;
         background: linear-gradient(160deg, #0d3349 0%, #1a5276 55%, #0d3349 100%);
@@ -19,6 +23,7 @@
         color: #f0ede6;
         padding: 10px 10px 28px;
         -webkit-text-size-adjust: 100%;
+        overscroll-behavior-y: contain;
     }
 
     h1 {
@@ -834,6 +839,25 @@
     </div>
 
     <script>
+    // ── BLOCK PULL-TO-REFRESH ───────────────────────────────────────────────────
+    // overscroll-behavior (above, in CSS) handles this on most browsers. Older
+    // iOS Safari doesn't honor that property, so this is a fallback: if the user
+    // is already scrolled to the very top and pulls down further, swallow the
+    // gesture so it can't trigger a refresh and wipe game state.
+    (function () {
+        let startY = 0;
+        document.addEventListener('touchstart', function (e) {
+            startY = e.touches[0].clientY;
+        }, { passive: true });
+        document.addEventListener('touchmove', function (e) {
+            const atTop = window.scrollY <= 0;
+            const pullingDown = e.touches[0].clientY > startY;
+            if (atTop && pullingDown) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    })();
+
     // ── PUZZLE ───────────────────────────────────────────────────────────────────
     // P is populated from Google Sheets at runtime by loadAndStart() below.
     // The fallback below is only used if the fetch fails.
