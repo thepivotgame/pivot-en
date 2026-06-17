@@ -737,7 +737,7 @@
         <span id="sbpts" style="color:#f9d976;font-weight:bold;font-size:16px;font-family:Georgia,serif;"></span>
     </div>
     <div id="header">
-        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.15</span></p>
+        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.16</span></p>
         <h1>PIVOT<span style="color:#a8c8e8;font-size:16px;letter-spacing:2px;font-weight:normal;"> : </span><span id="theme-label" style="color:#fff;font-size:20px;letter-spacing:4px;">…</span></h1>
         <div class="badge-row">
             <span class="pts-badge" id="pts">⏱ 0:00</span>
@@ -1752,7 +1752,13 @@
                 won: won,
                 elapsedSecs: elapsedSecs,
                 hintPenalty: hintPenalty,
-                pastGuesses: pastGuesses
+                pastGuesses: pastGuesses,
+                grid: grid,
+                foundKeys: Array.from(foundKeys),
+                pivotCellKeys: Array.from(pivotCellKeys),
+                hintKeys: Array.from(hintKeys),
+                foundWords: Array.from(foundWords),
+                foundOrder: foundOrder
             }));
         } catch (e) {
             // storage unavailable — nothing to do
@@ -2164,6 +2170,29 @@
         elapsedSecs = saved.elapsedSecs || 0;
         hintPenalty = saved.hintPenalty || 0;
         gameOver = true;
+
+        // Restore Part 1's board exactly as it was found, if we have it saved
+        // (older saved results from before this existed won't have it).
+        if (saved.grid) {
+            grid = saved.grid;
+            SZ = grid.length;
+            foundKeys = new Set(saved.foundKeys || []);
+            pivotCellKeys = new Set(saved.pivotCellKeys || []);
+            hintKeys = new Set(saved.hintKeys || []);
+            foundWords = new Set(saved.foundWords || []);
+            foundOrder = saved.foundOrder || [];
+            selCells = [];
+
+            const s1 = document.getElementById('s1');
+            if (s1) s1.style.display = '';
+            const hintbtn = document.getElementById('hintbtn');
+            if (hintbtn) hintbtn.style.display = 'none';
+            const scrollArrow = document.getElementById('scroll-down-arrow');
+            if (scrollArrow) scrollArrow.style.display = 'none';
+
+            renderGrid();
+            renderChips();
+        }
 
         const themeLabel = document.getElementById('theme-label');
         if (themeLabel) themeLabel.textContent = P.theme;
