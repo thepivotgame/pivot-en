@@ -746,7 +746,7 @@
         <span id="sbpts" style="color:#f9d976;font-weight:bold;font-size:16px;font-family:Georgia,serif;"></span>
     </div>
     <div id="header">
-        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.25</span></p>
+        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.26</span></p>
         <h1>PIVOT<span style="color:#a8c8e8;font-size:16px;letter-spacing:2px;font-weight:normal;"> : </span><span id="theme-label" style="color:#fff;font-size:20px;letter-spacing:4px;">…</span></h1>
         <div class="badge-row">
             <span class="pts-badge" id="pts">⏱ 0:00</span>
@@ -1118,6 +1118,7 @@
     let selCells = [],
         hintKeys = new Set();
     let hintCount = 0; // total hints used across both stages — escalating cost
+    let p1HintLocked = false; // true once a Part 1 hint's been used — blocks another until a word is found
     // pool is populated in initGame() after the grid is built from Sheets data
     const pool = [];
     let guessSlots = [],
@@ -1382,6 +1383,7 @@
                 return;
             }
             foundWords.add(w);
+            p1HintLocked = false;
             foundOrder.push(w); // record order found for share report
             p1EventLog.push({ type: 'word', pivot: w === P.pivot });
             p.cells.forEach(([rr, cc]) => foundKeys.add(ck(rr, cc)));
@@ -1429,6 +1431,10 @@
 
     // ── HINT ──────────────────────────────────────────────────────────────────────
     function doHint() {
+        if (p1HintLocked) {
+            flash('Find a word first', 'er');
+            return;
+        }
         const unfound = P.words.filter(w => !foundWords.has(w));
         if (!unfound.length)
             return;
@@ -1436,6 +1442,7 @@
         const hintable = unfound.filter(w => w !== P.pivot);
         const candidates = hintable.length > 0 ? hintable : unfound;
         const cost = addHintPenalty();
+        p1HintLocked = true;
         p1EventLog.push({ type: 'hint' });
         const w = candidates[Math.floor(Math.random() * candidates.length)];
         const p = placements[w];
