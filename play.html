@@ -148,37 +148,45 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 900;
-        padding: 8px 20px;
-        border-radius: 9px;
-        font-size: 13px;
+        padding: 13px 22px;
+        border-radius: 10px;
+        font-size: 15px;
         font-weight: bold;
         display: none;
-        white-space: nowrap;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        white-space: normal;
+        max-width: calc(100% - 32px);
+        text-align: center;
+        line-height: 1.35;
+        cursor: pointer;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+    }
+
+    #flash:active {
+        transform: translateX(-50%) scale(0.97);
     }
 
     #flash.ok {
-        background: rgba(46, 204, 113, 0.2);
-        color: #2ecc71;
-        border: 1px solid rgba(46, 204, 113, 0.4);
+        background: rgba(39, 174, 96, 0.96);
+        color: #fff;
+        border: 1px solid rgba(39, 174, 96, 1);
     }
 
     #flash.er {
-        background: rgba(231, 76, 60, 0.2);
-        color: #e74c3c;
-        border: 1px solid rgba(231, 76, 60, 0.4);
+        background: rgba(192, 57, 43, 0.96);
+        color: #fff;
+        border: 1px solid rgba(192, 57, 43, 1);
     }
 
     #flash.in {
-        background: rgba(255, 255, 255, 0.1);
-        color: #f0ede6;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(33, 47, 61, 0.96);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     #flash.hint {
-        background: rgba(243, 156, 18, 0.25);
+        background: rgba(230, 145, 14, 0.96);
         color: #fff;
-        border: 1px solid rgba(243, 156, 18, 0.6);
+        border: 1px solid rgba(230, 145, 14, 1);
         font-size: 16px;
         font-weight: bold;
         text-align: center;
@@ -738,7 +746,7 @@
         <span id="sbpts" style="color:#f9d976;font-weight:bold;font-size:16px;font-family:Georgia,serif;"></span>
     </div>
     <div id="header">
-        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.24</span></p>
+        <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.25</span></p>
         <h1>PIVOT<span style="color:#a8c8e8;font-size:16px;letter-spacing:2px;font-weight:normal;"> : </span><span id="theme-label" style="color:#fff;font-size:20px;letter-spacing:4px;">…</span></h1>
         <div class="badge-row">
             <span class="pts-badge" id="pts">⏱ 0:00</span>
@@ -1130,12 +1138,16 @@
         return r + '-' + c;
     }
     let flashT;
-    function flash(txt, type, ms=2500) {
+    function flash(txt, type, ms=4000) {
         clearTimeout(flashT);
         const el = document.getElementById('flash');
         el.textContent = txt;
         el.className = type;
         el.style.display = 'block';
+        el.onclick = () => {
+            clearTimeout(flashT);
+            el.style.display = 'none';
+        };
         flashT = setTimeout(() => el.style.display = 'none', ms);
     }
     function isAdj(r1, c1, r2, c2) {
@@ -1344,7 +1356,7 @@
         if (selCells.length > 0) {
             const adjToAny = selCells.some(([sr, sc]) => isAdj(r, c, sr, sc));
             if (!adjToAny) {
-                flash('Tap a letter next to your selection', 'er', 1500);
+                flash('Tap a letter next to your selection', 'er', 3000);
                 return;
             }
         }
@@ -1663,7 +1675,7 @@
             return;
         }
         if (!WORDBANK.has(guess)) {
-            flash('"' + guess + '" not in word list', 'er', 2500);
+            flash('"' + guess + '" not in word list', 'er');
             guessSlots.forEach(id => {
                 const s = pool.find(x => x.id === id);
                 if (s)
@@ -1686,7 +1698,7 @@
                 avail[ch]--;
             }
             if (missing) {
-                flash('"' + missing + '" not available — find more words to unlock letters', 'er', 3000);
+                flash('"' + missing + '" not available — find more words to unlock letters', 'er', 4500);
                 guessSlots.forEach(id => {
                     const s = pool.find(x => x.id === id);
                     if (s)
