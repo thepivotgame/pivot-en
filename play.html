@@ -2065,7 +2065,7 @@
         if (p2PendingHint) p2Lines.push('ℹ️'); // hint taken after the last guess (shouldn't normally happen, but don't drop it)
         const guessEmoji = p2Lines.join('\n');
 
-        return 'PIVOT — ' + P.theme + '\n' + timeStr + '\n' + p1Emoji + '\n' + guessEmoji + '\nhttps://tinyurl.com/pivot-en';
+        return 'PIVOT — ' + P.theme + '\n'  + p1Emoji + '\n' + guessEmoji + '\nhttps://tinyurl.com/pivot-en';
     }
     function showSharePrompt() {
         document.getElementById('shareresult').textContent = buildShareText();
