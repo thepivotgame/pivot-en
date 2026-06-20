@@ -8,12 +8,10 @@
     <script>
 (function () {
     try {
-        var saved = JSON.parse(localStorage.getItem('pivot_result') || 'null');
-        var d = new Date();
-        var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
-        if (saved && saved.date === today) {
-            window.location.replace('play.html');
-        }
+    var saved = JSON.parse(localStorage.getItem('pivot_result') || 'null');
+    if (saved) {
+        window.location.replace('play.html');
+    }
     } catch (e) {}
 })();
 </script>
