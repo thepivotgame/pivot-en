@@ -897,8 +897,9 @@
                     noise:    (r[11] || '').trim().toUpperCase(),
                     latHint:  (r[12] || '').trim(),
                     pivHint:  (r[13] || '').trim(),
-                    winText:  (r[14] || '').trim(),
-                    lossText: (r[15] || '').trim(),
+                    winText:    (r[14] || '').trim(),
+                    lossText:   (r[15] || '').trim(),
+                    gridString: (r[16] || '').trim().toUpperCase(),
                 };
             }
         }
@@ -948,6 +949,53 @@
         }
         return b;
     }
+    // ── LOAD PRE-BUILT GRID FROM 36-CHAR STRING ───────────────────────────────
+    function loadGridFromString(gridString) {
+        // Rebuild the grid array from the 36-character string (row-major order)
+        const g = [];
+        for (let r = 0; r < SZ; r++) {
+            g.push(gridString.slice(r * SZ, r * SZ + SZ).split(''));
+        }
+        // Locate each word's cells and direction in the grid
+        const pl = {};
+        const DIRS = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]];
+        for (const word of P.words) {
+            let found = false;
+            outer: for (let r = 0; r < SZ && !found; r++) {
+                for (let c = 0; c < SZ && !found; c++) {
+                    for (const [dr, dc] of DIRS) {
+                        let match = true;
+                        const cells = [];
+                        for (let i = 0; i < word.length; i++) {
+                            const nr = r + dr * i, nc = c + dc * i;
+                            if (nr < 0 || nr >= SZ || nc < 0 || nc >= SZ || g[nr][nc] !== word[i]) {
+                                match = false; break;
+                            }
+                            cells.push([nr, nc]);
+                        }
+                        if (match) {
+                            pl[word] = { cells, dir: [dr, dc] };
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        // Free letters = cells not occupied by any word
+        const occ = new Set();
+        Object.values(pl).forEach(p => p.cells.forEach(([r, c]) => occ.add(r + '-' + c)));
+        const free = [];
+        for (let r = 0; r < SZ; r++)
+            for (let c = 0; c < SZ; c++)
+                if (!occ.has(r + '-' + c)) free.push([r, c]);
+        return {
+            grid: g,
+            placements: pl,
+            freeLetters: shufl(free.map(([r, c]) => g[r][c]))
+        };
+    }
+
     function buildPuzzle() {
         const wds = [...P.words].sort((a, b) => b.length - a.length);
         let bGrid = null,
@@ -2183,7 +2231,9 @@
         // Populate runtime constants from the loaded puzzle
         SZ = P.SIZE || 6;
         try {
-            const _r = buildPuzzle();
+            const _r = (P.gridString && P.gridString.length === 36)
+                ? loadGridFromString(P.gridString)
+                : buildPuzzle();
             grid = _r.grid;
             placements = _r.placements;
             freeLetters = _r.freeLetters;
