@@ -2040,7 +2040,22 @@
         if (p2PendingHint) p2Lines.push('ℹ️'); // hint taken after the last guess (shouldn't normally happen, but don't drop it)
         const guessEmoji = p2Lines.join('\n');
 
-        return 'PIVOT — ' + P.theme + '\n'  + p1Emoji + '\n' + guessEmoji + '\nhttps://tinyurl.com/pivot-en';
+
+        const hints = totalHintsUsed();
+        const p2Guesses = p2EventLog.filter(e => e.type === 'guess').length;
+        let performanceLine = '';
+        if (hints === 0) {
+            performanceLine = 'Superb! No hints used. 🎉 🥳 😎 👌';
+        } else if (hints === 1) {
+            performanceLine = 'Excellent! Only 1 hint used. 🥳 🤓';
+        } else if (hints === 2) {
+            performanceLine = 'Well done with 2 hints used. 😊';
+        } else if (hints >= 3 && p2Guesses >= 4) {
+            performanceLine = 'Phew! You made it!! 😅';
+        }
+        const perfSuffix = performanceLine ? '\n' + performanceLine : '';
+        return 'PIVOT — ' + P.theme + '\n' + p1Emoji + '\n' + guessEmoji + perfSuffix + '\nhttps://tinyurl.com/pivot-en';
+        
     }
     function showSharePrompt() {
         document.getElementById('shareresult').textContent = buildShareText();
