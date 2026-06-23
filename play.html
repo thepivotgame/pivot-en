@@ -1705,7 +1705,20 @@
         document.getElementById('winword').textContent = P.target;
         document.getElementById('wintext').textContent = P.winText;
         const hints = totalHintsUsed();
-        document.getElementById('winscore').textContent = hints > 0 ? (hints + (hints === 1 ? ' hint used' : ' hints used')) : 'No hints used';
+        
+        const p2Guesses = p2EventLog.filter(e => e.type === 'guess').length;
+        let scoreMsg = '';
+        if (hints === 0) {
+            scoreMsg = 'Superb! No hints used. 🎉 🥳 😎 👌';
+        } else if (hints === 1) {
+            scoreMsg = 'Excellent! Only 1 hint used. 🥳 🤓';
+        } else if (hints === 2) {
+            scoreMsg = 'Well done with 2 hints used. 😊';
+        } else if (hints >= 3 && p2Guesses >= 4) {
+            scoreMsg = 'Phew! You made it!! 😅';
+        }
+        document.getElementById('winscore').textContent = scoreMsg;
+        
         setTimeout(() => {
             document.getElementById('wincard').scrollIntoView({
                 behavior: 'smooth',
