@@ -1345,6 +1345,7 @@
             hintKeys = new Set();
             renderGrid();
             renderChips();
+            saveProgress();
             // If Part 2 is already showing, update the pool immediately
             if (s2Initialised) {
                 refreshPool();
@@ -1403,6 +1404,7 @@
         hintKeys = new Set();
         hintKeys.add(ck(firstCell[0], firstCell[1]));
         renderGrid();
+        saveProgress();
         document.getElementById('s1').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
@@ -1684,6 +1686,7 @@
         renderPool();
         renderGuessDisplay();
         renderPastGuesses();
+        saveProgress();
         if (guess === P.target) {
             gameOver = true;
             showWin();
@@ -1742,7 +1745,135 @@
             // storage unavailable — nothing to do
         }
     }
+    // ── MID-GAME PROGRESS SAVE/RESTORE ──────────────────────────────────────────
+    function saveProgress() {
+        if (gameOver) return; // finished games are handled by saveTodayResult()
+        try {
+            localStorage.setItem('pivot_progress', JSON.stringify({
+                date: todayISO(),
+                stage: stage,
+                wordSearchDone: wordSearchDone,
+                s2Initialised: s2Initialised,
+                jumpedEarly: jumpedEarly,
+                gameStarted: gameStarted,
+                grid: grid,
+                foundKeys: Array.from(foundKeys),
+                pivotCellKeys: Array.from(pivotCellKeys),
+                hintKeys: Array.from(hintKeys),
+                foundWords: Array.from(foundWords),
+                foundOrder: foundOrder,
+                p1EventLog: p1EventLog,
+                p2EventLog: p2EventLog,
+                p1HintLocked: p1HintLocked,
+                pool: pool,
+                guessSlots: guessSlots,
+                pastGuesses: pastGuesses,
+                usedLat: usedLat,
+                usedPiv: usedPiv,
+                p2HintLocked: p2HintLocked
+            }));
+        } catch (e) { /* storage unavailable */ }
+    }
+
+    function clearProgress() {
+        try { localStorage.removeItem('pivot_progress'); } catch (e) {}
+    }
+
+    function restoreProgress(saved) {
+        // Restore all state variables
+        SZ = saved.grid.length;
+        grid = saved.grid;
+        stage = saved.stage || 1;
+        wordSearchDone = saved.wordSearchDone || false;
+        s2Initialised = saved.s2Initialised || false;
+        jumpedEarly = saved.jumpedEarly || false;
+        gameStarted = saved.gameStarted || false;
+        foundKeys = new Set(saved.foundKeys || []);
+        pivotCellKeys = new Set(saved.pivotCellKeys || []);
+        hintKeys = new Set(saved.hintKeys || []);
+        foundWords = new Set(saved.foundWords || []);
+        foundOrder = saved.foundOrder || [];
+        p1EventLog = saved.p1EventLog || [];
+        p2EventLog = saved.p2EventLog || [];
+        p1HintLocked = saved.p1HintLocked || false;
+        pastGuesses = saved.pastGuesses || [];
+        usedLat = saved.usedLat || false;
+        usedPiv = saved.usedPiv || false;
+        p2HintLocked = saved.p2HintLocked || false;
+
+        // Restore pool
+        pool.length = 0;
+        (saved.pool || []).forEach(s => pool.push(s));
+        guessSlots = saved.guessSlots || [];
+
+        // Re-derive placements from the grid (same logic as loadGridFromString)
+        const pl = {};
+        const DIRS8 = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]];
+        for (const word of P.words) {
+            let found = false;
+            outer: for (let r = 0; r < SZ && !found; r++) {
+                for (let c = 0; c < SZ && !found; c++) {
+                    for (const [dr, dc] of DIRS8) {
+                        let match = true;
+                        const cells = [];
+                        for (let i = 0; i < word.length; i++) {
+                            const nr = r + dr * i, nc = c + dc * i;
+                            if (nr < 0 || nr >= SZ || nc < 0 || nc >= SZ || grid[nr][nc] !== word[i]) {
+                                match = false; break;
+                            }
+                            cells.push([nr, nc]);
+                        }
+                        if (match) { pl[word] = { cells, dir: [dr, dc] }; found = true; break; }
+                    }
+                }
+            }
+        }
+        placements = pl;
+        WORDBANK.add(P.target.toUpperCase());
+
+        // Restore UI
+        if (gameStarted) document.body.classList.add('playing');
+
+        const s1 = document.getElementById('s1');
+        const s2 = document.getElementById('s2');
+        if (s1) s1.style.display = '';
+
+        const themeLabel = document.getElementById('theme-label');
+        if (themeLabel) themeLabel.textContent = P.theme;
+
+        renderGrid();
+        renderChips();
+
+        const hintbtn = document.getElementById('hintbtn');
+        const scrollArrow = document.getElementById('scroll-down-arrow');
+
+        if (wordSearchDone) {
+            if (hintbtn) hintbtn.style.display = 'none';
+            if (scrollArrow) scrollArrow.style.display = 'none';
+        } else {
+            if (hintbtn) hintbtn.style.display = '';
+            if (foundWords.has(P.pivot) && scrollArrow) scrollArrow.style.display = 'flex';
+        }
+
+        if (s2Initialised) {
+            if (s2) s2.style.display = '';
+            const instrCard = document.getElementById('instrcard');
+            const instrEl = document.getElementById('instrtext');
+            if (instrCard) instrCard.style.display = 'block';
+            if (instrEl) {
+                let txt = "It is related to <strong>" + P.pivot + "</strong>. You have " + MAX_GUESSES + " guesses.";
+                if (jumpedEarly && !wordSearchDone)
+                    txt += "<br>Reduce the letter pool by finding more words above.";
+                instrEl.innerHTML = txt;
+            }
+            renderPool();
+            renderGuessDisplay();
+            renderPastGuesses();
+        }
+    }
+
     function showWin() {
+        clearProgress();
         saveTodayResult(true);
         document.getElementById('actcard').style.display = 'none';
         document.getElementById('wincard').classList.remove('hidden');
@@ -1772,6 +1903,7 @@
         }, 300);
     }
     function showLoss() {
+        clearProgress();
         saveTodayResult(false);
         document.getElementById('actcard').style.display = 'none';
         document.getElementById('losscard').classList.remove('hidden');
@@ -2328,7 +2460,16 @@
         if (saved && saved.date === todayISO()) {
             showAlreadyPlayed(saved);
         } else {
-            initGame();
+            // Check for an in-progress game from today
+            let progress = null;
+            try {
+                progress = JSON.parse(localStorage.getItem('pivot_progress') || 'null');
+            } catch (e) { progress = null; }
+            if (progress && progress.date === todayISO()) {
+                restoreProgress(progress);
+            } else {
+                initGame();
+            }
         }
     }
 
