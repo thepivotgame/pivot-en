@@ -631,10 +631,16 @@
     }
     #summarybox .sum-success {
         color: #f9d976;
-        font-size: 22px;
+        font-size: 28px;
         font-weight: bold;
         letter-spacing: 3px;
-        margin: 0 0 6px;
+        margin: 0 0 4px;
+    }
+    #summarybox .sum-target-label {
+        color: #a8c8e8;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0 0 2px;
     }
     #summarybox .sum-target {
         color: #fff;
@@ -869,6 +875,7 @@
     <div id="summaryoverlay">
         <div id="summarybox">
             <div class="sum-success" id="sum-heading">SUCCESS!</div>
+            <div class="sum-target-label">Today's word was</div>
             <div class="sum-target" id="sum-target"></div>
             <div class="sum-intro">Here is a game summary of the hints and conclusion:</div>
             <div class="sum-section" id="sum-hint1-block">
@@ -2230,7 +2237,7 @@
     function showSummaryPanel(won) {
         // Heading and target line
         document.getElementById('sum-heading').textContent = won ? 'SUCCESS!' : 'Almost, but not quite...';
-        document.getElementById('sum-target').textContent = 'Today\'s word was "' + P.target + '"';
+        document.getElementById('sum-target').textContent = P.target;
 
         // Lateral hint — show with dim style if player didn't use it
         const h1text = document.getElementById('sum-hint1-text');
