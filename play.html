@@ -1521,7 +1521,8 @@
         const p = placements[w];
         // Find the cell that contains the first letter of the word
         const firstLetter = w[0];
-        const firstCell = p.cells.find(([r, c]) => grid[r][c] === firstLetter) || p.cells[0];
+        const pivotCells = placements[P.pivot] ? new Set(placements[P.pivot].cells.map(([r,c]) => ck(r,c))) : new Set();
+        const firstCell = p.cells.find(([r, c]) => grid[r][c] === firstLetter && !pivotCells.has(ck(r,c))) || p.cells.find(([r, c]) => grid[r][c] === firstLetter) || p.cells[0];
         selCells = [];
         hintKeys = new Set();
         hintKeys.add(ck(firstCell[0], firstCell[1]));
@@ -2087,6 +2088,10 @@
     tap('pivbtn', function() {
         if (usedPiv)
             return;
+        if (!usedLat) {
+            flash('Try the lateral hint first', 'er');
+            return;
+        }
         if (p2HintLocked) {
             flash('One hint per guess — try a guess first', 'er');
             return;
