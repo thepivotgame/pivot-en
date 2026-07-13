@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>PIVOT</title>
-    <script data-goatcounter="https://pivot.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://pivot-votd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <style>
     * {
         box-sizing: border-box;
@@ -59,7 +59,6 @@
         max-height: 120px;
         opacity: 1;
     }
-
 
 
     .card {
@@ -609,105 +608,102 @@
         z-index: 2000;
         pointer-events: none;
         display: none;
-    }/* Share */
+    }
 
+    /* Summary Panel */
     #summaryoverlay {
+        display: none;
         position: fixed;
         inset: 0;
-        z-index: 2001;
-        background: rgba(0, 0, 0, 0.82);
-        display: none;
+        z-index: 2100;
+        background: rgba(0,0,0,0.82);
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding: 16px;
     }
     #summarybox {
-        background: linear-gradient(160deg, #0d3349, #1a5276);
-        border: 1px solid rgba(249, 217, 118, 0.5);
+        background: #12122a;
+        border: 1px solid #2e2e5a;
         border-radius: 16px;
-        padding: 24px 20px 20px;
-        max-width: 340px;
+        max-width: 480px;
         width: 100%;
-        text-align: center;
-        position: relative;
-        z-index: 2002;
+        max-height: calc(100vh - 32px);
+        overflow-y: auto;
+        padding: 28px 24px 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: #e8e4d9;
     }
     #summarybox .sum-success {
-        color: #f9d976;
-        font-size: 28px;
+        font-size: 22px;
         font-weight: bold;
-        letter-spacing: 3px;
-        margin: 0 0 4px;
+        color: #e8b84b;
+        text-align: center;
+        margin-bottom: 6px;
     }
-    #summarybox .sum-success.sum-loss {
-        font-size: 17px;
-        letter-spacing: 1px;
-    }
+    #summarybox .sum-success.sum-loss { color: #a0a0c0; }
     #summarybox .sum-target-label {
-        color: #a8c8e8;
-        font-size: 13px;
-        font-weight: normal;
-        margin: 0 0 2px;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #8884aa;
+        margin-bottom: 4px;
     }
     #summarybox .sum-target {
-        color: #fff;
-        font-size: 26px;
+        text-align: center;
+        font-size: 32px;
         font-weight: bold;
-        margin: 0 0 16px;
+        letter-spacing: 0.12em;
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
+    #summarybox .sum-intro {
+        font-size: 13px;
+        color: #8884aa;
+        text-align: center;
+        margin-bottom: 14px;
     }
     #summarybox .sum-section {
-        background: rgba(255,255,255,0.07);
+        background: #1e1e40;
         border-radius: 10px;
-        padding: 10px 14px;
+        padding: 12px 14px;
         margin-bottom: 10px;
-        text-align: left;
-        font-size: 13px;
-        color: #d4eaf7;
+        font-size: 15px;
         line-height: 1.55;
     }
     #summarybox .sum-label {
-        color: #a8c8e8;
         font-size: 11px;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 3px;
-        font-weight: bold;
-    }
-    #summarybox .sum-unused {
-        color: #607a8a;
-        font-style: italic;
+        color: #8884aa;
+        margin-bottom: 5px;
     }
     #summarybox .sum-closebtn {
         display: block;
         width: 100%;
         margin-top: 16px;
-        padding: 13px;
-        border-radius: 10px;
-        background: linear-gradient(135deg, #f9d976, #e6b800);
-        color: #1a3a1a;
-        font-family: Georgia, serif;
-        font-size: 15px;
+        padding: 14px;
+        background: #e8b84b;
+        color: #1a1200;
+        font-size: 16px;
         font-weight: bold;
         border: none;
+        border-radius: 10px;
         cursor: pointer;
-    }
-
-    #summarybox .sum-intro {
-        color: #a8c8e8;
-        font-size: 12px;
-        margin: -8px 0 12px;
-        font-style: italic;
+        touch-action: manipulation;
     }
     #summarybox .sum-notnow {
-        margin-top: 10px;
-        color: #607a8a;
-        font-size: 12px;
-        text-decoration: underline;
+        text-align: center;
+        margin-top: 12px;
+        font-size: 13px;
+        color: #6664aa;
         cursor: pointer;
+        padding: 8px;
+        touch-action: manipulation;
     }
-    #summarybox .sum-notnow:hover {
-        color: #a8c8e8;
-    }
+    #summarybox .sum-notnow:hover { color: #a0a0c0; }
+
+    /* Share */
     #shareoverlay {
         position: fixed;
         inset: 0;
@@ -803,10 +799,25 @@
 <body>
     <div id="header">
         <p class="eyebrow">DAILY PUZZLE <span style="opacity:0.5;font-size:8px;letter-spacing:1px;">v1.27</span></p>
-        <h1>PIVOT<span style="color:#a8c8e8;font-size:16px;letter-spacing:2px;font-weight:normal;"> : </span><span id="theme-label" style="color:#fff;font-size:20px;letter-spacing:4px;">…</span></h1>
+        <h1>PIVOT<span style="color:#a8c8e8;font-size:16px;letter-spacing:2px;font-weight:normal;"> : </span><span id="theme-label" style="color:#fff;font-size:19px;letter-spacing:2px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;vertical-align:baseline;">…</span></h1>
     </div>
+
+    <!-- VOTD verse box -->
+    <div id="votd-banner" style="display:none;margin:8px auto 12px;max-width:480px;width:90%;background:#ffffff;border-radius:10px;padding:12px 16px;text-align:center;">
+      <p id="votd-banner-text" style="font-family:Georgia,serif;font-size:14px;color:#0d3349;line-height:1.6;margin:0;"></p>
+    </div>
+
     <div id="loading-msg" style="text-align:center;padding:40px 20px;color:#a8c8e8;font-family:Georgia,serif;font-size:16px;letter-spacing:1px;">
         Loading today's puzzle…
+    </div>
+    <div id="no-puzzle-msg" style="display:none;text-align:center;padding:40px 24px;font-family:Georgia,serif;">
+        <p style="color:#f0ede6;font-size:16px;line-height:1.6;margin:0 0 18px;">
+            No puzzle is loaded for today's date.
+        </p>
+        <p style="color:#a8c8e8;font-size:13px;line-height:1.6;margin:0 0 20px;">
+            If you've received this message in error, please let us know.
+        </p>
+        <a id="no-puzzle-contact-btn" href="#" style="background:#f9d976;color:#0d3349;border:none;border-radius:9px;padding:11px 18px;font-size:13px;font-weight:bold;letter-spacing:1px;cursor:pointer;min-height:42px;font-family:Georgia,serif;touch-action:manipulation;text-decoration:none;display:inline-flex;align-items:center;">Send us a message</a>
     </div>
     <div id="flash"></div>
 
@@ -831,7 +842,8 @@
                             <path d="M9 2 L9 16 M3 11 L9 18 L15 11" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <a href="index.html" target="_blank" style="background:#f9d976;color:#0d3349;border:none;border-radius:9px;padding:9px 13px;font-size:12px;font-weight:bold;letter-spacing:1px;cursor:pointer;min-height:42px;font-family:Georgia,serif;touch-action:manipulation;text-decoration:none;display:inline-flex;align-items:center;">Instructions</a>
+                    <button onclick="openNarration()" style="background:#e8b84b;color:#1a1200;border:2px solid #c49020;border-radius:9px;padding:9px 13px;font-size:12px;font-weight:bold;letter-spacing:1px;cursor:pointer;min-height:42px;font-family:Georgia,serif;touch-action:manipulation;display:inline-flex;align-items:center;gap:6px;box-shadow:0 2px 6px rgba(232,184,75,0.4);">🎧 Listen</button>
+                    <a href="index.html" target="_blank" rel="noopener" style="background:#f9d976;color:#0d3349;border:none;border-radius:9px;padding:9px 13px;font-size:12px;font-weight:bold;letter-spacing:1px;cursor:pointer;min-height:42px;font-family:Georgia,serif;touch-action:manipulation;text-decoration:none;display:inline-flex;align-items:center;">Instructions</a>
                 </div>
             </div>
         </div>
@@ -864,7 +876,7 @@
             </div>
         </div>
         <div class="card result-win hidden" id="wincard">
-            <div class="eemoji">🎉</div>
+            <div class="eemoji">😇</div>
             <h2 class="eword" id="winword"></h2>
             <p style="color:#a8c8e8;margin:0 0 10px;font-size:13px;" id="wintext"></p>
             <div class="escore" id="winscore"></div>
@@ -877,6 +889,7 @@
     </div>
 
     <p class="footer">PIVOT · DAILY PUZZLE</p>
+    <p style="text-align:center;font-family:-apple-system,sans-serif;font-size:10px;color:#4a6a8a;letter-spacing:0.05em;margin-top:4px;padding-bottom:8px;">© 2026 Roland Heersink · All rights reserved</p>
     <canvas id="fwcanvas">
     </canvas>
     <div id="summaryoverlay">
@@ -884,7 +897,7 @@
             <div class="sum-success" id="sum-heading">SUCCESS!</div>
             <div class="sum-target-label">Today's word was</div>
             <div class="sum-target" id="sum-target"></div>
-            <div class="sum-intro">Here is a game summary of the hints and conclusion:</div>
+            <div class="sum-intro">Here is a summary of the hints and the connection:</div>
             <div class="sum-section" id="sum-hint1-block">
                 <div class="sum-label">🔀 Lateral hint</div>
                 <div id="sum-hint1-text"></div>
@@ -901,6 +914,7 @@
             <div class="sum-notnow" id="sum-notnow">not now</div>
         </div>
     </div>
+
     <div id="shareoverlay">
         <div id="sharebox">
             <h3>Share your result?</h3>
@@ -914,9 +928,14 @@
     <div id="modal-overlay">
         <div id="modal-box">
             <h3 id="modal-title">🪸 Clue word found!</h3>
+            <!-- ORIGINAL (kept for easy restore): word search used to allow continuing after the pivot was found.
             <p id="modal-body">This word is your clue to Part 2. Jump down now or keep searching to shrink your letter pool.</p>
+            -->
+            <p id="modal-body">This word is your clue to Part 2.</p>
             <button class="modal-btn primary" id="modal-jump">→ Jump to Part 2</button>
+            <!-- "Keep searching" disabled: word search now locks as soon as the pivot is found. Kept for easy restore.
             <button class="modal-btn secondary" id="modal-stay">Keep searching</button>
+            -->
         </div>
     </div>
 
@@ -942,19 +961,9 @@
 
     // ── PUZZLE ───────────────────────────────────────────────────────────────────
     // P is populated from Google Sheets at runtime by loadAndStart() below.
-    // The fallback below is only used if the fetch fails.
-    const FALLBACK_P = {
-        theme: "GARDEN",
-        words: ["BLOOM", "PRUNE", "MULCH", "ROSE", "WEED", "SEED", "PLOT"],
-        SIZE: 6,
-        target: "BLUSH",
-        pivot: "ROSE",
-        noise: "AEITNOLCMP",
-        latHint: "Think colour, not flowers.",
-        pivHint: "ROSE is a flower — but it's also a colour. What shade of pink does it describe?",
-        winText: "A rosy pink. ROSE was the pivot — the flower becomes a colour.",
-        lossText: "BLUSH — a soft rosy pink. ROSE was the pivot: flower to colour.",
-    };
+    // If the fetch fails, or there's no row for today's date, P stays null and
+    // loadAndStart() shows the "no puzzle loaded" message instead of starting a
+    // game with missing data.
     let P = null;
 
     // ── GOOGLE SHEETS FETCH ──────────────────────────────────────────────────────
@@ -962,9 +971,14 @@
     // Column order: date, theme, word1..word7, pivot, target, noise,
     //               latHint, pivHint, winText, lossText  (columns A–P)
     const SHEET_CSV_URL =
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxPC3Ind1OHfoqz87q0LmRJVYnAmD3XUYBk5gBuTYfoeZ59wOAoqaLA_RdolsZaUCsrfPRqFi9zAtX/pub?gid=1830587129&single=true&output=csv";
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vT4aw6hHMSLlRzrEokb_UwqNyNgWbvA-pJ8cQkvFUjy6BF8u-gAjdJIxUcy0lnQIg4SOFr_RWN3exEQ/pub?gid=76516549&single=true&output=csv";
 
     function todayISO() {
+        // TEST MODE: append ?test=true&date=YYYY-MM-DD to URL to override today's date
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('test') && params.get('date')) {
+            return params.get('date');
+        }
         const d = new Date();
         const y = d.getFullYear();
         const m = String(d.getMonth() + 1).padStart(2, '0');
@@ -1019,6 +1033,10 @@
                     winText:    (r[14] || '').trim(),
                     lossText:   (r[15] || '').trim(),
                     gridString: (r[16] || '').trim().toUpperCase(),
+                    votdRef:    (r[17] || '').trim(),
+                    votdVerse:  (r[18] || '').trim(),
+                    passRef:    (r[19] || '').trim(),
+                    passageText:(r[20] || '').trim(),
                 };
             }
         }
@@ -1485,6 +1503,10 @@
                 return;
             }
             if (w === P.pivot) {
+                // Pivot found: word search ends here — lock the grid immediately.
+                wordSearchDone = true;
+                document.getElementById('hintbtn').style.display = 'none';
+                saveProgress();
                 document.getElementById('scroll-down-arrow').style.display = 'flex';
                 setTimeout(showPivotModal, 600);
                 // Always initialise s2 when pivot is found
@@ -1521,7 +1543,14 @@
         const p = placements[w];
         // Find the cell that contains the first letter of the word
         const firstLetter = w[0];
-        const firstCell = p.cells.find(([r, c]) => grid[r][c] === firstLetter) || p.cells[0];
+        const pivotCells = placements[P.pivot] ? new Set(placements[P.pivot].cells.map(([r,c]) => ck(r,c))) : new Set();
+        // Prefer: first letter, not pivot, not found. Then: first letter, not found. Then: any not found. Then: first letter. Then: first cell.
+        const firstCell = p.cells.find(([r, c]) => grid[r][c] === firstLetter && !pivotCells.has(ck(r,c)) && !foundKeys.has(ck(r,c)))
+            || p.cells.find(([r, c]) => grid[r][c] === firstLetter && !foundKeys.has(ck(r,c)))
+            || p.cells.find(([r, c]) => !foundKeys.has(ck(r,c)) && !pivotCells.has(ck(r,c)))
+            || p.cells.find(([r, c]) => !foundKeys.has(ck(r,c)))
+            || p.cells.find(([r, c]) => grid[r][c] === firstLetter)
+            || p.cells[0];
         selCells = [];
         hintKeys = new Set();
         hintKeys.add(ck(firstCell[0], firstCell[1]));
@@ -1703,7 +1732,7 @@
         slot.state = 'used';
         renderPool();
         renderGuessDisplay();
-       if (guessSlots.length === P.target.length) {
+        if (guessSlots.length === P.target.length) {
             // Word is complete — user must click Enter to submit
         }
     }
@@ -1852,7 +1881,7 @@
         // restrictions just mean this feature silently doesn't persist —
         // never breaks the game itself.
         try {
-            localStorage.setItem('pivot_result', JSON.stringify({
+            localStorage.setItem('pivot_result_votd', JSON.stringify({
                 date: todayISO(),
                 won: won,
                 pastGuesses: pastGuesses,
@@ -1871,9 +1900,9 @@
     }
     // ── MID-GAME PROGRESS SAVE/RESTORE ──────────────────────────────────────────
     function saveProgress() {
-        if (gameOver) return; // finished games are handled by saveTodayResult()
+        if (gameOver) return;
         try {
-            localStorage.setItem('pivot_progress', JSON.stringify({
+            localStorage.setItem('pivot_progress_votd', JSON.stringify({
                 date: todayISO(),
                 stage: stage,
                 wordSearchDone: wordSearchDone,
@@ -1896,15 +1925,14 @@
                 usedPiv: usedPiv,
                 p2HintLocked: p2HintLocked
             }));
-        } catch (e) { /* storage unavailable */ }
+        } catch (e) {}
     }
 
     function clearProgress() {
-        try { localStorage.removeItem('pivot_progress'); } catch (e) {}
+        try { localStorage.removeItem('pivot_progress_votd'); } catch (e) {}
     }
 
     function restoreProgress(saved) {
-        // Restore all state variables
         SZ = saved.grid.length;
         grid = saved.grid;
         stage = saved.stage || 1;
@@ -1925,17 +1953,15 @@
         usedPiv = saved.usedPiv || false;
         p2HintLocked = saved.p2HintLocked || false;
 
-        // Restore pool
         pool.length = 0;
         (saved.pool || []).forEach(s => pool.push(s));
         guessSlots = saved.guessSlots || [];
 
-        // Re-derive placements from the grid (same logic as loadGridFromString)
         const pl = {};
         const DIRS8 = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]];
         for (const word of P.words) {
             let found = false;
-            outer: for (let r = 0; r < SZ && !found; r++) {
+            for (let r = 0; r < SZ && !found; r++) {
                 for (let c = 0; c < SZ && !found; c++) {
                     for (const [dr, dc] of DIRS8) {
                         let match = true;
@@ -1955,7 +1981,6 @@
         placements = pl;
         WORDBANK.add(P.target.toUpperCase());
 
-        // Restore UI
         if (gameStarted) document.body.classList.add('playing');
 
         const s1 = document.getElementById('s1');
@@ -1963,7 +1988,13 @@
         if (s1) s1.style.display = '';
 
         const themeLabel = document.getElementById('theme-label');
-        if (themeLabel) themeLabel.textContent = P.theme;
+        if (themeLabel) themeLabel.textContent = P.votdRef || P.theme;
+        const votdBanner = document.getElementById('votd-banner');
+        const votdBannerText = document.getElementById('votd-banner-text');
+        if (votdBanner && votdBannerText && P.votdVerse) {
+          votdBannerText.textContent = P.votdVerse;
+          votdBanner.style.display = 'block';
+        }
 
         renderGrid();
         renderChips();
@@ -2008,13 +2039,13 @@
         const p2Guesses = p2EventLog.filter(e => e.type === 'guess').length;
         let scoreMsg = '';
         if (hints === 0) {
-            scoreMsg = 'Superb! No hints used. 🎉 🥳 😎 👌';
+            scoreMsg = 'Superb! No hints used. 😇 😇 😇';
         } else if (hints === 1) {
-            scoreMsg = 'Excellent! Only 1 hint used. 🥳 🤓';
+            scoreMsg = 'Excellent! Only 1 hint used. 😇 😇';
         } else if (hints === 2) {
-            scoreMsg = 'Well done with 2 hints used. 😊';
+            scoreMsg = 'Well done with 2 hints used. 😇';
         } else if (hints >= 3 && p2Guesses >= 4) {
-            scoreMsg = 'Phew! You made it!! 😅';
+            scoreMsg = 'Phew! You made it!! 🙏';
         }
         document.getElementById('winscore').textContent = scoreMsg;
         
@@ -2087,6 +2118,12 @@
     tap('pivbtn', function() {
         if (usedPiv)
             return;
+        // BIBLE version intentionally requires lateral hint before pivot hint,
+        // to preserve the two-step revelation of the pivot word's double meaning.
+        if (!usedLat) {
+            flash('Try the lateral hint first', 'er');
+            return;
+        }
         if (p2HintLocked) {
             flash('One hint per guess — try a guess first', 'er');
             return;
@@ -2137,6 +2174,11 @@
         s2Initialised = true;
         goStage2();
     });
+    // "Keep searching" disabled: the modal-stay button was removed from the DOM above.
+    // Listeners commented out (not deleted) — the button element no longer exists, so
+    // leaving these active would throw a null-reference error and break the rest of
+    // this script. Kept here for easy restore alongside the HTML button.
+    /*
     document.getElementById('modal-stay').addEventListener('touchend', function(e) {
         e.preventDefault();
         closeModal();
@@ -2155,6 +2197,7 @@
             document.getElementById('s1').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
+    */
     document.getElementById('modal-overlay').addEventListener('touchend', function(e) {
         if (e.target === this) {
             e.preventDefault();
@@ -2230,7 +2273,6 @@
             elapsed += 16;
         }
         animate();
-        // Fireworks run for half the requested duration, then summary panel appears
         const halfDuration = Math.round(durationMs / 2);
         setTimeout(() => {
             clearInterval(burstInterval);
@@ -2240,23 +2282,6 @@
                 showSummaryPanel(true);
             }, 600);
         }, halfDuration);
-    }
-
-    // ── WIN SUMMARY PANEL ─────────────────────────────────────────────────────────
-    function showSummaryPanel(won) {
-        // Heading and target line
-        const heading = document.getElementById('sum-heading');
-        heading.textContent = won ? 'SUCCESS!' : 'Almost, but not quite...';
-        heading.classList.toggle('sum-loss', !won);
-        document.getElementById('sum-target').textContent = P.target;
-
-        // All three boxes in uniform style — no dimming for unused hints
-        document.getElementById('sum-hint1-text').textContent = P.latHint;
-        document.getElementById('sum-hint2-text').textContent = P.pivHint;
-        document.getElementById('sum-wintext').textContent = P.winText;
-
-        // Show the panel
-        document.getElementById('summaryoverlay').style.display = 'flex';
     }
 
     // ── LOSS RAIN ────────────────────────────────────────────────────────────────
@@ -2321,6 +2346,18 @@
         }, halfDuration);
     }
 
+    // ── SUMMARY PANEL ────────────────────────────────────────────────────────────
+    function showSummaryPanel(won) {
+        const heading = document.getElementById('sum-heading');
+        heading.textContent = won ? 'SUCCESS!' : 'Almost, but not quite...';
+        heading.classList.toggle('sum-loss', !won);
+        document.getElementById('sum-target').textContent = P.target;
+        document.getElementById('sum-hint1-text').textContent = P.latHint;
+        document.getElementById('sum-hint2-text').textContent = P.pivHint;
+        document.getElementById('sum-wintext').textContent = won ? P.winText : P.lossText;
+        document.getElementById('summaryoverlay').style.display = 'flex';
+    }
+
     // ── SHARE ─────────────────────────────────────────────────────────────────────
     function buildShareText() {
         // Part 1: one continuous line — circles in order found, with an ℹ️
@@ -2365,16 +2402,18 @@
         const p2Guesses = p2EventLog.filter(e => e.type === 'guess').length;
         let performanceLine = '';
         if (hints === 0) {
-            performanceLine = 'No hints used. \n🎉 🥳 😎 👌';
+            performanceLine = 'No hints used. 😇 😇 😇';
         } else if (hints === 1) {
-            performanceLine = 'Only 1 hint used. \n🥳 🤓';
+            performanceLine = 'Only 1 hint used. 😇 😇';
         } else if (hints === 2) {
-            performanceLine = 'Just 2 hints used. \n😊';
-        } else if (hints >= 3 && p2Guesses >= 4) {
-            performanceLine = 'Phew! I made it!! \n😅';
+            performanceLine = 'Just 2 hints used. 😇';
+        } else if (hints === 3 ) {
+            performanceLine = 'Phew! I made it with 3 hints!! 😅';
+        } else if (hints > 3) {
+            performanceLine = 'Oh-oh.. ' + hints + ' hints used, but I finished! 🙏';
         }
         const perfSuffix = performanceLine ? '\n' + performanceLine : '';
-        return 'PIVOT — ' + P.theme + perfSuffix + '\n' + p1Emoji + '\n' + guessEmoji  + '\nhttps://tinyurl.com/pivot-en';
+        return 'PIVOT: Verse of the Day\n' + P.votdRef + perfSuffix + '\n' + p1Emoji + '\n' + guessEmoji  + '\nhttps://tinyurl.com/YouVersionTest';
         
     }
     function showSharePrompt() {
@@ -2384,23 +2423,22 @@
     function closeShare() {
         document.getElementById('shareoverlay').style.display = 'none';
     }
-    // Summary panel close → open share
+    function closeSummary() {
+        document.getElementById('summaryoverlay').style.display = 'none';
+    }
     (function() {
-        function addTap(id, fn) {
-            const el = document.getElementById(id);
-            if (!el) return;
-            el.addEventListener('touchend', function(e) { e.preventDefault(); e.stopPropagation(); fn(); }, { passive: false });
-            el.addEventListener('click', function(e) { e.preventDefault(); e.stopPropagation(); fn(); });
+        // Summary panel buttons
+        const sumClose = document.getElementById('sum-closebtn');
+        if (sumClose) {
+            sumClose.addEventListener('touchend', function(e) { e.preventDefault(); closeSummary(); showSharePrompt(); });
+            sumClose.addEventListener('click', function(e) { closeSummary(); showSharePrompt(); });
         }
-        addTap('sum-closebtn', function() {
-            document.getElementById('summaryoverlay').style.display = 'none';
-            showSharePrompt();
-        });
-        addTap('sum-notnow', function() {
-            document.getElementById('summaryoverlay').style.display = 'none';
-        });
-    })();
-    (function() {
+        const sumNotNow = document.getElementById('sum-notnow');
+        if (sumNotNow) {
+            sumNotNow.addEventListener('touchend', function(e) { e.preventDefault(); closeSummary(); });
+            sumNotNow.addEventListener('click', function(e) { closeSummary(); });
+        }
+
         function addTapShare(id, fn) {
             const el = document.getElementById(id);
             if (!el)
@@ -2547,7 +2585,13 @@
         renderChips();
         // Update theme label in the header
         const themeLabel = document.getElementById('theme-label');
-        if (themeLabel) themeLabel.textContent = P.theme;
+        if (themeLabel) themeLabel.textContent = P.votdRef || P.theme;
+        const votdBanner = document.getElementById('votd-banner');
+        const votdBannerText = document.getElementById('votd-banner-text');
+        if (votdBanner && votdBannerText && P.votdVerse) {
+          votdBannerText.textContent = P.votdVerse;
+          votdBanner.style.display = 'block';
+        }
     }
 
     function showAlreadyPlayed(saved) {
@@ -2582,7 +2626,13 @@
         }
 
         const themeLabel = document.getElementById('theme-label');
-        if (themeLabel) themeLabel.textContent = P.theme;
+        if (themeLabel) themeLabel.textContent = (P && (P.votdRef || P.theme)) || "Today's Puzzle";
+        const votdBanner = document.getElementById('votd-banner');
+        const votdBannerText = document.getElementById('votd-banner-text');
+        if (votdBanner && votdBannerText && P && P.votdVerse) {
+          votdBannerText.textContent = P.votdVerse;
+          votdBanner.style.display = 'block';
+        }
 
         const instrcard = document.getElementById('instrcard');
         if (instrcard) instrcard.style.display = 'none';
@@ -2592,7 +2642,7 @@
             s2.style.display = '';
             const note = document.createElement('p');
             note.style.cssText = 'text-align:center;color:#a8c8e8;font-size:13px;margin:0 0 14px;line-height:1.5;';
-            note.textContent = "You've already played today's PIVOT — here's how it went. Come back tomorrow for a new puzzle.";
+            note.textContent = "You've already played today's PIVOT — here's how it went. Come back tomorrow for a new Verse of the Day puzzle.";
             s2.insertBefore(note, s2.firstChild);
         }
 
@@ -2603,33 +2653,56 @@
 
     async function loadAndStart() {
         const loadEl = document.getElementById('loading-msg');
+        const noPuzzleEl = document.getElementById('no-puzzle-msg');
+        let sheetLoadFailed = false;
         try {
             P = await fetchTodayPuzzle();
         } catch (err) {
-            console.warn('Sheets fetch failed, using fallback puzzle.', err);
-            P = FALLBACK_P;
+            console.warn('Sheets fetch failed or no puzzle found for today.', err);
+            sheetLoadFailed = true;
+            P = null;
         }
         if (loadEl) loadEl.style.display = 'none';
 
         let saved = null;
         try {
-            saved = JSON.parse(localStorage.getItem('pivot_result') || 'null');
+            saved = JSON.parse(localStorage.getItem('pivot_result_votd') || 'null');
         } catch (e) {
             saved = null;
         }
+
+        // If today's puzzle already has a completed result saved, show that
+        // recap regardless of whether the sheet loaded just now — showAlreadyPlayed()
+        // is written to cope with P being unavailable.
         if (saved && saved.date === todayISO()) {
             showAlreadyPlayed(saved);
-        } else {
-            // Check for an in-progress game from today
-            let progress = null;
-            try {
-                progress = JSON.parse(localStorage.getItem('pivot_progress') || 'null');
-            } catch (e) { progress = null; }
-            if (progress && progress.date === todayISO()) {
-                restoreProgress(progress);
-            } else {
-                initGame();
+            return;
+        }
+
+        if (sheetLoadFailed) {
+            // No real puzzle data and nothing completed to redisplay — rather than
+            // starting or resuming a game with missing data, tell the visitor
+            // plainly and offer a way to flag it.
+            if (noPuzzleEl) {
+                const contactBtn = document.getElementById('no-puzzle-contact-btn');
+                if (contactBtn) {
+                    const subject = encodeURIComponent('PIVOT — no puzzle loaded for ' + todayISO());
+                    const body = encodeURIComponent('I saw the "no puzzle loaded" message on PIVOT for ' + todayISO() + '.');
+                    contactBtn.href = 'mailto:info@godforworkandlife.org?subject=' + subject + '&body=' + body;
+                }
+                noPuzzleEl.style.display = 'block';
             }
+            return;
+        }
+
+        let progress = null;
+        try {
+            progress = JSON.parse(localStorage.getItem('pivot_progress_votd') || 'null');
+        } catch (e) { progress = null; }
+        if (progress && progress.date === todayISO()) {
+            restoreProgress(progress);
+        } else {
+            initGame();
         }
     }
 
@@ -2640,5 +2713,355 @@
     }
     window.addEventListener('resize', renderGrid);
     </script>
+
+<!-- Narration modal — fixed to viewport, never taller than screen -->
+<div id="narr-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9000;display:none;align-items:center;justify-content:center;padding:16px;">
+  <div id="narr-card" style="background:#12122a;border:1px solid #2e2e5a;border-radius:16px;max-width:620px;width:100%;max-height:calc(100vh - 32px);display:flex;flex-direction:column;font-family:Georgia,serif;overflow:hidden;">
+
+    <!-- ── Sticky header: always visible ── -->
+    <div style="flex-shrink:0;padding:1rem 1.25rem 0.75rem;border-bottom:1px solid #2e2e5a;">
+
+      <!-- Row 1: ref label + close button -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
+        <p style="font-family:-apple-system,sans-serif;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8884aa;margin:0;" id="narr-ref">Romans 8:18–25 · NIV</p>
+        <button onclick="closeNarration()" style="background:#2e2e5a;border:none;border-radius:50%;width:30px;height:30px;font-size:16px;color:#e8e4d9;cursor:pointer;line-height:1;display:flex;align-items:center;justify-content:center;touch-action:manipulation;flex-shrink:0;">✕</button>
+      </div>
+
+      <!-- Row 2: play button + speed -->
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+        <button id="narr-playbtn" onclick="narrToggle()" style="display:flex;align-items:center;gap:8px;padding:10px 22px;border-radius:9px;border:2px solid #c49020;background:#e8b84b;color:#1a1200;font-family:-apple-system,sans-serif;font-size:15px;font-weight:bold;cursor:pointer;touch-action:manipulation;min-height:44px;box-shadow:0 2px 8px rgba(232,184,75,0.35);">
+          <svg viewBox="0 0 16 16" style="width:16px;height:16px;fill:currentColor;"><path id="narr-playpath" d="M3 2.5l10 5.5-10 5.5z"/></svg>
+          <span id="narr-playlabel">Play</span>
+        </button>
+        <button onclick="narrRestart()" title="Restart from beginning" style="display:flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:9px;border:1px solid #4a4a8a;background:#1e1e40;color:#e8e4d9;font-size:18px;cursor:pointer;touch-action:manipulation;min-height:44px;">⏮</button>
+        <div style="display:flex;align-items:center;gap:8px;font-family:-apple-system,sans-serif;font-size:12px;color:#8884aa;">
+          Speed:
+          <input type="range" min="0.5" max="1.2" step="0.1" value="0.8" id="narr-speed"
+                 oninput="document.getElementById('narr-speedval').textContent=parseFloat(this.value).toFixed(1)+'×'"
+                 style="width:85px;accent-color:#e8b84b;">
+          <span id="narr-speedval" style="color:#e8e4d9;min-width:28px;">0.8×</span>
+        </div>
+        <span id="narr-status" style="font-family:-apple-system,sans-serif;font-size:12px;color:#8884aa;"></span>
+      </div>
+    </div>
+
+    <!-- ── Scrollable body: passage + VOTD ── -->
+    <div style="flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:1.25rem 1.25rem 1.5rem;">
+
+      <div id="narr-passage" style="font-size:17px;line-height:1.85;color:#e8e4d9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;"></div>
+
+      <!-- VOTD — revealed after narration ends -->
+      <div id="narr-votd" style="display:none;margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid #e8b84b;background:#1a1a38;border-radius:0 8px 8px 0;">
+        <p style="font-family:-apple-system,sans-serif;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8884aa;margin-bottom:0.5rem;" id="narr-votd-label">Verse of the Day</p>
+        <p style="font-size:17px;line-height:1.75;font-weight:bold;color:#ffffff;" id="narr-votd-text"></p>
+      </div>
+
+      <p style="font-family:-apple-system,sans-serif;font-size:11px;color:#55527a;margin-top:1rem;line-height:1.6;">Puzzle words stay bold gold after they pass. The verse of the day appears when the reading ends.</p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  /* Narration token styles */
+  .ntok { display:inline; padding:1px 1px; border-radius:3px; transition:background 0.08s,color 0.08s; }
+  .ntok.nactive { background:#e8b84b; color:#1a1200; border-radius:4px; }
+  .ntok.nspoken { color:#55527a; }
+  .ntok.npuzzle.nspoken { color:#e8b84b; font-weight:bold; }
+  .ntok.nsuffix.nspoken { color:#55527a; font-weight:bold; }
+  .nverse-num { font-family:-apple-system,sans-serif; font-size:10px; color:#6660aa; vertical-align:super; margin-right:3px; }
+</style>
+
+<script>
+// ── Narration modal ───────────────────────────────────────────────────────────
+
+// Puzzle word roots and their highlight length.
+// This used to be a hardcoded const (Romans 8 words only), which meant it silently
+// went stale on every other day's puzzle. It's now rebuilt from the real P.words
+// inside buildNarration() — see there — which runs after P has loaded.
+let NARR_PUZZLE = { glory:5, worth:5, groan:5, saved:5, eager:5, hope:4, wait:4 };
+
+function narrPuzzleMatch(clean) {
+  for (const [k,len] of Object.entries(NARR_PUZZLE)) {
+    if (clean === k || clean.startsWith(k)) return { k, len };
+  }
+  return null;
+}
+
+let narrWordSpans = [], narrAllSpans = [], narrPlaying = false;
+let narrUtterance = null, narrEndTimer = null, narrBuilt = false;
+let narrUserStopped = false; // true when user manually stops — prevents poller misfiring
+// Persist narration state across page reloads via sessionStorage
+let narrOpenCount   = parseInt(sessionStorage.getItem('narrOpenCount') || '0');
+let narrLastWord    = parseInt(sessionStorage.getItem('narrLastWord')  || '0');
+let narrCurrentWord = 0;
+let narrCompleted   = sessionStorage.getItem('narrCompleted') === 'true';
+
+function openNarration() {
+  const overlay = document.getElementById('narr-overlay');
+  overlay.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  if (!narrBuilt) buildNarration();
+  narrOpenCount++;
+  sessionStorage.setItem('narrOpenCount', narrOpenCount);
+
+
+
+  if (narrCompleted) {
+    // Already finished — show full gold + VOTD, no autoplay
+    narrMarkAllSpoken();
+    document.getElementById('narr-votd').style.display = 'block';
+  } else {
+    // First open or returning mid-listen — autoplay (from beginning or resume point)
+    setTimeout(narrToggle, 200);
+  }
+}
+
+function closeNarration() {
+  // Kill timer FIRST — before anything else — so poller cannot fire narrFinished
+  if (narrEndTimer) { clearInterval(narrEndTimer); narrEndTimer = null; }
+  narrUserStopped = true;
+  // Record position before stopping (only if not completed — completed resets to 0)
+  if (narrPlaying && !narrCompleted) {
+    narrLastWord = narrCurrentWord;
+    sessionStorage.setItem('narrLastWord', narrLastWord);
+  }
+  narrPlaying = false; // set false before cancel so poller sees it even if it fires
+  speechSynthesis.cancel();
+  narrPlaying = false;
+  document.getElementById('narr-playlabel').textContent = 'Play';
+  document.getElementById('narr-playpath').setAttribute('d','M3 2.5l10 5.5-10 5.5z');
+  document.getElementById('narr-status').textContent = '';
+  document.getElementById('narr-overlay').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function buildNarration() {
+  narrBuilt = true;
+
+  // Rebuild the puzzle-word highlight list from today's actual search words.
+  if (typeof P !== 'undefined' && P.words && P.words.length) {
+    NARR_PUZZLE = Object.fromEntries(P.words.map(w => [w.toLowerCase(), w.length]));
+  }
+
+  // Passage segments — Romans 8:18–25 NIV (static for this puzzle)
+  const passageFull = (typeof P !== 'undefined' && P.passageText) ? P.passageText : "I consider that our present sufferings are not worth comparing with the glory that will be revealed in us. For the creation waits in eager expectation for the children of God to be revealed. For the creation was subjected to frustration, not by its own choice, but by the will of the one who subjected it, in hope that the creation itself will be liberated from its bondage to decay and brought into the freedom and glory of the children of God. We know that the whole creation has been groaning as in the pains of childbirth right up to the present time. Not only so, but we ourselves, who have the firstfruits of the Spirit, groan inwardly as we wait eagerly for our adoption to sonship, the redemption of our bodies. For in this hope we were saved. But hope that is seen is no hope at all. Who hopes for what they already have? But if we hope for what we do not yet have, we wait for it patiently.";
+  const segs = [{ v:'', t: passageFull }];
+
+  // Try to use VOTD/passage ref from puzzle data if available
+  const votdVerse = (typeof P !== 'undefined' && P.votdVerse) ? P.votdVerse
+    : "I consider that our present sufferings are not worth comparing with the glory that will be revealed in us.";
+  const votdRef  = (typeof P !== 'undefined' && P.votdRef)   ? P.votdRef   : "Romans 8:18";
+  const passRef  = (typeof P !== 'undefined' && P.passRef)   ? P.passRef   : "Romans 8:18–25 · NIV";
+
+  document.getElementById('narr-ref').textContent = passRef;
+  document.getElementById('narr-votd-label').textContent = 'Verse of the Day · ' + votdRef;
+
+  // Build passage DOM
+  const container = document.getElementById('narr-passage');
+  container.innerHTML = '';
+  narrWordSpans = []; narrAllSpans = [];
+  let wi = 0;
+
+  segs.forEach(seg => {
+    const sup = document.createElement('sup');
+    sup.className = 'nverse-num';
+    sup.textContent = seg.v;
+    container.appendChild(sup);
+
+    seg.t.split(' ').forEach((token, i, arr) => {
+      const letters = token.replace(/[^a-zA-Z]/g,'');
+      const punct   = token.slice(letters.length);
+      const clean   = letters.toLowerCase();
+      const m       = narrPuzzleMatch(clean);
+
+      if (m && letters.length > m.len) {
+        const s1 = document.createElement('span');
+        s1.className = 'ntok npuzzle'; s1.textContent = letters.slice(0,m.len); s1.id='nw'+wi;
+        container.appendChild(s1); narrWordSpans.push(s1); narrAllSpans.push(s1);
+        const s2 = document.createElement('span');
+        s2.className = 'ntok nsuffix'; s2.textContent = letters.slice(m.len)+punct;
+        container.appendChild(s2); narrAllSpans.push(s2);
+      } else {
+        const s = document.createElement('span');
+        s.className = 'ntok' + (m ? ' npuzzle' : ''); s.textContent = token; s.id='nw'+wi;
+        container.appendChild(s); narrWordSpans.push(s); narrAllSpans.push(s);
+      }
+      wi++;
+      if (i < arr.length-1) container.appendChild(document.createTextNode(' '));
+    });
+    container.appendChild(document.createTextNode(' '));
+  });
+
+  // Restore span states if returning mid-listen
+  if (narrLastWord > 0 && !narrCompleted) {
+    narrMarkSpoken(narrLastWord);
+  } else if (narrCompleted) {
+    narrMarkAllSpoken();
+    document.getElementById('narr-votd').style.display = 'block';
+  }
+
+  // Build VOTD
+  const votdEl = document.getElementById('narr-votd-text');
+  votdEl.innerHTML = '';
+  votdVerse.split(' ').forEach((tok, i, arr) => {
+    const clean = tok.replace(/[^a-zA-Z]/g,'').toLowerCase();
+    const m = narrPuzzleMatch(clean);
+    const s = document.createElement('span');
+    if (m) s.style.color = '#e8b84b';
+    s.textContent = tok;
+    votdEl.appendChild(s);
+    if (i < arr.length-1) votdEl.appendChild(document.createTextNode(' '));
+  });
+}
+
+function narrSpansForWord(wi) {
+  const fi = narrAllSpans.indexOf(narrWordSpans[wi]);
+  const ni = wi+1 < narrWordSpans.length ? narrAllSpans.indexOf(narrWordSpans[wi+1]) : narrAllSpans.length;
+  return narrAllSpans.slice(fi, ni);
+}
+
+function narrMarkSpoken(cur) {
+  narrCurrentWord = cur;
+  narrWordSpans.forEach((_,wi) => {
+    const spans = narrSpansForWord(wi);
+    if (wi < cur)      spans.forEach(s=>{s.classList.remove('nactive');s.classList.add('nspoken');});
+    else if (wi===cur) spans.forEach(s=>{s.classList.remove('nspoken');s.classList.add('nactive');});
+    else               spans.forEach(s=>s.classList.remove('nactive','nspoken'));
+  });
+}
+
+function narrMarkAllSpoken() {
+  narrAllSpans.forEach(s=>{s.classList.remove('nactive');s.classList.add('nspoken');});
+}
+
+function narrReset() {
+  narrAllSpans.forEach(s=>s.classList.remove('nactive','nspoken'));
+  document.getElementById('narr-votd').style.display = 'none';
+}
+
+function narrFinished() {
+  if (narrEndTimer) { clearInterval(narrEndTimer); narrEndTimer=null; }
+  if (!narrPlaying) return;
+  narrPlaying = false;
+  narrCompleted = true;
+  narrLastWord  = 0;
+  narrCurrentWord = 0;
+  sessionStorage.setItem('narrCompleted', 'true');
+  sessionStorage.setItem('narrLastWord', '0');
+  document.getElementById('narr-playlabel').textContent = 'Play';
+  document.getElementById('narr-playpath').setAttribute('d','M3 2.5l10 5.5-10 5.5z');
+  document.getElementById('narr-status').textContent = '';
+  narrMarkAllSpoken();
+  // Record completion in localStorage (keyed to today's date)
+  try {
+    const today = new Date().toISOString().slice(0,10);
+    localStorage.setItem('pivot_narr_listened_votd', JSON.stringify({ date: today, completed: true }));
+  } catch(e) {}
+  // Reveal VOTD
+  const votdBlock = document.getElementById('narr-votd');
+  votdBlock.style.display = 'block';
+  setTimeout(() => votdBlock.scrollIntoView({ behavior:'smooth', block:'nearest' }), 100);
+}
+
+function narrStop(reset) {
+  // Kill timer first so poller cannot fire narrFinished after cancel
+  if (narrEndTimer) { clearInterval(narrEndTimer); narrEndTimer=null; }
+  narrUserStopped = true;
+  narrPlaying = false; // set false before cancel
+  speechSynthesis.cancel();
+  document.getElementById('narr-playlabel').textContent = 'Play';
+  document.getElementById('narr-playpath').setAttribute('d','M3 2.5l10 5.5-10 5.5z');
+  document.getElementById('narr-status').textContent = '';
+  if (reset) narrReset();
+}
+
+function narrRestart() {
+  // Stop current playback, reset everything, scroll to top, autoplay from start
+  if (narrEndTimer) { clearInterval(narrEndTimer); narrEndTimer = null; }
+  narrUserStopped = true;
+  narrPlaying = false;
+  speechSynthesis.cancel();
+  narrLastWord    = 0;
+  narrCurrentWord = 0;
+  narrCompleted   = false;
+  sessionStorage.setItem('narrLastWord', '0');
+  sessionStorage.removeItem('narrCompleted');
+  narrReset();
+  // Scroll passage to top
+  const passage = document.getElementById('narr-passage');
+  if (passage) passage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Autoplay after scroll settles
+  setTimeout(() => {
+    narrUserStopped = false;
+    narrToggle();
+  }, 400);
+}
+
+function narrToggle() {
+  if (narrPlaying) { narrStop(false); return; }  // Stop but keep highlights
+  narrUserStopped = false; // reset for new playback
+  speechSynthesis.cancel();
+
+  const fullText = (typeof P !== 'undefined' && P.passageText) ? P.passageText : "I consider that our present sufferings are not worth comparing with the glory that will be revealed in us. For the creation waits in eager expectation for the children of God to be revealed. For the creation was subjected to frustration, not by its own choice, but by the will of the one who subjected it, in hope that the creation itself will be liberated from its bondage to decay and brought into the freedom and glory of the children of God. We know that the whole creation has been groaning as in the pains of childbirth right up to the present time. Not only so, but we ourselves, who have the firstfruits of the Spirit, groan inwardly as we wait eagerly for our adoption to sonship, the redemption of our bodies. For in this hope we were saved. But hope that is seen is no hope at all. Who hopes for what they already have? But if we hope for what we do not yet have, we wait for it patiently.";
+  const allWords = fullText.split(' ');
+
+  // Build resume text: if we stopped partway, skip words already spoken
+  let resumeFrom = narrLastWord; // word index to resume from
+  let charOffset  = 0;
+  if (resumeFrom > 0 && !narrCompleted) {
+    for (let i = 0; i < resumeFrom; i++) charOffset += allWords[i].length + 1;
+  } else {
+    resumeFrom = 0;
+    charOffset = 0;
+    narrReset(); // fresh start
+  }
+
+  const resumeText = fullText.slice(charOffset);
+
+  narrUtterance = new SpeechSynthesisUtterance(resumeText);
+  narrUtterance.rate = parseFloat(document.getElementById('narr-speed').value);
+
+  const voices = speechSynthesis.getVoices();
+  narrUtterance.voice = voices.find(v => v.lang.startsWith('en') && v.localService)
+  || voices.find(v => v.lang.startsWith('en'))
+  || voices[0];
+
+  // resumeText word list for boundary mapping
+  const resumeWords = resumeText.split(' ');
+
+  narrUtterance.onboundary = function(e) {
+    if (e.name!=='word') return;
+    let cum=0, foundLocal=resumeWords.length-1;
+    for (let i=0;i<resumeWords.length;i++) {
+      if (cum===e.charIndex){foundLocal=i;break;}
+      if (cum>e.charIndex){foundLocal=Math.max(0,i-1);break;}
+      cum+=resumeWords[i].length+1;
+    }
+    const globalIdx = resumeFrom + foundLocal;
+    narrMarkSpoken(globalIdx);
+    const el=document.getElementById('nw'+globalIdx);
+    if (el) el.scrollIntoView({behavior:'smooth',block:'nearest'});
+  };
+
+  narrUtterance.onend   = narrFinished;
+  narrUtterance.onerror = narrFinished;
+
+  narrPlaying = true;
+  document.getElementById('narr-playlabel').textContent = 'Stop';
+  document.getElementById('narr-playpath').setAttribute('d','M3 2h3.5v12H3zm6.5 0H13v12H9.5z');
+  document.getElementById('narr-status').textContent = resumeFrom > 0 ? 'Resuming…' : 'Playing…';
+  speechSynthesis.speak(narrUtterance);
+
+  // Safari onend fallback
+  narrEndTimer = setInterval(()=>{ if (!speechSynthesis.speaking && narrPlaying && !narrUserStopped) narrFinished(); }, 300);
+}
+
+// Close on overlay background tap
+document.getElementById('narr-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeNarration();
+});
+</script>
+
 </body>
 </html>
