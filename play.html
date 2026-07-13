@@ -913,7 +913,7 @@
     </div>
     <div id="modal-overlay">
         <div id="modal-box">
-            <h3 id="modal-title">🪸 Clue word found!</h3>
+            <h3 id="modal-title">🪸 PIVOT word found!</h3>
             <p id="modal-body">This word is your clue to Part 2.</p>
             <!-- Choice version: shown when more than 2 search words remain unfound. -->
             <p class="modal-body" id="modal-choice-body">Lock the word search now and move on, or keep searching for the rest?</p>
@@ -2400,7 +2400,7 @@
             performanceLine = 'Phew! I made it!! \n😅';
         }
         const perfSuffix = performanceLine ? '\n' + performanceLine : '';
-        return 'PIVOT — ' + P.theme + perfSuffix + '\n' + p1Emoji + '\n' + guessEmoji  + '\nhttps://tinyurl.com/pivot-en';
+        return 'PIVOT — ' + P.theme + perfSuffix + '\n' + p1Emoji + '\n' + guessEmoji  + '\nhttps://pivotword.com';
         
     }
     function showSharePrompt() {
@@ -2516,11 +2516,11 @@
                 if (instrCard)
                     instrCard.style.display = 'block';
                 if (instrEl && !instrEl.innerHTML)
-                    instrEl.innerHTML = 'Find the clue word in the word search above to unlock the letter pool.';
+                    instrEl.innerHTML = 'Find the PIVOT word in the word search above to unlock the letter pool.';
             } else if (s2Initialised && !gameOver && guessSlots.length === 0) {
                 refreshPool();
                 renderPool();
-                renderGuessDisplay();
+PIV                renderGuessDisplay();
             }
         }
         // Also re-init if s2 visible but pool is empty (safety net)
