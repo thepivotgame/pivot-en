@@ -914,16 +914,13 @@
     <div id="modal-overlay">
         <div id="modal-box">
             <h3 id="modal-title">🪸 Clue word found!</h3>
-            <!-- ORIGINAL (kept for easy restore): word search used to allow continuing after the pivot was found.
-            <p id="modal-body">This word is your clue to Part 2. Jump down now or keep searching to shrink your letter pool.</p>
-            -->
             <p id="modal-body">This word is your clue to Part 2.</p>
-            <button class="modal-btn primary" id="modal-jump">→ Jump to Part 2</button>
-            <p id="modal-body">Part 1 Word Search is now LOCKED.</p>
-            
-            <!-- "Keep searching" disabled: word search now locks as soon as the pivot is found. Kept for easy restore.
-            <button class="modal-btn secondary" id="modal-stay">Keep searching</button>
-            -->
+            <!-- Choice version: shown when more than 2 search words remain unfound. -->
+            <p class="modal-body" id="modal-choice-body">Lock the word search now and move on, or keep searching for the rest?</p>
+            <button class="modal-btn primary" id="modal-jump">→ Advanced: Lock &amp; go to Part 2</button>
+            <button class="modal-btn secondary" id="modal-stay">Classic: Keep searching</button>
+            <!-- No-choice version: shown when 2 or fewer search words remain unfound (auto-locks, same as before). -->
+            <p class="modal-body" id="modal-lock-body">Part 1 Word Search is now LOCKED.</p>
         </div>
     </div>
 
@@ -1236,7 +1233,8 @@
         gameOver = false,
         wordSearchDone = false,
         jumpedEarly = false,
-        s2Initialised = false;
+        s2Initialised = false,
+        advancedMode = false; // true = search locked at pivot (auto, or by player's "Advanced" choice); false = classic, still open
     let foundWords = new Set(),
         foundKeys = new Set(),
         pivotCellKeys = new Set();
@@ -1492,9 +1490,14 @@
                 return;
             }
             if (w === P.pivot) {
-                // Pivot found: word search ends here — lock the grid immediately.
-                wordSearchDone = true;
-                document.getElementById('hintbtn').style.display = 'none';
+                // Pivot found. If 2 or fewer words remain, lock immediately as before.
+                // If more than 2 remain, leave the search open until the player picks
+                // classic (keep searching) or advanced (lock now) in the modal.
+                const remainingAtPivot = P.words.length - foundWords.size;
+                if (remainingAtPivot <= 2) {
+                    wordSearchDone = true;
+                    document.getElementById('hintbtn').style.display = 'none';
+                }
                 saveProgress();
                 document.getElementById('scroll-down-arrow').style.display = 'flex';
                 setTimeout(showPivotModal, 600);
@@ -1543,6 +1546,16 @@
 
     // ── MODAL ─────────────────────────────────────────────────────────────────────
     function showPivotModal() {
+        // Remaining = words other than the pivot still unfound at this moment.
+        const remaining = P.words.length - foundWords.size;
+        const offerChoice = remaining > 2;
+        document.getElementById('modal-choice-body').style.display = offerChoice ? '' : 'none';
+        document.getElementById('modal-stay').style.display = offerChoice ? '' : 'none';
+        document.getElementById('modal-lock-body').style.display = offerChoice ? 'none' : '';
+        if (!offerChoice) {
+            // 2 or fewer words remain: no real choice to offer, auto-lock exactly as before.
+            advancedMode = true;
+        }
         document.getElementById('modal-overlay').style.display = 'flex';
     }
     function closeModal() {
@@ -1905,7 +1918,8 @@
                 pastGuesses: pastGuesses,
                 usedLat: usedLat,
                 usedPiv: usedPiv,
-                p2HintLocked: p2HintLocked
+                p2HintLocked: p2HintLocked,
+                advancedMode: advancedMode
             }));
         } catch (e) { /* storage unavailable */ }
     }
@@ -1935,6 +1949,7 @@
         usedLat = saved.usedLat || false;
         usedPiv = saved.usedPiv || false;
         p2HintLocked = saved.p2HintLocked || false;
+        advancedMode = saved.advancedMode || false;
 
         // Restore pool
         pool.length = 0;
@@ -2132,32 +2147,35 @@
     });
 
     // ── MODAL ─────────────────────────────────────────────────────────────────────
-    document.getElementById('modal-jump').addEventListener('touchend', function(e) {
-        e.preventDefault();
+    function chooseAdvanced() {
         closeModal();
+        advancedMode = true;
+        wordSearchDone = true;
+        document.getElementById('hintbtn').style.display = 'none';
         jumpedEarly = true;
         s2Initialised = true;
+        saveProgress();
         goStage2();
+    }
+    document.getElementById('modal-jump').addEventListener('touchend', function(e) {
+        e.preventDefault();
+        chooseAdvanced();
     }, {
         passive: false
     });
     document.getElementById('modal-jump').addEventListener('click', function(e) {
         e.preventDefault();
-        closeModal();
-        jumpedEarly = true;
-        s2Initialised = true;
-        goStage2();
+        chooseAdvanced();
     });
-    // "Keep searching" disabled: the modal-stay button was removed from the DOM above.
-    // Listeners commented out (not deleted) — the button element no longer exists, so
-    // leaving these active would throw a null-reference error and break the rest of
-    // this script. Kept here for easy restore alongside the HTML button.
-    /*
+    // "Keep searching" (classic mode) — only reachable when the modal offered the
+    // choice (i.e. more than 2 words remained unfound), since modal-stay is hidden
+    // otherwise. wordSearchDone stays false, advancedMode stays false.
     document.getElementById('modal-stay').addEventListener('touchend', function(e) {
         e.preventDefault();
         closeModal();
         if (!wordSearchDone) {
             document.getElementById('hintbtn').style.display = '';
+            saveProgress();
             document.getElementById('s1').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }, {
@@ -2168,10 +2186,10 @@
         closeModal();
         if (!wordSearchDone) {
             document.getElementById('hintbtn').style.display = '';
+            saveProgress();
             document.getElementById('s1').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
-    */
     document.getElementById('modal-overlay').addEventListener('touchend', function(e) {
         if (e.target === this) {
             e.preventDefault();
@@ -2353,8 +2371,9 @@
             }
         });
         const unfoundCount = totalWords - foundOrder.length;
+        const unfoundIcon = advancedMode ? '⭐' : '🔍';
         for (let i = 0; i < unfoundCount; i++) {
-            p1Emoji += '🔍';
+            p1Emoji += unfoundIcon;
         }
 
         // Part 2: one row per guess, with an ℹ️ (or a same-width blank, so
