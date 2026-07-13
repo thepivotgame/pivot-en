@@ -1490,14 +1490,9 @@
                 return;
             }
             if (w === P.pivot) {
-                // Pivot found. If 2 or fewer words remain, lock immediately as before.
-                // If more than 2 remain, leave the search open until the player picks
-                // classic (keep searching) or advanced (lock now) in the modal.
-                const remainingAtPivot = P.words.length - foundWords.size;
-                if (remainingAtPivot <= 2) {
-                    wordSearchDone = true;
-                    document.getElementById('hintbtn').style.display = 'none';
-                }
+                // Pivot found. Search stays open — the player always gets the
+                // classic (keep searching) / advanced (lock now) choice in the modal,
+                // regardless of how many words remain.
                 saveProgress();
                 document.getElementById('scroll-down-arrow').style.display = 'flex';
                 setTimeout(showPivotModal, 600);
@@ -1546,16 +1541,11 @@
 
     // ── MODAL ─────────────────────────────────────────────────────────────────────
     function showPivotModal() {
-        // Remaining = words other than the pivot still unfound at this moment.
-        const remaining = P.words.length - foundWords.size;
-        const offerChoice = remaining > 2;
-        document.getElementById('modal-choice-body').style.display = offerChoice ? '' : 'none';
-        document.getElementById('modal-stay').style.display = offerChoice ? '' : 'none';
-        document.getElementById('modal-lock-body').style.display = offerChoice ? 'none' : '';
-        if (!offerChoice) {
-            // 2 or fewer words remain: no real choice to offer, auto-lock exactly as before.
-            advancedMode = true;
-        }
+        // Player always gets the classic/advanced choice, no matter how many
+        // search words remain unfound.
+        document.getElementById('modal-choice-body').style.display = '';
+        document.getElementById('modal-stay').style.display = '';
+        document.getElementById('modal-lock-body').style.display = 'none';
         document.getElementById('modal-overlay').style.display = 'flex';
     }
     function closeModal() {
