@@ -2444,11 +2444,22 @@
                 fn();
             });
         }
+
+        
         addTapShare('sharebtn-wa', function() {
             const txt = encodeURIComponent(buildShareText());
-            window.open('whatsapp://send?text=' + txt, '_blank');
+            const a = document.createElement('a');
+            a.href = 'https://wa.me/?text=' + txt;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
             setTimeout(closeShare, 2000);
         });
+        
+        
+        
         addTapShare('sharebtn-em', function() {
             window.location.href = 'mailto:?subject=PIVOT&body=' + encodeURIComponent(buildShareText());
             setTimeout(closeShare, 1000);
