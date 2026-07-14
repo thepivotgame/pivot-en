@@ -1342,7 +1342,7 @@
                     div.classList.add('found');
                 else if (isHint)
                     div.classList.add('hint');
-                else if (selCells.length > 0 && !isHint) {
+                else if (selCells.length === 1 && !isHint) {
                     const adjToAny = selCells.some(([sr, sc]) => isAdj(r, c, sr, sc));
                     if (!adjToAny)
                         div.classList.add('nonadj');
