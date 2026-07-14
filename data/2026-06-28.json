@@ -1,0 +1,21 @@
+{
+  "theme": "WINTER",
+  "words": [
+    "FROST",
+    "SKATE",
+    "HOLLY",
+    "SLEET",
+    "SNOW",
+    "ICED",
+    "COLD"
+  ],
+  "SIZE": 6,
+  "pivot": "FROST",
+  "target": "CHILL",
+  "noise": "EIOGAONYUD",
+  "latHint": "Think coolness in manner - not frozen dew.",
+  "pivHint": "FROST coats everything in winter - what word means an icy coolness in behaviour?",
+  "winText": "Cold and sharp. FROST was the pivot - icy coating to cool manner.",
+  "lossText": "CHILL - an icy coolness. FROST was the pivot: winter coating to a CHILL in the manner.",
+  "gridString": "CHDECILFWONSILREULYLLOHEETAKSEGCOLDT"
+}

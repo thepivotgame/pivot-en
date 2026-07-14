@@ -1,0 +1,21 @@
+{
+  "theme": "DAIRY",
+  "words": [
+    "CREAM",
+    "MILKY",
+    "CHURN",
+    "BARN",
+    "HERD",
+    "GOAT",
+    "FARM"
+  ],
+  "SIZE": 6,
+  "pivot": "CREAM",
+  "target": "IVORY",
+  "noise": "FAINLATOPW",
+  "latHint": "Think a pale, off-white colour - not the dairy product.",
+  "pivHint": "CREAM rises to the top of the milk - but CREAM is also what colour?",
+  "winText": "A soft off-white. CREAM was the pivot - dairy product to the colour IVORY.",
+  "lossText": "IVORY - a pale, off-white. CREAM was the pivot: dairy product to an IVORY shade.",
+  "gridString": "YFARMIRCNDVYBARNGKOEUEOLHAHAAIFWCITM"
+}

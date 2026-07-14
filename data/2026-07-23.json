@@ -1,0 +1,21 @@
+{
+  "theme": "SAVANNA",
+  "words": [
+    "PLAIN",
+    "GRASS",
+    "PRIDE",
+    "HERD",
+    "MANE",
+    "DUST",
+    "HEAT"
+  ],
+  "SIZE": 6,
+  "pivot": "PLAIN",
+  "target": "BASIC",
+  "noise": "BECORWOEPL",
+  "latHint": "Think simple and unadorned - not open grassland.",
+  "pivHint": "A savanna is an open PLAIN - but calling something 'PLAIN' also means what?",
+  "winText": "Simple and unadorned. PLAIN was the pivot - grassland to BASIC simplicity.",
+  "lossText": "BASIC - simple, unadorned. PLAIN was the pivot: open grassland to PLAIN and BASIC.",
+  "gridString": "CEHASPIBNELPRSSARGEEIIMDBNDUSTHEATLC"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "CARNIVAL",
+  "words": [
+    "PRIZE",
+    "MASKS",
+    "RIDES",
+    "TENT",
+    "RING",
+    "FAIR",
+    "TOYS"
+  ],
+  "SIZE": 6,
+  "pivot": "PRIZE",
+  "target": "VALUE",
+  "noise": "BGAIWSTBLO",
+  "latHint": "Think valuing something highly - not a carnival prize.",
+  "pivHint": "You win a PRIZE at the carnival booth - but to PRIZE something means to do what with it?",
+  "winText": "Held in high regard. PRIZE was the pivot - carnival trophy to valuing something dearly.",
+  "lossText": "VALUE - to hold dear, to PRIZE. PRIZE was the pivot: carnival trophy to prizing something highly.",
+  "gridString": "LPAVMETURARAOWSIGTYKDNZNSEIOLESRIAFT"
+}

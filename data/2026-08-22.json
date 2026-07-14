@@ -1,0 +1,21 @@
+{
+  "theme": "SPA",
+  "words": [
+    "STEAM",
+    "TOWEL",
+    "ROBES",
+    "SOAK",
+    "CALM",
+    "OILS",
+    "WRAP"
+  ],
+  "SIZE": 6,
+  "pivot": "STEAM",
+  "target": "VIGOR",
+  "noise": "AGEIEDLNSP",
+  "latHint": "Think great energy and drive - not a steam room.",
+  "pivHint": "The spa has a STEAM room - but going 'full STEAM ahead' means moving with what?",
+  "winText": "Full of energy. STEAM was the pivot - spa STEAM room to driving VIGOR.",
+  "lossText": "VIGOR - energy and drive. STEAM was the pivot: spa STEAM room to full STEAM and VIGOR.",
+  "gridString": "RROBESSVIITOTOWELGGCALMSIMPKESAPARWL"
+}

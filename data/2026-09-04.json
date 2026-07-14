@@ -1,0 +1,21 @@
+{
+  "theme": "CELLAR",
+  "words": [
+    "VAULT",
+    "STONE",
+    "SHELF",
+    "MOLD",
+    "COLD",
+    "SAFE",
+    "BINS"
+  ],
+  "SIZE": 6,
+  "pivot": "VAULT",
+  "target": "BOUND",
+  "noise": "AOEEGHLWSC",
+  "latHint": "Think leaping over an obstacle - not an underground storage room.",
+  "pivHint": "Valuables sit in the cellar's VAULT - but a gymnast who does a VAULT over the bar does what?",
+  "winText": "Leaping clear over. VAULT was the pivot - cellar storage to a powerful BOUND.",
+  "lossText": "BOUND - to leap over. VAULT was the pivot: cellar VAULT to VAULT and BOUND clear.",
+  "gridString": "NMBUVOEDOAFSNGULCAOLEODFTHLESESDBINS"
+}

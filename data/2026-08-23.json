@@ -1,0 +1,21 @@
+{
+  "theme": "ARCADE",
+  "words": [
+    "TOKEN",
+    "AWARD",
+    "GAMES",
+    "HIGH",
+    "PLAY",
+    "WINS",
+    "CLAW"
+  ],
+  "SIZE": 6,
+  "pivot": "TOKEN",
+  "target": "SMALL",
+  "noise": "EAIENDTPRI",
+  "latHint": "Think something merely symbolic - not arcade coins.",
+  "pivHint": "You need a TOKEN to play the arcade game - but calling a gesture 'TOKEN' means it's how meaningful?",
+  "winText": "Just for show. TOKEN was the pivot - arcade coin to a SMALL, symbolic gesture.",
+  "lossText": "SMALL - minor, merely symbolic. TOKEN was the pivot: arcade coin to a TOKEN, SMALL gesture.",
+  "gridString": "WALCTYIMHOLANLKIWLSEMAGPNARSEHDDNIPT"
+}

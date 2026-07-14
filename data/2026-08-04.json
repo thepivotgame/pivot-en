@@ -1,0 +1,21 @@
+{
+  "theme": "PLAYGROUND",
+  "words": [
+    "SWING",
+    "SLIDE",
+    "CLIMB",
+    "SAND",
+    "GATE",
+    "BALL",
+    "KIDS"
+  ],
+  "SIZE": 6,
+  "pivot": "SWING",
+  "target": "SHIFT",
+  "noise": "IORWPECAEC",
+  "latHint": "Think a sudden change - not playground equipment.",
+  "pivHint": "Kids ride the SWING at the park - but a SWING in opinion means what kind of change?",
+  "winText": "A sudden change. SWING was the pivot - playground equipment to a SHIFT in mood.",
+  "lossText": "SHIFT - a change or SWING. SWING was the pivot: playground ride to a mood SHIFT.",
+  "gridString": "HIKIDSFSANDBTSWIMEWSLIDEBALLNCACETAG"
+}

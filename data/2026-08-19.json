@@ -1,0 +1,21 @@
+{
+  "theme": "GROCERY",
+  "words": [
+    "FRESH",
+    "CARTS",
+    "AISLE",
+    "BULK",
+    "CASH",
+    "BAGS",
+    "SCAN"
+  ],
+  "SIZE": 6,
+  "pivot": "FRESH",
+  "target": "BRASH",
+  "noise": "FTEAIOEMIR",
+  "latHint": "Think being cheeky or impudent - not fresh produce.",
+  "pivHint": "Grocery shelves are stocked with FRESH produce - but if someone 'gets FRESH' with you, how are they acting?",
+  "winText": "A bit too bold. FRESH was the pivot - FRESH produce to BRASH, cheeky behaviour.",
+  "lossText": "BRASH - bold and cheeky. FRESH was the pivot: FRESH produce to getting FRESH and BRASH.",
+  "gridString": "NACSSBAFITSRBCRSHKOAMELTCSGUSEIHBSEH"
+}

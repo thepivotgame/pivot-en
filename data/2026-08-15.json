@@ -1,0 +1,21 @@
+{
+  "theme": "MINE",
+  "words": [
+    "SHAFT",
+    "ROCKS",
+    "LAMP",
+    "CART",
+    "COAL",
+    "GOLD",
+    "GRIT"
+  ],
+  "SIZE": 6,
+  "pivot": "SHAFT",
+  "target": "CHEAT",
+  "noise": "LFWINAEOBM",
+  "latHint": "Think being treated unfairly - not a mine tunnel.",
+  "pivHint": "Miners descend the SHAFT - but if someone 'gives you the SHAFT,' what have they done to you?",
+  "winText": "Treated unfairly. SHAFT was the pivot - mine tunnel to being given the SHAFT and CHEAT-ed.",
+  "lossText": "CHEAT - to treat unfairly or deceive. SHAFT was the pivot: mine SHAFT to giving someone the SHAFT.",
+  "gridString": "ROCKSGCEOHCOALAMPLRFLHTDTIRGANOLFEBI"
+}

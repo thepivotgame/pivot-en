@@ -1,0 +1,21 @@
+{
+  "theme": "CASINO",
+  "words": [
+    "STAKE",
+    "CHIPS",
+    "CARDS",
+    "DICE",
+    "ODDS",
+    "DEAL",
+    "WINS"
+  ],
+  "SIZE": 6,
+  "pivot": "STAKE",
+  "target": "CLAIM",
+  "noise": "OERBCOAEBN",
+  "latHint": "Think asserting your rightful interest - not placing a bet.",
+  "pivHint": "A gambler places a STAKE on the table - but you can also plant a STAKE in the ground to mark territory. What word means asserting that right?",
+  "winText": "Asserting your right. STAKE was the pivot - casino bet to staking a CLAIM.",
+  "lossText": "CLAIM - to assert a right or interest. STAKE was the pivot: casino bet to staking a CLAIM.",
+  "gridString": "MOWINSDSDRACEPTDLDAIIASILHACKCBCNOBE"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "CHURCH",
+  "words": [
+    "BIBLE",
+    "ALTAR",
+    "HYMNS",
+    "PRAY",
+    "PEWS",
+    "BELL",
+    "FONT"
+  ],
+  "SIZE": 6,
+  "pivot": "BIBLE",
+  "target": "GUIDE",
+  "noise": "HNANDARISH",
+  "latHint": "Think the ultimate go-to reference - not scripture.",
+  "pivHint": "The BIBLE is read in church - but calling something 'your BIBLE' means what?",
+  "winText": "The go-to reference. BIBLE was the pivot - sacred text to the ultimate GUIDE.",
+  "lossText": "GUIDE - the definitive reference. BIBLE was the pivot: sacred scripture to a trusted GUIDE.",
+  "gridString": "PRAYBGEABIUSWTBENISLNMLDEAYOELAHHNFN"
+}

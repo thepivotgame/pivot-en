@@ -1,0 +1,21 @@
+{
+  "theme": "BIRDS",
+  "words": [
+    "CRANE",
+    "PERCH",
+    "NEST",
+    "WING",
+    "BEAK",
+    "EGGS",
+    "SONG"
+  ],
+  "SIZE": 6,
+  "pivot": "CRANE",
+  "target": "REACH",
+  "noise": "UTIOEMWAOL",
+  "latHint": "Think stretching and extending - not wading birds.",
+  "pivHint": "A CRANE is a tall bird - but you also CRANE your neck upward. What word means to stretch toward something?",
+  "winText": "REACH high. CRANE was the pivot - tall bird to stretching upward.",
+  "lossText": "REACH - to stretch toward something. CRANE was the pivot: wading bird to craning your neck.",
+  "gridString": "HCRHAGCETTLNRROSOOEKAEBSPMGNIWASGGEE"
+}

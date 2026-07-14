@@ -1,0 +1,21 @@
+{
+  "theme": "PHARMACY",
+  "words": [
+    "TONIC",
+    "PILLS",
+    "SHELF",
+    "DOSE",
+    "VIAL",
+    "CASE",
+    "CURE"
+  ],
+  "SIZE": 6,
+  "pivot": "TONIC",
+  "target": "BOOST",
+  "noise": "ETWIABERLD",
+  "latHint": "Think something that lifts your spirits - not medicine.",
+  "pivHint": "A TONIC is a medicinal remedy - but calling something 'a TONIC' for the soul means it gives you what?",
+  "winText": "A welcome lift. TONIC was the pivot - medicinal remedy to an energising BOOST.",
+  "lossText": "BOOST - a lift or surge of energy. TONIC was the pivot: medicine to an uplifting BOOST.",
+  "gridString": "CASEDTLFLTOOBALNSSODIEELWCPVHITCURES"
+}

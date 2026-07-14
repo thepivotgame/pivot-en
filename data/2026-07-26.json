@@ -1,0 +1,21 @@
+{
+  "theme": "WETLAND",
+  "words": [
+    "MUDDY",
+    "MARSH",
+    "REEDS",
+    "DUCK",
+    "FROG",
+    "MIST",
+    "PEAT"
+  ],
+  "SIZE": 6,
+  "pivot": "MUDDY",
+  "target": "FOGGY",
+  "noise": "IACIANEONT",
+  "latHint": "Think unclear thinking - not wet ground.",
+  "pivHint": "Wetlands are MUDDY underfoot - but 'MUDDY thinking' describes what kind of mind?",
+  "winText": "Unclear and confused. MUDDY was the pivot - wetland mud to FOGGY thinking.",
+  "lossText": "FOGGY - unclear, confused. MUDDY was the pivot: wetland mud to MUDDY, FOGGY thinking.",
+  "gridString": "MISTYGAUPGGORSDEERSOUDAFHFCIYTNOKAAE"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "THEATRE",
+  "words": [
+    "STAGE",
+    "USHER",
+    "DRAMA",
+    "SEAT",
+    "MASK",
+    "CUES",
+    "LOGE"
+  ],
+  "SIZE": 6,
+  "pivot": "STAGE",
+  "target": "PANIC",
+  "noise": "OLMIGOLBDA",
+  "latHint": "Think sudden fear - not a performance platform.",
+  "pivHint": "STAGE can mean a theatre platform - but many performers feel what before going on?",
+  "winText": "Frozen with fear. STAGE was the pivot - theatre platform to a flash of STAGE-fright PANIC.",
+  "lossText": "PANIC - sudden overwhelming fear. STAGE was the pivot: theatre STAGE to STAGE fright.",
+  "gridString": "KCDNSIUSRTEASEATUPHGMMCAEOAOBLRLDILM"
+}

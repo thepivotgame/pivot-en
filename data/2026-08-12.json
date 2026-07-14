@@ -1,0 +1,21 @@
+{
+  "theme": "STUDIO",
+  "words": [
+    "MIXER",
+    "TAKES",
+    "BOOTH",
+    "MICS",
+    "BEAT",
+    "REEL",
+    "CUES"
+  ],
+  "SIZE": 6,
+  "pivot": "MIXER",
+  "target": "PARTY",
+  "noise": "NEMNTAIOOE",
+  "latHint": "Think a casual social gathering - not a recording desk.",
+  "pivHint": "A studio MIXER blends the sound - but a work MIXER is a casual social what?",
+  "winText": "Mingling and mixing. MIXER was the pivot - studio mixing desk to a social PARTY.",
+  "lossText": "PARTY - a social gathering. MIXER was the pivot: mixing desk to a casual MIXER PARTY.",
+  "gridString": "MICSABRIYRTOPOXEBOTAKESTNEALRHETSEUC"
+}

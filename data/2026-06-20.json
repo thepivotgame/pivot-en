@@ -1,0 +1,21 @@
+{
+  "theme": "MUSIC",
+  "words": [
+    "CHORD",
+    "NOTES",
+    "BEAT",
+    "BAND",
+    "TEMPO",
+    "TUNE",
+    "CLEF"
+  ],
+  "SIZE": 6,
+  "pivot": "CHORD",
+  "target": "CROSS",
+  "noise": "UMVEIIAPYO",
+  "latHint": "Think spanning - not a song section.",
+  "pivHint": "CHORD links notes together - what word means to go over or span something?",
+  "winText": "Spanning the gap. CHORD was the pivot - musical link to a physical CROSS.",
+  "lossText": "CROSS - to traverse. CHORD was the pivot: linked notes to CROSS over.",
+  "gridString": "COPMETDHTUNEONOTESRSARCSEEPBDOBFELCV"
+}

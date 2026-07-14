@@ -1,0 +1,21 @@
+{
+  "theme": "BAKERY",
+  "words": [
+    "GLAZE",
+    "LOAF",
+    "CRUST",
+    "BAKE",
+    "RISE",
+    "TRAY",
+    "DOUGH"
+  ],
+  "SIZE": 6,
+  "pivot": "GLAZE",
+  "target": "STARE",
+  "noise": "LHOUAIWFMB",
+  "latHint": "Think eyes - not icing.",
+  "pivHint": "GLAZE coats a pastry - but eyes can too. What word means to look blankly?",
+  "winText": "A distant look. GLAZE was the pivot - shiny coating to blank-eyed STARE.",
+  "lossText": "STARE - to gaze fixedly. GLAZE was the pivot: pastry coating to a GLAZE-eyed stare.",
+  "gridString": "ARISERCGSTHLERLGOBLHUAOAUOFSZKDYARTE"
+}

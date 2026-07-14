@@ -1,0 +1,21 @@
+{
+  "theme": "ISLAND",
+  "words": [
+    "COAST",
+    "ATOLL",
+    "SHORE",
+    "PALM",
+    "REEF",
+    "SAND",
+    "COVE"
+  ],
+  "SIZE": 6,
+  "pivot": "COAST",
+  "target": "GLIDE",
+  "noise": "IONAPRNBEO",
+  "latHint": "Think effortless movement - not the shoreline.",
+  "pivHint": "An island has a COAST - but to COAST along means to move how?",
+  "winText": "Smooth and effortless. COAST was the pivot - island shoreline to gliding along.",
+  "lossText": "GLIDE - to move smoothly and effortlessly. COAST was the pivot: the shoreline to COAST and GLIDE along.",
+  "gridString": "CEROHSCOVEIGMLAPELDNASDFELLOTAOIBRAO"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "DELI",
+  "words": [
+    "SLICE",
+    "BREAD",
+    "MEATS",
+    "HAMS",
+    "BUNS",
+    "SOUP",
+    "WRAP"
+  ],
+  "SIZE": 6,
+  "pivot": "SLICE",
+  "target": "CHUNK",
+  "noise": "EHRAEOGTIC",
+  "latHint": "Think a portion or share - not sliced meat.",
+  "pivHint": "The deli cuts a SLICE of meat - but getting a SLICE of the profits means getting what?",
+  "winText": "A fair portion. SLICE was the pivot - deli meat to a CHUNK of the profits.",
+  "lossText": "CHUNK - a portion or share. SLICE was the pivot: deli SLICE to a CHUNK of the whole.",
+  "gridString": "NSNUBPUMLRHAKCEIHRHAIACWDAMETECSPUOS"
+}

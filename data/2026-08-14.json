@@ -1,0 +1,21 @@
+{
+  "theme": "FACTORY",
+  "words": [
+    "PLANT",
+    "BELTS",
+    "CRATE",
+    "LINE",
+    "TOOL",
+    "UNIT",
+    "GEAR"
+  ],
+  "SIZE": 6,
+  "pivot": "PLANT",
+  "target": "HOARD",
+  "noise": "SBMSAICPIO",
+  "latHint": "Think secretly hiding something away - not a manufacturing site.",
+  "pivHint": "A factory is also called a PLANT - but to PLANT evidence means to secretly do what with it?",
+  "winText": "Squirreled away. PLANT was the pivot - factory site to secretly HOARD something.",
+  "lossText": "HOARD - to secretly stockpile. PLANT was the pivot: factory PLANT to PLANT a hidden HOARD.",
+  "gridString": "PDRAGUOLHEBNCRATEIARONLTSOIITBLLCMSP"
+}

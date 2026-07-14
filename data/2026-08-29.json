@@ -1,0 +1,21 @@
+{
+  "theme": "FIREWORKS",
+  "words": [
+    "SPARK",
+    "BOOMS",
+    "FLASH",
+    "BANG",
+    "FUSE",
+    "LOUD",
+    "ROAR"
+  ],
+  "SIZE": 6,
+  "pivot": "SPARK",
+  "target": "EVOKE",
+  "noise": "RWOIIWPRPD",
+  "latHint": "Think triggering a strong reaction - not a literal spark.",
+  "pivHint": "Fireworks begin with a single SPARK - but an idea that causes a SPARK of debate does what to it?",
+  "winText": "Setting it off. SPARK was the pivot - firework SPARK to evoking a reaction.",
+  "lossText": "EVOKE - to trigger or bring forth. SPARK was the pivot: firework SPARK to SPARK and EVOKE a response.",
+  "gridString": "RKFUSEOOLPMEGNABOLERSROVKWHUBIRPDDWP"
+}

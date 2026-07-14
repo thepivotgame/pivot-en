@@ -1,0 +1,21 @@
+{
+  "theme": "WORKSHOP",
+  "words": [
+    "FORGE",
+    "ANVIL",
+    "TONGS",
+    "SAWS",
+    "VICE",
+    "WOOD",
+    "NAIL"
+  ],
+  "SIZE": 6,
+  "pivot": "FORGE",
+  "target": "FALSE",
+  "noise": "HNHOAIPSON",
+  "latHint": "Think something fake or counterfeit - not a metalworking furnace.",
+  "pivHint": "A blacksmith heats metal in a FORGE - but to FORGE a document means to make a what?",
+  "winText": "Not the real thing. FORGE was the pivot - blacksmith's furnace to a FALSE, counterfeit copy.",
+  "lossText": "FALSE - fake or counterfeit. FORGE was the pivot: blacksmith's FORGE to forging a fake.",
+  "gridString": "ENAILLFTVICEFOVASWSNRWOOAGAGPOHSAOED"
+}

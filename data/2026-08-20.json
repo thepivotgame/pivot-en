@@ -1,0 +1,21 @@
+{
+  "theme": "BARBER",
+  "words": [
+    "SHAVE",
+    "RAZOR",
+    "COMBS",
+    "CAPE",
+    "TRIM",
+    "SNIP",
+    "WASH"
+  ],
+  "SIZE": 6,
+  "pivot": "SHAVE",
+  "target": "CLOSE",
+  "noise": "IIAOSPHMBD",
+  "latHint": "Think a narrow escape - not a barber's razor.",
+  "pivHint": "The barber gives a clean SHAVE - but sometimes it's uncomfortably near a miss. What word describes that kind of escape?",
+  "winText": "A narrow escape. SHAVE was the pivot - barber's razor to a CLOSE call.",
+  "lossText": "CLOSE - narrow, near. SHAVE was the pivot: barber's SHAVE to a CLOSE SHAVE indeed.",
+  "gridString": "CTWASHCORHSPAEAILIPVZHMNECOMBSBIROAM"
+}

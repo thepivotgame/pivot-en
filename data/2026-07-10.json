@@ -1,0 +1,21 @@
+{
+  "theme": "RIVER",
+  "words": [
+    "DELTA",
+    "BANK",
+    "EDDY",
+    "FLOW",
+    "FORD",
+    "REED",
+    "WEIR"
+  ],
+  "SIZE": 6,
+  "pivot": "BANK",
+  "target": "TRUST",
+  "noise": "OOMCIAIFEV",
+  "latHint": "Think reliability and confidence - not riverbanks.",
+  "pivHint": "A river BANK holds the water in - but you also BANK on someone. What word means to rely on?",
+  "winText": "You can count on it. BANK was the pivot - river's edge to placing your TRUST.",
+  "lossText": "TRUST - to rely on or have confidence in. BANK was the pivot: river's edge to BANK on someone.",
+  "gridString": "RIEWRDTTSOERRKULDOENTFDFEAMVYCDBAIOF"
+}

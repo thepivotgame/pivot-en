@@ -1,0 +1,21 @@
+{
+  "theme": "RINK",
+  "words": [
+    "SKATE",
+    "BLADE",
+    "ICING",
+    "PUCK",
+    "GOAL",
+    "SPIN",
+    "COLD"
+  ],
+  "SIZE": 6,
+  "pivot": "SKATE",
+  "target": "EVADE",
+  "noise": "OCFIDOHBWT",
+  "latHint": "Think dodging a tricky question - not ice skating.",
+  "pivHint": "You SKATE across the ice - but to SKATE around a question means to do what?",
+  "winText": "Dodging the issue. SKATE was the pivot - ice rink sport to evading a question.",
+  "lossText": "EVADE - to dodge or avoid. SKATE was the pivot: ice skating to skating around the truth.",
+  "gridString": "AGNICISPINBCDKLELOVCAEALCUOTDDIPGOEH"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "VOLCANO",
+  "words": [
+    "BLAST",
+    "MAGMA",
+    "QUAKE",
+    "LAVA",
+    "VENT",
+    "ROCK",
+    "PEAK"
+  ],
+  "SIZE": 6,
+  "pivot": "BLAST",
+  "target": "SCOLD",
+  "noise": "IECPAAFIEL",
+  "latHint": "Think harsh criticism - not volcanic eruptions.",
+  "pivHint": "A volcano lets out a BLAST - but to BLAST someone in an argument means to do what?",
+  "winText": "Harsh words. BLAST was the pivot - volcanic eruption to a stinging SCOLD.",
+  "lossText": "SCOLD - to criticize sharply. BLAST was the pivot: volcanic eruption to BLAST someone.",
+  "gridString": "LOKCORDBCPSELLLEKAAMGAMIVPUKSEAQVENT"
+}

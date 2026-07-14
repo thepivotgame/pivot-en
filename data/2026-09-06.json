@@ -1,0 +1,21 @@
+{
+  "theme": "STABLE",
+  "words": [
+    "GROOM",
+    "HORSE",
+    "STALL",
+    "OATS",
+    "REIN",
+    "HOOF",
+    "SHOE"
+  ],
+  "SIZE": 6,
+  "pivot": "GROOM",
+  "target": "PRIME",
+  "noise": "ONDTIOWESC",
+  "latHint": "Think preparing someone for a future role - not tending a horse.",
+  "pivHint": "A GROOM brushes down the horse - but to GROOM a successor means to do what to them?",
+  "winText": "Ready for the role. GROOM was the pivot - stable hand to priming a successor.",
+  "lossText": "PRIME - to prepare and ready. GROOM was the pivot: stable's GROOM to priming someone for the role.",
+  "gridString": "NIERESMGESTTEIRAHAOOLOPOHLOROWSFNIOM"
+}

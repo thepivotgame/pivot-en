@@ -1,0 +1,21 @@
+{
+  "theme": "CLINIC",
+  "words": [
+    "PULSE",
+    "CHECK",
+    "VISIT",
+    "EXAM",
+    "CARE",
+    "FORM",
+    "DESK"
+  ],
+  "SIZE": 6,
+  "pivot": "PULSE",
+  "target": "TEMPO",
+  "noise": "ELDFAODLIH",
+  "latHint": "Think rhythm and pace - not a heartbeat check.",
+  "pivHint": "A nurse checks your PULSE - but the PULSE of a song or city refers to its what?",
+  "winText": "Finding the rhythm. PULSE was the pivot - heartbeat check to a steady TEMPO.",
+  "lossText": "TEMPO - the pace or rhythm. PULSE was the pivot: heartbeat check to the TEMPO of things.",
+  "gridString": "PKERACTPCXDOTIUEAEMLSLHMDKEISCFORMVE"
+}

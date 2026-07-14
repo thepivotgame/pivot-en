@@ -1,0 +1,21 @@
+{
+  "theme": "GYM",
+  "words": [
+    "SPLIT",
+    "BENCH",
+    "SQUAT",
+    "REPS",
+    "LIFT",
+    "TONE",
+    "PUSH"
+  ],
+  "SIZE": 6,
+  "pivot": "SPLIT",
+  "target": "SHARE",
+  "noise": "BIBOWEWPIH",
+  "latHint": "Think dividing something between people - not a gym routine.",
+  "pivHint": "Gymnasts do the SPLIT - but to SPLIT the bill with a friend means to do what?",
+  "winText": "Dividing it up. SPLIT was the pivot - gym move to sharing things evenly.",
+  "lossText": "SHARE - to divide between people. SPLIT was the pivot: gymnastics move to SPLIT things.",
+  "gridString": "THPUSHOSAEBSNSPERREINLWEPCTFILHSQUAT"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "LIBRARY",
+  "words": [
+    "SHELF",
+    "NOVEL",
+    "INDEX",
+    "SPINE",
+    "LOAN",
+    "BOOK",
+    "DESK"
+  ],
+  "SIZE": 6,
+  "pivot": "SPINE",
+  "target": "NERVE",
+  "noise": "UOIALDMGSW",
+  "latHint": "Think courage and resolve - not anatomy.",
+  "pivHint": "SPINE is the backbone of a book - what word means backbone in terms of courage?",
+  "winText": "Standing tall. SPINE was the pivot - book binding to inner resolve.",
+  "lossText": "NERVE - courage and resolve. SPINE was the pivot: book backbone to inner strength.",
+  "gridString": "ESKSEDNNHLRVINDEXEPEAVLDSBOOKFGMINLL"
+}

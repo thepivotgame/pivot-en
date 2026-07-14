@@ -945,8 +945,8 @@
     })();
 
     // ── PUZZLE ───────────────────────────────────────────────────────────────────
-    // P is populated from Google Sheets at runtime by loadAndStart() below.
-    // The fallback below is only used if the fetch fails.
+    // P is populated from a pre-generated static JSON file at runtime by
+    // loadAndStart() below. The fallback below is only used if the fetch fails.
     const FALLBACK_P = {
         theme: "GARDEN",
         words: ["BLOOM", "PRUNE", "MULCH", "ROSE", "WEED", "SEED", "PLOT"],
@@ -961,14 +961,21 @@
     };
     let P = null;
 
-    // ── GOOGLE SHEETS FETCH ──────────────────────────────────────────────────────
-    // Sheets doc is published as CSV (File → Share → Publish to web → CSV).
-    // Column order: date, theme, word1..word7, pivot, target, noise,
-    //               latHint, pivHint, winText, lossText  (columns A–P)
-    const SHEET_CSV_URL =
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxPC3Ind1OHfoqz87q0LmRJVYnAmD3XUYBk5gBuTYfoeZ59wOAoqaLA_RdolsZaUCsrfPRqFi9zAtX/pub?gid=1830587129&single=true&output=csv";
+    // ── STATIC JSON FETCH ────────────────────────────────────────────────────────
+    // Puzzle data is pre-generated as one static JSON file per day (see
+    // export_puzzles.py), served from the data/ folder alongside this page.
+    // This replaces the old live Google Sheets CSV fetch, which could not
+    // hold up at scale (Sheets CSV export throttles/blocks well before
+    // 100k daily reads). Field names in the JSON match exactly what the old
+    // CSV parser produced, so nothing downstream of P needed to change.
+    const PUZZLE_DATA_DIR = "data";
 
     function todayISO() {
+        // TEST MODE: append ?test=true&date=YYYY-MM-DD to URL to override today's date
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('test') && params.get('date')) {
+            return params.get('date');
+        }
         const d = new Date();
         const y = d.getFullYear();
         const m = String(d.getMonth() + 1).padStart(2, '0');
@@ -976,57 +983,11 @@
         return y + '-' + m + '-' + day;
     }
 
-    function parseCSV(text) {
-        // Minimal CSV parser — handles quoted fields with commas inside.
-        const rows = [];
-        const lines = text.trim().split('\n');
-        for (const line of lines) {
-            const cols = [];
-            let cur = '', inQ = false;
-            for (let i = 0; i < line.length; i++) {
-                const ch = line[i];
-                if (ch === '"') { inQ = !inQ; }
-                else if (ch === ',' && !inQ) { cols.push(cur.trim()); cur = ''; }
-                else { cur += ch; }
-            }
-            cols.push(cur.trim());
-            rows.push(cols);
-        }
-        return rows;
-    }
-
     async function fetchTodayPuzzle() {
         const today = todayISO();
-        const resp = await fetch(SHEET_CSV_URL);
-        if (!resp.ok) throw new Error('Sheet fetch failed: ' + resp.status);
-        const text = await resp.text();
-        const rows = parseCSV(text);
-        // Skip header row (row 0), find row whose column A matches today
-        for (let i = 1; i < rows.length; i++) {
-            const r = rows[i];
-            // Sheets may format date as yyyy-mm-dd or m/d/yyyy — normalise both
-            let rowDate = (r[0] || '').trim();
-            if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(rowDate)) {
-                const parts = rowDate.split('/');
-                rowDate = parts[2] + '-' + parts[0].padStart(2,'0') + '-' + parts[1].padStart(2,'0');
-            }
-            if (rowDate === today) {
-                return {
-                    theme:    (r[1]  || '').trim().toUpperCase(),
-                    words:    [r[2],r[3],r[4],r[5],r[6],r[7],r[8]].map(w => (w||'').trim().toUpperCase()).filter(Boolean),
-                    SIZE:     6,
-                    pivot:    (r[9]  || '').trim().toUpperCase(),
-                    target:   (r[10] || '').trim().toUpperCase(),
-                    noise:    (r[11] || '').trim().toUpperCase(),
-                    latHint:  (r[12] || '').trim(),
-                    pivHint:  (r[13] || '').trim(),
-                    winText:    (r[14] || '').trim(),
-                    lossText:   (r[15] || '').trim(),
-                    gridString: (r[16] || '').trim().toUpperCase(),
-                };
-            }
-        }
-        throw new Error('No puzzle found for ' + today);
+        const resp = await fetch(`${PUZZLE_DATA_DIR}/${today}.json`);
+        if (!resp.ok) throw new Error('No puzzle found for ' + today);
+        return await resp.json();
     }
 
     // ── VALID WORDS (pre-computed for this puzzle) ─────────────────────────────
@@ -1244,7 +1205,7 @@
     let selCells = [],
         hintKeys = new Set();
     let p1HintLocked = false; // true once a Part 1 hint's been used — blocks another until a word is found
-    // pool is populated in initGame() after the grid is built from Sheets data
+    // pool is populated in initGame() after the grid is built from puzzle JSON data
     const pool = [];
     let guessSlots = [],
         pastGuesses = [],
@@ -2647,7 +2608,7 @@
         try {
             P = await fetchTodayPuzzle();
         } catch (err) {
-            console.warn('Sheets fetch failed, using fallback puzzle.', err);
+            console.warn('Puzzle JSON fetch failed, using fallback puzzle.', err);
             P = FALLBACK_P;
         }
         if (loadEl) loadEl.style.display = 'none';

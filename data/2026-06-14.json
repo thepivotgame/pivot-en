@@ -1,0 +1,21 @@
+{
+  "theme": "WEEKEND",
+  "words": [
+    "SLEEP",
+    "CYCLE",
+    "FILM",
+    "LAZY",
+    "HIKE",
+    "WALK",
+    "PARK"
+  ],
+  "SIZE": 6,
+  "pivot": "FILM",
+  "target": "SHEEN",
+  "noise": "UOOTYAWIPR",
+  "latHint": "Think surface and light - not a screen.",
+  "pivHint": "FILM isn't just for watching. What thin layer does it leave on a surface?",
+  "winText": "A lustrous glow. FILM was the pivot - a thin coating, not a movie.",
+  "lossText": "SHEEN - a soft lustre. FILM was the pivot: a thin surface FILM.",
+  "gridString": "EHESCNOSWMYPWHLACATIAELRFKZIEKREYOPP"
+}

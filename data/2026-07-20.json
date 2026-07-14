@@ -1,0 +1,21 @@
+{
+  "theme": "RAILWAY",
+  "words": [
+    "TRACK",
+    "DEPOT",
+    "RAIL",
+    "STOP",
+    "LINE",
+    "SEAT",
+    "CREW"
+  ],
+  "SIZE": 6,
+  "pivot": "TRACK",
+  "target": "TRACE",
+  "noise": "ETIFOODIWD",
+  "latHint": "Think following a trail - not railway lines.",
+  "pivHint": "Trains run on a TRACK - but to TRACK someone is to do what?",
+  "winText": "Following the trail. TRACK was the pivot - railway line to tracing a path.",
+  "lossText": "TRACE - to follow or TRACK down. TRACK was the pivot: railway line to tracing footsteps.",
+  "gridString": "DEPOTSEWERCECNAAEARCIITTKAOLWDODIEFT"
+}

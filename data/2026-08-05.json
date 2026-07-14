@@ -1,0 +1,21 @@
+{
+  "theme": "STADIUM",
+  "words": [
+    "MATCH",
+    "FIELD",
+    "CROWD",
+    "GOAL",
+    "TEAM",
+    "SEAT",
+    "FANS"
+  ],
+  "SIZE": 6,
+  "pivot": "MATCH",
+  "target": "EQUAL",
+  "noise": "ACNHMMONOF",
+  "latHint": "Think being equal or corresponding - not a sports game.",
+  "pivHint": "Fans watch the MATCH at the stadium - but if two things MATCH, they are how alike?",
+  "winText": "A perfect MATCH. MATCH was the pivot - the game to being perfectly EQUAL.",
+  "lossText": "EQUAL - corresponding. MATCH was the pivot: stadium game to an EQUAL MATCH.",
+  "gridString": "MLTLEFCAQAFAROTIENOGECUSWLAAHMDNMOMO"
+}

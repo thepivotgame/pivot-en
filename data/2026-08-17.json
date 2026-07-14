@@ -1,0 +1,21 @@
+{
+  "theme": "DINER",
+  "words": [
+    "PLATE",
+    "BOOTH",
+    "STOOL",
+    "MENU",
+    "COOK",
+    "DINE",
+    "CUPS"
+  ],
+  "SIZE": 6,
+  "pivot": "PLATE",
+  "target": "TASKS",
+  "noise": "CFRIOEEILO",
+  "latHint": "Think your current workload - not a dinner plate.",
+  "pivHint": "Your meal arrives on a PLATE - but 'what's on your PLATE' at work means what?",
+  "winText": "A full workload. PLATE was the pivot - dinner PLATE to a list of TASKS.",
+  "lossText": "TASKS - items of work, a workload. PLATE was the pivot: dinner PLATE to a full PLATE of TASKS.",
+  "gridString": "SAMENUPSSLKDULTOKICRAOENBOOTHEOCCSEI"
+}

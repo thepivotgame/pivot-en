@@ -1,0 +1,21 @@
+{
+  "theme": "PARADE",
+  "words": [
+    "DRUMS",
+    "BANDS",
+    "FLAGS",
+    "BEAT",
+    "STEP",
+    "WAVE",
+    "ROPE"
+  ],
+  "SIZE": 6,
+  "pivot": "DRUMS",
+  "target": "RALLY",
+  "noise": "RMSIEEDCIA",
+  "latHint": "Think gathering enthusiastic support - not a parade beat.",
+  "pivHint": "DRUMS keep the parade marching - but to 'drum up' support means to do what?",
+  "winText": "Gathering momentum. DRUMS was the pivot - parade beat to RALLY support.",
+  "lossText": "RALLY - to gather enthusiastic support. DRUMS was the pivot: parade beat to drumming up a RALLY.",
+  "gridString": "PFYLRDELLARMTABUEESGMEVDESDNABROPEWT"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "FARM",
+  "words": [
+    "FENCE",
+    "CROPS",
+    "BALES",
+    "BARN",
+    "SOIL",
+    "PLOW",
+    "HERD"
+  ],
+  "SIZE": 6,
+  "pivot": "BARN",
+  "target": "SOLID",
+  "noise": "NPEBYIAUTG",
+  "latHint": "Think strength and dependability - not farm buildings.",
+  "pivHint": "A BARN is built to last - big and dependable. What word means firm and reliable?",
+  "winText": "Built to last. BARN was the pivot - sturdy farm building to rock-SOLID dependability.",
+  "lossText": "SOLID - firm and dependable. BARN was the pivot: farm building to SOLID reliability.",
+  "gridString": "LFODLIISELABOWDNASSPORCITENLEEAGYUPH"
+}

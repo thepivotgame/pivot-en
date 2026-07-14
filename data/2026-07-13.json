@@ -1,0 +1,21 @@
+{
+  "theme": "HOSPITAL",
+  "words": [
+    "CHART",
+    "NURSE",
+    "PULSE",
+    "WARD",
+    "BEDS",
+    "DOSE",
+    "SHOT"
+  ],
+  "SIZE": 6,
+  "pivot": "CHART",
+  "target": "STEER",
+  "noise": "OIAIMGCGTM",
+  "latHint": "Think guiding a path - not medical records.",
+  "pivHint": "A CHART tracks a patient's vitals - but you can also CHART a course. What word means to guide a direction?",
+  "winText": "Setting the direction. CHART was the pivot - medical record to STEER a course.",
+  "lossText": "STEER - to guide or direct. CHART was the pivot: patient CHART to STEER a course.",
+  "gridString": "SEDETCWREOHESASASMHIRLDEOTUDECTPNMBI"
+}

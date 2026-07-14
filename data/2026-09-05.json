@@ -1,0 +1,21 @@
+{
+  "theme": "RANCH",
+  "words": [
+    "FENCE",
+    "HERDS",
+    "BOOTS",
+    "BARN",
+    "ROPE",
+    "DIRT",
+    "GATE"
+  ],
+  "SIZE": 6,
+  "pivot": "FENCE",
+  "target": "WAVER",
+  "noise": "OEMIDOAFTD",
+  "latHint": "Think being indecisive - not a ranch boundary.",
+  "pivHint": "A ranch is lined with FENCE - but sitting on the FENCE means you're doing what about a decision?",
+  "winText": "Caught in the middle. FENCE was the pivot - ranch boundary to WAVER, unable to decide.",
+  "lossText": "WAVER - to hesitate, undecided. FENCE was the pivot: ranch FENCE to sitting on the FENCE.",
+  "gridString": "TRIDFRSVAEEWDTNPNGRCOERAERTOATHEOABE"
+}

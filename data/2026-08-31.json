@@ -1,0 +1,21 @@
+{
+  "theme": "HIGHWAY",
+  "words": [
+    "SIGNS",
+    "LANES",
+    "TOLLS",
+    "RAMP",
+    "FAST",
+    "CARS",
+    "TRIP"
+  ],
+  "SIZE": 6,
+  "pivot": "SIGNS",
+  "target": "OMENS",
+  "noise": "WLIANRIAGE",
+  "latHint": "Think indications of what's to come - not road signs.",
+  "pivHint": "Highway SIGNS point the way - but 'SIGNS of trouble ahead' are also called what?",
+  "winText": "A telling indication. SIGNS was the pivot - road SIGNS to ominous OMENS.",
+  "lossText": "OMENS - SIGNS of what's to come. SIGNS was the pivot: highway SIGNS to reading the OMENS.",
+  "gridString": "LANESECMPIRTASGMNORNTSAFSLLOTRGRWNIE"
+}

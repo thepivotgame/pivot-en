@@ -1,0 +1,21 @@
+{
+  "theme": "SLEEP",
+  "words": [
+    "DREAM",
+    "DUVET",
+    "SNORE",
+    "DOZE",
+    "REST",
+    "DARK",
+    "LULL"
+  ],
+  "SIZE": 6,
+  "pivot": "DOZE",
+  "target": "FLOAT",
+  "noise": "DIWHRAMUOE",
+  "latHint": "Think lightness - not nodding off.",
+  "pivHint": "You DOZE on the water as well as in a chair - what word means to move weightlessly?",
+  "winText": "Light as air. DOZE was the pivot - drifting off to sleep, then FLOAT free.",
+  "lossText": "FLOAT - to move weightlessly. DOZE was the pivot: dozing off to FLOAT free.",
+  "gridString": "DLULLFERONSLZTEVUDOTSAOADOWEMHIADARK"
+}

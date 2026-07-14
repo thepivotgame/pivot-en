@@ -1,0 +1,21 @@
+{
+  "theme": "JUNGLE",
+  "words": [
+    "VINES",
+    "DENSE",
+    "HUMID",
+    "FERN",
+    "TREE",
+    "MIST",
+    "MOSS"
+  ],
+  "SIZE": 6,
+  "pivot": "VINES",
+  "target": "COVER",
+  "noise": "UEAADMNSIO",
+  "latHint": "Think protection and concealment - not treetops.",
+  "pivHint": "VINES drape over everything they touch - what word simply means to conceal or protect?",
+  "winText": "Hidden beneath. VINES was the pivot - jungle growth to hiding under COVER.",
+  "lossText": "COVER - to conceal or protect. VINES was the pivot: jungle growth to COVER over.",
+  "gridString": "VSSOMVOHUMIDCDENSEREERTDESNEOISMAFUA"
+}

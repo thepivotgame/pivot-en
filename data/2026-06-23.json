@@ -1,0 +1,21 @@
+{
+  "theme": "BEACH",
+  "words": [
+    "SHORE",
+    "DUNES",
+    "SHELL",
+    "SURF",
+    "SAND",
+    "TIDE",
+    "CRAB"
+  ],
+  "SIZE": 6,
+  "pivot": "SHORE",
+  "target": "BRACE",
+  "noise": "SGLAUEOIHV",
+  "latHint": "Think support and strength - not the seaside.",
+  "pivHint": "SHORE means coastline - but to SHORE something up is to strengthen it. What's the word?",
+  "winText": "Strong support. SHORE was the pivot - seaside to structural strength.",
+  "lossText": "BRACE - to support or strengthen. SHORE was the pivot: coastline to shoring up.",
+  "gridString": "DUNESRLLEHSEBCOUAAGRRVNEEFTIDEACRABI"
+}

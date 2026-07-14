@@ -1,0 +1,21 @@
+{
+  "theme": "ORCHARD",
+  "words": [
+    "CRISP",
+    "APPLE",
+    "BLOOM",
+    "PEAR",
+    "LIMB",
+    "RIPE",
+    "PICK"
+  ],
+  "SIZE": 6,
+  "pivot": "CRISP",
+  "target": "CLEAR",
+  "noise": "OGSGILONBA",
+  "latHint": "Think sharp and easy to understand - not crunchy apples.",
+  "pivHint": "A CRISP apple snaps cleanly - but a CRISP explanation is one that's how?",
+  "winText": "Sharp and CLEAR. CRISP was the pivot - crunchy apple to a CLEAR explanation.",
+  "lossText": "CLEAR - sharp and easy to understand. CRISP was the pivot: crunchy apple to a CRISP, CLEAR point.",
+  "gridString": "ABRCECLKMNRIGCRIPESISALGAPPLEBMOOLBP"
+}

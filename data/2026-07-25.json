@@ -1,0 +1,21 @@
+{
+  "theme": "PRAIRIE",
+  "words": [
+    "FIELD",
+    "WHEAT",
+    "GRAIN",
+    "DUST",
+    "WIND",
+    "CROP",
+    "BARN"
+  ],
+  "SIZE": 6,
+  "pivot": "FIELD",
+  "target": "REALM",
+  "noise": "HNGAGTOOEH",
+  "latHint": "Think an area of expertise - not open land.",
+  "pivHint": "A prairie is an open FIELD - but 'not my FIELD' means what kind of area?",
+  "winText": "An area of expertise. FIELD was the pivot - open prairie to a professional REALM.",
+  "lossText": "REALM - an area or domain. FIELD was the pivot: open prairie to a REALM of expertise.",
+  "gridString": "FAWMELGIHRTNCREGSRRHALUAOETIDBPNWIND"
+}

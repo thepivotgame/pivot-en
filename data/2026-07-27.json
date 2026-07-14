@@ -1,0 +1,21 @@
+{
+  "theme": "CANYON",
+  "words": [
+    "GORGE",
+    "RIDGE",
+    "CLIFF",
+    "ROCK",
+    "ECHO",
+    "DUST",
+    "PATH"
+  ],
+  "SIZE": 6,
+  "pivot": "GORGE",
+  "target": "FEAST",
+  "noise": "GWOABBOIWE",
+  "latHint": "Think eating greedily - not deep ravines.",
+  "pivHint": "A canyon has a deep GORGE - but to GORGE yourself means to do what?",
+  "winText": "Eating your fill. GORGE was the pivot - deep ravine to FEAST greedily.",
+  "lossText": "FEAST - to eat heartily. GORGE was the pivot: canyon ravine to gorging at a FEAST.",
+  "gridString": "RCAFGHITLOETDSRIBAGGWOFPECHOCFWTSUDK"
+}

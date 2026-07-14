@@ -1,0 +1,21 @@
+{
+  "theme": "OBSERVATORY",
+  "words": [
+    "SCOPE",
+    "STARS",
+    "NIGHT",
+    "DOME",
+    "MOON",
+    "DUST",
+    "VOID"
+  ],
+  "SIZE": 6,
+  "pivot": "SCOPE",
+  "target": "CHECK",
+  "noise": "ILOAEBLNAG",
+  "latHint": "Think looking something over carefully - not a telescope.",
+  "pivHint": "An observatory SCOPE surveys the sky - but to SCOPE something out first means to do what to it?",
+  "winText": "Taking a good look. SCOPE was the pivot - looking through a lens to SCOPE something out first.",
+  "lossText": "CHECK - to look over carefully. SCOPE was the pivot: looking through a lens to SCOPE things out.",
+  "gridString": "MCEHSTCOMCRHDIOVAGEPDNTIEKNBSNTSUDAL"
+}

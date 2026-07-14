@@ -1,0 +1,21 @@
+{
+  "theme": "BUTCHER",
+  "words": [
+    "CARVE",
+    "BLOCK",
+    "KNIFE",
+    "MEAT",
+    "CHOP",
+    "CUTS",
+    "LEAN"
+  ],
+  "SIZE": 6,
+  "pivot": "CARVE",
+  "target": "NICHE",
+  "noise": "AECOGODFAM",
+  "latHint": "Think establishing your own space - not cutting meat.",
+  "pivHint": "A butcher will CARVE the meat - but to CARVE out your place in the world means what?",
+  "winText": "Making your mark. CARVE was the pivot - butcher's cut to carving out a NICHE.",
+  "lossText": "NICHE - a specialized place or role. CARVE was the pivot: butcher's cut to carving a NICHE.",
+  "gridString": "BCPOHCKLMEATNNORNCIAVCIUFEHEKTELAEOS"
+}

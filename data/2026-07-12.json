@@ -1,0 +1,21 @@
+{
+  "theme": "RESTAURANT",
+  "words": [
+    "TABLE",
+    "ORDER",
+    "DISH",
+    "MENU",
+    "CHEF",
+    "FORK",
+    "SOUP"
+  ],
+  "SIZE": 6,
+  "pivot": "TABLE",
+  "target": "DEFER",
+  "noise": "ADAWCWHIOP",
+  "latHint": "Think postponing - not furniture.",
+  "pivHint": "TABLE isn't just where you eat - what does it mean to TABLE a discussion?",
+  "winText": "Put off for later. TABLE was the pivot - restaurant furniture to a DEFER of the decision.",
+  "lossText": "DEFER - to put off until later. TABLE was the pivot: dining furniture to DEFER a motion.",
+  "gridString": "REFHTSOESAODRIBUFMDLPOECEARNHHRKUACW"
+}

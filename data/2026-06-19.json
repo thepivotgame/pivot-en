@@ -1,0 +1,21 @@
+{
+  "theme": "FOREST",
+  "words": [
+    "MAPLE",
+    "ACORN",
+    "BARK",
+    "MOSS",
+    "FERN",
+    "LEAF",
+    "ROOT"
+  ],
+  "SIZE": 6,
+  "pivot": "BARK",
+  "target": "GRUFF",
+  "noise": "EOEBIDAANM",
+  "latHint": "Think manner, not trees.",
+  "pivHint": "BARK covers a tree - but dogs do it too. What word means rough and abrupt in manner?",
+  "winText": "Rough and ready. BARK was the pivot - tree covering to a GRUFF manner.",
+  "lossText": "GRUFF - rough and abrupt. BARK was the pivot: tree skin to tone of voice.",
+  "gridString": "TUFGMROLEAFFOAPCENRLMOSSEBARKAFERNOI"
+}

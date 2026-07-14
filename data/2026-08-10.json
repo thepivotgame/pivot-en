@@ -1,0 +1,21 @@
+{
+  "theme": "CHOIR",
+  "words": [
+    "VOICE",
+    "HYMNS",
+    "ROBES",
+    "NOTE",
+    "SING",
+    "LOFT",
+    "ALTO"
+  ],
+  "SIZE": 6,
+  "pivot": "VOICE",
+  "target": "INPUT",
+  "noise": "ODSRIATAEH",
+  "latHint": "Think having a say in a decision - not singing.",
+  "pivHint": "Every singer in the CHOIR has a VOICE - but having a VOICE in a decision means having what?",
+  "winText": "A say in things. VOICE was the pivot - singing VOICE to having real INPUT.",
+  "lossText": "INPUT - a say or contribution. VOICE was the pivot: singing VOICE to having a VOICE in things.",
+  "gridString": "VHIUETTOYSTFNPIMOORNSCNLGROBESOTLAET"
+}

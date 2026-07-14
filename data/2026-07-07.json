@@ -1,0 +1,21 @@
+{
+  "theme": "MARKET",
+  "words": [
+    "STALL",
+    "FRESH",
+    "CROWD",
+    "SELL",
+    "CART",
+    "BULK",
+    "CASH"
+  ],
+  "SIZE": 6,
+  "pivot": "STALL",
+  "target": "DELAY",
+  "noise": "OSKAEPMUIN",
+  "latHint": "Think time - not a market stand.",
+  "pivHint": "A market STALL is where you sell - but STALL also means to hold things up. What's the word?",
+  "winText": "Time wasted. STALL was the pivot - market stand to wasting time.",
+  "lossText": "DELAY - to hold up or postpone. STALL was the pivot: market STALL to a deliberate STALL.",
+  "gridString": "FTYELSBRSCTAUAEADALCLSSNKLLHHPDWORCO"
+}

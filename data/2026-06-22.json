@@ -1,0 +1,21 @@
+{
+  "theme": "VILLAGE",
+  "words": [
+    "GREEN",
+    "POND",
+    "LANE",
+    "MILL",
+    "GATE",
+    "BARN",
+    "WELL"
+  ],
+  "SIZE": 6,
+  "pivot": "GREEN",
+  "target": "NAIVE",
+  "noise": "HFTFOECOIM",
+  "latHint": "Think inexperience - not the village common.",
+  "pivHint": "A village GREEN is lush and fresh - but to be GREEN also means to be what about the world?",
+  "winText": "Wet behind the ears. GREEN was the pivot - village common to being NAIVE and inexperienced.",
+  "lossText": "NAIVE - inexperienced and trusting. GREEN was the pivot: village GREEN to GREEN and NAIVE.",
+  "gridString": "GVEAINNRABFGMFEOPAHIIEOTEMLANEWELLDO"
+}

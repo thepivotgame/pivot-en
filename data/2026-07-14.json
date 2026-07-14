@@ -1,0 +1,21 @@
+{
+  "theme": "AIRPORT",
+  "words": [
+    "PILOT",
+    "CABIN",
+    "GATE",
+    "CREW",
+    "BAGS",
+    "VISA",
+    "SEAT"
+  ],
+  "SIZE": 6,
+  "pivot": "PILOT",
+  "target": "TRIAL",
+  "noise": "IMNEOCGPAD",
+  "latHint": "Think testing something new - not flying.",
+  "pivHint": "A PILOT flies the plane - but a pilot program tests something new. What word means that kind of test run?",
+  "winText": "Testing the waters. PILOT was the pivot - flying the aircraft to running a TRIAL.",
+  "lossText": "TRIAL - a test run. PILOT was the pivot: aircraft PILOT to a PILOT TRIAL.",
+  "gridString": "PIBLATNIBACRSALRGAIEEOASNWADTIGOPTEV"
+}

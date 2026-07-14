@@ -1,0 +1,21 @@
+{
+  "theme": "LABORATORY",
+  "words": [
+    "PROBE",
+    "FLASK",
+    "TESTS",
+    "DATA",
+    "COAT",
+    "CELL",
+    "GERM"
+  ],
+  "SIZE": 6,
+  "pivot": "PROBE",
+  "target": "QUERY",
+  "noise": "OABELABNIR",
+  "latHint": "Think asking deep questions - not a scientific tool.",
+  "pivHint": "A scientist might use a PROBE to test a sample - but a journalist will PROBE for what?",
+  "winText": "Digging for answers. PROBE was the pivot - lab instrument to a probing QUERY.",
+  "lossText": "QUERY - a question or inquiry. PROBE was the pivot: lab tool to probing questions.",
+  "gridString": "RPCMYQUERECFBEDOLEGBAABLSTSETERKAINA"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "WEATHER",
+  "words": [
+    "STORM",
+    "SLEET",
+    "FOGGY",
+    "CLOUD",
+    "HAIL",
+    "GUST",
+    "MIST"
+  ],
+  "SIZE": 6,
+  "pivot": "STORM",
+  "target": "ANGER",
+  "noise": "IPWOEDFAHW",
+  "latHint": "Think strong emotion - not meteorology.",
+  "pivHint": "A STORM can rage in the sky - but it can also rage inside you. What word means that inner surge of feeling?",
+  "winText": "A flash of temper. STORM was the pivot - weather system to a surge of ANGER.",
+  "lossText": "ANGER - intense displeasure. STORM was the pivot: weather system to inner fury.",
+  "gridString": "ECLOUDSLEETNLTSUGRIFOGGYAAGRWOHTSIME"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "ATTIC",
+  "words": [
+    "STORE",
+    "TRUNK",
+    "BOXES",
+    "MOTH",
+    "BEAM",
+    "WEBS",
+    "LAMP"
+  ],
+  "SIZE": 6,
+  "pivot": "STORE",
+  "target": "AWAIT",
+  "noise": "WEBPNORCHI",
+  "latHint": "Think something waiting to happen - not a storage space.",
+  "pivHint": "Old boxes STORE memories in the attic - but if surprises are 'in STORE' for you, what are they doing?",
+  "winText": "Waiting to happen. STORE was the pivot - attic storage to surprises that AWAIT.",
+  "lossText": "AWAIT - to be in STORE for someone. STORE was the pivot: attic storage to what will AWAIT.",
+  "gridString": "BEAMPASWOMTIATAPNWHLOICEKNURTBHBOXES"
+}

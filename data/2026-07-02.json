@@ -1,0 +1,21 @@
+{
+  "theme": "CIRCUS",
+  "words": [
+    "CLOWN",
+    "TENT",
+    "RING",
+    "ROPE",
+    "ACTS",
+    "DRUM",
+    "FLAG"
+  ],
+  "SIZE": 6,
+  "pivot": "CLOWN",
+  "target": "JOKER",
+  "noise": "AGUTSDIONE",
+  "latHint": "Think cards and trickery - not face paint.",
+  "pivHint": "A CLOWN is a comic performer - what word means a wild card or prankster?",
+  "winText": "Wild card. CLOWN was the pivot - circus performer to the trickster in the pack.",
+  "lossText": "JOKER - a prankster or wild card. CLOWN was the pivot: circus act to the JOKER in the deck.",
+  "gridString": "ACTSJRGALFRRDOKOITREPNWEUEGISNMGNEAT"
+}

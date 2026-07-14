@@ -1,0 +1,21 @@
+{
+  "theme": "STARS",
+  "words": [
+    "FLARE",
+    "COMET",
+    "NOVA",
+    "MOON",
+    "DARK",
+    "VOID",
+    "DUST"
+  ],
+  "SIZE": 6,
+  "pivot": "FLARE",
+  "target": "BLAZE",
+  "noise": "TIUAGERYOP",
+  "latHint": "Think fire and brilliance - not solar activity.",
+  "pivHint": "A solar FLARE erupts with intense light - what word means a roaring brilliant fire?",
+  "winText": "Burning bright. FLARE was the pivot - solar eruption to a roaring BLAZE.",
+  "lossText": "BLAZE - a roaring brilliant fire. FLARE was the pivot: solar eruption to blazing fire.",
+  "gridString": "VEZBNNFOLAOPALIVODKRADMUOYIRTSECOMET"
+}

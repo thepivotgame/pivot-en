@@ -1,0 +1,21 @@
+{
+  "theme": "RAINFOREST",
+  "words": [
+    "MISTY",
+    "DENSE",
+    "HUMID",
+    "VINE",
+    "FERN",
+    "FROG",
+    "DAMP"
+  ],
+  "SIZE": 6,
+  "pivot": "MISTY",
+  "target": "VAGUE",
+  "noise": "OCNEBHGPTI",
+  "latHint": "Think unclear and hard to recall - not weather.",
+  "pivHint": "Rainforests are often MISTY - but a MISTY memory means what kind of memory?",
+  "winText": "Hard to pin down. MISTY was the pivot - forest haze to a VAGUE recollection.",
+  "lossText": "VAGUE - unclear, hazy. MISTY was the pivot: rainforest mist to a VAGUE memory.",
+  "gridString": "MDNREFFIENIVRMSUEAOUNTVGGHECYGTPDAMP"
+}

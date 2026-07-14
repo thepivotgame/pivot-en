@@ -1,0 +1,21 @@
+{
+  "theme": "FESTIVAL",
+  "words": [
+    "CROWD",
+    "STAGE",
+    "BOOTH",
+    "FOOD",
+    "LIVE",
+    "SHOW",
+    "PASS"
+  ],
+  "SIZE": 6,
+  "pivot": "CROWD",
+  "target": "TIGHT",
+  "noise": "OABIWAPGWO",
+  "latHint": "Think a cramped, snug squeeze - not a crowd of people.",
+  "pivHint": "Festivals draw a big CROWD - but a CROWD-ed space can also be described as how snug?",
+  "winText": "A snug squeeze. CROWD was the pivot - festival CROWD to a TIGHT, cramped space.",
+  "lossText": "TIGHT - cramped, snug. CROWD was the pivot: festival CROWD to a TIGHT squeeze.",
+  "gridString": "CDPASSSROGTTHTOOBIOHAWFPWIWGDGALIVEB"
+}

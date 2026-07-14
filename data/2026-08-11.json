@@ -1,0 +1,21 @@
+{
+  "theme": "GALLERY",
+  "words": [
+    "FRAME",
+    "EASEL",
+    "BRUSH",
+    "TOUR",
+    "WALL",
+    "HALL",
+    "ARTS"
+  ],
+  "SIZE": 6,
+  "pivot": "FRAME",
+  "target": "BLAME",
+  "noise": "OWNTIEDIWM",
+  "latHint": "Think falsely accusing someone - not picture frames.",
+  "pivHint": "A painting sits inside a FRAME - but to FRAME someone for a crime means to unfairly do what?",
+  "winText": "Unfairly accused. FRAME was the pivot - picture FRAME to wrongly placing BLAME.",
+  "lossText": "BLAME - to hold responsible, often unfairly. FRAME was the pivot: picture FRAME to framing someone.",
+  "gridString": "HTOURFAHSURBLESAEELAMRBMAELTMOWEWSWN"
+}

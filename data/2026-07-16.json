@@ -1,0 +1,21 @@
+{
+  "theme": "MUSEUM",
+  "words": [
+    "RELIC",
+    "GUIDE",
+    "TOUR",
+    "CASE",
+    "WING",
+    "DESK",
+    "HALL"
+  ],
+  "SIZE": 6,
+  "pivot": "RELIC",
+  "target": "DATED",
+  "noise": "WRLEOIWIMA",
+  "latHint": "Think old-fashioned - not ancient artifacts.",
+  "pivHint": "A RELIC sits behind museum glass - but calling something a RELIC can mean it's old-fashioned. What word fits?",
+  "winText": "Out of style. RELIC was the pivot - ancient artifact to something DATED.",
+  "lossText": "DATED - old-fashioned, outmoded. RELIC was the pivot: museum piece to a DATED idea.",
+  "gridString": "DADTKETRESDSAOEIGAMDULNCEGIRIWLLAHWC"
+}

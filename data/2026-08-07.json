@@ -1,0 +1,21 @@
+{
+  "theme": "POOL",
+  "words": [
+    "DRAIN",
+    "LANES",
+    "TOWEL",
+    "SWIM",
+    "DEEP",
+    "LIFE",
+    "KICK"
+  ],
+  "SIZE": 6,
+  "pivot": "DRAIN",
+  "target": "WEARY",
+  "noise": "IODAOISFFL",
+  "latHint": "Think exhausted and worn out - not pool plumbing.",
+  "pivHint": "Water leaves through the pool's DRAIN - but a long day can DRAIN you, leaving you how?",
+  "winText": "Worn right out. DRAIN was the pivot - pool plumbing to feeling utterly WEARY.",
+  "lossText": "WEARY - exhausted, worn out. DRAIN was the pivot: pool DRAIN to feeling DRAIN-ed and WEARY.",
+  "gridString": "DYKICKEREFILELANESPAMIWSEWRINSTOWELI"
+}

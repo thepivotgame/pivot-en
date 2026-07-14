@@ -1,0 +1,21 @@
+{
+  "theme": "SPACE",
+  "words": [
+    "ORBIT",
+    "COMET",
+    "LUNAR",
+    "PROBE",
+    "NOVA",
+    "DARK",
+    "DUST"
+  ],
+  "SIZE": 6,
+  "pivot": "ORBIT",
+  "target": "ROUND",
+  "noise": "IAHIEOGAPF",
+  "latHint": "Think shape and repetition - not space travel.",
+  "pivHint": "An ORBIT is one loop - what word means a circular or repeating path?",
+  "winText": "Going ROUND. ORBIT was the pivot - planetary path to a repeating ROUND.",
+  "lossText": "ROUND - circular or repeating. ORBIT was the pivot: planetary loop to circular pattern.",
+  "gridString": "NORNLDOKUUCEVRNPOBAABIMORDAIEREDUSTP"
+}

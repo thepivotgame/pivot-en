@@ -1,0 +1,21 @@
+{
+  "theme": "MOUNTAIN",
+  "words": [
+    "RIDGE",
+    "CLIFF",
+    "SLOPE",
+    "PEAK",
+    "SNOW",
+    "MIST",
+    "SCREE"
+  ],
+  "SIZE": 6,
+  "pivot": "RIDGE",
+  "target": "CREST",
+  "noise": "YKUAAOPGIE",
+  "latHint": "Think tops and peaks - not a mountain spine.",
+  "pivHint": "A RIDGE is a raised spine of rock - what word means the very top or peak of something?",
+  "winText": "At the very top. RIDGE was the pivot - mountain spine to reaching the CREST.",
+  "lossText": "CREST - the very top. RIDGE was the pivot: mountain spine to reaching the highest point.",
+  "gridString": "RKMISTCIARLSWLDEOCTOIGPRCSNFEEEAISFE"
+}

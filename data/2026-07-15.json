@@ -1,0 +1,21 @@
+{
+  "theme": "CONCERT",
+  "words": [
+    "SOUND",
+    "CROWD",
+    "VENUE",
+    "BAND",
+    "NOTE",
+    "TUNE",
+    "AMPS"
+  ],
+  "SIZE": 6,
+  "pivot": "SOUND",
+  "target": "VALID",
+  "noise": "ESPIOERRFH",
+  "latHint": "Think logical and well-founded - not audio.",
+  "pivHint": "SOUND fills the venue - but an argument can be SOUND too. What word means well-founded and logical?",
+  "winText": "Logically solid. SOUND was the pivot - concert audio to a VALID argument.",
+  "lossText": "VALID - well-founded and SOUND. SOUND was the pivot: concert audio to a VALID point.",
+  "gridString": "DCEAVSIRETOBSOUUOAPWNNLNMDEESDARVROI"
+}

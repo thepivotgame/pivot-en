@@ -1,0 +1,21 @@
+{
+  "theme": "CASTLE",
+  "words": [
+    "GUARD",
+    "CROWN",
+    "STONE",
+    "MOAT",
+    "GATE",
+    "WALL",
+    "KEEP"
+  ],
+  "SIZE": 6,
+  "pivot": "GUARD",
+  "target": "WATCH",
+  "noise": "EOMHFAEIRN",
+  "latHint": "Think keeping a careful eye - not castle sentries.",
+  "pivHint": "A GUARD stands at the gate - but to GUARD something is also to do what?",
+  "winText": "Keeping a careful eye. GUARD was the pivot - castle sentinel to keep WATCH closely.",
+  "lossText": "WATCH - to observe and protect. GUARD was the pivot: castle sentinel to keeping WATCH.",
+  "gridString": "TGATEPGAHNCEWUOWMEHTAOMKSLFRNALEOCDE"
+}

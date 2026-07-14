@@ -1,0 +1,21 @@
+{
+  "theme": "CINEMA",
+  "words": [
+    "SCENE",
+    "AISLE",
+    "REEL",
+    "SEAT",
+    "SHOW",
+    "FILM",
+    "ROLE"
+  ],
+  "SIZE": 6,
+  "pivot": "SCENE",
+  "target": "DRAMA",
+  "noise": "GTICTRIOEE",
+  "latHint": "Think a fuss or commotion - not a movie segment.",
+  "pivHint": "A SCENE plays out on screen - but you can also 'make a SCENE.' What word means an exaggerated fuss?",
+  "winText": "Quite the performance. SCENE was the pivot - movie segment to full DRAMA and fuss.",
+  "lossText": "DRAMA - an exaggerated, emotional fuss. SCENE was the pivot: movie segment to making a SCENE.",
+  "gridString": "SDSALRHCAEMEOGEMARWRLNOTAISLECFIEIRT"
+}

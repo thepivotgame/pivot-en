@@ -1,0 +1,21 @@
+{
+  "theme": "WEDDING",
+  "words": [
+    "TIERS",
+    "BRIDE",
+    "RINGS",
+    "VOWS",
+    "CAKE",
+    "VEIL",
+    "GIFT"
+  ],
+  "SIZE": 6,
+  "pivot": "TIERS",
+  "target": "LEVEL",
+  "noise": "FWIIACDGAM",
+  "latHint": "Think ranks or levels in a system - not a wedding cake.",
+  "pivHint": "A wedding cake rises in TIERS - but a pricing system with TIERS has different what?",
+  "winText": "Step by step. TIERS was the pivot - wedding cake layers to LEVEL upon LEVEL in a system.",
+  "lossText": "LEVEL - a rank or tier. TIERS was the pivot: wedding cake layers to system LEVEL.",
+  "gridString": "ELEVTTERDFIEKLIEVVAGRNLOCSBCGWGIWAAS"
+}

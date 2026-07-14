@@ -1,0 +1,21 @@
+{
+  "theme": "TRAVEL",
+  "words": [
+    "STAMP",
+    "ROUTE",
+    "LODGE",
+    "VISA",
+    "TREK",
+    "PACK",
+    "TOUR"
+  ],
+  "SIZE": 6,
+  "pivot": "STAMP",
+  "target": "BRAND",
+  "noise": "KOPAEEUITL",
+  "latHint": "Think marks and identity - not postage.",
+  "pivHint": "A STAMP marks a passport - but it can also mark an identity permanently. What's the word for that kind of mark?",
+  "winText": "Marked for life. STAMP was the pivot - passport STAMP to permanent BRAND.",
+  "lossText": "BRAND - a permanent mark or identity. STAMP was the pivot: travel mark to lasting BRAND.",
+  "gridString": "LODGENRSEKBAVRTCDEIUUAIPSOOPMLATREKP"
+}

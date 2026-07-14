@@ -1,0 +1,21 @@
+{
+  "theme": "SALON",
+  "words": [
+    "STYLE",
+    "CURLS",
+    "RINSE",
+    "DYES",
+    "FOIL",
+    "BLOW",
+    "GELS"
+  ],
+  "SIZE": 6,
+  "pivot": "STYLE",
+  "target": "FLAIR",
+  "noise": "BOPWDEIROE",
+  "latHint": "Think a distinctive flair - not a haircut.",
+  "pivHint": "The salon gives you a new STYLE - but doing something 'with STYLE' means doing it with what?",
+  "winText": "A touch of FLAIR. STYLE was the pivot - a new hair STYLE to doing things with FLAIR.",
+  "lossText": "FLAIR - a stylish, distinctive flourish. STYLE was the pivot: hair STYLE to genuine FLAIR.",
+  "gridString": "BSASFRLLTEOIORGYINWUEDLSRCLFLEIOSDBO"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "GARDEN",
+  "words": [
+    "BLOOM",
+    "PRUNE",
+    "MULCH",
+    "ROSE",
+    "WEED",
+    "SEED",
+    "PLOT"
+  ],
+  "SIZE": 6,
+  "pivot": "ROSE",
+  "target": "BLUSH",
+  "noise": "DOTOEAGRMI",
+  "latHint": "Think colour, not flowers.",
+  "pivHint": "ROSE is a flower - but it's also a colour. What shade of pink does it describe?",
+  "winText": "A rosy pink. ROSE was the pivot - the flower becomes a colour.",
+  "lossText": "BLUSH - a soft rosy pink. ROSE was the pivot: flower to colour.",
+  "gridString": "USWEEDBMLNSEBLUPOEHROLRSPGOOCRTMDTMH"
+}

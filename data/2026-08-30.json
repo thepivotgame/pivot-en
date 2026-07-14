@@ -1,0 +1,21 @@
+{
+  "theme": "SUBWAY",
+  "words": [
+    "RIDER",
+    "TRAIN",
+    "CARDS",
+    "STOP",
+    "GATE",
+    "LINE",
+    "RUSH"
+  ],
+  "SIZE": 6,
+  "pivot": "RIDER",
+  "target": "EXTRA",
+  "noise": "OAMINFDBEN",
+  "latHint": "Think an extra clause tacked onto something - not a passenger.",
+  "pivHint": "Every subway car has RIDER passengers - but a 'RIDER' attached to a contract adds something on top. What word means that addition?",
+  "winText": "An EXTRA add-on. RIDER was the pivot - subway passenger to a contract's EXTRA clause.",
+  "lossText": "EXTRA - an additional clause or add-on. RIDER was the pivot: subway RIDER to a contract's RIDER.",
+  "gridString": "LAETNRIHRTICNSEDAXEUERRGFRDATBNSTOPI"
+}

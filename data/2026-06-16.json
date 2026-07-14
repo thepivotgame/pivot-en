@@ -1,0 +1,21 @@
+{
+  "theme": "OCEAN",
+  "words": [
+    "SWELL",
+    "CORAL",
+    "TIDE",
+    "REEF",
+    "WAVE",
+    "FOAM",
+    "KELP"
+  ],
+  "SIZE": 6,
+  "pivot": "SWELL",
+  "target": "SURGE",
+  "noise": "OPEFVLIDAW",
+  "latHint": "Think rising energy - not the sea.",
+  "pivHint": "SWELL means to grow larger - what word means a sudden powerful rush?",
+  "winText": "A rush of energy. SWELL was the pivot - ocean movement to surging power.",
+  "lossText": "SURGE - a sudden powerful rush. SWELL was the pivot: ocean movement to surging energy.",
+  "gridString": "FRSESGOEUWOLAWEDITMLAROCLDFVPVWEPLEK"
+}

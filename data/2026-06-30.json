@@ -1,0 +1,21 @@
+{
+  "theme": "CITY",
+  "words": [
+    "METRO",
+    "TOWER",
+    "PLAZA",
+    "SMOG",
+    "BLOCK",
+    "GRID",
+    "LANE"
+  ],
+  "SIZE": 6,
+  "pivot": "TOWER",
+  "target": "LOFTY",
+  "noise": "EPKAICUONE",
+  "latHint": "Think height and ambition - not buildings.",
+  "pivHint": "A TOWER rises high above everything - what word means elevated or high-minded?",
+  "winText": "Reaching up. TOWER was the pivot - tall structure to elevated thinking.",
+  "lossText": "LOFTY - high or elevated in manner. TOWER was the pivot: tall building to high ideals.",
+  "gridString": "MSMOGABEFDRZLNTIEAOAORWLCLLGOPKYTUTE"
+}

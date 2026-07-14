@@ -1,0 +1,21 @@
+{
+  "theme": "CAMPING",
+  "words": [
+    "TRAIL",
+    "EMBER",
+    "SCOUT",
+    "TENT",
+    "FIRE",
+    "TARP",
+    "COOK"
+  ],
+  "SIZE": 6,
+  "pivot": "EMBER",
+  "target": "GLEAM",
+  "noise": "OUPANIWKBE",
+  "latHint": "Think light that lingers - not dying fire.",
+  "pivHint": "An EMBER fades slowly, still glowing - what word means a small persistent light?",
+  "winText": "A soft persistent light. EMBER was the pivot - dying fire to lingering GLEAM.",
+  "lossText": "GLEAM - a small persistent light. EMBER was the pivot: fading fire to lasting GLEAM.",
+  "gridString": "GATENTEMBERUTRKALOEAIOMCBLRFOSEWNPOC"
+}

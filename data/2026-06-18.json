@@ -1,0 +1,21 @@
+{
+  "theme": "KITCHEN",
+  "words": [
+    "BLEND",
+    "WHISK",
+    "LADLE",
+    "OVEN",
+    "STIR",
+    "TRAY",
+    "RACK"
+  ],
+  "SIZE": 6,
+  "pivot": "BLEND",
+  "target": "MERGE",
+  "noise": "FPOULBIKAO",
+  "latHint": "Think things coming together - beyond the kitchen.",
+  "pivHint": "BLEND means to mix - what's the word when two things become one entirely?",
+  "winText": "Two become one. BLEND was the pivot - kitchen mixing to broader union.",
+  "lossText": "MERGE - to combine into one. BLEND was the pivot: mixing to merging.",
+  "gridString": "OSRGBWEVTLHLEMEITALNSNRDDKPAALKCARYE"
+}

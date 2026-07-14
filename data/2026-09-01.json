@@ -1,0 +1,21 @@
+{
+  "theme": "TUNNEL",
+  "words": [
+    "DRILL",
+    "DARK",
+    "ROCK",
+    "DAMP",
+    "BORE",
+    "ECHO",
+    "PIPE"
+  ],
+  "SIZE": 6,
+  "pivot": "DRILL",
+  "target": "GRIND",
+  "noise": "DISBEEBHAO",
+  "latHint": "Think a repetitive daily routine - not boring through rock.",
+  "pivHint": "Tunnels are bored with a giant DRILL - but the 'daily DRILL' at work is also called the daily what?",
+  "winText": "The daily routine. DRILL was the pivot - tunnel boring to the daily GRIND.",
+  "lossText": "GRIND - a repetitive routine. DRILL was the pivot: the tunnel DRILL to the daily GRIND.",
+  "gridString": "DAMPRDAROCKIREIHGNKPRLCIBIBOLEHPAOBE"
+}

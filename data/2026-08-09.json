@@ -1,0 +1,21 @@
+{
+  "theme": "ORCHESTRA",
+  "words": [
+    "SCORE",
+    "BATON",
+    "BRASS",
+    "HORN",
+    "OBOE",
+    "DRUM",
+    "SOLO"
+  ],
+  "SIZE": 6,
+  "pivot": "SCORE",
+  "target": "NOTCH",
+  "noise": "EARONEDSIG",
+  "latHint": "Think cutting a small mark into a surface - not sheet music.",
+  "pivHint": "Musicians read from the SCORE - but if you SCORE a piece of wood, what have you made in it?",
+  "winText": "A small cut. SCORE was the pivot - sheet music to NOTCH a surface.",
+  "lossText": "NOTCH - a small cut or mark. SCORE was the pivot: musical SCORE to scoring a NOTCH.",
+  "gridString": "SMURDOSCNHOLAOORBORCTROSBNATEHNDBOAE"
+}

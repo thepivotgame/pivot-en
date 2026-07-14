@@ -1,0 +1,21 @@
+{
+  "theme": "SCHOOL",
+  "words": [
+    "CHALK",
+    "RULER",
+    "DESK",
+    "BELL",
+    "EXAM",
+    "TERM",
+    "HALL"
+  ],
+  "SIZE": 6,
+  "pivot": "RULER",
+  "target": "REIGN",
+  "noise": "LOVHTUAMIE",
+  "latHint": "Think authority and power - not measuring.",
+  "pivHint": "A RULER measures things - but it also means one who rules. What word means to hold power?",
+  "winText": "Power and authority. RULER was the pivot - measuring tool to wielding power.",
+  "lossText": "REIGN - to hold power. RULER was the pivot: measuring stick to ruling authority.",
+  "gridString": "NRRTGHICEXAMERHLAMMELAUIUBELLRHODESK"
+}

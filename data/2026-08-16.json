@@ -1,0 +1,21 @@
+{
+  "theme": "QUARRY",
+  "words": [
+    "BLOCK",
+    "STONE",
+    "DRILL",
+    "PITS",
+    "HAUL",
+    "SAWS",
+    "ROCK"
+  ],
+  "SIZE": 6,
+  "pivot": "BLOCK",
+  "target": "STUCK",
+  "noise": "ICIDEWAERA",
+  "latHint": "Think being unable to move forward - not cut stone.",
+  "pivHint": "Quarries cut huge stone BLOCK pieces - but a writer's BLOCK leaves you feeling what?",
+  "winText": "Completely STUCK. BLOCK was the pivot - quarried stone to feeling creatively STUCK.",
+  "lossText": "STUCK - unable to move forward. BLOCK was the pivot: stone BLOCK to a creative BLOCK.",
+  "gridString": "HSWASUABPCTKULLIRDLENOTSSICICSRKWACK"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "SPORT",
+  "words": [
+    "RELAY",
+    "DRAFT",
+    "FOUL",
+    "SQUAD",
+    "BOUT",
+    "PACE",
+    "LANE"
+  ],
+  "SIZE": 6,
+  "pivot": "DRAFT",
+  "target": "WINDS",
+  "noise": "UTAIROVEBA",
+  "latHint": "Think air currents - not team selection.",
+  "pivHint": "A DRAFT picks players - but you feel one under a door too. What word means moving air?",
+  "winText": "Blowing through. DRAFT was the pivot - team selection to moving air currents.",
+  "lossText": "WINDS - moving currents of air. DRAFT was the pivot: team selection to a current of air.",
+  "gridString": "IWSDSRDTQLEPNRULTAOOAOUCFYDFBELANETA"
+}
