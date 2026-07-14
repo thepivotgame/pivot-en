@@ -2103,6 +2103,10 @@
     tap('pivbtn', function() {
         if (usedPiv)
             return;
+        if (!usedLat) {
+            flash('Try the Lateral hint first', 'er');
+            return;
+        }
         if (p2HintLocked) {
             flash('One hint per guess — try a guess first', 'er');
             return;
