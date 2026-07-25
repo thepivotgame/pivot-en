@@ -99,6 +99,114 @@
         border: 2px solid rgba(231, 76, 60, 0.5);
     }
 
+    #stats-panel {
+        display: none;
+        background: linear-gradient(160deg, #fffaf0 0%, #fff3d6 100%);
+        border: 2px solid #f9d976;
+        border-radius: 16px;
+        padding: 18px 18px 16px;
+        margin-bottom: 8px;
+        text-align: center;
+        color: #2c3e50;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+    }
+
+    .stats-title {
+        font-size: 17px;
+        font-weight: bold;
+        color: #1a5276;
+        margin-bottom: 12px;
+        letter-spacing: 0.3px;
+    }
+
+    .stats-streak-block {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .stats-streak-num {
+        font-size: 32px;
+        font-weight: bold;
+        color: #1a5276;
+        line-height: 1.15;
+    }
+
+    .stats-streak-sub {
+        font-size: 12.5px;
+        color: #6a7f8f;
+        margin-top: 3px;
+    }
+
+    .stats-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 14px 0;
+        text-align: left;
+    }
+
+    .stats-row-num {
+        flex: 0 0 110px;
+        width: 110px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #1a5276;
+        text-align: center;
+    }
+
+    .stats-row-visual {
+        flex: 0 0 110px;
+        width: 110px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 3px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stats-row-text {
+        flex: 1;
+        font-size: 14px;
+        color: #3d4f5c;
+        line-height: 1.35;
+        text-align: left;
+    }
+
+    .stats-dot-mini {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: #2ecc71;
+        box-shadow: 0 0 0 1px #229954 inset;
+        flex-shrink: 0;
+    }
+
+    .stats-star-mini {
+        font-size: 15px;
+        color: #e6910e;
+        line-height: 1;
+        letter-spacing: 0;
+        white-space: nowrap;
+    }
+
+    .stats-nudge {
+        margin-top: 12px;
+        font-size: 13.5px;
+        color: #7a4a12;
+        background: rgba(232, 115, 74, 0.16);
+        border: 1px solid rgba(232, 115, 74, 0.45);
+        border-radius: 8px;
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .stats-final {
+        background: rgba(46, 204, 113, 0.16);
+        border-color: rgba(46, 204, 113, 0.5);
+        color: #1a5276;
+        font-weight: bold;
+    }
+
     .slabel {
         font-size: 10px;
         letter-spacing: 3px;
@@ -528,6 +636,23 @@
         margin-bottom: 6px;
     }
 
+    .eresult-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 6px;
+    }
+
+    .eresult-row .eemoji-sm {
+        font-size: 26px;
+        line-height: 1;
+    }
+
+    .eresult-row .eword {
+        margin: 0;
+    }
+
     .eword {
         color: #f9d976;
         font-size: 24px;
@@ -632,6 +757,26 @@
         position: relative;
         z-index: 2002;
     }
+    #summarybox .sum-close-x {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.08);
+        color: #a8c8e8;
+        font-size: 20px;
+        line-height: 1;
+        cursor: pointer;
+        touch-action: manipulation;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    #summarybox .sum-close-x:hover { background: rgba(255,255,255,0.16); color: #ffffff; }
     #summarybox .sum-success {
         color: #f9d976;
         font-size: 28px;
@@ -831,7 +976,7 @@
                             <path d="M9 2 L9 16 M3 11 L9 18 L15 11" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <a href="index.html"  style="background:#f9d976;color:#0d3349;border:none;border-radius:9px;padding:9px 13px;font-size:12px;font-weight:bold;letter-spacing:1px;cursor:pointer;min-height:42px;font-family:Georgia,serif;touch-action:manipulation;text-decoration:none;display:inline-flex;align-items:center;">Instructions</a>
+                    <a href="index.html?howto=1"  style="background:#f9d976;color:#0d3349;border:none;border-radius:9px;padding:9px 13px;font-size:12px;font-weight:bold;letter-spacing:1px;cursor:pointer;min-height:42px;font-family:Georgia,serif;touch-action:manipulation;text-decoration:none;display:inline-flex;align-items:center;">Instructions</a>
                 </div>
             </div>
         </div>
@@ -864,16 +1009,23 @@
             </div>
         </div>
         <div class="card result-win hidden" id="wincard">
-            <div class="eemoji">🎉</div>
-            <h2 class="eword" id="winword"></h2>
-            <p style="color:#a8c8e8;margin:0 0 10px;font-size:13px;" id="wintext"></p>
+            <div class="eresult-row">
+                <span class="eemoji-sm">🎉</span>
+                <h2 class="eword" id="winword"></h2>
+            </div>
+            <p style="color:#a8c8e8;margin:0 0 10px;font-size:16px;" id="wintext"></p>
             <div class="escore" id="winscore"></div>
         </div>
         <div class="card result-loss hidden" id="losscard">
-            <div class="eemoji">😔</div>
-            <h2 style="color:#e74c3c;margin:0 0 6px;font-size:20px;" id="lossword"></h2>
-            <p style="color:#a8c8e8;font-size:13px;" id="losstext"></p>
+            <div class="eresult-row">
+                <span class="eemoji-sm">😔</span>
+                <h2 style="color:#e74c3c;margin:0;font-size:20px;" id="lossword"></h2>
+            </div>
+            <p style="color:#a8c8e8;font-size:16px;" id="losstext"></p>
         </div>
+        <p class="hidden" id="view-share-link" style="text-align:center;font-family:-apple-system,sans-serif;font-size:13px;color:#f9d976;font-weight:bold;text-decoration:underline;cursor:pointer;touch-action:manipulation;margin:6px 0;">click here to view sharing window</p>
+        <div id="stats-panel"></div>
+                <a href="https://www.biblepivot.com" target="_blank" rel="noopener" id="biblepivot-link" class="hidden" style="display:block;text-align:center;font-family:-apple-system,sans-serif;font-size:13px;color:#f9d976;font-weight:bold;text-decoration:underline;cursor:pointer;touch-action:manipulation;margin:6px 0;">click here to play our other game: Bible Pivot</a>
     </div>
 
     <p class="footer">PIVOT · DAILY PUZZLE</p>
@@ -881,6 +1033,7 @@
     </canvas>
     <div id="summaryoverlay">
         <div id="summarybox">
+            <button class="sum-close-x" id="sum-close-x" aria-label="Close">&times;</button>
             <div class="sum-success" id="sum-heading">SUCCESS!</div>
             <div class="sum-target-label">Today's word was</div>
             <div class="sum-target" id="sum-target"></div>
@@ -988,6 +1141,169 @@
         const resp = await fetch(`${PUZZLE_DATA_DIR}/${today}.json`);
         if (!resp.ok) throw new Error('No puzzle found for ' + today);
         return await resp.json();
+    }
+
+    // ── MONTHLY STATS / STREAK TRACKING ──────────────────────────────────────────
+    // Stored entirely in localStorage on this device — no server, no accounts,
+    // nothing aggregated or visible to us. A device change loses at most the
+    // current month's progress, never an open-ended streak. Only same-day play
+    // counts (no catch-up credit), so "days" here always means same-day completions.
+    function statsMonthKey(dateStr) {
+        const parts = dateStr.split('-');
+        return 'pivot_stats_' + parts[0] + '_' + parts[1];
+    }
+    function statsDaysInMonth(dateStr) {
+        const parts = dateStr.split('-').map(Number);
+        return new Date(parts[0], parts[1], 0).getDate();
+    }
+    function statsMonthName(dateStr) {
+        const parts = dateStr.split('-').map(Number);
+        return new Date(parts[0], parts[1] - 1, 1).toLocaleString('en-US', { month: 'long' });
+    }
+    function statsComputeScore(won, hints) {
+        // 0–5 scale: a loss is 0; a win scores higher the fewer hints it took.
+        if (!won) return 0;
+        if (hints <= 0) return 5;
+        if (hints === 1) return 4;
+        if (hints === 2) return 3;
+        if (hints === 3) return 2;
+        return 1;
+    }
+    function loadMonthStats(dateStr) {
+        try {
+            const raw = localStorage.getItem(statsMonthKey(dateStr));
+            if (raw) return JSON.parse(raw);
+        } catch (e) {}
+        return { days: {} };
+    }
+    function saveMonthStats(dateStr, stats) {
+        try {
+            localStorage.setItem(statsMonthKey(dateStr), JSON.stringify(stats));
+        } catch (e) {}
+    }
+    function recordDayResult(dateStr, won, hints, jumpedAhead, wordsFound, starsEarned) {
+        // Idempotent: safe to call again on a same-day reload since it just
+        // rewrites today's entry with the same values.
+        const stats = loadMonthStats(dateStr);
+        const dayNum = String(parseInt(dateStr.split('-')[2], 10));
+        stats.days[dayNum] = {
+            won: won,
+            hints: hints,
+            score: statsComputeScore(won, hints),
+            jumpedAhead: !!jumpedAhead,
+            wordsFound: wordsFound || 0,
+            starsEarned: starsEarned || 0
+        };
+        saveMonthStats(dateStr, stats);
+        return stats;
+    }
+    function computeCurrentStreak(daysMap, todayDayNum) {
+        // Counts consecutive days played, walking backward from today —
+        // scoped to the current month only (resets each month, no
+        // carryover from the previous month). Counts ANY completed day
+        // (win or loss) toward the streak, not just wins — this rewards
+        // showing up daily, not a perfect score.
+        let count = 0;
+        for (let d = todayDayNum; d >= 1; d--) {
+            if (daysMap[String(d)]) count++;
+            else break;
+        }
+        return count;
+    }
+    function statsSummary(dateStr) {
+        const stats = loadMonthStats(dateStr);
+        const daysInMonth = statsDaysInMonth(dateStr);
+        const todayDayNum = parseInt(dateStr.split('-')[2], 10);
+        const entries = Object.keys(stats.days).map(k => stats.days[k]);
+        const dayNums = Object.keys(stats.days).map(Number);
+        const played = entries.length;
+        const avgScore = played ? (entries.reduce((s, d) => s + d.score, 0) / played) : 0;
+        const avgWordsFound = played ? (entries.reduce((s, d) => s + (d.wordsFound || 0), 0) / played) : 0;
+        const avgStarsEarned = played ? (entries.reduce((s, d) => s + (d.starsEarned || 0), 0) / played) : 0;
+        let bestScore = 0;
+        entries.forEach(d => { if (d.score > bestScore) bestScore = d.score; });
+        // Denominator is days elapsed since THIS user's first play this month,
+        // not the calendar day-of-month — otherwise someone who starts on the
+        // 23rd with a perfect record would see "9/23" instead of "9/9".
+        const firstDayPlayed = played ? Math.min.apply(null, dayNums) : todayDayNum;
+        const elapsedDays = played ? (todayDayNum - firstDayPlayed + 1) : 0;
+        return {
+            monthName: statsMonthName(dateStr),
+            daysInMonth: daysInMonth,
+            todayDayNum: todayDayNum,
+            firstDayPlayed: firstDayPlayed,
+            elapsedDays: elapsedDays,
+            played: played,
+            currentStreak: computeCurrentStreak(stats.days, todayDayNum),
+            avgScore: avgScore,
+            avgWordsFound: avgWordsFound,
+            avgStarsEarned: avgStarsEarned,
+            bestScore: bestScore,
+            daysMap: stats.days,
+            isLastDay: todayDayNum === daysInMonth
+        };
+    }
+    function renderStatsPanel(dateStr) {
+        const panel = document.getElementById('stats-panel');
+        if (!panel) return;
+        const s = statsSummary(dateStr);
+
+        // Decorative bar rows: filled up to the rounded average, out of a fixed
+        // max (7 possible words per puzzle including the pivot; 6 possible
+        // "unfound at jump" stars, since the pivot itself is always found first).
+        const WORDS_MAX = 7;
+        const STARS_MAX = 6;
+        const wordsFilled = Math.min(WORDS_MAX, Math.round(s.avgWordsFound));
+        const starsFilled = Math.min(STARS_MAX, Math.round(s.avgStarsEarned));
+
+        let wordsRow = '';
+        for (let i = 0; i < wordsFilled; i++) {
+            wordsRow += '<span class="stats-dot-mini"></span>';
+        }
+        let starsRow = '';
+        for (let i = 0; i < starsFilled; i++) {
+            starsRow += '★';
+        }
+
+        let html = '<div class="stats-title">🔥 Monthly Progress Report 📈</div>' +
+            '<div class="stats-streak-block">' +
+                '<div class="stats-streak-num">' + s.currentStreak + '-day streak</div>' +
+                '<div class="stats-streak-sub">' + s.played + '/' + s.elapsedDays + ' days played this month</div>' +
+            '</div>' +
+            '<div class="stats-row">' +
+                '<div class="stats-row-visual">' + wordsRow + '</div>' +
+                '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found per game</div>' +
+            '</div>';
+
+        // Only show the stars row once there's actually something to show —
+        // a "0.0 stars" line is just noise for someone who hasn't jumped
+        // ahead yet this month.
+        if (s.avgStarsEarned > 0) {
+            html += '<div class="stats-row">' +
+                '<div class="stats-row-visual"><span class="stats-star-mini">' + starsRow + '</span></div>' +
+                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' stars earned per game (by locking the search puzzle early)</div>' +
+            '</div>';
+        }
+
+        const remaining = s.daysInMonth - s.todayDayNum;
+        if (!s.isLastDay && remaining > 0 && remaining <= 7 && s.played >= s.elapsedDays - 2) {
+            html += '<div class="stats-nudge">' + remaining + (remaining === 1 ? ' day' : ' days') +
+                ' left this month — you\'re at ' + s.played + '/' + s.elapsedDays + '</div>';
+        }
+        if (s.isLastDay) {
+            html += '<div class="stats-nudge stats-final">Completed ' + s.monthName + ' — ' +
+                s.played + '/' + s.elapsedDays + ' days, average score ' + s.avgScore.toFixed(1) + '</div>';
+        }
+        panel.innerHTML = html;
+        panel.style.display = 'block';
+        const bpLink = document.getElementById('biblepivot-link');
+        if (bpLink) bpLink.classList.remove('hidden');
+    }
+    function statsMonthEndShareLine(dateStr) {
+        const s = statsSummary(dateStr);
+        if (!s.isLastDay) return '';
+        return '\nCompleted ' + s.monthName + ' — ' + s.played + '/' + s.elapsedDays +
+            ' days, average score ' + s.avgScore.toFixed(1);
     }
 
     // ── VALID WORDS (pre-computed for this puzzle) ─────────────────────────────
@@ -1200,6 +1516,7 @@
         foundKeys = new Set(),
         pivotCellKeys = new Set();
     let foundOrder = []; // tracks Part 1 words in the order they were found
+    let lastGameWon = null; // tracks whether the most recent game finish was a win, for reopening the summary popup
     let p1EventLog = [], // chronological log of Part 1 word-found / hint-used events, for score report line breaks
         p2EventLog = []; // chronological log of Part 2 guess-submitted / hint-used events, same purpose
     let selCells = [],
@@ -1974,19 +2291,43 @@
         }
     }
 
+    function scrollToPageBottom() {
+        // Wait two animation frames so any just-changed layout (cards being
+        // unhidden, stats panel being filled in) has actually been measured
+        // by the browser before we read scrollHeight — otherwise this can
+        // measure a too-short page and land partway down instead of at the
+        // true bottom.
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                const bottom = Math.max(
+                    document.body.scrollHeight,
+                    document.documentElement.scrollHeight
+                );
+                window.scrollTo({ top: bottom, behavior: 'smooth' });
+            });
+        });
+    }
+
     function showWin() {
         clearProgress();
         saveTodayResult(true);
+        lastGameWon = true;
         document.getElementById('actcard').style.display = 'none';
         document.getElementById('wincard').classList.remove('hidden');
+        const viewShareLinkWin = document.getElementById('view-share-link');
+        if (viewShareLinkWin) viewShareLinkWin.classList.remove('hidden');
         document.getElementById('winword').textContent = P.target;
         document.getElementById('wintext').textContent = P.winText;
         const hints = totalHintsUsed();
+        const wordsFound = foundOrder.length;
+        const starsEarned = advancedMode ? (P.words.length - foundOrder.length) : 0;
+        recordDayResult(todayISO(), true, hints, advancedMode, wordsFound, starsEarned);
+        renderStatsPanel(todayISO());
         
         const p2Guesses = p2EventLog.filter(e => e.type === 'guess').length;
         let scoreMsg = '';
         if (hints === 0) {
-            scoreMsg = 'Superb! No hints used. 🎉 🥳 😎 👌';
+            scoreMsg = 'Superb! No hints used. 🎉 🥳 😎';
         } else if (hints === 1) {
             scoreMsg = 'Excellent! Only 1 hint used. 🥳 🤓';
         } else if (hints === 2) {
@@ -1997,27 +2338,28 @@
         document.getElementById('winscore').textContent = scoreMsg;
         
         setTimeout(() => {
-            document.getElementById('wincard').scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-            setTimeout(() => launchFireworks(3500), 600);
+            scrollToPageBottom();
+            setTimeout(() => { scrollToPageBottom(); launchFireworks(7000); }, 600);
         }, 300);
     }
     function showLoss() {
         clearProgress();
         saveTodayResult(false);
+        lastGameWon = false;
         document.getElementById('actcard').style.display = 'none';
         document.getElementById('losscard').classList.remove('hidden');
+        const viewShareLinkLoss = document.getElementById('view-share-link');
+        if (viewShareLinkLoss) viewShareLinkLoss.classList.remove('hidden');
         document.getElementById('lossword').textContent = 'The word was ' + P.target;
         const hints = totalHintsUsed();
+        const wordsFound = foundOrder.length;
+        const starsEarned = advancedMode ? (P.words.length - foundOrder.length) : 0;
+        recordDayResult(todayISO(), false, hints, advancedMode, wordsFound, starsEarned);
+        renderStatsPanel(todayISO());
         document.getElementById('losstext').textContent = P.lossText + (hints > 0 ? ' (' + hints + (hints === 1 ? ' hint' : ' hints') + ' used)' : '');
         setTimeout(() => {
-            document.getElementById('losscard').scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-            setTimeout(() => launchRain(3500), 600);
+            scrollToPageBottom();
+            setTimeout(() => { scrollToPageBottom(); launchRain(7000); }, 600);
         }, 300);
     }
 
@@ -2244,7 +2586,7 @@
         // All three boxes in uniform style — no dimming for unused hints
         document.getElementById('sum-hint1-text').textContent = P.latHint;
         document.getElementById('sum-hint2-text').textContent = P.pivHint;
-        document.getElementById('sum-wintext').textContent = P.winText;
+        document.getElementById('sum-wintext').textContent = won ? P.winText : P.lossText;
 
         // Show the panel
         document.getElementById('summaryoverlay').style.display = 'flex';
@@ -2356,8 +2698,10 @@
         const hints = totalHintsUsed();
         const p2Guesses = p2EventLog.filter(e => e.type === 'guess').length;
         let performanceLine = '';
-        if (hints === 0) {
-            performanceLine = 'No hints used. \n🎉 🥳 😎 👌';
+        if (lastGameWon === false) {
+            performanceLine = "Didn't quite get it today. \n😔";
+        } else if (hints === 0) {
+            performanceLine = 'No hints used. \n🎉 🥳 😎';
         } else if (hints === 1) {
             performanceLine = 'Only 1 hint used. \n🥳 🤓';
         } else if (hints === 2) {
@@ -2366,7 +2710,7 @@
             performanceLine = 'Phew! I made it!! \n😅';
         }
         const perfSuffix = performanceLine ? '\n' + performanceLine : '';
-        return 'PIVOT — ' + P.theme + perfSuffix + '\n' + p1Emoji + '\n' + guessEmoji  + '\nPlay at PivotWord(dot)com';
+        return 'PIVOT — ' + P.theme + perfSuffix + '\n' + p1Emoji + '\n' + guessEmoji  + '\nPlay at PivotWord(dot)com' + statsMonthEndShareLine(todayISO());
         
     }
     function showSharePrompt() {
@@ -2390,6 +2734,12 @@
         });
         addTap('sum-notnow', function() {
             document.getElementById('summaryoverlay').style.display = 'none';
+        });
+        addTap('sum-close-x', function() {
+            document.getElementById('summaryoverlay').style.display = 'none';
+        });
+        addTap('view-share-link', function() {
+            showSummaryPanel(lastGameWon !== false);
         });
     })();
     (function() {
@@ -2559,7 +2909,15 @@
         pastGuesses = saved.pastGuesses || [];
         p1EventLog = saved.p1EventLog || [];
         p2EventLog = saved.p2EventLog || [];
+        advancedMode = saved.advancedMode || false;
         gameOver = true;
+        // A completed/redisplayed game is obviously past the stage-2 unlock
+        // already. Without this, the window 'scroll' listener further down
+        // sees s2Initialised still at its default false and — as soon as our
+        // scroll-to-bottom logic fires a scroll event — calls goStage2()
+        // again, which resets the instrcard content and scrolls the page
+        // back up to it, undoing the scroll-to-bottom entirely.
+        s2Initialised = true;
 
         // Restore Part 1's board exactly as it was found, if we have it saved
         // (older saved results from before this existed won't have it).

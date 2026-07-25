@@ -135,6 +135,35 @@
         border-color: #c85a2e;
     }
 
+    /* Mini hint button — shown below the word search */
+    .mini-actions {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        width: 180px;
+        margin-bottom: 4px;
+    }
+
+    .mini-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        font-family: Georgia, serif;
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+        border-radius: 7px;
+        padding: 7px 4px;
+        white-space: nowrap;
+    }
+
+    .mini-hint {
+        background: rgba(52, 152, 219, 0.8);
+        color: #f0ede6;
+    }
+
     .section-label {
         font-size: 9px;
         letter-spacing: 1.5px;
@@ -323,6 +352,12 @@
                     <div class="mc found2">E</div>
                 </div>
             </div>
+
+            <!-- Hint action -->
+            <div class="mini-actions">
+                <div class="mini-btn mini-hint">Get Hint</div>
+            </div>
+
             <div class="step-gap"></div>
             <!-- Letter Inventory -->
             <div style="margin-bottom:8px;">
@@ -416,10 +451,23 @@
             </div>
             <div class="step-gap"></div>
 
-            
+            <div class="step">
+                <div class="step-header">
+                    <div class="snum" style="background:#e8b84b;color:#1a1200;">3</div>
+                    <span style="font-size:13px;font-weight:bold;color:#e8b84b;letter-spacing:0.5px;">GET HELP</span>
+                </div>
+                <p>
+                    <span style="color:#f0ede6;">Stuck? Just click </span>
+                    <strong class="hl">Get Hint</strong>
+                    <span style="color:#f0ede6;">.</span>
+                </p>
+            </div>
+
+            <div class="step-gap"></div>
+
          <div class="step">
                 <div class="step-header">
-                    <div class="snum" style="background:#3498db;color:#fff;">3</div>
+                    <div class="snum" style="background:#3498db;color:#fff;">4</div>
                     <span style="font-size:13px;font-weight:bold;color:#3498db;letter-spacing:0.5px;">CHOOSE YOUR LEVEL</span>
                 </div>
                 <p>
@@ -433,7 +481,7 @@
 
             <div class="step">
                 <div class="step-header">
-                    <div class="snum" style="background:rgba(255,255,255,0.2);color:#fff;">3</div>
+                    <div class="snum" style="background:rgba(255,255,255,0.2);color:#fff;">5</div>
                     <span style="font-size:13px;font-weight:bold;color:#fff;letter-spacing:0.5px;">GUESS THE WORD</span>
                 </div>
                 <p><span style="color:#f0ede6;">Play like Wordle to find the word of the day.</span></p>
