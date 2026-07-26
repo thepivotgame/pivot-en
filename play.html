@@ -112,7 +112,7 @@
     }
 
     .stats-title {
-        font-size: 17px;
+        font-size: 23px;
         font-weight: bold;
         color: #1a5276;
         margin-bottom: 12px;
@@ -267,7 +267,86 @@
         font-size: 16px;
         font-weight: bold;
         text-align: center;
-    }/* Grid */
+    }
+
+    /* ── Floating score tracker ─────────────────────────────────────────── */
+    #score-tracker {
+        position: fixed;
+        top: 14px;
+        left: 14px;
+        z-index: 950;
+        background: #e8734a;
+        color: #fff;
+        border: 1px solid #c85a2e;
+        border-radius: 10px;
+        padding: 7px 16px;
+        font-family: Georgia, serif;
+        box-shadow: 0 0 8px rgba(232, 115, 74, 0.6), 0 4px 14px rgba(0,0,0,0.4);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    #score-tracker .score-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+        color: #fff;
+        opacity: 0.85;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 1px;
+    }
+
+    #score-tracker #score-value {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .score-pop {
+        position: fixed;
+        z-index: 960;
+        color: #f9d976;
+        font-family: Georgia, serif;
+        font-size: 56px;
+        font-weight: bold;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.7), 0 0 22px rgba(249, 217, 118, 0.55);
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        transition: top 1600ms cubic-bezier(.25,.65,.3,1),
+                    left 1600ms cubic-bezier(.25,.65,.3,1),
+                    font-size 1600ms ease-in,
+                    opacity 1600ms ease-in;
+    }
+
+    .score-pop.bonus {
+        font-size: 72px;
+        text-align: center;
+        line-height: 1.05;
+        text-shadow: 0 2px 12px rgba(0,0,0,0.75), 0 0 34px rgba(249, 217, 118, 0.85);
+        animation: bonusPulse 450ms ease-in-out 2;
+    }
+
+    .score-pop .bonus-line1 {
+        display: block;
+        font-size: 0.4em;
+        letter-spacing: 5px;
+        margin-bottom: 2px;
+    }
+
+    .score-pop .bonus-line2 {
+        display: block;
+    }
+
+    @keyframes bonusPulse {
+        0% { transform: translate(-50%, -50%) scale(1); }
+        50% { transform: translate(-50%, -50%) scale(1.15); }
+        100% { transform: translate(-50%, -50%) scale(1); }
+    }
+    /* Grid */
 
     #grid {
         display: grid;
@@ -679,6 +758,46 @@
         display: none;
     }
 
+    #score-intro-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: 1000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        touch-action: pan-y;
+    }
+
+    #score-intro-box {
+        background: linear-gradient(160deg, #0d3349, #1a5276);
+        border: 1px solid rgba(249, 217, 118, 0.4);
+        border-radius: 16px;
+        padding: 22px 20px;
+        max-width: 320px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #score-intro-box h3 {
+        color: #f9d976;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 14px;
+    }
+
+    #score-intro-box p {
+        color: #a8c8e8;
+        font-size: 13.5px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+
+    #score-intro-box p:last-of-type {
+        margin-bottom: 20px;
+    }
+
     #modal-box {
         background: linear-gradient(160deg, #0d3349, #1a5276);
         border: 1px solid rgba(249, 217, 118, 0.4);
@@ -701,6 +820,21 @@
         font-size: 13px;
         line-height: 1.5;
         margin-bottom: 18px;
+    }
+
+    #modal-lock-question {
+        display: block;
+        color: #f9d976;
+        font-size: 19px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    #modal-choice-body .modal-detail-line {
+        display: block;
+        font-size: 13px;
+        color: #a8c8e8;
+        line-height: 1.5;
     }
 
     .modal-btn {
@@ -954,11 +1088,13 @@
         Loading today's puzzle…
     </div>
     <div id="flash"></div>
+    <div id="score-tracker"><span class="score-label">Score</span><span id="score-value">0</span></div>
 
     <div id="s1" style="display:none">
         <div class="card">
             <p class="slabel">Step 1 — Word Search</p>
-            <p style="font-size:12px;color:#a8c8e8;margin-bottom:10px;">Tap connected letters to spell each hidden word. Words go in any direction. Tap the last letter again to undo.</p>
+            <p style="font-size:14px;color:#a8c8e8;margin-bottom:10px;">Tap connected letters to spell each hidden word. Words go in any direction. Tap the last letter again to undo.</p>
+            <p style="font-size:14px;color:#f9d976;font-weight:bold;margin-bottom:10px;">+5 points for each word found<br>+20 points bonus for finding all 7 words</p>
             <div id="grid"></div>
         </div>
         <div class="card">
@@ -970,7 +1106,7 @@
             <div style="display:flex;align-items:center;gap:10px;margin-top:6px;">
                 <button class="btn bh" id="hintbtn">Get Hint</button>
                 <div style="flex:1;display:flex;justify-content:flex-end;gap:10px;align-items:center;">
-                    <div id="scroll-down-arrow" style="display:none;align-items:center;justify-content:center;gap:8px;cursor:pointer;touch-action:manipulation;background:#e8734a;border-radius:9px;padding:9px 13px;min-height:42px;font-family:Georgia,serif;" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth',block:'start'})">
+                    <div id="scroll-down-arrow" style="display:none;align-items:center;justify-content:center;gap:8px;cursor:pointer;touch-action:manipulation;background:#e8734a;border-radius:9px;padding:9px 13px;min-height:42px;font-family:Georgia,serif;" onclick="scrollToPart2()">
                         <span style="font-size:12px;color:#fff;font-weight:bold;letter-spacing:1px;text-transform:uppercase;">Part 2</span>
                         <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="animation:bounceDown 1.2s ease-in-out infinite;flex-shrink:0;">
                             <path d="M9 2 L9 16 M3 11 L9 18 L15 11" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1067,13 +1203,26 @@
     <div id="modal-overlay">
         <div id="modal-box">
             <h3 id="modal-title">🪸 PIVOT word found!</h3>
-            <p id="modal-body">This word is your clue to Part 2.</p>
             <!-- Choice version: shown when more than 2 search words remain unfound. -->
-            <p class="modal-body" id="modal-choice-body">Lock the word search now and move on, or keep searching for the rest?</p>
+            <p class="modal-body" id="modal-choice-body">
+                <span id="modal-lock-question">Lock in +0 point bonus?</span>
+                <span class="modal-detail-line">Score 5 points for each unfound word</span>
+                <span class="modal-detail-line">Lock the word search and go to Part 2</span>
+            </p>
             <button class="modal-btn primary" id="modal-jump">→ Advanced: Lock &amp; go to Part 2</button>
             <button class="modal-btn secondary" id="modal-stay">Classic: Keep searching</button>
             <!-- No-choice version: shown when 2 or fewer search words remain unfound (auto-locks, same as before). -->
             <p class="modal-body" id="modal-lock-body">Part 1 Word Search is now LOCKED.</p>
+        </div>
+    </div>
+
+    <div id="score-intro-overlay">
+        <div id="score-intro-box">
+            <h3>New: Score System! 🎉</h3>
+            <p>We've added points for finding words, locking in bonuses, and solving fast.</p>
+            <p>Try it out and let us know via the sharing/feedback button what you think.</p>
+            <p>Enjoy!</p>
+            <button class="modal-btn primary" id="score-intro-close">Got it</button>
         </div>
     </div>
 
@@ -1181,7 +1330,7 @@
             localStorage.setItem(statsMonthKey(dateStr), JSON.stringify(stats));
         } catch (e) {}
     }
-    function recordDayResult(dateStr, won, hints, jumpedAhead, wordsFound, starsEarned) {
+    function recordDayResult(dateStr, won, hints, jumpedAhead, wordsFound, starsEarned, pointsScore) {
         // Idempotent: safe to call again on a same-day reload since it just
         // rewrites today's entry with the same values.
         const stats = loadMonthStats(dateStr);
@@ -1192,7 +1341,8 @@
             score: statsComputeScore(won, hints),
             jumpedAhead: !!jumpedAhead,
             wordsFound: wordsFound || 0,
-            starsEarned: starsEarned || 0
+            starsEarned: starsEarned || 0,
+            pointsScore: pointsScore || 0 // the real points total (word finds, bonuses, guess score, etc.)
         };
         saveMonthStats(dateStr, stats);
         return stats;
@@ -1227,6 +1377,20 @@
         // 23rd with a perfect record would see "9/23" instead of "9/9".
         const firstDayPlayed = played ? Math.min.apply(null, dayNums) : todayDayNum;
         const elapsedDays = played ? (todayDayNum - firstDayPlayed + 1) : 0;
+        const currentStreak = computeCurrentStreak(stats.days, todayDayNum);
+        // "Average score this streak" — scoped to just the current consecutive
+        // run of played days (same days computeCurrentStreak counts), not the
+        // whole month, and using the real points total (pointsScore), not the
+        // legacy 0–5 statsComputeScore used elsewhere in this function.
+        let streakScoreSum = 0, streakDaysWithScore = 0;
+        for (let d = todayDayNum; d > todayDayNum - currentStreak; d--) {
+            const entry = stats.days[String(d)];
+            if (entry && typeof entry.pointsScore === 'number') {
+                streakScoreSum += entry.pointsScore;
+                streakDaysWithScore++;
+            }
+        }
+        const avgScoreThisStreak = streakDaysWithScore ? (streakScoreSum / streakDaysWithScore) : 0;
         return {
             monthName: statsMonthName(dateStr),
             daysInMonth: daysInMonth,
@@ -1234,10 +1398,11 @@
             firstDayPlayed: firstDayPlayed,
             elapsedDays: elapsedDays,
             played: played,
-            currentStreak: computeCurrentStreak(stats.days, todayDayNum),
+            currentStreak: currentStreak,
             avgScore: avgScore,
             avgWordsFound: avgWordsFound,
             avgStarsEarned: avgStarsEarned,
+            avgScoreThisStreak: avgScoreThisStreak,
             bestScore: bestScore,
             daysMap: stats.days,
             isLastDay: todayDayNum === daysInMonth
@@ -1262,10 +1427,10 @@
         }
         let starsRow = '';
         for (let i = 0; i < starsFilled; i++) {
-            starsRow += '★';
+            starsRow += '🔒';
         }
 
-        let html = '<div class="stats-title">🔥 Monthly Progress Report 📈</div>' +
+        let html = '<div class="stats-title">Today\'s score: ' + totalScore + ' points</div>' +
             '<div class="stats-streak-block">' +
                 '<div class="stats-streak-num">' + s.currentStreak + '-day streak</div>' +
                 '<div class="stats-streak-sub">' + s.played + '/' + s.elapsedDays + ' days played this month</div>' +
@@ -1275,13 +1440,25 @@
                 '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found per game</div>' +
             '</div>';
 
-        // Only show the stars row once there's actually something to show —
-        // a "0.0 stars" line is just noise for someone who hasn't jumped
-        // ahead yet this month.
+        // Only show this row once there's actually something to show —
+        // a "0.0 locked" line is just noise for someone who hasn't jumped
+        // ahead yet this month. (Internally still tracked as "stars" —
+        // see starsEarned/avgStarsEarned — but displayed as locked words.)
         if (s.avgStarsEarned > 0) {
             html += '<div class="stats-row">' +
                 '<div class="stats-row-visual"><span class="stats-star-mini">' + starsRow + '</span></div>' +
-                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' stars earned per game (by locking the search puzzle early)</div>' +
+                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked per game (by locking the search puzzle early)</div>' +
+            '</div>';
+        }
+
+        // Average real-points score across the current streak only — needs
+        // at least one day with a recorded pointsScore (older saved days from
+        // before this field existed won't have one, so this stays hidden
+        // rather than showing a misleading "0.0").
+        if (s.avgScoreThisStreak > 0) {
+            html += '<div class="stats-row">' +
+                '<div class="stats-row-num">' + s.avgScoreThisStreak.toFixed(1) + '</div>' +
+                '<div class="stats-row-text">Average score this streak</div>' +
             '</div>';
         }
 
@@ -1516,6 +1693,11 @@
         foundKeys = new Set(),
         pivotCellKeys = new Set();
     let foundOrder = []; // tracks Part 1 words in the order they were found
+    let totalScore = 0; // running score total, persists for the whole game (see addScore())
+    let displayScore = 0; // what the badge actually shows — only increments when a pop visually lands,
+                           // so a bonus that's already added to totalScore for persistence never shows
+                           // in the badge before its own popup arrives (see spawnScorePop)
+    let pendingLockBonus = 0; // computed when the pivot modal opens: 5 pts × words still unfound
     let lastGameWon = null; // tracks whether the most recent game finish was a win, for reopening the summary popup
     let p1EventLog = [], // chronological log of Part 1 word-found / hint-used events, for score report line breaks
         p2EventLog = []; // chronological log of Part 2 guess-submitted / hint-used events, same purpose
@@ -1531,6 +1713,13 @@
         p2HintLocked = false; // true once a hint's been used since the last guess — blocks another until you guess again
     let gameStarted = false;
     const MAX_GUESSES = 4;
+    const GUESS_SCORE = { 1: 25, 2: 20, 3: 15, 4: 10 }; // points for guessing the target on guess 1/2/3/4
+    // Score-pop animation timing — must match the .score-pop transition
+    // duration in the CSS. Kept as constants so the flight time, the badge
+    // update delay, the bonus pop's stagger, and the part-2 transition delay
+    // can never silently drift out of sync with each other.
+    const POP_FLIGHT_MS = 1600;
+    const BONUS_START_DELAY_MS = 1750; // gap before the bonus pop starts, so it never overlaps the regular +5 pop's own flight
 
     // ── HELPERS ───────────────────────────────────────────────────────────────────
     function ck(r, c) {
@@ -1557,6 +1746,77 @@
             return;
         gameStarted = true;
         document.body.classList.add('playing');
+        showScoreTracker();
+    }
+    function showScoreTracker() {
+        const el = document.getElementById('score-tracker');
+        if (el) el.style.display = 'flex';
+    }
+    function renderScoreTracker() {
+        const el = document.getElementById('score-value');
+        if (el) el.textContent = displayScore;
+    }
+    function addScore(points, label) {
+        totalScore += points;
+        spawnScorePop(points);
+        saveProgress(); // persist immediately so a mid-game refresh never loses earned points
+    }
+    function awardBonus(points) {
+        totalScore += points;
+        spawnScorePop(points, true);
+        saveProgress();
+    }
+    function addBonusScore(points) {
+        // Delayed so it doesn't visually collide with the regular "+5" pop
+        // that likely just fired for the 7th word a moment earlier — starts
+        // once that pop has already landed (matches its flight time).
+        setTimeout(() => awardBonus(points), BONUS_START_DELAY_MS);
+    }
+    function spawnScorePop(points, isBonus) {
+        const tracker = document.getElementById('score-tracker');
+        const pop = document.createElement('div');
+        pop.className = 'score-pop' + (isBonus ? ' bonus' : '');
+        if (isBonus) {
+            pop.innerHTML = '<span class="bonus-line1">BONUS</span><span class="bonus-line2">+' + points + '</span>';
+        } else {
+            pop.textContent = (points >= 0 ? '+' : '') + points;
+        }
+
+        // Start big, dead center of the screen.
+        const startTop = window.innerHeight / 2;
+        const startLeft = window.innerWidth / 2;
+        pop.style.top = startTop + 'px';
+        pop.style.left = startLeft + 'px';
+        document.body.appendChild(pop);
+
+        // Force layout so the browser registers the start position before
+        // we change it — otherwise the transition has nothing to animate from.
+        void pop.offsetWidth;
+
+        // Target: the badge's actual current position (so it always lands
+        // exactly on the score counter, regardless of screen size/scroll).
+        let targetTop = startTop - 80, targetLeft = startLeft;
+        if (tracker) {
+            const rect = tracker.getBoundingClientRect();
+            targetTop = rect.top + rect.height / 2;
+            targetLeft = rect.left + rect.width / 2;
+        }
+        requestAnimationFrame(() => {
+            pop.style.top = targetTop + 'px';
+            pop.style.left = targetLeft + 'px';
+            pop.style.fontSize = '14px';
+            pop.style.opacity = '0';
+        });
+        // Update the badge only once THIS pop has visually "arrived" — bumps
+        // the badge by exactly this pop's own point value, regardless of
+        // whether totalScore (used for persistence) was already incremented
+        // earlier for a different, still-in-flight pop (e.g. a guess-score
+        // pop and a bonus pop both fired from the same win).
+        setTimeout(() => {
+            displayScore += points;
+            renderScoreTracker();
+        }, POP_FLIGHT_MS);
+        setTimeout(() => pop.remove(), POP_FLIGHT_MS + 50);
     }
     function totalHintsUsed() {
         return p1EventLog.filter(e => e.type === 'hint').length + p2EventLog.filter(e => e.type === 'hint').length;
@@ -1742,6 +2002,7 @@
             p1HintLocked = false;
             foundOrder.push(w); // record order found for share report
             p1EventLog.push({ type: 'word', pivot: w === P.pivot });
+            addScore(5, 'Word found!');
             p.cells.forEach(([rr, cc]) => foundKeys.add(ck(rr, cc)));
             if (w === P.pivot) {
                 p.cells.forEach(([rr, cc]) => pivotCellKeys.add(ck(rr, cc)));
@@ -1764,8 +2025,13 @@
                 hintKeys = new Set();
                 renderGrid();
                 document.getElementById('hintbtn').style.display = 'none';
+                addBonusScore(20);
                 saveProgress(); // re-save now that wordSearchDone/s2Initialised/jumpedEarly are set
-                setTimeout(goStage2, 900);
+                // Wait for the bonus pop to fully arrive before jumping to
+                // Part 2 (bonus starts at BONUS_START_DELAY_MS, then takes
+                // POP_FLIGHT_MS to land), plus a short pause so it doesn't
+                // feel like the screen yanks away the instant it lands.
+                setTimeout(goStage2, BONUS_START_DELAY_MS + POP_FLIGHT_MS + 400);
                 return;
             }
             if (w === P.pivot) {
@@ -1822,6 +2088,9 @@
     function showPivotModal() {
         // Player always gets the classic/advanced choice, no matter how many
         // search words remain unfound.
+        const unfoundCount = P.words.length - foundWords.size;
+        pendingLockBonus = unfoundCount * 5;
+        document.getElementById('modal-lock-question').textContent = 'Lock in +' + pendingLockBonus + ' point bonus?';
         document.getElementById('modal-choice-body').style.display = '';
         document.getElementById('modal-stay').style.display = '';
         document.getElementById('modal-lock-body').style.display = 'none';
@@ -1877,6 +2146,53 @@
         guessSlots = guessSlots.filter(id => pool.find(s => s.id === id));
     }
 
+    function computeUntouchedLetterBonus() {
+        // Counts pool tiles that are neither confirmed-correct (green) nor
+        // confirmed-absent-from-the-target (muted) — i.e. tiles that gave
+        // the player no information at all: either their letter was never
+        // guessed, or they're an "extra" copy beyond what's been confirmed
+        // for a letter that IS in the target (e.g. a target has one O, the
+        // player found it, but a second O tile sits in the pool untouched).
+        //
+        // This reuses letterColorPlan() — the same classification renderPool()
+        // already uses to color tiles green/absent/neutral — so the bonus
+        // always matches what the player can see in the pool, rather than a
+        // separate heuristic that could disagree with the on-screen colors.
+        const plan = letterColorPlan();
+        const consumed = {}; // letter -> { green, yellow } tiles already accounted for, mirrors renderPool()
+        let untouched = 0;
+        pool.forEach(slot => {
+            const lp = plan[slot.l];
+            if (!lp) {
+                untouched++; // letter never appeared in any guess at all
+                return;
+            }
+            if (lp.fullyAbsent)
+                return; // confirmed NOT in the target — touched, just not present
+            if (!consumed[slot.l])
+                consumed[slot.l] = { green: 0, yellow: 0 };
+            const c = consumed[slot.l];
+            if (c.green < lp.green) {
+                c.green++; // one of the confirmed-correct copies
+            } else if (c.yellow < lp.yellow) {
+                c.yellow++; // one of the confirmed-present copies
+            } else {
+                untouched++; // extra copy beyond what's been confirmed
+            }
+        });
+        return untouched;
+    }
+
+    function scrollToPart2(offset = 90) {
+        // Scrolls instrcard into view, but stops a bit short of full "align
+        // to top" so the row above it (Part 2 button / Instructions link)
+        // stays visible, giving the fixed score badge (top-left) clearance
+        // instead of overlapping the white "Find Today's Word" box.
+        const el = document.getElementById('instrcard');
+        if (!el) return;
+        const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+    }
     function goStage2() {
         stage = 2;
         document.getElementById('hintbtn').style.display = 'none';
@@ -1890,15 +2206,17 @@
             let txt = "It is related to <strong>" + P.pivot + "</strong>. You have " + MAX_GUESSES + " guesses.";
             if (jumpedEarly && !wordSearchDone)
                 txt += "<br>Reduce the letter pool by finding more words above.";
+            txt += "<br><br>+25 if you solve in 1 guess.";
+            txt += "<br>+20 if you solve in 2 guesses.";
+            txt += "<br>+15 if you solve in 3 guesses.";
+            txt += "<br>+10 if you solve in 4 guesses.";
+            txt += "<br><br>BONUS: +1 for each untouched letter.";
             instrEl.innerHTML = txt;
         }
         refreshPool();
         renderPool();
         renderGuessDisplay();
-        setTimeout(() => document.getElementById('instrcard').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        }), 400);
+        setTimeout(() => scrollToPart2(), 400);
     }
 
     function renderPool() {
@@ -2105,8 +2423,19 @@
         renderPastGuesses();
         saveProgress();
         if (guess === P.target) {
+            const guessNumber = pastGuesses.length;
+            const guessPoints = GUESS_SCORE[guessNumber] || 0;
+            const untouchedBonus = computeUntouchedLetterBonus();
+            totalScore += guessPoints + untouchedBonus;
+            saveProgress(); // safety net: persist win points immediately, before the pop animations finish
+            spawnScorePop(guessPoints);
+            let winDelay = POP_FLIGHT_MS + 400;
+            if (untouchedBonus > 0) {
+                setTimeout(() => spawnScorePop(untouchedBonus, true), BONUS_START_DELAY_MS);
+                winDelay = BONUS_START_DELAY_MS + POP_FLIGHT_MS + 400;
+            }
             gameOver = true;
-            showWin();
+            setTimeout(showWin, winDelay);
             return;
         }
         if (pastGuesses.length >= MAX_GUESSES) {
@@ -2156,7 +2485,8 @@
                 foundWords: Array.from(foundWords),
                 foundOrder: foundOrder,
                 p1EventLog: p1EventLog,
-                p2EventLog: p2EventLog
+                p2EventLog: p2EventLog,
+                totalScore: totalScore
             }));
         } catch (e) {
             // storage unavailable — nothing to do
@@ -2188,7 +2518,8 @@
                 usedLat: usedLat,
                 usedPiv: usedPiv,
                 p2HintLocked: p2HintLocked,
-                advancedMode: advancedMode
+                advancedMode: advancedMode,
+                totalScore: totalScore
             }));
         } catch (e) { /* storage unavailable */ }
     }
@@ -2219,6 +2550,8 @@
         usedPiv = saved.usedPiv || false;
         p2HintLocked = saved.p2HintLocked || false;
         advancedMode = saved.advancedMode || false;
+        totalScore = saved.totalScore || 0;
+        displayScore = totalScore; // no pop animating on a page reload — show the true value immediately
 
         // Restore pool
         pool.length = 0;
@@ -2252,6 +2585,7 @@
 
         // Restore UI
         if (gameStarted) document.body.classList.add('playing');
+        if (gameStarted) { showScoreTracker(); renderScoreTracker(); }
 
         const s1 = document.getElementById('s1');
         const s2 = document.getElementById('s2');
@@ -2283,6 +2617,11 @@
                 let txt = "It is related to <strong>" + P.pivot + "</strong>. You have " + MAX_GUESSES + " guesses.";
                 if (jumpedEarly && !wordSearchDone)
                     txt += "<br>Reduce the letter pool by finding more words above.";
+                txt += "<br><br>+25 if you solve in 1 guess.";
+                txt += "<br>+20 if you solve in 2 guesses.";
+                txt += "<br>+15 if you solve in 3 guesses.";
+                txt += "<br>+10 if you solve in 4 guesses.";
+                txt += "<br><br>BONUS: +1 for each untouched letter.";
                 instrEl.innerHTML = txt;
             }
             renderPool();
@@ -2321,7 +2660,7 @@
         const hints = totalHintsUsed();
         const wordsFound = foundOrder.length;
         const starsEarned = advancedMode ? (P.words.length - foundOrder.length) : 0;
-        recordDayResult(todayISO(), true, hints, advancedMode, wordsFound, starsEarned);
+        recordDayResult(todayISO(), true, hints, advancedMode, wordsFound, starsEarned, totalScore);
         renderStatsPanel(todayISO());
         
         const p2Guesses = p2EventLog.filter(e => e.type === 'guess').length;
@@ -2354,7 +2693,7 @@
         const hints = totalHintsUsed();
         const wordsFound = foundOrder.length;
         const starsEarned = advancedMode ? (P.words.length - foundOrder.length) : 0;
-        recordDayResult(todayISO(), false, hints, advancedMode, wordsFound, starsEarned);
+        recordDayResult(todayISO(), false, hints, advancedMode, wordsFound, starsEarned, totalScore);
         renderStatsPanel(todayISO());
         document.getElementById('losstext').textContent = P.lossText + (hints > 0 ? ' (' + hints + (hints === 1 ? ' hint' : ' hints') + ' used)' : '');
         setTimeout(() => {
@@ -2452,8 +2791,14 @@
         document.getElementById('hintbtn').style.display = 'none';
         jumpedEarly = true;
         s2Initialised = true;
-        saveProgress();
-        goStage2();
+        if (pendingLockBonus > 0) {
+            awardBonus(pendingLockBonus);
+            pendingLockBonus = 0;
+            setTimeout(goStage2, POP_FLIGHT_MS + 400);
+        } else {
+            saveProgress();
+            goStage2();
+        }
     }
     document.getElementById('modal-jump').addEventListener('touchend', function(e) {
         e.preventDefault();
@@ -2669,7 +3014,7 @@
             }
         });
         const unfoundCount = totalWords - foundOrder.length;
-        const unfoundIcon = advancedMode ? '⭐' : '🔍';
+        const unfoundIcon = advancedMode ? '🔒' : '🔍';
         for (let i = 0; i < unfoundCount; i++) {
             p1Emoji += unfoundIcon;
         }
@@ -2696,18 +3041,12 @@
 
 
         const hints = totalHintsUsed();
-        const p2Guesses = p2EventLog.filter(e => e.type === 'guess').length;
         let performanceLine = '';
         if (lastGameWon === false) {
             performanceLine = "Didn't quite get it today. \n😔";
-        } else if (hints === 0) {
-            performanceLine = 'No hints used. \n🎉 🥳 😎';
-        } else if (hints === 1) {
-            performanceLine = 'Only 1 hint used. \n🥳 🤓';
-        } else if (hints === 2) {
-            performanceLine = 'Just 2 hints used. \n😊';
-        } else if (hints >= 3 && p2Guesses >= 4) {
-            performanceLine = 'Phew! I made it!! \n😅';
+        } else {
+            const hintsText = hints === 0 ? 'no hints used' : hints + (hints === 1 ? ' hint used' : ' hints used');
+            performanceLine = totalScore + ' points / ' + hintsText;
         }
         const perfSuffix = performanceLine ? '\n' + performanceLine : '';
         return 'PIVOT — ' + P.theme + perfSuffix + '\n' + p1Emoji + '\n' + guessEmoji  + '\nPlay at PivotWord(dot)com' + statsMonthEndShareLine(todayISO());
@@ -2930,6 +3269,10 @@
             foundWords = new Set(saved.foundWords || []);
             foundOrder = saved.foundOrder || [];
             selCells = [];
+            totalScore = saved.totalScore || 0;
+            displayScore = totalScore; // no pop animating here either — show the true value immediately
+            showScoreTracker();
+            renderScoreTracker();
 
             const s1 = document.getElementById('s1');
             if (s1) s1.style.display = '';
@@ -2992,7 +3335,30 @@
                 initGame();
             }
         }
+        maybeShowScoreIntro();
     }
+
+    // ── SCORE SYSTEM INTRO POPUP (shown once per device) ────────────────────────
+    function maybeShowScoreIntro() {
+        let seen = false;
+        try {
+            seen = localStorage.getItem('pivot_seen_score_intro') === '1';
+        } catch (e) { /* storage unavailable — just skip showing it */ return; }
+        if (seen) return;
+        const overlay = document.getElementById('score-intro-overlay');
+        if (overlay) overlay.style.display = 'flex';
+    }
+    function dismissScoreIntro() {
+        const overlay = document.getElementById('score-intro-overlay');
+        if (overlay) overlay.style.display = 'none';
+        try { localStorage.setItem('pivot_seen_score_intro', '1'); } catch (e) { /* storage unavailable */ }
+    }
+    (function() {
+        const btn = document.getElementById('score-intro-close');
+        if (!btn) return;
+        btn.addEventListener('touchend', function(e) { e.preventDefault(); dismissScoreIntro(); }, { passive: false });
+        btn.addEventListener('click', function(e) { e.preventDefault(); dismissScoreIntro(); });
+    })();
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', loadAndStart);
