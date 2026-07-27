@@ -1437,7 +1437,7 @@
             '</div>' +
             '<div class="stats-row">' +
                 '<div class="stats-row-visual">' + wordsRow + '</div>' +
-                '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found/game</div>' +
+                '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found per game</div>' +
             '</div>';
 
         // Only show this row once there's actually something to show —
@@ -1447,20 +1447,24 @@
         if (s.avgStarsEarned > 0) {
             html += '<div class="stats-row">' +
                 '<div class="stats-row-visual"><span class="stats-star-mini">' + starsRow + '</span></div>' +
-                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked/game</div>' +
+                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked per game (by locking the search puzzle early)</div>' +
             '</div>';
         }
 
-        // Average real-points score across the current streak only — needs
-        // at least one day with a recorded pointsScore (older saved days from
-        // before this field existed won't have one, so this stays hidden
-        // rather than showing a misleading "0.0").
-        //if (s.avgScoreThisStreak > 0) {
-        //    html += '<div class="stats-row">' +
-        //        '<div class="stats-row-num">' + s.avgScoreThisStreak.toFixed(1) + '</div>' +
-        //        '<div class="stats-row-text">Average score this streak</div>' +
-        //    '</div>';
-        }
+        // TEMPORARILY DISABLED (re-enable Aug 1, 2026): players who already
+        // have a streak going right now would see a misleadingly low average,
+        // since their earlier streak days were recorded before the points
+        // system existed (pointsScore for those days is 0, not "no data").
+        // Once August starts, everyone's streak will only contain days that
+        // actually have a real pointsScore, so this becomes accurate again.
+        // The underlying calculation (s.avgScoreThisStreak, in statsSummary())
+        // is untouched — only this display block is disabled.
+        // if (s.avgScoreThisStreak > 0) {
+        //     html += '<div class="stats-row">' +
+        //         '<div class="stats-row-num">' + s.avgScoreThisStreak.toFixed(1) + '</div>' +
+        //         '<div class="stats-row-text">Average score this streak</div>' +
+        //     '</div>';
+        // }
 
         const remaining = s.daysInMonth - s.todayDayNum;
         if (!s.isLastDay && remaining > 0 && remaining <= 7 && s.played >= s.elapsedDays - 2) {
