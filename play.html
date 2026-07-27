@@ -1752,17 +1752,23 @@
         const el = document.getElementById('score-tracker');
         if (el) el.style.display = 'flex';
     }
+    const MAX_SCORE = 100; // total score is capped here — see addPoints()
+    function addPoints(points) {
+        // Single place that mutates totalScore, so the 100-point cap can
+        // never be bypassed by a future scoring feature that adds directly.
+        totalScore = Math.min(MAX_SCORE, totalScore + points);
+    }
     function renderScoreTracker() {
         const el = document.getElementById('score-value');
         if (el) el.textContent = displayScore;
     }
     function addScore(points, label) {
-        totalScore += points;
+        addPoints(points);
         spawnScorePop(points);
         saveProgress(); // persist immediately so a mid-game refresh never loses earned points
     }
     function awardBonus(points) {
-        totalScore += points;
+        addPoints(points);
         spawnScorePop(points, true);
         saveProgress();
     }
@@ -1813,7 +1819,7 @@
         // earlier for a different, still-in-flight pop (e.g. a guess-score
         // pop and a bonus pop both fired from the same win).
         setTimeout(() => {
-            displayScore += points;
+            displayScore = Math.min(MAX_SCORE, displayScore + points);
             renderScoreTracker();
         }, POP_FLIGHT_MS);
         setTimeout(() => pop.remove(), POP_FLIGHT_MS + 50);
@@ -2147,6 +2153,11 @@
     }
 
     function computeUntouchedLetterBonus() {
+        // Returns the raw COUNT of untouched pool tiles — NOT points. The
+        // caller (doSubmit()'s win branch) multiplies this by 2 to get the
+        // actual bonus (2 pts per untouched letter). Kept as a plain count
+        // here so the "points per letter" rate lives in exactly one place.
+        //
         // Counts pool tiles that are neither confirmed-correct (green) nor
         // confirmed-absent-from-the-target (muted) — i.e. tiles that gave
         // the player no information at all: either their letter was never
@@ -2210,7 +2221,7 @@
             txt += "<br>+20 if you solve in 2 guesses.";
             txt += "<br>+15 if you solve in 3 guesses.";
             txt += "<br>+10 if you solve in 4 guesses.";
-            txt += "<br><br>BONUS: +1 for each untouched letter.";
+            txt += "<br><br>BONUS: +2 for each untouched letter.";
             instrEl.innerHTML = txt;
         }
         refreshPool();
@@ -2425,8 +2436,9 @@
         if (guess === P.target) {
             const guessNumber = pastGuesses.length;
             const guessPoints = GUESS_SCORE[guessNumber] || 0;
-            const untouchedBonus = computeUntouchedLetterBonus();
-            totalScore += guessPoints + untouchedBonus;
+            const untouchedLetterCount = computeUntouchedLetterBonus();
+            const untouchedBonus = untouchedLetterCount * 2; // 2 pts per untouched letter
+            addPoints(guessPoints + untouchedBonus);
             saveProgress(); // safety net: persist win points immediately, before the pop animations finish
             spawnScorePop(guessPoints);
             let winDelay = POP_FLIGHT_MS + 400;
@@ -2621,7 +2633,7 @@
                 txt += "<br>+20 if you solve in 2 guesses.";
                 txt += "<br>+15 if you solve in 3 guesses.";
                 txt += "<br>+10 if you solve in 4 guesses.";
-                txt += "<br><br>BONUS: +1 for each untouched letter.";
+                txt += "<br><br>BONUS: +2 for each untouched letter.";
                 instrEl.innerHTML = txt;
             }
             renderPool();
