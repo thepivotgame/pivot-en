@@ -1437,7 +1437,7 @@
             '</div>' +
             '<div class="stats-row">' +
                 '<div class="stats-row-visual">' + wordsRow + '</div>' +
-                '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found per game</div>' +
+                '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found/game</div>' +
             '</div>';
 
         // Only show this row once there's actually something to show —
@@ -1447,7 +1447,7 @@
         if (s.avgStarsEarned > 0) {
             html += '<div class="stats-row">' +
                 '<div class="stats-row-visual"><span class="stats-star-mini">' + starsRow + '</span></div>' +
-                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked per game (by locking the search puzzle early)</div>' +
+                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked/game</div>' +
             '</div>';
         }
 
@@ -1455,11 +1455,11 @@
         // at least one day with a recorded pointsScore (older saved days from
         // before this field existed won't have one, so this stays hidden
         // rather than showing a misleading "0.0").
-        if (s.avgScoreThisStreak > 0) {
-            html += '<div class="stats-row">' +
-                '<div class="stats-row-num">' + s.avgScoreThisStreak.toFixed(1) + '</div>' +
-                '<div class="stats-row-text">Average score this streak</div>' +
-            '</div>';
+        //if (s.avgScoreThisStreak > 0) {
+        //    html += '<div class="stats-row">' +
+        //        '<div class="stats-row-num">' + s.avgScoreThisStreak.toFixed(1) + '</div>' +
+        //        '<div class="stats-row-text">Average score this streak</div>' +
+        //    '</div>';
         }
 
         const remaining = s.daysInMonth - s.todayDayNum;
