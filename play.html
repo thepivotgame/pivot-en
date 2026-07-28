@@ -1438,16 +1438,19 @@
             '</div>' +
             '<div class="stats-row">' +
                 '<div class="stats-row-visual">' + wordsRow + '</div>' +
-                '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found per game</div>' +
+                '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found/game</div>' +
             '</div>';
 
-        // Always shown, matching the words-found row above it. (Internally
-        // still tracked as "stars" — see starsEarned/avgStarsEarned — but
-        // displayed as locked words.)
-        html += '<div class="stats-row">' +
-            '<div class="stats-row-visual"><span class="stats-star-mini">' + starsRow + '</span></div>' +
-            '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked per game (by locking the search puzzle early)</div>' +
-        '</div>';
+        // Only show this row when there's actually something to report —
+        // a "0.0 locked" line is just noise for someone who hasn't jumped
+        // ahead yet this month. (Internally still tracked as "stars" —
+        // see starsEarned/avgStarsEarned — but displayed as locked words.)
+        if (s.avgStarsEarned > 0) {
+            html += '<div class="stats-row">' +
+                '<div class="stats-row-visual"><span class="stats-star-mini">' + starsRow + '</span></div>' +
+                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked/game</div>' +
+            '</div>';
+        }
 
         // TEMPORARILY DISABLED (re-enable Aug 1, 2026): players who already
         // have a streak going right now would see a misleadingly low average,
@@ -3243,11 +3246,11 @@
         shufl(allLetters).forEach(l => pool.push({ l, id: pool.length, state: 'available' }));
         // Make sure WORDBANK includes today's target
         WORDBANK.add(P.target.toUpperCase());
-        // Reveal game sections now that puzzle is ready
+        // Reveal Part 1 now that the puzzle is ready. Part 2 (#s2, which
+        // includes the guess pool and the hint buttons) stays hidden until
+        // goStage2() reveals it — which happens once the pivot word is found.
         const s1 = document.getElementById('s1');
-        const s2 = document.getElementById('s2');
         if (s1) s1.style.display = '';
-        if (s2) s2.style.display = '';
         // Render everything
         renderGrid();
         renderChips();
