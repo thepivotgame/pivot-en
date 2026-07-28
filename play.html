@@ -1165,6 +1165,7 @@
     </div>
 
     <p class="footer">PIVOT · DAILY PUZZLE</p>
+    <p style="text-align:center;font-family:-apple-system,sans-serif;font-size:10px;color:#4a6a8a;letter-spacing:0.05em;margin-top:4px;padding-bottom:8px;">© 2026 Roland Heersink · All rights reserved</p>
     <canvas id="fwcanvas">
     </canvas>
     <div id="summaryoverlay">
@@ -1440,16 +1441,13 @@
                 '<div class="stats-row-text">' + s.avgWordsFound.toFixed(1) + ' search words found per game</div>' +
             '</div>';
 
-        // Only show this row once there's actually something to show —
-        // a "0.0 locked" line is just noise for someone who hasn't jumped
-        // ahead yet this month. (Internally still tracked as "stars" —
-        // see starsEarned/avgStarsEarned — but displayed as locked words.)
-        if (s.avgStarsEarned > 0) {
-            html += '<div class="stats-row">' +
-                '<div class="stats-row-visual"><span class="stats-star-mini">' + starsRow + '</span></div>' +
-                '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked per game (by locking the search puzzle early)</div>' +
-            '</div>';
-        }
+        // Always shown, matching the words-found row above it. (Internally
+        // still tracked as "stars" — see starsEarned/avgStarsEarned — but
+        // displayed as locked words.)
+        html += '<div class="stats-row">' +
+            '<div class="stats-row-visual"><span class="stats-star-mini">' + starsRow + '</span></div>' +
+            '<div class="stats-row-text">' + s.avgStarsEarned.toFixed(1) + ' search words locked per game (by locking the search puzzle early)</div>' +
+        '</div>';
 
         // TEMPORARILY DISABLED (re-enable Aug 1, 2026): players who already
         // have a streak going right now would see a misleadingly low average,

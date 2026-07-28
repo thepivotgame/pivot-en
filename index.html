@@ -20,6 +20,8 @@
     <script>
 (function () {
     try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('howto') === '1') return; // came here on purpose from play.html — show instructions
     var saved = JSON.parse(localStorage.getItem('pivot_result') || 'null');
     if (saved) {
         window.location.replace('play.html');
@@ -491,6 +493,7 @@
     <a href="play.html" class="cta">Let's Play →</a>
 
     <p class="footer">PIVOT · DAILY PUZZLE</p>
+    <p style="text-align:center;font-family:-apple-system,sans-serif;font-size:10px;color:#4a6a8a;letter-spacing:0.05em;margin-top:4px;padding-bottom:8px;">© 2026 Roland Heersink · All rights reserved</p>
 
 </body>
 </html>
