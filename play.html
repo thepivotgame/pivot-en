@@ -7,6 +7,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>PIVOT</title>
+    
+    <script>
+      window.goatcounter = {
+        path: function() {
+          var isEN = location.hostname.includes('pivotword');
+          return (isEN ? '/en' : '/bible') + location.pathname;
+        }
+      };
+    </script>
+    
+    
     <script data-goatcounter="https://pivot.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <style>
     * {
