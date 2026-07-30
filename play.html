@@ -2227,11 +2227,11 @@
             let txt = "It is related to <strong>" + P.pivot + "</strong>. You have " + MAX_GUESSES + " guesses.";
             if (jumpedEarly && !wordSearchDone)
                 txt += "<br>Reduce the letter pool by finding more words above.";
-            txt += "<br><br>+25 if you solve in 1 guess.";
-            txt += "<br>+20 if you solve in 2 guesses.";
-            txt += "<br>+15 if you solve in 3 guesses.";
-            txt += "<br>+10 if you solve in 4 guesses.";
-            txt += "<br><br>BONUS: +2 for each untouched letter.";
+            txt += "<br>&nbsp; &nbsp;&nbsp; &nbsp;+25 pts if you solve in 1 guess.";
+            txt += "<br>&nbsp; &nbsp;&nbsp; &nbsp;+20 pts if you solve in 2 guesses.";
+            txt += "<br>&nbsp; &nbsp;&nbsp; &nbsp;+15 pts if you solve in 3 guesses.";
+            txt += "<br>&nbsp; &nbsp;&nbsp; &nbsp;+10 pts if you solve in 4 guesses.";
+            txt += "<br>BONUS: +2 pts for each untouched letter.";
             instrEl.innerHTML = txt;
         }
         refreshPool();
