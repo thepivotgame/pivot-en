@@ -1469,11 +1469,13 @@
         const bpLink = document.getElementById('biblepivot-link');
         if (bpLink) bpLink.classList.remove('hidden');
     }
-    function statsMonthEndShareLine(dateStr) {
-        const s = statsSummary(dateStr);
-        if (!s.isLastDay) return '';
-        return '\nCompleted ' + s.monthName + ' — ' + s.played + '/' + s.elapsedDays +
-            ' days, average score ' + s.avgScore.toFixed(1);
+    
+        // comment our last day sharing material
+        // function statsMonthEndShareLine(dateStr) {
+        // const s = statsSummary(dateStr);
+        // if (!s.isLastDay) return '';
+        // return '\nCompleted ' + s.monthName + ' — ' + s.played + '/' + s.elapsedDays +
+        //    ' days, average score ' + s.avgScore.toFixed(1);
     }
 
     // ── VALID WORDS (pre-computed for this puzzle) ─────────────────────────────
