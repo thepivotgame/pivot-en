@@ -841,123 +841,6 @@
         display: none;
     }/* Share */
 
-    #summaryoverlay {
-        position: fixed;
-        inset: 0;
-        z-index: 2001;
-        background: rgba(0, 0, 0, 0.82);
-        display: none;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-    #summarybox {
-        background: linear-gradient(160deg, #0d3349, #1a5276);
-        border: 1px solid rgba(249, 217, 118, 0.5);
-        border-radius: 16px;
-        padding: 24px 20px 20px;
-        max-width: 340px;
-        width: 100%;
-        text-align: center;
-        position: relative;
-        z-index: 2002;
-    }
-    #summarybox .sum-close-x {
-        position: absolute;
-        top: 10px;
-        right: 12px;
-        width: 30px;
-        height: 30px;
-        border: none;
-        border-radius: 50%;
-        background: rgba(255,255,255,0.08);
-        color: #a8c8e8;
-        font-size: 20px;
-        line-height: 1;
-        cursor: pointer;
-        touch-action: manipulation;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-    }
-    #summarybox .sum-close-x:hover { background: rgba(255,255,255,0.16); color: #ffffff; }
-    #summarybox .sum-success {
-        color: #f9d976;
-        font-size: 28px;
-        font-weight: bold;
-        letter-spacing: 3px;
-        margin: 0 0 4px;
-    }
-    #summarybox .sum-success.sum-loss {
-        font-size: 17px;
-        letter-spacing: 1px;
-    }
-    #summarybox .sum-target-label {
-        color: #a8c8e8;
-        font-size: 13px;
-        font-weight: normal;
-        margin: 0 0 2px;
-    }
-    #summarybox .sum-target {
-        color: #fff;
-        font-size: 26px;
-        font-weight: bold;
-        margin: 0 0 16px;
-    }
-    #summarybox .sum-section {
-        background: rgba(255,255,255,0.07);
-        border-radius: 10px;
-        padding: 10px 14px;
-        margin-bottom: 10px;
-        text-align: left;
-        font-size: 13px;
-        color: #d4eaf7;
-        line-height: 1.55;
-    }
-    #summarybox .sum-label {
-        color: #a8c8e8;
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 3px;
-        font-weight: bold;
-    }
-    #summarybox .sum-unused {
-        color: #607a8a;
-        font-style: italic;
-    }
-    #summarybox .sum-closebtn {
-        display: block;
-        width: 100%;
-        margin-top: 16px;
-        padding: 13px;
-        border-radius: 10px;
-        background: linear-gradient(135deg, #f9d976, #e6b800);
-        color: #1a3a1a;
-        font-family: Georgia, serif;
-        font-size: 15px;
-        font-weight: bold;
-        border: none;
-        cursor: pointer;
-    }
-
-    #summarybox .sum-intro {
-        color: #a8c8e8;
-        font-size: 12px;
-        margin: -8px 0 12px;
-        font-style: italic;
-    }
-    #summarybox .sum-notnow {
-        margin-top: 10px;
-        color: #607a8a;
-        font-size: 12px;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-    #summarybox .sum-notnow:hover {
-        color: #a8c8e8;
-    }
     #shareoverlay {
         position: fixed;
         inset: 0;
@@ -1139,29 +1022,6 @@
     <p style="text-align:center;font-family:-apple-system,sans-serif;font-size:10px;color:#4a6a8a;letter-spacing:0.05em;margin-top:4px;padding-bottom:8px;">© 2026 Roland Heersink · All rights reserved</p>
     <canvas id="fwcanvas">
     </canvas>
-    <div id="summaryoverlay">
-        <div id="summarybox">
-            <button class="sum-close-x" id="sum-close-x" aria-label="Close">&times;</button>
-            <div class="sum-success" id="sum-heading">SUCCESS!</div>
-            <div class="sum-target-label">Today's word was</div>
-            <div class="sum-target" id="sum-target"></div>
-            <div class="sum-intro">Here is a summary:</div>
-            <div class="sum-section" id="sum-hint1-block">
-                <div class="sum-label">🔀 Lateral hint</div>
-                <div id="sum-hint1-text"></div>
-            </div>
-            <div class="sum-section" id="sum-hint2-block">
-                <div class="sum-label">🪸 Pivot hint</div>
-                <div id="sum-hint2-text"></div>
-            </div>
-            <div class="sum-section">
-                <div class="sum-label">💡 The connection</div>
-                <div id="sum-wintext"></div>
-            </div>
-            <button class="sum-closebtn" id="sum-closebtn">Share my result →</button>
-            <div class="sum-notnow" id="sum-notnow">not now</div>
-        </div>
-    </div>
     <div id="shareoverlay">
         <div id="sharebox">
             <h3>Share your result?</h3>
@@ -1184,6 +1044,17 @@
             <button class="modal-btn secondary" id="modal-stay">Classic: Keep searching</button>
             <!-- No-choice version: shown when 2 or fewer search words remain unfound (auto-locks, same as before). -->
             <p class="modal-body" id="modal-lock-body">Part 1 Word Search is now LOCKED.</p>
+        </div>
+    </div>
+
+    <!-- August reset notice — one-time pop-up for returning players only -->
+    <div id="aug-reset-notice" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1100;align-items:center;justify-content:center;padding:20px;">
+        <div style="background:linear-gradient(160deg, #0d3349, #1a5276);border:1px solid rgba(249, 217, 118, 0.4);border-radius:16px;padding:22px 20px;max-width:360px;width:100%;font-family:Georgia, serif;text-align:center;box-sizing:border-box;">
+            <p style="font-size:15px;line-height:1.6;color:#e8e4d9;margin-bottom:1.25rem;">
+                <span style="font-size:17px;font-weight:bold;color:#f9d976;">New month, fresh start!</span><br>
+                Your streak and score have reset for August. Keep playing daily — we'll share a monthly recap at the end of the month.
+            </p>
+            <button class="modal-btn primary" onclick="dismissAugResetNotice()">Got it</button>
         </div>
     </div>
 
@@ -2937,27 +2808,12 @@
             setTimeout(() => {
                 canvas.style.display = 'none';
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
-                showSummaryPanel(true);
+                showSharePrompt();
             }, 600);
         }, halfDuration);
     }
 
-    // ── WIN SUMMARY PANEL ─────────────────────────────────────────────────────────
-    function showSummaryPanel(won) {
-        // Heading and target line
-        const heading = document.getElementById('sum-heading');
-        heading.textContent = won ? 'SUCCESS!' : 'Almost, but not quite...';
-        heading.classList.toggle('sum-loss', !won);
-        document.getElementById('sum-target').textContent = P.target;
 
-        // All three boxes in uniform style — no dimming for unused hints
-        document.getElementById('sum-hint1-text').textContent = P.latHint;
-        document.getElementById('sum-hint2-text').textContent = P.pivHint;
-        document.getElementById('sum-wintext').textContent = won ? P.winText : P.lossText;
-
-        // Show the panel
-        document.getElementById('summaryoverlay').style.display = 'flex';
-    }
 
     // ── LOSS RAIN ────────────────────────────────────────────────────────────────
     function launchRain(durationMs) {
@@ -3016,7 +2872,7 @@
             setTimeout(() => {
                 canvas.style.display = 'none';
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
-                showSummaryPanel(false);
+                showSharePrompt();
             }, 600);
         }, halfDuration);
     }
@@ -3065,7 +2921,7 @@
         const hints = totalHintsUsed();
         let performanceLine = '';
         if (lastGameWon === false) {
-            performanceLine = "Didn't quite get it today. \n😔";
+            performanceLine = "😔 Didn't quite get it today.";
         } else {
             const hintsText = hints === 0 ? 'no hints used' : hints + (hints === 1 ? ' hint used' : ' hints used');
             performanceLine = totalScore + ' points / ' + hintsText;
@@ -3081,7 +2937,7 @@
     function closeShare() {
         document.getElementById('shareoverlay').style.display = 'none';
     }
-    // Summary panel close → open share
+    // "View sharing window" link → open share prompt directly (summary panel removed)
     (function() {
         function addTap(id, fn) {
             const el = document.getElementById(id);
@@ -3089,18 +2945,8 @@
             el.addEventListener('touchend', function(e) { e.preventDefault(); e.stopPropagation(); fn(); }, { passive: false });
             el.addEventListener('click', function(e) { e.preventDefault(); e.stopPropagation(); fn(); });
         }
-        addTap('sum-closebtn', function() {
-            document.getElementById('summaryoverlay').style.display = 'none';
-            showSharePrompt();
-        });
-        addTap('sum-notnow', function() {
-            document.getElementById('summaryoverlay').style.display = 'none';
-        });
-        addTap('sum-close-x', function() {
-            document.getElementById('summaryoverlay').style.display = 'none';
-        });
         addTap('view-share-link', function() {
-            showSummaryPanel(lastGameWon !== false);
+            showSharePrompt();
         });
     })();
     (function() {
@@ -3327,7 +3173,45 @@
         if (saved.won) showWin(); else showLoss();
     }
 
+    // ── AUGUST RESET NOTICE (one-time, returning players only) ─────────────────
+    // "Returning player" = someone with any pivot_stats_ key dated before
+    // August 2026 (i.e. they played in July or earlier). Brand-new players have
+    // no such key and never see this. Shown at most once per device via the
+    // 'pivot_aug2026_reset_notice_seen' flag.
+    function hasPreAugustStats() {
+        try {
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (!key || key.indexOf('pivot_stats_') !== 0) continue;
+                const parts = key.replace('pivot_stats_', '').split('_');
+                if (parts.length !== 2) continue;
+                const y = parseInt(parts[0], 10), m = parseInt(parts[1], 10);
+                if (!isNaN(y) && !isNaN(m) && (y < 2026 || (y === 2026 && m < 8))) return true;
+            }
+        } catch (e) {}
+        return false;
+    }
+    function shouldShowAugResetNotice() {
+        try {
+            if (localStorage.getItem('pivot_aug2026_reset_notice_seen') === 'true') return false;
+        } catch (e) { return false; }
+        return hasPreAugustStats();
+    }
+    function dismissAugResetNotice() {
+        try { localStorage.setItem('pivot_aug2026_reset_notice_seen', 'true'); } catch (e) {}
+        document.getElementById('aug-reset-notice').style.display = 'none';
+        _loadAndStart();
+    }
+
     async function loadAndStart() {
+        if (shouldShowAugResetNotice()) {
+            document.getElementById('aug-reset-notice').style.display = 'flex';
+            return;
+        }
+        _loadAndStart();
+    }
+
+    async function _loadAndStart() {
         const loadEl = document.getElementById('loading-msg');
         try {
             P = await fetchTodayPuzzle();
