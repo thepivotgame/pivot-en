@@ -1469,14 +1469,12 @@
         const bpLink = document.getElementById('biblepivot-link');
         if (bpLink) bpLink.classList.remove('hidden');
     }
-    
-        // comment our last day sharing material
-        // function statsMonthEndShareLine(dateStr) {
-        // const s = statsSummary(dateStr);
-        // if (!s.isLastDay) return '';
-        // return '\nCompleted ' + s.monthName + ' — ' + s.played + '/' + s.elapsedDays +
-        //    ' days, average score ' + s.avgScore.toFixed(1);
-    //  }
+    function statsMonthEndShareLine(dateStr) {
+        const s = statsSummary(dateStr);
+        if (!s.isLastDay) return '';
+        return '\nCompleted ' + s.monthName + ' — ' + s.played + '/' + s.elapsedDays +
+            ' days, average score ' + s.avgScore.toFixed(1);
+    }
 
     // ── VALID WORDS (pre-computed for this puzzle) ─────────────────────────────
     // (WORDBANK is defined inline below — not regenerated per puzzle)
