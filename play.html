@@ -1238,19 +1238,13 @@
         const firstDayPlayed = played ? Math.min.apply(null, dayNums) : todayDayNum;
         const elapsedDays = played ? (todayDayNum - firstDayPlayed + 1) : 0;
         const currentStreak = computeCurrentStreak(stats.days, todayDayNum);
-        // "Average score this streak" — scoped to just the current consecutive
-        // run of played days (same days computeCurrentStreak counts), not the
-        // whole month, and using the real points total (pointsScore), not the
-        // legacy 0–5 statsComputeScore used elsewhere in this function.
-        let streakScoreSum = 0, streakDaysWithScore = 0;
-        for (let d = todayDayNum; d > todayDayNum - currentStreak; d--) {
-            const entry = stats.days[String(d)];
-            if (entry && typeof entry.pointsScore === 'number') {
-                streakScoreSum += entry.pointsScore;
-                streakDaysWithScore++;
-            }
-        }
-        const avgScoreThisStreak = streakDaysWithScore ? (streakScoreSum / streakDaysWithScore) : 0;
+        // "Average score this month" — the real points total (pointsScore),
+        // not the legacy 0–5 statsComputeScore used for avgScore above.
+        // Scoped to the whole month (not just the current streak) since
+        // stats.days already resets naturally each month via
+        // statsMonthKey(dateStr) — so there's no stale pre-points-system
+        // data to worry about going forward from the Aug 2026 reset.
+        const avgPointsScore = played ? (entries.reduce((s, d) => s + (d.pointsScore || 0), 0) / played) : 0;
         return {
             monthName: statsMonthName(dateStr),
             daysInMonth: daysInMonth,
@@ -1262,7 +1256,7 @@
             avgScore: avgScore,
             avgWordsFound: avgWordsFound,
             avgStarsEarned: avgStarsEarned,
-            avgScoreThisStreak: avgScoreThisStreak,
+            avgPointsScore: avgPointsScore,
             bestScore: bestScore,
             daysMap: stats.days,
             isLastDay: todayDayNum === daysInMonth
@@ -1311,20 +1305,17 @@
             '</div>';
         }
 
-        // TEMPORARILY DISABLED (re-enable Aug 1, 2026): players who already
-        // have a streak going right now would see a misleadingly low average,
-        // since their earlier streak days were recorded before the points
-        // system existed (pointsScore for those days is 0, not "no data").
-        // Once August starts, everyone's streak will only contain days that
-        // actually have a real pointsScore, so this becomes accurate again.
-        // The underlying calculation (s.avgScoreThisStreak, in statsSummary())
-        // is untouched — only this display block is disabled.
-        // if (s.avgScoreThisStreak > 0) {
-        //     html += '<div class="stats-row">' +
-        //         '<div class="stats-row-num">' + s.avgScoreThisStreak.toFixed(1) + '</div>' +
-        //         '<div class="stats-row-text">Average score this streak</div>' +
-        //     '</div>';
-        // }
+        // Average score this month, using the real points total (pointsScore).
+        // Safe to show unconditionally now: stats.days resets each month via
+        // statsMonthKey(dateStr), and streaks/stats were reset for everyone
+        // on Aug 1, 2026 alongside the points-system deploy — so every day
+        // counted here from now on has a real recorded pointsScore.
+        if (s.played > 0) {
+            html += '<div class="stats-row">' +
+                '<div class="stats-row-num">' + s.avgPointsScore.toFixed(1) + '</div>' +
+                '<div class="stats-row-text">Average score this month</div>' +
+            '</div>';
+        }
 
         const remaining = s.daysInMonth - s.todayDayNum;
         if (!s.isLastDay && remaining > 0 && remaining <= 7 && s.played >= s.elapsedDays - 2) {
@@ -1333,7 +1324,7 @@
         }
         if (s.isLastDay) {
             html += '<div class="stats-nudge stats-final">Completed ' + s.monthName + ' — ' +
-                s.played + '/' + s.elapsedDays + ' days, average score ' + s.avgScore.toFixed(1) + '</div>';
+                s.played + '/' + s.elapsedDays + ' days, average score ' + s.avgPointsScore.toFixed(1) + '</div>';
         }
         panel.innerHTML = html;
         panel.style.display = 'block';
@@ -1344,7 +1335,7 @@
         const s = statsSummary(dateStr);
         if (!s.isLastDay) return '';
         return '\nCompleted ' + s.monthName + ' — ' + s.played + '/' + s.elapsedDays +
-            ' days, average score ' + s.avgScore.toFixed(1);
+            ' days, average score ' + s.avgPointsScore.toFixed(1);
     }
 
     // ── VALID WORDS (pre-computed for this puzzle) ─────────────────────────────
