@@ -414,6 +414,12 @@
         box-shadow: 0 0 8px rgba(249, 217, 118, 0.7);
     }
 
+    .cell.pivot-found.hint-found {
+        background: #e8734a;
+        border-color: #f9d976;
+        box-shadow: 0 0 8px rgba(249, 217, 118, 0.7);
+    }
+
     .cell.nonadj {
         opacity: 0.35;
     }/* Chips */
@@ -1770,6 +1776,8 @@
                     div.classList.add('sel-found');
                 else if (isSel)
                     div.classList.add('sel');
+                else if (isPivotCell && isHint)
+                    div.classList.add('pivot-found', 'hint-found');
                 else if (isPivotCell)
                     div.classList.add('pivot-found');
                 else if (isHint && isFnd)
