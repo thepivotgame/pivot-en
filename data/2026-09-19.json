@@ -1,0 +1,21 @@
+{
+  "theme": "SAFARI",
+  "words": [
+    "JEEP",
+    "GUIDE",
+    "HERD",
+    "DUST",
+    "PLAIN",
+    "SCOUT",
+    "LION"
+  ],
+  "SIZE": 6,
+  "pivot": "GUIDE",
+  "target": "USHER",
+  "noise": "OD",
+  "latHint": "Think gently showing someone the way - not a safari guide.",
+  "pivHint": "A safari GUIDE leads the tour - but to GUIDE someone else means to do what?",
+  "winText": "Showing the way. GUIDE was the pivot - safari leader to gently USHERing others.",
+  "lossText": "USHER - to GUIDE along. GUIDE was the pivot: safari GUIDE to USHERing others forward.",
+  "gridString": "GPLAINUSCOUTIJEEPSDREHRUELIONDDHEUOS"
+}

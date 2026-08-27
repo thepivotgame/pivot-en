@@ -1,0 +1,21 @@
+{
+  "theme": "CIDER",
+  "words": [
+    "APPLE",
+    "PRESS",
+    "CASK",
+    "MULL",
+    "SPICE",
+    "TART",
+    "COOL"
+  ],
+  "SIZE": 6,
+  "pivot": "PRESS",
+  "target": "NUDGE",
+  "noise": "OFJ",
+  "latHint": "Think nudging someone for an answer - not squeezing apples.",
+  "pivHint": "A cider PRESS squeezes the fruit - but to PRESS someone for an answer means to do what?",
+  "winText": "No more waiting. PRESS was the pivot - apple squeezing to giving a firm NUDGE.",
+  "lossText": "NUDGE - to PRESS gently. PRESS was the pivot: cider PRESS to nudging for an answer.",
+  "gridString": "MODCSTUJOAPALOESIRLNFKCTAPPLEUPRESSG"
+}

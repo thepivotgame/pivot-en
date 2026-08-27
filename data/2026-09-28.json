@@ -1,0 +1,21 @@
+{
+  "theme": "COCKPIT",
+  "words": [
+    "GEAR",
+    "DIAL",
+    "RADIO",
+    "SEAT",
+    "SPEED",
+    "CREW",
+    "STICK"
+  ],
+  "SIZE": 6,
+  "pivot": "STICK",
+  "target": "STAND",
+  "noise": "ILDEOM",
+  "latHint": "Think holding your ground through hardship - not a cockpit control.",
+  "pivHint": "A pilot grips the control STICK - but to STICK with something hard means to do what?",
+  "winText": "Staying the course. STICK was the pivot - cockpit control to STANDing firm.",
+  "lossText": "STAND - to STICK with it. STICK was the pivot: control STICK to STANDing firm through hardship.",
+  "gridString": "RSTICKAAADOCDEEPSRIISGMEOLADSWEATLIN"
+}

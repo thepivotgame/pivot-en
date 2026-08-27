@@ -1,0 +1,21 @@
+{
+  "theme": "HARVEST",
+  "words": [
+    "WHEAT",
+    "REAP",
+    "OATS",
+    "FARM",
+    "STACK",
+    "YIELD",
+    "CORN"
+  ],
+  "SIZE": 6,
+  "pivot": "YIELD",
+  "target": "GRANT",
+  "noise": "DHE",
+  "latHint": "Think conceding a point in an argument - not a good crop.",
+  "pivHint": "A good YIELD means a big harvest - but to YIELD in an argument means to do what?",
+  "winText": "Giving ground gently. YIELD was the pivot - harvest size to a small GRANTed point.",
+  "lossText": "GRANT - to YIELD a point. YIELD was the pivot: crop YIELD to YIELDing, or GRANTing, ground.",
+  "gridString": "OCORNYADAETITMRAFESEEPTLGHHRNDWSTACK"
+}

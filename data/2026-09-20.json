@@ -1,0 +1,21 @@
+{
+  "theme": "DESERT",
+  "words": [
+    "SAND",
+    "DUNE",
+    "OASIS",
+    "HEAT",
+    "CAMEL",
+    "ARID",
+    "GLARE"
+  ],
+  "SIZE": 6,
+  "pivot": "HEAT",
+  "target": "ROUND",
+  "noise": "ESTHV",
+  "latHint": "Think one bout in a race - not desert warmth.",
+  "pivHint": "Desert HEAT can be brutal - but a race's HEAT refers to what?",
+  "winText": "One ROUND down. HEAT was the pivot - desert warmth to a race's ROUND.",
+  "lossText": "ROUND - one HEAT of a race. HEAT was the pivot: desert warmth to race HEAT.",
+  "gridString": "HCAMELENUDUHARIDVDTOASISOSTLRNSANDGE"
+}

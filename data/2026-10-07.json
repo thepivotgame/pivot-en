@@ -1,0 +1,21 @@
+{
+  "theme": "AUTUMN",
+  "words": [
+    "COOL",
+    "WIND",
+    "AMBER",
+    "CRISP",
+    "SHORT",
+    "COAT",
+    "LEAF"
+  ],
+  "SIZE": 6,
+  "pivot": "SHORT",
+  "target": "TERSE",
+  "noise": "AG",
+  "latHint": "Think a blunt, clipped reply - not shorter days.",
+  "pivHint": "Autumn days grow SHORT - but if someone is SHORT with you, how are they acting?",
+  "winText": "A clipped reply. SHORT was the pivot - SHORTer days to a TERSE answer.",
+  "lossText": "TERSE - blunt and SHORT. SHORT was the pivot: SHORT days to a TERSE temper.",
+  "gridString": "ACRISPMOWCHLBOIOOEELNARAREDTTFGRSTAE"
+}

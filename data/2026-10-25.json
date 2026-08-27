@@ -1,0 +1,21 @@
+{
+  "theme": "SKELETON",
+  "words": [
+    "BACK",
+    "DARK",
+    "RIBS",
+    "TOMB",
+    "BONES",
+    "SKULL",
+    "EERIE"
+  ],
+  "SIZE": 6,
+  "pivot": "RIBS",
+  "target": "TEASE",
+  "noise": "CLPR",
+  "latHint": "Think teasing someone playfully - not a skeleton's RIBS.",
+  "pivHint": "A skeleton's RIBS protect its chest - but to RIB someone playfully means to do what?",
+  "winText": "All in good fun. RIBS was the pivot - the body's cage to a playful TEASE.",
+  "lossText": "TEASE - to rib playfully. RIBS was the pivot: skeleton's RIBS to teasing a friend.",
+  "gridString": "BBACKROAPRDINCEALBEERIESSKULLSTOMBTE"
+}

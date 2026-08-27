@@ -1,0 +1,21 @@
+{
+  "theme": "RAVEN",
+  "words": [
+    "WING",
+    "OMEN",
+    "CAWS",
+    "DARK",
+    "BLACK",
+    "CROAK",
+    "PERCH"
+  ],
+  "SIZE": 6,
+  "pivot": "DARK",
+  "target": "BLIND",
+  "noise": "FAH",
+  "latHint": "Think being kept in the dark about the truth - not a raven's black feathers.",
+  "pivHint": "A raven is DARK as night - but if you're kept in the DARK about something, what are you to it?",
+  "winText": "No one told you. DARK was the pivot - a raven's color to being BLIND to the truth.",
+  "lossText": "BLIND - kept in the DARK. DARK was the pivot: raven's DARK feathers to being in the DARK.",
+  "gridString": "CDARKOAPFABMWEOLWESRAIINCCHDNBKHALGN"
+}

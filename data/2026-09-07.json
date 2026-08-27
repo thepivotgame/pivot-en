@@ -1,0 +1,21 @@
+{
+  "theme": "VINEYARD",
+  "words": [
+    "VINES",
+    "GRAPE",
+    "VATS",
+    "CRUSH",
+    "RIPE",
+    "CASK",
+    "WINE"
+  ],
+  "SIZE": 6,
+  "pivot": "CRUSH",
+  "target": "ADORE",
+  "noise": "NPYL",
+  "latHint": "Think secret affection - not squeezing grapes.",
+  "pivHint": "CRUSH turns grapes into juice - but having a CRUSH on someone means what?",
+  "winText": "Smitten and sweet. CRUSH was the pivot - CRUSHed grapes to a quiet ADORE.",
+  "lossText": "ADORE - to admire deeply. CRUSH was the pivot: grape CRUSH to secret CRUSH.",
+  "gridString": "CWINECAVOPYRSLINDUKRPNRSGRAPEHAEVATS"
+}

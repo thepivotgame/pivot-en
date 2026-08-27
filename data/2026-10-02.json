@@ -1,0 +1,21 @@
+{
+  "theme": "FOLIAGE",
+  "words": [
+    "LEAF",
+    "MAPLE",
+    "AMBER",
+    "CRISP",
+    "FALL",
+    "RUST",
+    "GOLD"
+  ],
+  "SIZE": 6,
+  "pivot": "FALL",
+  "target": "DUPED",
+  "noise": "IALSHNK",
+  "latHint": "Think being fooled - not leaves dropping.",
+  "pivHint": "Leaves FALL from the trees - but if you FALL for a prank, what happens to you?",
+  "winText": "Taken in completely. FALL was the pivot - leaves FALLing to being DUPED.",
+  "lossText": "DUPED - fooled completely. FALL was the pivot: leaves FALLing to FALLing for a trick.",
+  "gridString": "MINLCKAMBERDPDSAITLLAFSPEOHUPEUGRLAD"
+}

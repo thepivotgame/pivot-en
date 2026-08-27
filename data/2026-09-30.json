@@ -1,0 +1,21 @@
+{
+  "theme": "HANGAR",
+  "words": [
+    "WING",
+    "GEAR",
+    "BAYS",
+    "DOOR",
+    "SPARE",
+    "COVER",
+    "PARTS"
+  ],
+  "SIZE": 6,
+  "pivot": "PARTS",
+  "target": "LEAVE",
+  "noise": "PSWR",
+  "latHint": "Think saying goodbye - not aircraft components.",
+  "pivHint": "A hangar stores aircraft PARTS - but when two people PART ways, what do they do?",
+  "winText": "Going separate ways. PARTS was the pivot - aircraft pieces to saying LEAVE.",
+  "lossText": "LEAVE - to part ways. PARTS was the pivot: aircraft PARTS to parting company.",
+  "gridString": "GAWDPBENORACAOIYRORPSWTVERAPSEESVLER"
+}

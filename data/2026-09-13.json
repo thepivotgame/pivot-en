@@ -1,0 +1,21 @@
+{
+  "theme": "LOCKER",
+  "words": [
+    "COMBO",
+    "LOCK",
+    "SHELF",
+    "LATCH",
+    "SLOT",
+    "DOOR",
+    "CODE"
+  ],
+  "SIZE": 6,
+  "pivot": "CODE",
+  "target": "ETHIC",
+  "noise": "RAOWG",
+  "latHint": "Think principles - not a locker combination.",
+  "pivHint": "A locker CODE unlocks a door - but a moral CODE guides what?",
+  "winText": "A guiding principle. CODE was the pivot - locker CODE to a moral ETHIC.",
+  "lossText": "ETHIC - a guiding principle. CODE was the pivot: locker CODE to moral CODE.",
+  "gridString": "CSHELFOHWOAGMECDTCBKDOCTOALOHOESIRCR"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "TRICKS",
+  "words": [
+    "PRANK",
+    "JOKE",
+    "MAGIC",
+    "HOAX",
+    "STUNT",
+    "GRIN",
+    "FOOL"
+  ],
+  "SIZE": 6,
+  "pivot": "STUNT",
+  "target": "LIMIT",
+  "noise": "HE",
+  "latHint": "Think holding back someone's growth - not a daring trick.",
+  "pivHint": "A daredevil pulls off a STUNT - but to STUNT someone's growth means to do what?",
+  "winText": "Held back. STUNT was the pivot - a daring trick to LIMITing growth.",
+  "lossText": "LIMIT - to STUNT and restrict. STUNT was the pivot: a daring STUNT to LIMITing growth.",
+  "gridString": "MJOKEHASGTPOGTFREAIUAOIXCNMIONKTLHIL"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "GREENHOUSE",
+  "words": [
+    "SHOOT",
+    "SEED",
+    "PANE",
+    "PLANT",
+    "SOIL",
+    "BLOOM",
+    "WARM"
+  ],
+  "SIZE": 6,
+  "pivot": "SHOOT",
+  "target": "PHOTO",
+  "noise": "EFAPR",
+  "latHint": "Think snapping a picture - not a new plant.",
+  "pivHint": "A greenhouse SHOOT is new plant growth - but grabbing a camera for a SHOOT means capturing what?",
+  "winText": "Say cheese. SHOOT was the pivot - new growth to a PHOTO SHOOT.",
+  "lossText": "PHOTO - a captured image. SHOOT was the pivot: plant SHOOT to PHOTO SHOOT.",
+  "gridString": "PWARMSASOOHENPOOREELOIODBTNALPHFAPTE"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "CANDLE",
+  "words": [
+    "WICK",
+    "FLAME",
+    "MELT",
+    "GLOW",
+    "SCENT",
+    "TAPER",
+    "SOOT"
+  ],
+  "SIZE": 6,
+  "pivot": "FLAME",
+  "target": "TAUNT",
+  "noise": "MEHI",
+  "latHint": "Think a harsh online jab - not candlelight.",
+  "pivHint": "A candle's FLAME flickers warmly - but to FLAME someone online means to do what?",
+  "winText": "Words that sting. FLAME was the pivot - candle's glow to a harsh TAUNT.",
+  "lossText": "TAUNT - a harsh insult. FLAME was the pivot: candle's FLAME to an online TAUNT.",
+  "gridString": "FSCENTLWICKAAGUHIPMELTMEESOOTRAENTWT"
+}

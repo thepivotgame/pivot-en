@@ -1,0 +1,21 @@
+{
+  "theme": "GLACIER",
+  "words": [
+    "FLOE",
+    "BLOCK",
+    "DRIFT",
+    "CHILL",
+    "CHIP",
+    "SLOW",
+    "FLOW"
+  ],
+  "SIZE": 6,
+  "pivot": "DRIFT",
+  "target": "SENSE",
+  "noise": "PTD",
+  "latHint": "Think the general idea - not slow ice movement.",
+  "pivHint": "A glacier's DRIFT is its slow movement - but if you catch someone's DRIFT, what do you get?",
+  "winText": "Point taken. DRIFT was the pivot - slow ice to catching the general SENSE.",
+  "lossText": "SENSE - the general meaning. DRIFT was the pivot: glacier's DRIFT to catching the SENSE of it.",
+  "gridString": "BDRIFTLLIHCFOSPFHLCLLNIOKODEPEWWSTES"
+}

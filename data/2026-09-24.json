@@ -1,0 +1,21 @@
+{
+  "theme": "CLIFF",
+  "words": [
+    "EDGE",
+    "ROCK",
+    "WAVES",
+    "STEEP",
+    "DROP",
+    "VIEW",
+    "LEDGE"
+  ],
+  "SIZE": 6,
+  "pivot": "DROP",
+  "target": "DITCH",
+  "noise": "GFR",
+  "latHint": "Think giving up a bad habit for good - not falling from a cliff.",
+  "pivHint": "A cliff DROP is a steep fall - but to DROP a bad habit means to do what?",
+  "winText": "Letting go for good. DROP was the pivot - a steep fall to DITCHing a habit.",
+  "lossText": "DITCH - to DROP for good. DROP was the pivot: cliff's edge to DITCHing a habit.",
+  "gridString": "EROCKWDDGLTAGRWEIVEORDHEDPFGISSTEEPC"
+}

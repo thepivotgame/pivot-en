@@ -1,0 +1,21 @@
+{
+  "theme": "SPIDER",
+  "words": [
+    "SILK",
+    "LEGS",
+    "TRAP",
+    "SPIN",
+    "WEAVE",
+    "CRAWL",
+    "CREEP"
+  ],
+  "SIZE": 6,
+  "pivot": "SPIN",
+  "target": "ANGLE",
+  "noise": "PRD",
+  "latHint": "Think a biased take on a story - not a spider's web.",
+  "pivHint": "A spider will SPIN a web - but to SPIN a news story means to do what?",
+  "winText": "A slanted take. SPIN was the pivot - a woven web to a biased ANGLE.",
+  "lossText": "ANGLE - a spun perspective. SPIN was the pivot: spider's web to SPINning a story.",
+  "gridString": "WCRAWLERSILKAETPEGVERDGEEPAASRNSPINL"
+}

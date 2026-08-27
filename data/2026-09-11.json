@@ -1,0 +1,21 @@
+{
+  "theme": "CLASSROOM",
+  "words": [
+    "DESK",
+    "CHALK",
+    "QUIZ",
+    "GRADE",
+    "BOOK",
+    "REST",
+    "PUPIL"
+  ],
+  "SIZE": 6,
+  "pivot": "GRADE",
+  "target": "SLOPE",
+  "noise": "FAH",
+  "latHint": "Think a hill's incline - not a school mark.",
+  "pivHint": "A GRADE is a school score - but a road's GRADE describes what?",
+  "winText": "A gentle rise. GRADE was the pivot - school score to a road's SLOPE.",
+  "lossText": "SLOPE - a rising incline. GRADE was the pivot: school mark to road GRADE.",
+  "gridString": "CGRADEHBOOKRAFQOHELIPUPSKSEDITESALPZ"
+}

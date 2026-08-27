@@ -1,0 +1,21 @@
+{
+  "theme": "GOURD",
+  "words": [
+    "FARM",
+    "STEM",
+    "BUMPY",
+    "VINE",
+    "SHELL",
+    "SEED",
+    "CARVE"
+  ],
+  "SIZE": 6,
+  "pivot": "SHELL",
+  "target": "SPEND",
+  "noise": "AKFL",
+  "latHint": "Think paying up - not a gourd's hard skin.",
+  "pivHint": "A gourd has a tough SHELL - but to SHELL out for something means to do what?",
+  "winText": "Paying the price. SHELL was the pivot - a gourd's skin to having to SPEND.",
+  "lossText": "SPEND - to SHELL out. SHELL was the pivot: gourd's SHELL to SPENDing money.",
+  "gridString": "BSHELLUEFVLVMFARMIPEAAPNYKTCNEDEESSD"
+}

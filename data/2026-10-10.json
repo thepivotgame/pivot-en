@@ -1,0 +1,21 @@
+{
+  "theme": "QUILT",
+  "words": [
+    "SEAMS",
+    "CLOTH",
+    "WARM",
+    "LAYER",
+    "COZY",
+    "SOFT",
+    "FOLD"
+  ],
+  "SIZE": 6,
+  "pivot": "LAYER",
+  "target": "DEPTH",
+  "noise": "KAB",
+  "latHint": "Think added complexity and nuance - not a quilt's layer.",
+  "pivHint": "A quilt has many a cozy LAYER - but adding a LAYER to a story gives it more of what?",
+  "winText": "More than meets the eye. LAYER was the pivot - a quilt's warmth to a story's DEPTH.",
+  "lossText": "DEPTH - added complexity. LAYER was the pivot: a quilt's LAYER to a story's DEPTH.",
+  "gridString": "SCLOTHEWARMKASYZOCMOEPBHSFRDAETTFOLD"
+}

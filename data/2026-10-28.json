@@ -1,0 +1,21 @@
+{
+  "theme": "BONFIRE",
+  "words": [
+    "GLOW",
+    "LOGS",
+    "WARM",
+    "HEAT",
+    "FLAME",
+    "SMOKE",
+    "BLAZE"
+  ],
+  "SIZE": 6,
+  "pivot": "SMOKE",
+  "target": "BEATS",
+  "noise": "LDUGN",
+  "latHint": "Think easily beating the competition - not a bonfire's SMOKE.",
+  "pivHint": "A bonfire gives off thick SMOKE - but to SMOKE the competition means to do what to them?",
+  "winText": "No contest. SMOKE was the pivot - a fire's haze to a competition it BEATS easily.",
+  "lossText": "BEATS - to SMOKE the competition. SMOKE was the pivot: bonfire's SMOKE to beating everyone easily.",
+  "gridString": "FAGGSHLNLMSEAEOOMAMKWRGTEZALBSDWUBTL"
+}

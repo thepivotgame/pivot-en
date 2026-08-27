@@ -1,0 +1,21 @@
+{
+  "theme": "COSTUME",
+  "words": [
+    "MASK",
+    "CAPE",
+    "SILK",
+    "WORN",
+    "GUISE",
+    "PAINT",
+    "CLOAK"
+  ],
+  "SIZE": 6,
+  "pivot": "GUISE",
+  "target": "FRONT",
+  "noise": "DHE",
+  "latHint": "Think putting on a false appearance - not a Halloween costume.",
+  "pivHint": "A costume gives you a GUISE for the night - but acting 'under the GUISE of' kindness means hiding behind what?",
+  "winText": "Not what it seems. GUISE was the pivot - costume disguise to a false FRONT.",
+  "lossText": "FRONT - a false FRONT. GUISE was the pivot: costume's GUISE to putting up a FRONT.",
+  "gridString": "GPAINTUCLOAKIADOSWSPEAIOEEMTLRFHRNKN"
+}

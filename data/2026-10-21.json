@@ -1,0 +1,21 @@
+{
+  "theme": "OWL",
+  "words": [
+    "HOOT",
+    "DARK",
+    "WISE",
+    "CALM",
+    "PLUME",
+    "PERCH",
+    "TALON"
+  ],
+  "SIZE": 6,
+  "pivot": "WISE",
+  "target": "AWARE",
+  "noise": "PTD",
+  "latHint": "Think being wise to someone's trick - not an owl's wisdom.",
+  "pivHint": "An OWL is a symbol of wisdom - but if you're WISE to someone's scheme, what are you?",
+  "winText": "Nothing gets past you. WISE was the pivot - an owl's wisdom to being AWARE.",
+  "lossText": "AWARE - WISE to it. WISE was the pivot: the owl's wisdom to being WISE to a trick.",
+  "gridString": "PTALONLEOPADUSRODAMIECHREWATHKCALMWR"
+}

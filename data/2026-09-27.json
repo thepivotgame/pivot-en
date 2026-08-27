@@ -1,0 +1,21 @@
+{
+  "theme": "SHIPYARD",
+  "words": [
+    "HULL",
+    "CRANE",
+    "WELD",
+    "STEEL",
+    "DECK",
+    "RIVET",
+    "SHIP"
+  ],
+  "SIZE": 6,
+  "pivot": "WELD",
+  "target": "UNITE",
+  "noise": "PRD",
+  "latHint": "Think bringing people together - not joining metal.",
+  "pivHint": "A shipyard worker will WELD steel plates - but to WELD a team together means to do what?",
+  "winText": "Stronger together. WELD was the pivot - joining metal to a UNITEd team.",
+  "lossText": "UNITE - to WELD together. WELD was the pivot: joining steel to uniting a team.",
+  "gridString": "CSTEELRIVETLAWELDUNPIDEHEEURCNSHIPKT"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "LIGHTHOUSE",
+  "words": [
+    "BEAM",
+    "TOWER",
+    "COAST",
+    "WARN",
+    "SPIN",
+    "FLASH",
+    "KEEP"
+  ],
+  "SIZE": 6,
+  "pivot": "FLASH",
+  "target": "QUICK",
+  "noise": "HTF",
+  "latHint": "Think something over in an instant - not a lighthouse beam.",
+  "pivHint": "A lighthouse gives a bright FLASH of light - but 'in a FLASH' means what?",
+  "winText": "Gone in a blink. FLASH was the pivot - a beam of light to something QUICK.",
+  "lossText": "QUICK - over in an instant. FLASH was the pivot: lighthouse beam to a FLASH of time.",
+  "gridString": "TSAOCFOBEAMLWARNHAEINIPSRKEEPHFKQTUC"
+}

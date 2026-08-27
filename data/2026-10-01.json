@@ -1,0 +1,21 @@
+{
+  "theme": "EQUINOX",
+  "words": [
+    "HALF",
+    "LIGHT",
+    "DARK",
+    "EARTH",
+    "TURN",
+    "TILT",
+    "ORBIT"
+  ],
+  "SIZE": 6,
+  "pivot": "TILT",
+  "target": "SLANT",
+  "noise": "GPUEI",
+  "latHint": "Think a biased leaning in an argument - not the earth's axis.",
+  "pivHint": "The earth's TILT creates seasons - but if an argument has a TILT, what does it have?",
+  "winText": "A subtle bias. TILT was the pivot - earth's axis to a SLANTed view.",
+  "lossText": "SLANT - a biased angle. TILT was the pivot: earth's TILT to a SLANTed argument.",
+  "gridString": "DTILTHAEAIUARABGRLKREHNFOTITTLPHUSNG"
+}

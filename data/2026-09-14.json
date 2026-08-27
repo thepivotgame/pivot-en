@@ -1,0 +1,21 @@
+{
+  "theme": "STATION",
+  "words": [
+    "BENCH",
+    "FARE",
+    "TRAIN",
+    "STOP",
+    "DELAY",
+    "RAIL",
+    "GATE"
+  ],
+  "SIZE": 6,
+  "pivot": "DELAY",
+  "target": "STALL",
+  "noise": "EB",
+  "latHint": "Think holding something up on purpose - not a train delay.",
+  "pivHint": "A station DELAY holds up a train - but to DELAY something on purpose means to do what?",
+  "winText": "Buying time. DELAY was the pivot - a held-up train to STALLing for time.",
+  "lossText": "STALL - to DELAY on purpose. DELAY was the pivot: a train's DELAY to STALLing deliberately.",
+  "gridString": "RGATESADBRRTIEEAAOLLNIFPLACNBALYHSET"
+}

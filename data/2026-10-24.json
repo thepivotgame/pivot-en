@@ -1,0 +1,21 @@
+{
+  "theme": "BAT",
+  "words": [
+    "WING",
+    "CAVE",
+    "DARK",
+    "FLIT",
+    "NIGHT",
+    "CHIRP",
+    "SONAR"
+  ],
+  "SIZE": 6,
+  "pivot": "FLIT",
+  "target": "SKIPS",
+  "noise": "CLABT",
+  "latHint": "Think skipping quickly between things - not a bat in flight.",
+  "pivHint": "A bat will FLIT through the dark - but if you FLIT between jobs, what are you doing?",
+  "winText": "Never settling. FLIT was the pivot - a bat's fluttering to someone who SKIPS around.",
+  "lossText": "SKIPS - FLITs quickly. FLIT was the pivot: bat's flight to skipping from place to place.",
+  "gridString": "NCHIRPIAKRADGVWINGHEIBOTTILFSSKLASPC"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "GHOST",
+  "words": [
+    "PALE",
+    "MOAN",
+    "WISP",
+    "MIST",
+    "GHOUL",
+    "HAUNT",
+    "SHEET"
+  ],
+  "SIZE": 6,
+  "pivot": "HAUNT",
+  "target": "STAYS",
+  "noise": "MEHI",
+  "latHint": "Think a memory that lingers with you - not a ghost in a house.",
+  "pivHint": "A ghost will HAUNT an old house - but a haunting memory does what to your mind?",
+  "winText": "Impossible to shake. HAUNT was the pivot - a ghost's home to a memory that STAYS.",
+  "lossText": "STAYS - lingers on. HAUNT was the pivot: a ghost's HAUNT to a memory that STAYS with you.",
+  "gridString": "GPMOANHAUNTWOLAESIUEEHISLHIMMPSTEYSS"
+}

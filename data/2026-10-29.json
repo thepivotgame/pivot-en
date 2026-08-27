@@ -1,0 +1,21 @@
+{
+  "theme": "PORCH",
+  "words": [
+    "BOWL",
+    "RAIL",
+    "DOOR",
+    "POST",
+    "STEPS",
+    "LIGHT",
+    "CHAIR"
+  ],
+  "SIZE": 6,
+  "pivot": "RAIL",
+  "target": "GRIPE",
+  "noise": "SWAEND",
+  "latHint": "Think complaining loudly - not a porch railing.",
+  "pivHint": "A porch has a sturdy RAIL - but to RAIL against something means to do what?",
+  "winText": "Letting off steam. RAIL was the pivot - a porch RAILing to a loud GRIPE.",
+  "lossText": "GRIPE - to RAIL and complain. RAIL was the pivot: porch RAILing to RAILing against something.",
+  "gridString": "SCPOSTTHGILEEANIWDPIADOWSRAOBGEIRRSP"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "MASK",
+  "words": [
+    "EYES",
+    "HIDE",
+    "VEIL",
+    "WORN",
+    "PAINT",
+    "PLUME",
+    "CLOTH"
+  ],
+  "SIZE": 6,
+  "pivot": "HIDE",
+  "target": "SUEDE",
+  "noise": "LAMNRH",
+  "latHint": "Think a soft tanned leather - not concealing your face.",
+  "pivHint": "A mask can HIDE your face - but an animal's HIDE, once tanned, becomes what soft material?",
+  "winText": "Soft and supple. HIDE was the pivot - a mask's concealment to tanned SUEDE.",
+  "lossText": "SUEDE - tanned animal HIDE. HIDE was the pivot: mask's hiding to soft SUEDE leather.",
+  "gridString": "PCWORNALIEVEIOUREHNTAMYMTHIDESNEULSD"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "NURSERY",
+  "words": [
+    "CRIB",
+    "ROCK",
+    "SOFT",
+    "SLEEP",
+    "CARE",
+    "STORK",
+    "QUIET"
+  ],
+  "SIZE": 6,
+  "pivot": "ROCK",
+  "target": "STONE",
+  "noise": "ARFEPL",
+  "latHint": "Think something solid and unmoving - not soothing a baby.",
+  "pivHint": "You ROCK a baby gently to sleep - but a ROCK by the road is what?",
+  "winText": "Solid and still. ROCK was the pivot - gentle ROCKing to a hard STONE.",
+  "lossText": "STONE - a solid ROCK. ROCK was the pivot: ROCKing a baby to a roadside STONE.",
+  "gridString": "CSLEEPROCKEQIFAPULBTRIRFSEEOTASTORKN"
+}

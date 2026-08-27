@@ -1,0 +1,21 @@
+{
+  "theme": "MOON",
+  "words": [
+    "GLOW",
+    "TIDE",
+    "BEAM",
+    "FULL",
+    "ORBIT",
+    "PHASE",
+    "WHITE"
+  ],
+  "SIZE": 6,
+  "pivot": "PHASE",
+  "target": "STAGE",
+  "noise": "CLPR",
+  "latHint": "Think a temporary period in life - not the moon's shape.",
+  "pivHint": "The moon goes through each PHASE - but 'just a PHASE' in life means a temporary what?",
+  "winText": "It'll pass. PHASE was the pivot - the moon's shape to a passing STAGE.",
+  "lossText": "STAGE - a passing PHASE. PHASE was the pivot: the moon's PHASE to a STAGE in life.",
+  "gridString": "OPHASERGTATFBLPIUMIOHLDATWLRCETLGSEB"
+}

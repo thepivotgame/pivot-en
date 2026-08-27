@@ -1,0 +1,21 @@
+{
+  "theme": "HALLOWEEN",
+  "words": [
+    "DUSK",
+    "IMPS",
+    "MASK",
+    "CORN",
+    "SCARY",
+    "TRICK",
+    "TREAT"
+  ],
+  "SIZE": 6,
+  "pivot": "TRICK",
+  "target": "KNACK",
+  "noise": "EBHT",
+  "latHint": "Think a clever skill or talent - not a Halloween prank.",
+  "pivHint": "A Halloween TRICK is a playful prank - but 'a TRICK of the trade' means a clever what?",
+  "winText": "The secret's out. TRICK was the pivot - a playful prank to a clever KNACK.",
+  "lossText": "KNACK - a clever TRICK. TRICK was the pivot: Halloween TRICK to a trade's KNACK.",
+  "gridString": "STRICKCRMASKAEAUPCRADHMOYTTEIRNBCKKN"
+}

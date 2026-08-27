@@ -1,0 +1,21 @@
+{
+  "theme": "GRAVEYARD",
+  "words": [
+    "TOMB",
+    "STONE",
+    "CRYPT",
+    "MOSS",
+    "QUIET",
+    "COLD",
+    "REST"
+  ],
+  "SIZE": 6,
+  "pivot": "REST",
+  "target": "EXTRA",
+  "noise": "LDM",
+  "latHint": "Think what's left over once everyone's accounted for - not eternal rest.",
+  "pivHint": "A graveyard is a place of REST - but 'the REST of the group' means what's left over, or what?",
+  "winText": "All that's left. REST was the pivot - eternal REST to the EXTRA, leftover few.",
+  "lossText": "EXTRA - what's left over. REST was the pivot: eternal REST to the EXTRA ones left behind.",
+  "gridString": "STOMBMTPYRCOOELTOSNMIALSEEDUDXRESTQR"
+}
