@@ -13,8 +13,8 @@
   "pivot": "QUEUE",
   "target": "ORDER",
   "noise": "AKFL",
-  "latHint": "Think sequence - not a lunch line.",
-  "pivHint": "A cafeteria QUEUE is a waiting line - but in computing, a QUEUE processes data in what?",
+  "latHint": "Think first come, first served.",
+  "pivHint": "A cafeteria QUEUE is a waiting line - but in computing, a QUEUE specifies the ______",
   "winText": "First in, first out. QUEUE was the pivot - lunch line to data ORDER.",
   "lossText": "ORDER - a set sequence in which data is processed. QUEUE was the pivot: a cafeteria line to the first-in-first-out ORDER of a computing queue.",
   "gridString": "LAEMSDIFLANRNKTRAYELUNCHEFORKOQUEUER"

@@ -13,7 +13,7 @@
   "pivot": "ECHO",
   "target": "AGREE",
   "noise": "OWKTSL",
-  "latHint": "Think nodding along with someone - not a sound bouncing back.",
+  "latHint": "Think a yes-man.",
   "pivHint": "A valley ECHO repeats sound - but to ECHO someone's opinion means to do what?",
   "winText": "Same page. ECHO was the pivot - bouncing sound to AGREEing outright.",
   "lossText": "AGREE - to ECHO a view. ECHO was the pivot: valley ECHO to AGREEing.",

@@ -13,8 +13,8 @@
   "pivot": "CODE",
   "target": "CREED",
   "noise": "GALOM",
-  "latHint": "Think a personal set of beliefs - not a locker combination.",
-  "pivHint": "A locker CODE unlocks a door - but a moral CODE guides a person's what?",
+  "latHint": "Think words recited in church.",
+  "pivHint": "A locker CODE unlocks a door - but a knight's sworn CODE of honor is also known as his _____",
   "winText": "A guiding principle. CODE was the pivot - locker CODE to a personal CREED.",
   "lossText": "CREED - a personal set of beliefs. CODE was the pivot: locker CODE to a moral CODE, or CREED.",
   "gridString": "CSHELFOEOOAMMECDTDBKDOCROALOHLCSERCG"

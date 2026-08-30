@@ -13,8 +13,8 @@
   "pivot": "HAUNT",
   "target": "STAYS",
   "noise": "MEHI",
-  "latHint": "Think a memory that lingers with you - not a ghost in a house.",
-  "pivHint": "A ghost will HAUNT an old house - but a haunting memory does what to your mind?",
+  "latHint": "Think what nobody dares overnight at the haunted house.",
+  "pivHint": "A ghost HAUNTs a house because it won't leave - and a painful memory HAUNTs you the same way: it just ______",
   "winText": "Impossible to shake. HAUNT was the pivot - a ghost's home to a memory that STAYS.",
   "lossText": "STAYS - lingers on. HAUNT was the pivot: a ghost's HAUNT to a memory that STAYS with you.",
   "gridString": "GPMOANHAUNTWOLAESIUEEHISLHIMMPSTEYSS"

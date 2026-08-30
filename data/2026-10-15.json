@@ -13,8 +13,8 @@
   "pivot": "GUISE",
   "target": "FRONT",
   "noise": "DHE",
-  "latHint": "Think putting on a false appearance - not a Halloween costume.",
-  "pivHint": "A costume gives you a GUISE for the night - but acting 'under the GUISE of' kindness means hiding behind what?",
+  "latHint": "Think another word for a fake identity.",
+  "pivHint": "Under the GUISE of a friend, he really wanted something else - what was he putting on?",
   "winText": "Not what it seems. GUISE was the pivot - costume disguise to a false FRONT.",
   "lossText": "FRONT - a false FRONT. GUISE was the pivot: costume's GUISE to putting up a FRONT.",
   "gridString": "GPAINTUCLOAKIADOSWSPEAIOEEMTLRFHRNKN"

@@ -13,7 +13,7 @@
   "pivot": "PATCH",
   "target": "FIXED",
   "noise": "PNW",
-  "latHint": "Think getting something mended - not a pumpkin patch.",
+  "latHint": "Think duct tape.",
   "pivHint": "A pumpkin PATCH is a growing plot - but to PATCH something means to do what?",
   "winText": "Good as new. PATCH was the pivot - growing plot to something FIXED.",
   "lossText": "FIXED - PATCHed and repaired. PATCH was the pivot: pumpkin PATCH to getting something FIXED.",

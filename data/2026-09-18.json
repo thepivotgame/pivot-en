@@ -13,8 +13,8 @@
   "pivot": "TRUNK",
   "target": "CHEST",
   "noise": "ARFEPL",
-  "latHint": "Think a wooden storage box - not an elephant's nose.",
-  "pivHint": "An elephant's TRUNK is its long nose - but a tree's TRUNK, or a storage TRUNK, is what?",
+  "latHint": "Think heart and lungs.",
+  "pivHint": "An elephant's TRUNK is its long nose - but a storage TRUNK is also called a ______?",
   "winText": "Sturdy and central. TRUNK was the pivot - elephant's nose to a solid CHEST.",
   "lossText": "CHEST - a sturdy TRUNK. TRUNK was the pivot: elephant's nose to storage TRUNK.",
   "gridString": "GTRUNKUTFYPLARBEZRROGREFDACPEDCREHAS"

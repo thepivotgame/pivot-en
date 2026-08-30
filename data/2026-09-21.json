@@ -13,8 +13,8 @@
   "pivot": "DRIFT",
   "target": "SENSE",
   "noise": "PTD",
-  "latHint": "Think the general idea - not slow ice movement.",
-  "pivHint": "A glacier's DRIFT is its slow movement - but if you catch someone's DRIFT, what do you get?",
+  "latHint": "Think reading between the lines.",
+  "pivHint": "A glacier's DRIFT is its slow movement - but if you catch someone's DRIFT, you get a _____ of what they're saying",
   "winText": "Point taken. DRIFT was the pivot - slow ice to catching the general SENSE.",
   "lossText": "SENSE - the general meaning. DRIFT was the pivot: glacier's DRIFT to catching the SENSE of it.",
   "gridString": "BDRIFTLLIHCFOSPFHLCLLNIOKODEPEWWSTES"

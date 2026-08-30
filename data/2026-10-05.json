@@ -13,8 +13,8 @@
   "pivot": "TRAIL",
   "target": "TAILS",
   "noise": "EOBD",
-  "latHint": "Think closely following someone - not a wagon path.",
-  "pivHint": "A hayride follows a scenic TRAIL - but to TRAIL someone closely means to do what?",
+  "latHint": "Think tuxedos and dogs.",
+  "pivHint": "A hiking TRAIL winds through the woods - but if you TRAIL someone closely, what are you doing to them?",
   "winText": "A few steps back. TRAIL was the pivot - wagon path to someone who TAILS.",
   "lossText": "TAILS - closely follows. TRAIL was the pivot: hayride path to TRAILing, or tailing, someone.",
   "gridString": "SICNELTRAILARCRGAMAOTHBPWOBTDEALOLTS"

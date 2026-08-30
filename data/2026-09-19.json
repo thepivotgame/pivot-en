@@ -13,8 +13,8 @@
   "pivot": "GUIDE",
   "target": "USHER",
   "noise": "OD",
-  "latHint": "Think gently showing someone the way - not a safari guide.",
-  "pivHint": "A safari GUIDE leads the tour - but to GUIDE someone else means to do what?",
+  "latHint": "Think a movie theater flashlight.",
+  "pivHint": "A safari GUIDE leads the tour - but what is a wedding GUIDE who brings you to your seat called?",
   "winText": "Showing the way. GUIDE was the pivot - safari leader to gently USHERing others.",
   "lossText": "USHER - to GUIDE along. GUIDE was the pivot: safari GUIDE to USHERing others forward.",
   "gridString": "GPLAINUSCOUTIJEEPSDREHRUELIONDDHEUOS"

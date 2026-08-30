@@ -13,8 +13,8 @@
   "pivot": "FLIT",
   "target": "SKIPS",
   "noise": "CLABT",
-  "latHint": "Think hopping quickly from one thing to the next - not a bat in flight.",
-  "pivHint": "A bat will FLIT through the dark - but if you FLIT between jobs, what are you doing?",
+  "latHint": "Think erratic butterfly flight.",
+  "pivHint": "A radio dial FLITs between stations when you're scanning - it just ______ right past the boring ones",
   "winText": "Never settling. FLIT was the pivot - a bat's fluttering to someone who SKIPS around.",
   "lossText": "SKIPS - FLITs quickly. FLIT was the pivot: bat's flight to skipping from place to place.",
   "gridString": "NCHIRPIAKRADGVWINGHEIBOTTILFSSKLASPC"

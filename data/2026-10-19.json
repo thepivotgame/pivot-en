@@ -13,8 +13,8 @@
   "pivot": "REST",
   "target": "EXTRA",
   "noise": "LDM",
-  "latHint": "Think what's left over once everyone's accounted for - not eternal rest.",
-  "pivHint": "A graveyard is a place of REST - but 'the REST of the group' means what's left over, or what?",
+  "latHint": "Think a movie background player with no lines.",
+  "pivHint": "A recipe serves four, but you cooked for six - the two leftover portions are what?",
   "winText": "All that's left. REST was the pivot - eternal REST to the EXTRA, leftover few.",
   "lossText": "EXTRA - what's left over. REST was the pivot: eternal REST to the EXTRA ones left behind.",
   "gridString": "STOMBMTPYRCOOELTOSNMIALSEEDUDXRESTQR"

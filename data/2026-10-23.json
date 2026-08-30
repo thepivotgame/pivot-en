@@ -13,8 +13,8 @@
   "pivot": "SPIN",
   "target": "ANGLE",
   "noise": "PRD",
-  "latHint": "Think a biased take on a story - not a spider's web.",
-  "pivHint": "A spider will SPIN a web - but to SPIN a news story means to do what?",
+  "latHint": "Think protractor measurement.",
+  "pivHint": "A basketball can SPIN on your finger - but a reporter's SPIN on a story means giving it what?",
   "winText": "A slanted take. SPIN was the pivot - a woven web to a biased ANGLE.",
   "lossText": "ANGLE - a spun perspective. SPIN was the pivot: spider's web to SPINning a story.",
   "gridString": "WCRAWLERSILKAETPEGVERDGEEPAASRNSPINL"

@@ -13,8 +13,8 @@
   "pivot": "CRACK",
   "target": "SOLVE",
   "noise": "HTRD",
-  "latHint": "Think figuring out a tough problem - not a crackling fire.",
-  "pivHint": "A fire will CRACK and pop as it burns - but to CRACK a difficult case means to do what?",
+  "latHint": "Think working through a tricky math equation.",
+  "pivHint": "A CRACK runs through the old vase - but to CRACK a case means to do what?",
   "winText": "Case closed. CRACK was the pivot - a fire's CRACKle to knowing how to SOLVE it.",
   "lossText": "SOLVE - to CRACK the case. CRACK was the pivot: fire's CRACKle to CRACKing a mystery.",
   "gridString": "ECRACKMLOGSLBRGWDHEMALFORRYZOCMTVSEW"

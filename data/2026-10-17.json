@@ -13,8 +13,8 @@
   "pivot": "TREAT",
   "target": "HEALS",
   "noise": "TIRWZ",
-  "latHint": "Think curing an illness - not a sweet snack.",
-  "pivHint": "A Halloween TREAT is a sweet gift - but a doctor who can TREAT you helps you do what?",
+  "latHint": "Think a video game character whose job is restoring health points.",
+  "pivHint": "A doctor will TREAT a patient - but what does that TREATment do for them?",
   "winText": "On the mend. TREAT was the pivot - a sweet gift to something that HEALS.",
   "lossText": "HEALS - to TREAT and cure. TREAT was the pivot: candy TREAT to TREATing an illness.",
   "gridString": "SCWTATWUHRLWEBGEAZEOMAWPTWSTREILRHLT"

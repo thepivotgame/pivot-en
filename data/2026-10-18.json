@@ -13,8 +13,8 @@
   "pivot": "STUNT",
   "target": "LIMIT",
   "noise": "HE",
-  "latHint": "Think holding back someone's growth - not a daring trick.",
-  "pivHint": "A daredevil pulls off a STUNT - but to STUNT someone's growth means to do what?",
+  "latHint": "Think what tricky drivers push against.",
+  "pivHint": "A daredevil performs a STUNT - but if something STUNTs your growth, what does it do to it?",
   "winText": "Held back. STUNT was the pivot - a daring trick to LIMITing growth.",
   "lossText": "LIMIT - to STUNT and restrict. STUNT was the pivot: a daring STUNT to LIMITing growth.",
   "gridString": "MJOKEHASGTPOGTFREAIUAOIXCNMIONKTLHIL"

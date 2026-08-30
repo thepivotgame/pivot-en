@@ -13,8 +13,8 @@
   "pivot": "HEAT",
   "target": "ROUND",
   "noise": "ESTHV",
-  "latHint": "Think one bout in a race - not desert warmth.",
-  "pivHint": "Desert HEAT can be brutal - but a race's HEAT refers to what?",
+  "latHint": "Think first, second, third.",
+  "pivHint": "On a hot day, you might crave a cold drink in the HEAT - and if you're buying for the table, that's called a _____",
   "winText": "One ROUND down. HEAT was the pivot - desert warmth to a race's ROUND.",
   "lossText": "ROUND - one HEAT of a race. HEAT was the pivot: desert warmth to race HEAT.",
   "gridString": "HCAMELENUDUHARIDVDTOASISOSTLRNSANDGE"

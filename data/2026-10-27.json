@@ -13,8 +13,8 @@
   "pivot": "SPELL",
   "target": "WHILE",
   "noise": "DNKTA",
-  "latHint": "Think a short stretch of time - not a magic incantation.",
-  "pivHint": "A witch casts a SPELL - but 'a SPELL of good weather' refers to what kind of stretch?",
+  "latHint": "Think 'sit a spell, stay a...'",
+  "pivHint": "A witch casts a magic SPELL - but 'a SPELL of good weather' just means a short ______",
   "winText": "A brief stretch. SPELL was the pivot - a magic incantation to a short WHILE.",
   "lossText": "WHILE - a brief SPELL. SPELL was the pivot: witch's SPELL to a SPELL, or WHILE, of time.",
   "gridString": "BSPELLRITPAEOHDAHNOENCKWMRAHCLDBWERB"

@@ -13,7 +13,7 @@
   "pivot": "SCALE",
   "target": "CLIMB",
   "noise": "KA",
-  "latHint": "Think scaling a high wall - not fish skin.",
+  "latHint": "Think the corporate ladder.",
   "pivHint": "A fish's SCALE is part of its skin - but to SCALE a wall means to do what?",
   "winText": "Up and over. SCALE was the pivot - scaling fish skin to a CLIMB up a wall.",
   "lossText": "CLIMB - to SCALE upward. SCALE was the pivot: fish SCALE to CLIMBing high.",

@@ -13,8 +13,8 @@
   "pivot": "TRICK",
   "target": "KNACK",
   "noise": "EBHT",
-  "latHint": "Think a clever skill or talent - not a Halloween prank.",
-  "pivHint": "A Halloween TRICK is a playful prank - but 'a TRICK of the trade' means a clever what?",
+  "latHint": "Think a magician's secret move, practiced for years.",
+  "pivHint": "A dog learns a new TRICK for a treat - but if you have a TRICK for something, you've got a natural ______",
   "winText": "The secret's out. TRICK was the pivot - a playful prank to a clever KNACK.",
   "lossText": "KNACK - a clever TRICK. TRICK was the pivot: Halloween TRICK to a trade's KNACK.",
   "gridString": "STRICKCRMASKAEAUPCRADHMOYTTEIRNBCKKN"

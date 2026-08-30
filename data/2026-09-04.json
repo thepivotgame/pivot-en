@@ -13,8 +13,8 @@
   "pivot": "VAULT",
   "target": "BOUND",
   "noise": "AOEEGHLWSC",
-  "latHint": "Think leaping over an obstacle - not an underground storage room.",
-  "pivHint": "Valuables sit in the cellar's VAULT - but a gymnast who does a VAULT over the bar does what?",
+  "latHint": "Think a kangaroo jump.",
+  "pivHint": "A bank VAULT holds treasure under lock and key - but in old heist movies, the guard inside is often left tied up, or ______",
   "winText": "Leaping clear over. VAULT was the pivot - cellar storage to a powerful BOUND.",
   "lossText": "BOUND - to leap over. VAULT was the pivot: cellar VAULT to VAULT and BOUND clear.",
   "gridString": "NMBUVOEDOAFSNGULCAOLEODFTHLESESDBINS"

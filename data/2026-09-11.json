@@ -13,7 +13,7 @@
   "pivot": "GRADE",
   "target": "SLOPE",
   "noise": "FAH",
-  "latHint": "Think a hill's incline - not a school mark.",
+  "latHint": "Think skiing.",
   "pivHint": "A GRADE is a school score - but a road's GRADE describes what?",
   "winText": "A gentle rise. GRADE was the pivot - school score to a road's SLOPE.",
   "lossText": "SLOPE - a rising incline. GRADE was the pivot: school mark to road GRADE.",

@@ -13,8 +13,8 @@
   "pivot": "TWIST",
   "target": "SHOCK",
   "noise": "TM",
-  "latHint": "Think an unexpected twist you didn't see coming - not a maze path.",
-  "pivHint": "A maze has many a TWIST and turn - but a story's TWIST ending gives you what?",
+  "latHint": "Think touching a live wire, coiled and frayed.",
+  "pivHint": "A pretzel has a TWIST shape - but a story's TWIST ending gives you what?",
   "winText": "Didn't see that coming. TWIST was the pivot - maze turns to a total SHOCK.",
   "lossText": "SHOCK - an unexpected turn. TWIST was the pivot: maze path to a plot TWIST.",
   "gridString": "THEDGEWCORNTIPKMOUSTALKRTCSTTNLOSTHH"

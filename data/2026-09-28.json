@@ -13,8 +13,8 @@
   "pivot": "STICK",
   "target": "STAND",
   "noise": "ILDEOM",
-  "latHint": "Think holding your ground through hardship - not a cockpit control.",
-  "pivHint": "A pilot grips the control STICK - but to STICK with something hard means to do what?",
+  "latHint": "Think leaning on a cane.",
+  "pivHint": "A hockey player controls the puck with a STICK - but to STICK with a tough decision means to take a firm ______",
   "winText": "Staying the course. STICK was the pivot - cockpit control to STANDing firm.",
   "lossText": "STAND - to STICK with it. STICK was the pivot: control STICK to STANDing firm through hardship.",
   "gridString": "RSTICKAAADOCDEEPSRIISGMEOLADSWEATLIN"

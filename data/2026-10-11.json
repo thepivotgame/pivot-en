@@ -13,8 +13,8 @@
   "pivot": "CUFF",
   "target": "LOOSE",
   "noise": "PRD",
-  "latHint": "Think unplanned and casual - not a sweater's edge.",
-  "pivHint": "A sweater's CUFF sits at the wrist - but speaking 'off the CUFF' means speaking how?",
+  "latHint": "Think a punch to the face.",
+  "pivHint": "A shirt has a CUFF at the wrist - but speaking off the CUFF means speaking how?",
   "winText": "No script needed. CUFF was the pivot - sweater's edge to a LOOSE, unplanned remark.",
   "lossText": "LOOSE - unplanned and easy. CUFF was the pivot: sweater CUFF to a LOOSE, off-the-CUFF remark.",
   "gridString": "SWOVENCOKNITAOPFOSRLFDENFUZZYUCLROSG"

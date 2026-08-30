@@ -13,7 +13,7 @@
   "pivot": "LIFT",
   "target": "STEAL",
   "noise": "IXFR",
-  "latHint": "Think secretly taking something - not a plane rising.",
+  "latHint": "Think a pickpocket in a crowd.",
   "pivHint": "A plane needs LIFT to rise - but to LIFT something from a store means to do what?",
   "winText": "Sticky fingers. LIFT was the pivot - a plane's rise to a sneaky STEAL.",
   "lossText": "STEAL - to LIFT secretly. LIFT was the pivot: plane's LIFT to LIFTing an item.",

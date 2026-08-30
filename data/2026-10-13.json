@@ -13,8 +13,8 @@
   "pivot": "BRICK",
   "target": "BROKE",
   "noise": "PNW",
-  "latHint": "Think ruining something completely - not a chimney's BRICK.",
-  "pivHint": "A chimney is built from BRICK - but in tech slang, to BRICK a phone means to turn it into a useless lump. What state does that leave it in?",
+  "latHint": "Think a brick through a window.",
+  "pivHint": "A BRICK builds a house - but if you BRICK your phone, what happened to it?",
   "winText": "Dead on arrival. BRICK was the pivot - a chimney's BRICK to a BROKEn, BRICKed device.",
   "lossText": "BROKE - ruined completely. BRICK was the pivot: chimney's BRICK to BRICKing a device for good.",
   "gridString": "SEHSASMVENTOOPIPEOKCIRBTEULFPOWEBNRK"

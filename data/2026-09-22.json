@@ -13,8 +13,8 @@
   "pivot": "GRAZE",
   "target": "SCUFF",
   "noise": "KTJ",
-  "latHint": "Think a scraped knee - not cattle eating grass.",
-  "pivHint": "Cattle GRAZE in the meadow - but if you GRAZE your knee, what happens?",
+  "latHint": "Think dragging your shoes.",
+  "pivHint": "Cattle GRAZE in the meadow - but if you GRAZE your knee, it's called a ______",
   "winText": "Just a scratch. GRAZE was the pivot - cattle grazing to a SCUFF on the knee.",
   "lossText": "SCUFF - a light scrape. GRAZE was the pivot: cattle grazing to a GRAZEd knee.",
   "gridString": "DGRAZEAPETALIMILDASOMRAWYTKUJNFHSTCF"

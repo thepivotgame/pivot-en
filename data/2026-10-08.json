@@ -13,8 +13,8 @@
   "pivot": "FLAME",
   "target": "TAUNT",
   "noise": "MEHI",
-  "latHint": "Think a harsh online jab - not candlelight.",
-  "pivHint": "A candle's FLAME flickers warmly - but in old internet slang, to FLAME someone means posting something meant to hurt or provoke them. What's a short word for that kind of harsh remark?",
+  "latHint": "Think a boxer trash-talking before a big fight.",
+  "pivHint": "A candle's FLAME flickers - but to FLAME someone online means to do what?",
   "winText": "Words that sting. FLAME was the pivot - candle's glow to a harsh TAUNT.",
   "lossText": "TAUNT - a harsh insult. FLAME was the pivot: candle's FLAME to an online TAUNT.",
   "gridString": "FSCENTLWICKAAGUHIPMELTMEESOOTRAENTWT"
