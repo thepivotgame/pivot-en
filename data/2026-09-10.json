@@ -15,7 +15,7 @@
   "noise": "ESPWTL",
   "latHint": "Think sudden fright - not birds in a field.",
   "pivHint": "A scarecrow's job is to SCARE crows away - but to SCARE someone else means to do what?",
-  "winText": "A jolt of fright. SCARE was the pivot - SCAREing birds to sounding the ALARM.",
+  "winText": "A jolt of fright. SCARE was the pivot - scaring birds to sounding the ALARM.",
   "lossText": "ALARM - a sudden fright. SCARE was the pivot: scaring crows to ALARMing someone.",
   "gridString": "SPERCHTCFLRMRTAYOLASRRWPWAMPEAWWALER"
 }

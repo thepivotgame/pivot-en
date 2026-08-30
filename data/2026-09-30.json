@@ -14,8 +14,8 @@
   "target": "LEAVE",
   "noise": "PSWR",
   "latHint": "Think saying goodbye - not aircraft components.",
-  "pivHint": "A hangar stores aircraft PARTS - but when two people PART ways, what do they do?",
-  "winText": "Going separate ways. PARTS was the pivot - aircraft pieces to saying LEAVE.",
-  "lossText": "LEAVE - to part ways. PARTS was the pivot: aircraft PARTS to parting company.",
+  "pivHint": "A hangar stores aircraft PARTS - but drop the S, and to PART means to do what when two people go their separate ways?",
+  "winText": "Going separate ways. PARTS was the pivot - drop the S and to PART means to LEAVE and go your separate ways.",
+  "lossText": "LEAVE - to part ways, to go. PARTS was the pivot: drop the S and to PART means to say goodbye and LEAVE.",
   "gridString": "GAWDPBENORACAOIYRORPSWTVERAPSEESVLER"
 }

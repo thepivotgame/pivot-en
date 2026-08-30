@@ -11,11 +11,11 @@
   ],
   "SIZE": 6,
   "pivot": "CODE",
-  "target": "ETHIC",
-  "noise": "RAOWG",
-  "latHint": "Think principles - not a locker combination.",
-  "pivHint": "A locker CODE unlocks a door - but a moral CODE guides what?",
-  "winText": "A guiding principle. CODE was the pivot - locker CODE to a moral ETHIC.",
-  "lossText": "ETHIC - a guiding principle. CODE was the pivot: locker CODE to moral CODE.",
-  "gridString": "CSHELFOHWOAGMECDTCBKDOCTOALOHOESIRCR"
+  "target": "CREED",
+  "noise": "GALOM",
+  "latHint": "Think a personal set of beliefs - not a locker combination.",
+  "pivHint": "A locker CODE unlocks a door - but a moral CODE guides a person's what?",
+  "winText": "A guiding principle. CODE was the pivot - locker CODE to a personal CREED.",
+  "lossText": "CREED - a personal set of beliefs. CODE was the pivot: locker CODE to a moral CODE, or CREED.",
+  "gridString": "CSHELFOEOOAMMECDTDBKDOCROALOHLCSERCG"
 }

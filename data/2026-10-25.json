@@ -13,9 +13,9 @@
   "pivot": "RIBS",
   "target": "TEASE",
   "noise": "CLPR",
-  "latHint": "Think teasing someone playfully - not a skeleton's RIBS.",
-  "pivHint": "A skeleton's RIBS protect its chest - but to RIB someone playfully means to do what?",
-  "winText": "All in good fun. RIBS was the pivot - the body's cage to a playful TEASE.",
-  "lossText": "TEASE - to rib playfully. RIBS was the pivot: skeleton's RIBS to teasing a friend.",
+  "latHint": "Think puffing up your hair with a comb.",
+  "pivHint": "A skeleton's RIBS protect its chest - but drop the S, and to RIB someone playfully means to do what to them?",
+  "winText": "All in good fun. RIBS was the pivot - drop the S and to RIB someone is simply to TEASE them.",
+  "lossText": "TEASE - to poke fun at someone. RIBS was the pivot: drop the S and to RIB a friend means the same as to TEASE them.",
   "gridString": "BBACKROAPRDINCEALBEERIESSKULLSTOMBTE"
 }
