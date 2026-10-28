@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "HOSE",
   "target": "SOCKS",
-  "noise": "NALGU",
+  "noise": "DHE",
   "latHint": "Think the lone item that always goes missing in the dryer.",
-  "pivHint": "A garden HOSE is a long tube for watering plants. Long ago, HOSE also meant a snug covering for the legs and feet, like the ______ you pull on before shoes.",
-  "winText": "Well covered. HOSE was the pivot - a watering tube to an old word for SOCKS.",
-  "lossText": "SOCKS - soft coverings worn on the feet. HOSE was the pivot: a garden HOSE waters plants, but HOSE is also an old word for leg and foot coverings, the kind we now call SOCKS.",
-  "gridString": "EDGCKNDELPBUAEILSDPSOAAESOSNOEMHLTSW"
+  "pivHint": "A garden HOSE waters the plants - but long ago HOSE also meant the ______ you pull on before shoes.",
+  "winText": "Well covered. HOSE was the pivot - a watering tube to old-fashioned SOCKS.",
+  "lossText": "SOCKS - coverings for the feet. HOSE was the pivot: a garden HOSE, and the old word HOSE for leg and foot coverings.",
+  "gridString": "SBHOSEPLANTWAOISOEDOKODEEMSCSDSEEDEH"
 }

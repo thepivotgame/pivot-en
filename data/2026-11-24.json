@@ -1,21 +1,21 @@
 {
-  "theme": "WEDDING",
+  "theme": "RECEPTION",
   "words": [
     "VOWS",
     "CAKE",
     "VEIL",
     "KISS",
-    "GROOM",
+    "TOAST",
     "BRIDE",
     "AISLE"
   ],
   "SIZE": 6,
-  "pivot": "GROOM",
-  "target": "BRUSH",
-  "noise": "UEFAB",
-  "latHint": "Think bristles on a handle, used for paint or hair.",
-  "pivHint": "The GROOM is the man getting married. As a verb, it means to clean and tidy an animal, such as a horse, with a ______ and comb.",
-  "winText": "Neat and tidy. GROOM was the pivot - the man at the altar to the act of tidying a horse with a BRUSH.",
-  "lossText": "BRUSH - a tool with bristles. GROOM was the pivot: the GROOM is the man getting married, but to GROOM an animal is to clean and tidy its coat, usually with a BRUSH.",
-  "gridString": "EESRMUKKDLOFIABIOBSCUERHSWOVGBAELSIA"
+  "pivot": "TOAST",
+  "target": "BREAD",
+  "noise": "GSHT",
+  "latHint": "Think a baker's daily loaf.",
+  "pivHint": "A TOAST at a reception honors the couple - but TOAST in the kitchen is browned ______.",
+  "winText": "Raise a slice. TOAST was the pivot - a speech for the couple to browned BREAD.",
+  "lossText": "BREAD - baked dough in a loaf. TOAST was the pivot: a wedding TOAST, and a kitchen TOAST, which is browned BREAD.",
+  "gridString": "TBRIDEOSEGVKAISLEASWOVICTADRLTKISSBH"
 }

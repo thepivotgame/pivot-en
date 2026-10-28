@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "DELTA",
   "target": "GAMMA",
-  "noise": "AU",
+  "noise": "ESPWTL",
   "latHint": "Think invisible, high-energy rays from exploding stars.",
-  "pivHint": "A DELTA is the fan-shaped land where a river meets the sea. It is also the fourth letter of an old alphabet that begins alpha, beta, ______.",
-  "winText": "Right on the letter. DELTA was the pivot - a river's fan of land to the letter just before it, GAMMA.",
-  "lossText": "GAMMA - the third letter of an old alphabet that runs alpha, beta, GAMMA, DELTA. DELTA was the pivot: a river DELTA is where land fans out at the sea, but DELTA is also a letter, and GAMMA comes right before it.",
-  "gridString": "SDELTAIDUAKRLTEAEETAMEETWOLFRTABMGCO"
+  "pivHint": "A DELTA is where a river fans into the sea - but it is also the letter after alpha, beta, and ______.",
+  "winText": "Right on the letter. DELTA was the pivot - a river mouth to the letter after GAMMA.",
+  "lossText": "GAMMA - the third letter, after alpha and beta. DELTA was the pivot: a river DELTA, and the letter DELTA that follows GAMMA.",
+  "gridString": "OPGTMETLISCBTLFRWOEDELTAREEDOTKSAMAW"
 }

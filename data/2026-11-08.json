@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "SHARP",
   "target": "SMART",
-  "noise": "UOE",
+  "noise": "GPUEI",
   "latHint": "Think a straight-A student with a gold star.",
-  "pivHint": "In music, a SHARP raises a note by a half step. Describe a quick-thinking person and you might also call them SHARP, or ______.",
-  "winText": "Quick on the uptake. SHARP was the pivot - a raised note to a clever, SMART mind.",
-  "lossText": "SMART - quick to learn and clever. SHARP was the pivot: in music a SHARP raises a note, but a SHARP person is also clever, which is another way to say SMART.",
-  "gridString": "TDENUTARGASMEONAIPBHOOUROCSETTSHARPE"
+  "pivHint": "A SHARP raises a note in music - but a SHARP mind is quick and ______.",
+  "winText": "Quick on the uptake. SHARP was the pivot - a raised note to a SMART mind.",
+  "lossText": "SMART - quick to learn. SHARP was the pivot: a musical SHARP, and a SHARP mind, one that is SMART.",
+  "gridString": "SCHORDHUBEATASATPURTOOGNPIANOERISMGE"
 }

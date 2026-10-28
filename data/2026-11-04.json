@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "CHILL",
   "target": "RELAX",
-  "noise": "VD",
+  "noise": "OVSWT",
   "latHint": "Think a hammock, a cold drink, and nowhere to be.",
-  "pivHint": "A CHILL is a cool, nippy feeling in the air. Telling a friend to CHILL means to calm down and ______.",
-  "winText": "Easy does it. CHILL was the pivot - a nip in the air to a calm instruction to RELAX.",
-  "lossText": "RELAX - to calm down and rest. CHILL was the pivot: a CHILL is a cool feeling in the air, but in slang, to CHILL means to calm down and RELAX.",
-  "gridString": "CLOUDASLLFLDNIIRNEOHAOIVWCHSARGUSTRX"
+  "pivHint": "A CHILL is a cool nip in the air - but telling a friend to CHILL means to do what?",
+  "winText": "Easy does it. CHILL was the pivot - cool air to a calm order to RELAX.",
+  "lossText": "RELAX - to calm down and rest. CHILL was the pivot: a weather CHILL, and to 'CHILL out' means to RELAX.",
+  "gridString": "CSFLVHHLRXOAIWONSILTSUGLLATTDRRAINEW"
 }

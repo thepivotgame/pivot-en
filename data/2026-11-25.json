@@ -1,21 +1,21 @@
 {
-  "theme": "PAINTER",
+  "theme": "BEDROOM",
   "words": [
-    "WASH",
-    "TINT",
-    "BLUE",
-    "GOLD",
-    "EASEL",
-    "PAINT",
-    "SHADE"
+    "LAMP",
+    "RUGS",
+    "DOZE",
+    "ROBE",
+    "SHEET",
+    "QUILT",
+    "SLEEP"
   ],
   "SIZE": 6,
-  "pivot": "WASH",
-  "target": "CLEAN",
-  "noise": "TYWMJ",
-  "latHint": "Think spotless, like a freshly scrubbed kitchen.",
-  "pivHint": "In watercolor, a WASH is a thin, see-through layer of paint. In the sink, to WASH something is to make it ______.",
-  "winText": "Squeaky. WASH was the pivot - a thin layer of watercolor to making things CLEAN.",
-  "lossText": "CLEAN - free of dirt. WASH was the pivot: a WASH is a thin layer of watercolor paint, but to WASH dishes or clothes is to make them CLEAN.",
-  "gridString": "LESAEWPDUMNLHADLOGSHIEBAASCNJYWTINTT"
+  "pivot": "SHEET",
+  "target": "PAPER",
+  "noise": "GSHT",
+  "latHint": "Think folding a crane for good luck.",
+  "pivHint": "A SHEET covers your mattress - but a SHEET of what is a flat page for writing?",
+  "winText": "Fresh page. SHEET was the pivot - a bed cover to a SHEET of PAPER.",
+  "lossText": "PAPER - the flat material we write on. SHEET was the pivot: a bed SHEET, and a SHEET of PAPER.",
+  "gridString": "SPRSQPHEGUEREEIAGTELAMPSTSDOZEROBEPH"
 }

@@ -4,18 +4,18 @@
     "TENT",
     "FIRE",
     "LAKE",
-    "WOOD",
-    "STAKE",
+    "BOOT",
     "CANOE",
-    "BOOTS"
+    "STOVE",
+    "TRAIL"
   ],
   "SIZE": 6,
-  "pivot": "STAKE",
-  "target": "SHARE",
-  "noise": "EDIJ",
-  "latHint": "Think splitting a pizza evenly among friends.",
-  "pivHint": "A STAKE is a pointed peg that holds a tent in the ground. In business, an investor also owns a STAKE, meaning a ______ of the company.",
-  "winText": "Your piece of the pie. STAKE was the pivot - a tent peg to a SHARE of ownership.",
-  "lossText": "SHARE - a part of something owned. STAKE was the pivot: a STAKE is a peg that anchors a tent, but a STAKE in a business means a piece of ownership, a SHARE of the company.",
-  "gridString": "REONACBRWHSLOIDOAIOFAKOETNETJDSTAKEE"
+  "pivot": "BOOT",
+  "target": "START",
+  "noise": "GPUEI",
+  "latHint": "Think pressing the power button.",
+  "pivHint": "A hiking BOOT protects your foot - but to BOOT a computer is to ______ it up.",
+  "winText": "Powered up. BOOT was the pivot - a trail BOOT to a computer you BOOT, or START.",
+  "lossText": "START - to begin. BOOT was the pivot: a trail BOOT, and to BOOT a computer means to START it up.",
+  "gridString": "SCFPELTRAILAOEBNRKVINOOEEGUTOETSRTAT"
 }

@@ -1,21 +1,21 @@
 {
-  "theme": "CANDLE",
+  "theme": "PAINTER",
   "words": [
-    "WICK",
-    "GLOW",
-    "DRIP",
-    "SOOT",
-    "FLAME",
-    "SMOKE",
-    "TAPER"
+    "WASH",
+    "TINT",
+    "BLUE",
+    "GOLD",
+    "EASEL",
+    "PAINT",
+    "SHADE"
   ],
   "SIZE": 6,
-  "pivot": "FLAME",
-  "target": "LOVER",
-  "noise": "AUAG",
-  "latHint": "Think roses, sonnets, and a longing heart.",
-  "pivHint": "A FLAME is the glowing, flickering part of a fire. An old FLAME is a former ______.",
-  "winText": "Still burning. FLAME was the pivot - a candle's glow to an old FLAME, a past LOVER.",
-  "lossText": "LOVER - someone you have romantic feelings for. FLAME was the pivot: a FLAME is the glow atop a candle, but an old FLAME is a former sweetheart, a past LOVER.",
-  "gridString": "SMOKEKAAWTMCUOOAAIVOLPLWSEGEFGRPIRDL"
+  "pivot": "WASH",
+  "target": "CLEAN",
+  "noise": "TYSKR",
+  "latHint": "Think spotless, like a freshly scrubbed kitchen.",
+  "pivHint": "A WASH is a thin layer of watercolor - but to WASH dishes is to make them what?",
+  "winText": "Squeaky. WASH was the pivot - thin watercolor to making things CLEAN.",
+  "lossText": "CLEAN - free of dirt. WASH was the pivot: a paint WASH, and to WASH dishes until they are CLEAN.",
+  "gridString": "PBLUEKAGOLDWITAEALNIYSHTTNHASCSTEENR"
 }

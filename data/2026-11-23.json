@@ -1,21 +1,21 @@
 {
-  "theme": "HIGHWAY",
+  "theme": "ROADWAY",
   "words": [
     "LANE",
     "EXIT",
     "RAMP",
-    "SIGN",
-    "YIELD",
+    "HORN",
     "TRUCK",
-    "MERGE"
+    "MERGE",
+    "ROUTE"
   ],
   "SIZE": 6,
-  "pivot": "YIELD",
-  "target": "CROPS",
-  "noise": "YRUPY",
-  "latHint": "Think corn, wheat, and soybeans.",
-  "pivHint": "A YIELD sign tells drivers to give way to others. On a farm, the YIELD is the amount of ______ harvested from a field.",
-  "winText": "Bumper harvest. YIELD was the pivot - a road sign to the farm's YIELD of CROPS.",
-  "lossText": "CROPS - plants grown and harvested for food. YIELD was the pivot: a YIELD sign tells drivers to give way, but a farm's YIELD is the amount of CROPS it produces.",
-  "gridString": "EXITLTUDPMARSLRYNUMERGECSIGNPKOYPYCR"
+  "pivot": "HORN",
+  "target": "BRASS",
+  "noise": "DHE",
+  "latHint": "Think trumpets, trombones, and tubas.",
+  "pivHint": "A HORN honks a warning on the road - but a HORN also plays in the ______ section of an orchestra.",
+  "winText": "Loud and clear. HORN was the pivot - a car's warning to the BRASS section.",
+  "lossText": "BRASS - the family of loud metal instruments. HORN was the pivot: a road HORN, and an orchestra HORN, part of the BRASS section.",
+  "gridString": "TMERGERRNOHXUAAUOICMLTRTKPSENRSDBAEH"
 }

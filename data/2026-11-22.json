@@ -5,17 +5,17 @@
     "OATS",
     "MILK",
     "HASH",
-    "POACH",
-    "TOAST",
-    "SYRUP"
+    "SYRUP",
+    "BACON",
+    "FRUIT"
   ],
   "SIZE": 6,
-  "pivot": "POACH",
-  "target": "STEAL",
-  "noise": "IVDO",
-  "latHint": "Think a pickpocket on a crowded street.",
-  "pivHint": "To POACH an egg is to cook it gently in simmering water. To POACH a rival's best employee is to lure them away - in plain words, to ______ them.",
-  "winText": "Sneaky. POACH was the pivot - a gently cooked egg to taking what is not yours, to STEAL.",
-  "lossText": "STEAL - to take something that is not yours. POACH was the pivot: to POACH an egg is to simmer it gently, but to POACH also means to take what belongs to another, like a rival's star employee, which is to STEAL.",
-  "gridString": "TSAOTVMPURYSIOTOGTLASGAAKCELEODHSAHI"
+  "pivot": "HASH",
+  "target": "POUND",
+  "noise": "RM",
+  "latHint": "Think what a hammer does to a nail.",
+  "pivHint": "HASH is a fried breakfast of potatoes and meat - but the # key is also called the ______ sign.",
+  "winText": "Key find. HASH was the pivot - a breakfast dish to the # sign, also called POUND.",
+  "lossText": "POUND - another name for the # symbol. HASH was the pivot: breakfast HASH, and the HASH sign #, also called POUND.",
+  "gridString": "SBACONYFRUITREGGSMUNUTOIPHASHLROPDMK"
 }

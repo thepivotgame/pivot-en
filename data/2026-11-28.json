@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "DECK",
   "target": "CARDS",
-  "noise": "OE",
+  "noise": "GPUEI",
   "latHint": "Think a dealer shuffling at the kitchen table.",
-  "pivHint": "A DECK is a wooden platform built behind a house. It is also a full set of 52 playing ______.",
+  "pivHint": "A DECK is a wooden platform behind a house - but a DECK is also 52 playing ______.",
   "winText": "Shuffle up. DECK was the pivot - a backyard platform to a set of playing CARDS.",
-  "lossText": "CARDS - the paper pieces used in games. DECK was the pivot: a DECK is a wooden platform behind a house, but a DECK is also a full set of 52 playing CARDS.",
-  "gridString": "STAIRKDHRAOCRAOTOEOLOTFDCLDIAEPORCHS"
+  "lossText": "CARDS - paper pieces used in games. DECK was the pivot: a house DECK, and a DECK of 52 CARDS.",
+  "gridString": "PAHALLOUTRPSRIATSDCOGDIEHROOFCICADEK"
 }

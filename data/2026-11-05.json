@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "DOUGH",
   "target": "MONEY",
-  "noise": "HGN",
+  "noise": "LD",
   "latHint": "Think a paycheck at the end of the week.",
-  "pivHint": "DOUGH is the soft mixture bakers knead and roll into loaves. In everyday slang, it is also what people earn and spend.",
-  "winText": "Rolling in it. DOUGH was the pivot - a baker's DOUGH to the slang for MONEY.",
-  "lossText": "MONEY - what people earn and spend. DOUGH was the pivot: bakers knead DOUGH to make bread, and in slang, DOUGH is another word for MONEY.",
-  "gridString": "DOUGHLLNSGCOLYNROAORUOLFRSBHENTMOVEN"
+  "pivHint": "Bakers knead DOUGH into bread - but earning some DOUGH means earning what?",
+  "winText": "Rolling in it. DOUGH was the pivot - bread DOUGH to the slang for MONEY.",
+  "lossText": "MONEY - what you earn and spend. DOUGH was the pivot: a baker's DOUGH, and slang DOUGH for MONEY.",
+  "gridString": "DFLOUROCRUSTULOAFBGLVENUHOEOLNMRNYDS"
 }

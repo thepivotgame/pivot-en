@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "CHIP",
   "target": "SNACK",
-  "noise": "UO",
+  "noise": "ILDEOM",
   "latHint": "Think something small you grab between meals.",
-  "pivHint": "A CHIP is a tiny piece of silicon that powers a computer. It is also a thin, crunchy slice of potato, a salty ______.",
+  "pivHint": "A computer CHIP is tiny silicon - but a potato CHIP is a crunchy what?",
   "winText": "Crunch time. CHIP was the pivot - a computer part to a crunchy SNACK.",
-  "lossText": "SNACK - a small bite between meals. CHIP was the pivot: a computer CHIP is a tiny circuit, but a potato CHIP is a crunchy SNACK.",
-  "gridString": "PIXELNICECMUHOTLOOCDYIUSCEBCSADISKEK"
+  "lossText": "SNACK - a small bite between meals. CHIP was the pivot: a computer CHIP, and a potato CHIP, a SNACK.",
+  "gridString": "CMOUSELHPDMDIOIKAOCSXPCCKDETYBLSLIEN"
 }

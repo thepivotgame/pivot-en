@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "STOCK",
   "target": "BROTH",
-  "noise": "JPL",
+  "noise": "WEC",
   "latHint": "Think a bowl of chicken noodle when you are under the weather.",
-  "pivHint": "On a farm, STOCK means the animals raised there, such as cattle and sheep. In the kitchen, it is the simmered liquid that soups start from, also called ______.",
-  "winText": "Simmered to perfection. STOCK was the pivot - farm animals to the flavorful BROTH in a soup pot.",
-  "lossText": "BROTH - a thin, flavorful soup liquid. STOCK was the pivot: STOCK on a farm means the animals, but in a kitchen STOCK is a simmered liquid used as a soup base, much like BROTH.",
-  "gridString": "JSTOCKPHDPFBLGRAINOLERERWTHOLAPOOCDB"
+  "pivHint": "Farm STOCK is cattle and sheep - but in the kitchen, STOCK is a soup base, much like ______.",
+  "winText": "Simmered nicely. STOCK was the pivot - farm animals to a pot of BROTH.",
+  "lossText": "BROTH - a thin, savory soup liquid. STOCK was the pivot: farm STOCK, and soup STOCK, a base much like BROTH.",
+  "gridString": "SFIELDTGRAINOPHERDCLOAHRKOBOTWBWOCCE"
 }

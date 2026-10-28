@@ -1,5 +1,5 @@
 {
-  "theme": "AUTUMN",
+  "theme": "NOVEMBER",
   "words": [
     "RAKE",
     "LEAF",
@@ -12,10 +12,10 @@
   "SIZE": 6,
   "pivot": "RAKE",
   "target": "ROGUE",
-  "noise": "RGNC",
+  "noise": "ADHL",
   "latHint": "Think a lone elephant that has wandered away from the herd.",
-  "pivHint": "A RAKE is a long-handled tool for gathering fallen leaves. In old novels, a RAKE is also a charming, mischievous fellow of doubtful morals - a ______.",
-  "winText": "Charming trouble. RAKE was the pivot - a leaf-gathering tool to a dashing ROGUE.",
-  "lossText": "ROGUE - a charming, mischievous scoundrel. RAKE was the pivot: a RAKE gathers fallen leaves, but in old novels a RAKE is also a dashing, mischievous man, a ROGUE.",
-  "gridString": "DNIWECTRFKGRSMAPLEIREDICMELUOGNROCAN"
+  "pivHint": "A RAKE gathers fallen leaves - but in old novels a RAKE is a charming, mischievous ______.",
+  "winText": "Charming trouble. RAKE was the pivot - a leaf tool to a dashing ROGUE.",
+  "lossText": "ROGUE - a charming scoundrel. RAKE was the pivot: a lawn RAKE to the dashing RAKE of old novels, a ROGUE.",
+  "gridString": "AMAPLECIDERWOMADAIRFIGKNNAUSEDEOLRTH"
 }

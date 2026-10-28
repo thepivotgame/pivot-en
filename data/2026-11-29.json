@@ -4,18 +4,18 @@
     "OPAL",
     "RUBY",
     "GOLD",
-    "GEMS",
-    "CHARM",
+    "BAND",
     "PEARL",
-    "CHAIN"
+    "CHAIN",
+    "STONE"
   ],
   "SIZE": 6,
-  "pivot": "CHARM",
-  "target": "SPELL",
-  "noise": "OL",
-  "latHint": "Think what a student does with each letter of a tricky word.",
-  "pivHint": "A CHARM is a tiny trinket that dangles from a bracelet. It is also a magical incantation that a wizard might cast - a ______.",
-  "winText": "Magic words. CHARM was the pivot - a bracelet trinket to a SPELL.",
-  "lossText": "SPELL - magic words that cast an enchantment. CHARM was the pivot: a CHARM is a small trinket on a bracelet, but in fairy tales a CHARM is also a magical incantation, a SPELL.",
-  "gridString": "CHAINYLHGLEBGLAESUOPORMRLAPOMSDLRAEP"
+  "pivot": "BAND",
+  "target": "GROUP",
+  "noise": "GSHT",
+  "latHint": "Think a gathering of people who share something in common.",
+  "pivHint": "A BAND is a plain ring of gold - but a BAND on stage is a musical ______.",
+  "winText": "In tune. BAND was the pivot - a gold ring to a musical GROUP.",
+  "lossText": "GROUP - people together. BAND was the pivot: a wedding BAND, and a rock BAND, a GROUP of players.",
+  "gridString": "PCHAINENOTSRABPSGURAAOOBLNLGUYPDRTGH"
 }
