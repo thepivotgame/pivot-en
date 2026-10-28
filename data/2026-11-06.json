@@ -1,0 +1,21 @@
+{
+  "theme": "SCHOOL",
+  "words": [
+    "DESK",
+    "BELL",
+    "BOOK",
+    "TEST",
+    "RULER",
+    "CHALK",
+    "CLASS"
+  ],
+  "SIZE": 6,
+  "pivot": "RULER",
+  "target": "QUEEN",
+  "noise": "WLGUVD",
+  "latHint": "Think a crown, a throne, and a very long reign.",
+  "pivHint": "A RULER is a straight-edged tool for measuring and drawing lines. It is also a person who governs a kingdom, such as a king or a ______.",
+  "winText": "Long may she reign. RULER was the pivot - a classroom measuring tool to a royal RULER, the QUEEN.",
+  "lossText": "QUEEN - a woman who rules a kingdom. RULER was the pivot: a RULER measures lines at school, but a RULER is also someone who governs, such as a king or a QUEEN.",
+  "gridString": "RKOOBDGULNLEWCLASSEVEEHKDEBURCQTESTU"
+}

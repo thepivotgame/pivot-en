@@ -1,0 +1,21 @@
+{
+  "theme": "WORKSHOP",
+  "words": [
+    "NAIL",
+    "FILE",
+    "BOLT",
+    "VISE",
+    "LEVEL",
+    "DRILL",
+    "CLAMP"
+  ],
+  "SIZE": 6,
+  "pivot": "LEVEL",
+  "target": "FLOOR",
+  "noise": "VHIG",
+  "latHint": "Think where the carpet or tile goes, and what you sweep and mop.",
+  "pivHint": "A LEVEL is a tool with a small bubble that shows whether a surface is flat. It is also one story of a building, like the ground ______.",
+  "winText": "Solid ground. LEVEL was the pivot - a builder's bubble tool to one story of a building, a FLOOR.",
+  "lossText": "FLOOR - one story of a building. LEVEL was the pivot: a LEVEL checks that a surface is flat, but a LEVEL is also one story of a building, like the ground FLOOR.",
+  "gridString": "LIANORFLEVELECLAMPSGIIVOILFHRIVBOLTD"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "BREAKFAST",
+  "words": [
+    "EGGS",
+    "OATS",
+    "MILK",
+    "HASH",
+    "POACH",
+    "TOAST",
+    "SYRUP"
+  ],
+  "SIZE": 6,
+  "pivot": "POACH",
+  "target": "STEAL",
+  "noise": "IVDO",
+  "latHint": "Think a pickpocket on a crowded street.",
+  "pivHint": "To POACH an egg is to cook it gently in simmering water. To POACH a rival's best employee is to lure them away - in plain words, to ______ them.",
+  "winText": "Sneaky. POACH was the pivot - a gently cooked egg to taking what is not yours, to STEAL.",
+  "lossText": "STEAL - to take something that is not yours. POACH was the pivot: to POACH an egg is to simmer it gently, but to POACH also means to take what belongs to another, like a rival's star employee, which is to STEAL.",
+  "gridString": "TSAOTVMPURYSIOTOGTLASGAAKCELEODHSAHI"
+}

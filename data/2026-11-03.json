@@ -1,0 +1,21 @@
+{
+  "theme": "CHESS",
+  "words": [
+    "ROOK",
+    "KING",
+    "MOVE",
+    "PAWN",
+    "QUEEN",
+    "BOARD",
+    "CHECK"
+  ],
+  "SIZE": 6,
+  "pivot": "ROOK",
+  "target": "RAVEN",
+  "noise": "FUAY",
+  "latHint": "Think a gloomy poem that keeps saying 'Nevermore.'",
+  "pivHint": "A ROOK is the castle-shaped chess piece. It is also a black bird of the crow family, a cousin of the crow and the ______.",
+  "winText": "Nevermore lost. ROOK was the pivot - a chess castle to a fellow black bird, the RAVEN.",
+  "lossText": "RAVEN - a large black bird of the crow family. ROOK was the pivot: a ROOK is a chess piece, but a ROOK is also a black bird in the same family as the RAVEN.",
+  "gridString": "KKNVQEICOUVANUEOFYGEMHRENWAPCRBOARDA"
+}

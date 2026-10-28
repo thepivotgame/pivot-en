@@ -1,0 +1,21 @@
+{
+  "theme": "PIRATES",
+  "words": [
+    "SHIP",
+    "GOLD",
+    "SAIL",
+    "ISLE",
+    "CHEST",
+    "SWORD",
+    "PLANK"
+  ],
+  "SIZE": 6,
+  "pivot": "CHEST",
+  "target": "HEART",
+  "noise": "AYEJ",
+  "latHint": "Think a drumbeat inside you, or a symbol on a Valentine.",
+  "pivHint": "A CHEST is a sturdy box for burying treasure. On your body, it is also the front of your upper body, where the lungs sit beside the ______.",
+  "winText": "Treasure inside. CHEST was the pivot - a box of gold to the body part that beats inside it, the HEART.",
+  "lossText": "HEART - the organ that pumps blood. CHEST was the pivot: a treasure CHEST is a sturdy box, but your CHEST is also the front of your upper body, which holds your lungs and your HEART.",
+  "gridString": "DROWSETKNALPSGJSIYEOIHAEHLSASRCDTHAE"
+}

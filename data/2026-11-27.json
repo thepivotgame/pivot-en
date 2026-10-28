@@ -1,0 +1,21 @@
+{
+  "theme": "CANDLE",
+  "words": [
+    "WICK",
+    "GLOW",
+    "DRIP",
+    "SOOT",
+    "FLAME",
+    "SMOKE",
+    "TAPER"
+  ],
+  "SIZE": 6,
+  "pivot": "FLAME",
+  "target": "LOVER",
+  "noise": "AUAG",
+  "latHint": "Think roses, sonnets, and a longing heart.",
+  "pivHint": "A FLAME is the glowing, flickering part of a fire. An old FLAME is a former ______.",
+  "winText": "Still burning. FLAME was the pivot - a candle's glow to an old FLAME, a past LOVER.",
+  "lossText": "LOVER - someone you have romantic feelings for. FLAME was the pivot: a FLAME is the glow atop a candle, but an old FLAME is a former sweetheart, a past LOVER.",
+  "gridString": "SMOKEKAAWTMCUOOAAIVOLPLWSEGEFGRPIRDL"
+}

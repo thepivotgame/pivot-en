@@ -1,0 +1,21 @@
+{
+  "theme": "CIRCUS",
+  "words": [
+    "RING",
+    "TENT",
+    "HOOP",
+    "LION",
+    "CLOWN",
+    "TAMER",
+    "MAGIC"
+  ],
+  "SIZE": 6,
+  "pivot": "RING",
+  "target": "PHONE",
+  "noise": "EVTG",
+  "latHint": "Think the device in your pocket that buzzes with messages.",
+  "pivHint": "A RING is the round arena where circus acts perform. As a verb, to give someone a RING means to ______ them.",
+  "winText": "Calling it right. RING was the pivot - a circus arena to a quick call: to RING someone is to PHONE them.",
+  "lossText": "PHONE - to call someone on a handset. RING was the pivot: a RING is a circus arena, but to give someone a RING means to PHONE them.",
+  "gridString": "LREMATICIGAMOPTNETNEOHGVONWOLCGNTEHP"
+}

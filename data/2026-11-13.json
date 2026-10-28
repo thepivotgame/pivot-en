@@ -1,0 +1,21 @@
+{
+  "theme": "MYSTERY",
+  "words": [
+    "LEAD",
+    "CASE",
+    "CLUE",
+    "TAIL",
+    "ALIBI",
+    "TRACE",
+    "CRIME"
+  ],
+  "SIZE": 6,
+  "pivot": "LEAD",
+  "target": "METAL",
+  "noise": "VRSONO",
+  "latHint": "Think blacksmiths, anvils, and shiny armor.",
+  "pivHint": "A LEAD is a clue that points a detective toward a suspect. Spelled the same, LEAD is also a heavy, soft gray ______ once used in pipes and paint.",
+  "winText": "Heavy stuff. LEAD was the pivot - a detective's clue to a heavy gray METAL.",
+  "lossText": "METAL - a hard, shiny material like iron or tin. LEAD was the pivot: a LEAD is a clue in an investigation, but LEAD is also a soft, heavy METAL once used in pipes.",
+  "gridString": "EALIBISRECTLCVSRTMLTAILNUCCMOAEOLEAD"
+}

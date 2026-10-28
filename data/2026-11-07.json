@@ -1,0 +1,21 @@
+{
+  "theme": "OCEAN",
+  "words": [
+    "SEAL",
+    "WAVE",
+    "KELP",
+    "TIDE",
+    "CORAL",
+    "SHARK",
+    "WHALE"
+  ],
+  "SIZE": 6,
+  "pivot": "SEAL",
+  "target": "CLOSE",
+  "noise": "VRS",
+  "latHint": "Think the opposite of open.",
+  "pivHint": "A SEAL is a sleek, whiskered ocean mammal. As a verb, you SEAL a deal when you finally ______ it.",
+  "winText": "Deal done. SEAL was the pivot - from a whiskered ocean swimmer to the moment you CLOSE a deal.",
+  "lossText": "CLOSE - to finish or shut. SEAL was the pivot: a SEAL is an ocean animal, but to SEAL a deal, an envelope, or a jar is to CLOSE it firmly.",
+  "gridString": "CORALLPLEKESCRVLEESHARKASHWOVLWSTIDE"
+}

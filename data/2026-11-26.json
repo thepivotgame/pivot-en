@@ -1,0 +1,21 @@
+{
+  "theme": "FEAST",
+  "words": [
+    "YAMS",
+    "ROLL",
+    "WINE",
+    "TART",
+    "GRAVY",
+    "GUEST",
+    "TABLE"
+  ],
+  "SIZE": 6,
+  "pivot": "GRAVY",
+  "target": "BONUS",
+  "noise": "LCEF",
+  "latHint": "Think a free upgrade, or an extra scoop of ice cream.",
+  "pivHint": "GRAVY is the savory sauce poured over turkey and potatoes. In slang, it is also an unexpected extra, like a ______ added to your paycheck.",
+  "winText": "Pure extra. GRAVY was the pivot - a sauce for the turkey to a welcome BONUS.",
+  "lossText": "BONUS - an extra reward beyond what you expected. GRAVY was the pivot: GRAVY tops a turkey dinner, and in slang GRAVY means a pleasant extra, a BONUS on top of what you earned.",
+  "gridString": "TGRAVYAELLCARNLBOMTIOBSSNWRFAEUGUEST"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "SPACE",
+  "words": [
+    "MOON",
+    "MARS",
+    "NOVA",
+    "DUST",
+    "ROVER",
+    "COMET",
+    "LUNAR"
+  ],
+  "SIZE": 6,
+  "pivot": "ROVER",
+  "target": "NOMAD",
+  "noise": "UPJ",
+  "latHint": "Think tents, camels, and no fixed address.",
+  "pivHint": "A ROVER is a wheeled robot that explores the surface of another planet. The word also means a wanderer who roams from place to place - a ______.",
+  "winText": "Always on the move. ROVER was the pivot - a robot explorer to a wandering NOMAD.",
+  "lossText": "NOMAD - a person who roams with no fixed home. ROVER was the pivot: a ROVER explores a planet's surface, and the word ROVER also means a wanderer, which is exactly what a NOMAD is.",
+  "gridString": "ROVERCAADAOOVNNUJMOPUUSENOOMLTMDMARS"
+}

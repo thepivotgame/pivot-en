@@ -1,0 +1,21 @@
+{
+  "theme": "HOUSE",
+  "words": [
+    "DECK",
+    "DOOR",
+    "ROOF",
+    "HALL",
+    "PORCH",
+    "STAIR",
+    "ATTIC"
+  ],
+  "SIZE": 6,
+  "pivot": "DECK",
+  "target": "CARDS",
+  "noise": "OE",
+  "latHint": "Think a dealer shuffling at the kitchen table.",
+  "pivHint": "A DECK is a wooden platform built behind a house. It is also a full set of 52 playing ______.",
+  "winText": "Shuffle up. DECK was the pivot - a backyard platform to a set of playing CARDS.",
+  "lossText": "CARDS - the paper pieces used in games. DECK was the pivot: a DECK is a wooden platform behind a house, but a DECK is also a full set of 52 playing CARDS.",
+  "gridString": "STAIRKDHRAOCRAOTOEOLOTFDCLDIAEPORCHS"
+}

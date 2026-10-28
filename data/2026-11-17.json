@@ -1,0 +1,21 @@
+{
+  "theme": "SEWING",
+  "words": [
+    "SEAM",
+    "YARN",
+    "SILK",
+    "PINS",
+    "BASTE",
+    "CLOTH",
+    "SPOOL"
+  ],
+  "SIZE": 6,
+  "pivot": "BASTE",
+  "target": "ROAST",
+  "noise": "AWT",
+  "latHint": "Think Sunday dinner, with the oven on for hours.",
+  "pivHint": "To BASTE in sewing is to stitch loosely so fabric stays put for a while. In the kitchen, you BASTE a turkey with its own juices as it cooks into a golden ______.",
+  "winText": "Golden brown. BASTE was the pivot - loose stitches to juices spooned over a ROAST.",
+  "lossText": "ROAST - meat cooked slowly in an oven. BASTE was the pivot: to BASTE in sewing is to stitch loosely, but to BASTE in cooking is to spoon juices over meat as it cooks into a ROAST.",
+  "gridString": "TCSNIPOLOOPSSOTSEAITYARNLHMRWAKBASTE"
+}

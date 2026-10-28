@@ -1,0 +1,21 @@
+{
+  "theme": "HIGHWAY",
+  "words": [
+    "LANE",
+    "EXIT",
+    "RAMP",
+    "SIGN",
+    "YIELD",
+    "TRUCK",
+    "MERGE"
+  ],
+  "SIZE": 6,
+  "pivot": "YIELD",
+  "target": "CROPS",
+  "noise": "YRUPY",
+  "latHint": "Think corn, wheat, and soybeans.",
+  "pivHint": "A YIELD sign tells drivers to give way to others. On a farm, the YIELD is the amount of ______ harvested from a field.",
+  "winText": "Bumper harvest. YIELD was the pivot - a road sign to the farm's YIELD of CROPS.",
+  "lossText": "CROPS - plants grown and harvested for food. YIELD was the pivot: a YIELD sign tells drivers to give way, but a farm's YIELD is the amount of CROPS it produces.",
+  "gridString": "EXITLTUDPMARSLRYNUMERGECSIGNPKOYPYCR"
+}

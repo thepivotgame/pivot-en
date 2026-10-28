@@ -1,0 +1,21 @@
+{
+  "theme": "CITRUS",
+  "words": [
+    "PEEL",
+    "PULP",
+    "SEED",
+    "ZEST",
+    "LEMON",
+    "JUICE",
+    "SLICE"
+  ],
+  "SIZE": 6,
+  "pivot": "ZEST",
+  "target": "GUSTO",
+  "noise": "VRSO",
+  "latHint": "Think a cheerful chef tackling a huge feast.",
+  "pivHint": "ZEST is the bright outer peel of a lemon or orange, grated into recipes. It is also lively energy, as in singing 'with ______.'",
+  "winText": "Full of life. ZEST was the pivot - lemon peel to lively GUSTO.",
+  "lossText": "GUSTO - hearty enthusiasm and energy. ZEST was the pivot: ZEST is the outer peel of a citrus fruit, but it is also a word for lively enthusiasm, as in doing something with GUSTO.",
+  "gridString": "LEEPSEZRPGCLESLICESOUUOMTJPTSODEESVN"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "COFFEE",
+  "words": [
+    "BEAN",
+    "BREW",
+    "MILK",
+    "MUGS",
+    "LATTE",
+    "ROAST",
+    "CREMA"
+  ],
+  "SIZE": 6,
+  "pivot": "BREW",
+  "target": "STORM",
+  "noise": "YON",
+  "latHint": "Think thunder, lightning, and a downpour.",
+  "pivHint": "To BREW is to steep coffee in hot water. When trouble is gathering, we also say it is BREWing - like dark clouds before a ______.",
+  "winText": "Dark clouds gathering. BREW was the pivot - a pot of coffee to a STORM that is BREWing.",
+  "lossText": "STORM - a spell of violent wind and rain. BREW was the pivot: you BREW coffee, but trouble or bad weather is also said to be BREWing, as in 'a STORM is BREWing.'",
+  "gridString": "TSAORONWMYMEMBEANTIORRSTLRCTBAKSGUML"
+}

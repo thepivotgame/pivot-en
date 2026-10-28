@@ -1,0 +1,21 @@
+{
+  "theme": "RIVER",
+  "words": [
+    "FLOW",
+    "SILT",
+    "REED",
+    "BOAT",
+    "DELTA",
+    "CREEK",
+    "OTTER"
+  ],
+  "SIZE": 6,
+  "pivot": "DELTA",
+  "target": "GAMMA",
+  "noise": "AU",
+  "latHint": "Think invisible, high-energy rays from exploding stars.",
+  "pivHint": "A DELTA is the fan-shaped land where a river meets the sea. It is also the fourth letter of an old alphabet that begins alpha, beta, ______.",
+  "winText": "Right on the letter. DELTA was the pivot - a river's fan of land to the letter just before it, GAMMA.",
+  "lossText": "GAMMA - the third letter of an old alphabet that runs alpha, beta, GAMMA, DELTA. DELTA was the pivot: a river DELTA is where land fans out at the sea, but DELTA is also a letter, and GAMMA comes right before it.",
+  "gridString": "SDELTAIDUAKRLTEAEETAMEETWOLFRTABMGCO"
+}

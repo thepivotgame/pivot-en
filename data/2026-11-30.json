@@ -1,0 +1,21 @@
+{
+  "theme": "GAMES",
+  "words": [
+    "DEAL",
+    "HAND",
+    "PAIR",
+    "SUIT",
+    "BLUFF",
+    "JOKER",
+    "RUMMY"
+  ],
+  "SIZE": 6,
+  "pivot": "BLUFF",
+  "target": "CLIFF",
+  "noise": "KN",
+  "latHint": "Think a dramatic, rocky edge where sea gulls nest.",
+  "pivHint": "To BLUFF is to pretend you hold stronger cards than you do. A BLUFF is also a steep, broad-faced ______ overlooking the water.",
+  "winText": "Called it. BLUFF was the pivot - a card player's trick to a steep CLIFF.",
+  "lossText": "CLIFF - a steep rock face. BLUFF was the pivot: to BLUFF is to fake a strong hand at cards, but a BLUFF is also a steep, broad bank or rock face overlooking water, much like a CLIFF.",
+  "gridString": "YMMURHFRSFKAFREUCNUILKIDLAEDOTBPINFJ"
+}

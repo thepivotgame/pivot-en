@@ -1,0 +1,21 @@
+{
+  "theme": "THEATER",
+  "words": [
+    "PLAY",
+    "CAST",
+    "SEAT",
+    "ROLE",
+    "STAGE",
+    "DRAMA",
+    "USHER"
+  ],
+  "SIZE": 6,
+  "pivot": "STAGE",
+  "target": "PHASE",
+  "noise": "JFRG",
+  "latHint": "Think a toddler's temporary habit that they soon outgrow.",
+  "pivHint": "A STAGE is the raised platform where actors perform. It is also one step in a changing cycle, like the full or crescent ______ of the moon.",
+  "winText": "Moving on. STAGE was the pivot - where actors perform to a PHASE you pass through.",
+  "lossText": "PHASE - one step in a process or cycle. STAGE was the pivot: a STAGE is a theater platform, but it also means a step in a longer cycle, like a PHASE of the moon.",
+  "gridString": "TPYALPAFTAJDEUSHERSTAGEASECGRMHROLEA"
+}
