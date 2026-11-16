@@ -1,0 +1,21 @@
+{
+  "theme": "PLAYROOM",
+  "words": [
+    "DOLL",
+    "PLAY",
+    "GAME",
+    "TOYS",
+    "PAINT",
+    "TEDDY",
+    "BLOCK"
+  ],
+  "SIZE": 6,
+  "pivot": "GAME",
+  "target": "READY",
+  "noise": "OVSWT",
+  "latHint": "Think set and willing - not a contest.",
+  "pivHint": "A GAME is played in the playroom - but to be GAME for it means you are willing and what?",
+  "winText": "Count me in. GAME was the pivot - a contest to being READY.",
+  "lossText": "READY - prepared. GAME was the pivot: a playroom GAME to being GAME for it.",
+  "gridString": "TNIAPBOEDOLLYVDOAGSWCDYATKOSYMYRDEAE"
+}

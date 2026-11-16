@@ -1,0 +1,21 @@
+{
+  "theme": "BEACON",
+  "words": [
+    "WAVE",
+    "ROCK",
+    "PIER",
+    "LAMP",
+    "COAST",
+    "TOWER",
+    "FLARE"
+  ],
+  "SIZE": 6,
+  "pivot": "LAMP",
+  "target": "GENIE",
+  "noise": "RLBTEAP",
+  "latHint": "Think a wish-granting spirit - not a light.",
+  "pivHint": "A LAMP lights a room - but in an old tale, who comes out when you rub the magic LAMP?",
+  "winText": "Three wishes. LAMP was the pivot - a light to a GENIE.",
+  "lossText": "GENIE - a wish-granting spirit. LAMP was the pivot: a room LAMP to Aladdin's LAMP.",
+  "gridString": "CNEFPLOTWLERAKLAMPSCGRVITOWEREIRABER"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "FLOWERBED",
+  "words": [
+    "ROSE",
+    "LILY",
+    "IRIS",
+    "STEM",
+    "BLOOM",
+    "DAISY",
+    "PETAL"
+  ],
+  "SIZE": 6,
+  "pivot": "IRIS",
+  "target": "PUPIL",
+  "noise": "GSHT",
+  "latHint": "Think the black dot in your eye - not a flower.",
+  "pivHint": "An IRIS is a tall flower - but the IRIS is also the colored ring around what part of the eye?",
+  "winText": "Eyes wide. IRIS was the pivot - a flower to the eye's PUPIL.",
+  "lossText": "PUPIL - the dark opening in the eye. IRIS was the pivot: a garden IRIS to the IRIS of the eye.",
+  "gridString": "DGHIPEALRTESIILITOSLPEARYYMULPBLOOMS"
+}

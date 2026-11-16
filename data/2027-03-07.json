@@ -1,0 +1,21 @@
+{
+  "theme": "JUNKYARD",
+  "words": [
+    "CARS",
+    "RUST",
+    "WIRE",
+    "HEAP",
+    "METAL",
+    "SCRAP",
+    "CRANE"
+  ],
+  "SIZE": 6,
+  "pivot": "SCRAP",
+  "target": "BRAWL",
+  "noise": "UDNTEP",
+  "latHint": "Think a fistfight - not leftover metal.",
+  "pivHint": "SCRAP is leftover metal in a junkyard - but having a SCRAP with a rival means getting into a what?",
+  "winText": "Fists up. SCRAP was the pivot - leftover metal to a BRAWL.",
+  "lossText": "BRAWL - a rough fight. SCRAP was the pivot: junkyard SCRAP to a SCRAP with a rival.",
+  "gridString": "MSCRAPEDRUSTTTAAPPAUNACNLLERIWBHWREA"
+}

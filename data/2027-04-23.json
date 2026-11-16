@@ -1,0 +1,21 @@
+{
+  "theme": "SHAKESPEARE",
+  "words": [
+    "IAGO",
+    "PLAY",
+    "AVON",
+    "WILL",
+    "ROMEO",
+    "GLOBE",
+    "FOLIO"
+  ],
+  "SIZE": 6,
+  "pivot": "WILL",
+  "target": "DRIVE",
+  "noise": "NTHOYA",
+  "latHint": "Think ambition that pushes you on - not a bard's name.",
+  "pivHint": "WILL was Shakespeare's first name - but WILL is also the determination that gives a person what?",
+  "winText": "Go-getter. WILL was the pivot - the Bard's name to DRIVE.",
+  "lossText": "DRIVE - determination. WILL was the pivot: Shakespeare's WILL to a strong WILL.",
+  "gridString": "RTLOAIOFPLAYMNOGINEBOLGWOHEVIDVRYIAO"
+}

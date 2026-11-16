@@ -1,0 +1,21 @@
+{
+  "theme": "TREASURE",
+  "words": [
+    "MAPS",
+    "GOLD",
+    "LOOT",
+    "COIN",
+    "CHEST",
+    "PEARL",
+    "SWORD"
+  ],
+  "SIZE": 6,
+  "pivot": "LOOT",
+  "target": "DOUGH",
+  "noise": "CLPR",
+  "latHint": "Think slang for cash - not pirate booty.",
+  "pivHint": "LOOT is a pirate's stolen treasure - but LOOT is also slang for what, like bread?",
+  "winText": "Rich. LOOT was the pivot - treasure to DOUGH.",
+  "lossText": "DOUGH - slang for money. LOOT was the pivot: pirate LOOT to LOOT as cash.",
+  "gridString": "CPEARLHMAPSCEGCPROSWORDITOOLHNGDOUDL"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "FORECAST",
+  "words": [
+    "SNOW",
+    "MIST",
+    "GUST",
+    "HAIL",
+    "FROST",
+    "CLOUD",
+    "STORM"
+  ],
+  "SIZE": 6,
+  "pivot": "GUST",
+  "target": "BURST",
+  "noise": "DHE",
+  "latHint": "Think a sudden outbreak - not a puff of wind.",
+  "pivHint": "A GUST is a rush of wind - but a GUST of laughter is a sudden what?",
+  "winText": "Out it came. GUST was the pivot - a rush of wind to a BURST.",
+  "lossText": "BURST - a sudden outbreak. GUST was the pivot: a wind GUST to a GUST of laughter.",
+  "gridString": "FCLOUDRTSIMGODNREUSTORMSTBWHSTHAILUT"
+}

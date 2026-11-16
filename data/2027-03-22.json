@@ -1,0 +1,21 @@
+{
+  "theme": "COTTAGE",
+  "words": [
+    "LAWN",
+    "DOOR",
+    "ROOF",
+    "GATE",
+    "STONE",
+    "PATHS",
+    "LATCH"
+  ],
+  "SIZE": 6,
+  "pivot": "LATCH",
+  "target": "GRASP",
+  "noise": "EKCT",
+  "latHint": "Think finally understanding - not a gate fastener.",
+  "pivHint": "A LATCH keeps a gate shut - but to LATCH on to an idea means to do what?",
+  "winText": "Got it. LATCH was the pivot - a gate catch to GRASPing an idea.",
+  "lossText": "GRASP - to understand. LATCH was the pivot: a gate LATCH to LATCHing on to an idea.",
+  "gridString": "SHTAPDTCECTOOTPSGONAFOORELAWNRGATEAK"
+}

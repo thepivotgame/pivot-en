@@ -1,0 +1,21 @@
+{
+  "theme": "BOWLING",
+  "words": [
+    "GAME",
+    "ROLL",
+    "LANE",
+    "PINS",
+    "FRAME",
+    "ALLEY",
+    "SPARE"
+  ],
+  "SIZE": 6,
+  "pivot": "SPARE",
+  "target": "MERCY",
+  "noise": "UAKLP",
+  "latHint": "Think compassion for a prisoner - not a bowling score.",
+  "pivHint": "A SPARE in bowling clears all pins in two rolls - but to SPARE a prisoner means to show what?",
+  "winText": "Let go. SPARE was the pivot - a bowling score to MERCY.",
+  "lossText": "MERCY - compassion shown. SPARE was the pivot: bowling SPARE to SPARING a prisoner.",
+  "gridString": "AROLLPLAALFILNGRPNERAPSSYMMUKYEMECER"
+}

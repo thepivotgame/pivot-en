@@ -1,0 +1,21 @@
+{
+  "theme": "GROUNDHOG",
+  "words": [
+    "HOLE",
+    "PEEK",
+    "DAYS",
+    "SNOW",
+    "EARLY",
+    "WEEKS",
+    "SHADE"
+  ],
+  "SIZE": 6,
+  "pivot": "SHADE",
+  "target": "GHOST",
+  "noise": "AKFL",
+  "latHint": "Think a spirit in a haunted house - not cool shadow.",
+  "pivHint": "A SHADE is cool shadow on a sunny day - but in old poetry a SHADE is the what of a dead person?",
+  "winText": "Boo. SHADE was the pivot - cool shadow to a GHOST.",
+  "lossText": "GHOST - a spirit of the dead. SHADE was the pivot: cool SHADE to a SHADE of the dead.",
+  "gridString": "EWEEKSAAHEFHRDEOLALPATLDYSGYHEOWONSK"
+}

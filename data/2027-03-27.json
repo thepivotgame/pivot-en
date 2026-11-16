@@ -1,0 +1,21 @@
+{
+  "theme": "BRIDGE",
+  "words": [
+    "SLAM",
+    "HAND",
+    "PAIR",
+    "BIDS",
+    "DUMMY",
+    "TRICK",
+    "TRUMP"
+  ],
+  "SIZE": 6,
+  "pivot": "TRUMP",
+  "target": "OUTDO",
+  "noise": "ARFEPL",
+  "latHint": "Think beating a rival at their game - not a suit.",
+  "pivHint": "A TRUMP is the winning suit in bridge - but to TRUMP a rival means to do what to them?",
+  "winText": "Top that. TRUMP was the pivot - a winning suit to OUTDOing a rival.",
+  "lossText": "OUTDO - to beat. TRUMP was the pivot: a bridge TRUMP to TRUMPing a rival.",
+  "gridString": "DTRICKURRERLMUHIAFMMALSOYPNODUBIDSPT"
+}

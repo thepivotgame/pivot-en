@@ -1,0 +1,21 @@
+{
+  "theme": "HEARTH",
+  "words": [
+    "SOOT",
+    "LOGS",
+    "COAL",
+    "WARM",
+    "ASHES",
+    "GRATE",
+    "BRICK"
+  ],
+  "SIZE": 6,
+  "pivot": "GRATE",
+  "target": "ANNOY",
+  "noise": "PRD",
+  "latHint": "Think rubbing someone the wrong way - not a fireplace.",
+  "pivHint": "A GRATE holds logs in the hearth - but to GRATE on someone means to do what?",
+  "winText": "Nerves frayed. GRATE was the pivot - a fireplace frame to ANNOYing someone.",
+  "lossText": "ANNOY - to irritate. GRATE was the pivot: hearth GRATE to GRATING on someone.",
+  "gridString": "GBRICKRSOOTWASHESATGPNDREOAROMNLAOCY"
+}

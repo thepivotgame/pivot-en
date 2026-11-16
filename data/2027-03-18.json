@@ -1,0 +1,21 @@
+{
+  "theme": "HIBERNATION",
+  "words": [
+    "DENS",
+    "SNOW",
+    "BEAR",
+    "CAVE",
+    "SLEEP",
+    "QUIET",
+    "LAIRS"
+  ],
+  "SIZE": 6,
+  "pivot": "BEAR",
+  "target": "ABIDE",
+  "noise": "TYSKR",
+  "latHint": "Think putting up with it - not a hibernating animal.",
+  "pivHint": "A BEAR sleeps through winter - but to BEAR a hardship means to do what?",
+  "winText": "Well endured. BEAR was the pivot - a sleeping animal to a hardship you ABIDE.",
+  "lossText": "ABIDE - to tolerate. BEAR was the pivot: a sleeping BEAR to BEAR a burden.",
+  "gridString": "SQUIETLAIRSYEBKNNREVETOSPDAAWEADBCRI"
+}

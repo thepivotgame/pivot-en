@@ -1,0 +1,21 @@
+{
+  "theme": "NAVY",
+  "words": [
+    "CREW",
+    "SHIP",
+    "HULL",
+    "MAST",
+    "SAILS",
+    "PORTS",
+    "FLEET"
+  ],
+  "SIZE": 6,
+  "pivot": "FLEET",
+  "target": "SWIFT",
+  "noise": "OLADEH",
+  "latHint": "Think very fast - not a group of ships.",
+  "pivHint": "A FLEET is a group of ships - but a FLEET runner is how?",
+  "winText": "Blink and gone. FLEET was the pivot - ships to SWIFT feet.",
+  "lossText": "SWIFT - fast. FLEET was the pivot: a navy FLEET to FLEET of foot.",
+  "gridString": "STROPCAEMLIRIEDAHELLUHSWSFHOATTSFWEI"
+}

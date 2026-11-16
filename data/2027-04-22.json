@@ -1,0 +1,21 @@
+{
+  "theme": "EARTHDAY",
+  "words": [
+    "TREE",
+    "LAND",
+    "WIND",
+    "BINS",
+    "GREEN",
+    "CLEAN",
+    "SOLAR"
+  ],
+  "SIZE": 6,
+  "pivot": "WIND",
+  "target": "TWIST",
+  "noise": "EP",
+  "latHint": "Think coiling a rope - not moving air.",
+  "pivHint": "WIND is moving air - but to WIND a rope around a pole means to do what to it?",
+  "winText": "Round and round. WIND was the pivot - moving air to a rope you TWIST.",
+  "lossText": "TWIST - to coil. WIND was the pivot: a breeze WIND to WINDing a rope.",
+  "gridString": "TBINSWRLCEOIEALELNENERADTDAGRPSTNEIW"
+}

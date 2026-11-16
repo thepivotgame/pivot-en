@@ -1,0 +1,21 @@
+{
+  "theme": "NEWSPAPER",
+  "words": [
+    "LEAD",
+    "NEWS",
+    "DESK",
+    "EDIT",
+    "PRINT",
+    "ISSUE",
+    "PAPER"
+  ],
+  "SIZE": 6,
+  "pivot": "PAPER",
+  "target": "ESSAY",
+  "noise": "OILPUJTR",
+  "latHint": "Think a school assignment - not daily news.",
+  "pivHint": "A PAPER is a daily news sheet - but a PAPER handed in at school is an ______.",
+  "winText": "Hot off the press. PAPER was the pivot - a news sheet to an ESSAY.",
+  "lossText": "ESSAY - a short piece of writing. PAPER was the pivot: a daily PAPER to a school PAPER.",
+  "gridString": "PDDSJRREPAPNISSUEONKUWDLTYSIILETPATS"
+}

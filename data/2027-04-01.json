@@ -1,0 +1,21 @@
+{
+  "theme": "APRILFOOLS",
+  "words": [
+    "HOAX",
+    "JOKE",
+    "FOOL",
+    "GAGS",
+    "PUNCH",
+    "SPOOF",
+    "CLOWN"
+  ],
+  "SIZE": 6,
+  "pivot": "FOOL",
+  "target": "TRICK",
+  "noise": "AEGB",
+  "latHint": "Think a prank and a sleight of hand - not a silly person.",
+  "pivHint": "A FOOL is a silly person - but to FOOL someone is to play a what on them?",
+  "winText": "Gotcha. FOOL was the pivot - a silly person to a TRICK.",
+  "lossText": "TRICK - a deception. FOOL was the pivot: a FOOL to FOOLing someone.",
+  "gridString": "PSPOOFUHJAGONWOLCOCBKAKLHCETXRGAGSIE"
+}

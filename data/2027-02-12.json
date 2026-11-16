@@ -1,0 +1,21 @@
+{
+  "theme": "TAKEOUT",
+  "words": [
+    "RICE",
+    "TIPS",
+    "BAGS",
+    "MENU",
+    "PIZZA",
+    "ORDER",
+    "SAUCE"
+  ],
+  "SIZE": 6,
+  "pivot": "ORDER",
+  "target": "MONKS",
+  "noise": "DHE",
+  "latHint": "Think brothers in robes - not a food request.",
+  "pivHint": "You ORDER from a menu - but a religious ORDER is a community of whom?",
+  "winText": "Amen. ORDER was the pivot - a menu choice to a religious band of MONKS.",
+  "lossText": "MONKS - men in a religious community. ORDER was the pivot: a takeout ORDER to a religious ORDER.",
+  "gridString": "PORDERIDINCBZECMUAZHEKAGATIPSSMENUOS"
+}

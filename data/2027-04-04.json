@@ -1,0 +1,21 @@
+{
+  "theme": "HEDGEROW",
+  "words": [
+    "NEST",
+    "BIRD",
+    "VOLE",
+    "WREN",
+    "BERRY",
+    "THORN",
+    "HEDGE"
+  ],
+  "SIZE": 6,
+  "pivot": "THORN",
+  "target": "PEEVE",
+  "noise": "LAMNRH",
+  "latHint": "Think the little thing that drives you mad - not a rose spike.",
+  "pivHint": "A THORN pricks your finger on a rose - but a THORN in your side is your pet what?",
+  "winText": "Pricked. THORN was the pivot - a rose spike to a pet PEEVE.",
+  "lossText": "PEEVE - an annoyance. THORN was the pivot: a rose THORN to a THORN in the side.",
+  "gridString": "NERWABELOVITSGNRHHTLDOMEYRREBPVNERHE"
+}

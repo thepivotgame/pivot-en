@@ -1,0 +1,21 @@
+{
+  "theme": "BREADSHOP",
+  "words": [
+    "BUNS",
+    "LOAF",
+    "ROLL",
+    "OVEN",
+    "YEAST",
+    "DOUGH",
+    "FLOUR"
+  ],
+  "SIZE": 6,
+  "pivot": "LOAF",
+  "target": "SLOTH",
+  "noise": "WEC",
+  "latHint": "Think a lazy animal in the trees - not bread.",
+  "pivHint": "A LOAF is baked bread - but to LOAF around means to be idle like a what?",
+  "winText": "Fresh and idle. LOAF was the pivot - baked bread to a SLOTH.",
+  "lossText": "SLOTH - laziness, or a tree-dwelling animal. LOAF was the pivot: a bread LOAF to LOAFing around.",
+  "gridString": "YDOUGHEFLOURAWROLLSNUBAOTOVENFCSETLH"
+}

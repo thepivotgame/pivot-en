@@ -1,0 +1,21 @@
+{
+  "theme": "ZOOKEEPER",
+  "words": [
+    "GOAT",
+    "BEAR",
+    "CAGE",
+    "LION",
+    "ZEBRA",
+    "PANDA",
+    "TIGER"
+  ],
+  "SIZE": 6,
+  "pivot": "GOAT",
+  "target": "CHAMP",
+  "noise": "LNICWES",
+  "latHint": "Think the greatest of all time - not a farm animal.",
+  "pivHint": "A GOAT is a farm animal - but GOAT is also short for Greatest Of All Time, a true ______.",
+  "winText": "Top of the herd. GOAT was the pivot - a farm animal to a CHAMP.",
+  "lossText": "CHAMP - a winner. GOAT was the pivot: a farm GOAT to the sporting GOAT.",
+  "gridString": "ZTCAPWESIANCBPNGGBRDLOEEACMAIREIRTHL"
+}

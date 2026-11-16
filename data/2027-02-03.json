@@ -1,0 +1,21 @@
+{
+  "theme": "TUGBOAT",
+  "words": [
+    "ROPE",
+    "HORN",
+    "BOAT",
+    "PORT",
+    "CABIN",
+    "BARGE",
+    "STERN"
+  ],
+  "SIZE": 6,
+  "pivot": "STERN",
+  "target": "HARSH",
+  "noise": "KTOCE",
+  "latHint": "Think a strict, severe teacher - not the back of a ship.",
+  "pivHint": "The STERN is the back of a tugboat - but a STERN teacher is how?",
+  "winText": "No nonsense. STERN was the pivot - a ship's back to HARSH discipline.",
+  "lossText": "HARSH - severe. STERN was the pivot: ship STERN to a STERN teacher.",
+  "gridString": "BSTERNAOTCIRREABKOGOATOHECPORTHHSEAR"
+}

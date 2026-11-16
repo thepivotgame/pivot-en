@@ -1,0 +1,21 @@
+{
+  "theme": "CHECKMATE",
+  "words": [
+    "MATE",
+    "ROOK",
+    "PAWN",
+    "MOVE",
+    "CLOCK",
+    "BOARD",
+    "QUEEN"
+  ],
+  "SIZE": 6,
+  "pivot": "MATE",
+  "target": "BUDDY",
+  "noise": "KTJ",
+  "latHint": "Think a best friend - not a chess ending.",
+  "pivHint": "MATE ends a chess game - but your MATE is also a pal, your what?",
+  "winText": "Checkmate. MATE was the pivot - the end of chess to a BUDDY.",
+  "lossText": "BUDDY - a close friend. MATE was the pivot: a chess MATE to your MATE.",
+  "gridString": "CBOARDLQUEENOPRTMKCDAOJBKMVWOTDEUYNK"
+}

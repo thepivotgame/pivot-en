@@ -1,0 +1,21 @@
+{
+  "theme": "TENTING",
+  "words": [
+    "CAMP",
+    "TENT",
+    "PACK",
+    "FIRE",
+    "STAKE",
+    "FLASK",
+    "TORCH"
+  ],
+  "SIZE": 6,
+  "pivot": "TORCH",
+  "target": "ARSON",
+  "noise": "TEDP",
+  "latHint": "Think a crime involving matches - not a flashlight.",
+  "pivHint": "A TORCH is a hand-held light - but to TORCH a building for the insurance is to commit what crime?",
+  "winText": "Case closed. TORCH was the pivot - a flashlight to the crime of ARSON.",
+  "lossText": "ARSON - the crime of setting fire on purpose. TORCH was the pivot: a hand TORCH to TORCHing a building.",
+  "gridString": "STENTFTORCHIACPTDRKSALFEEPCMNOARKSPE"
+}

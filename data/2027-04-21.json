@@ -1,0 +1,21 @@
+{
+  "theme": "READINGROOM",
+  "words": [
+    "BOOK",
+    "READ",
+    "LOAN",
+    "CARD",
+    "SHELF",
+    "SPINE",
+    "NOVEL"
+  ],
+  "SIZE": 6,
+  "pivot": "NOVEL",
+  "target": "FRESH",
+  "noise": "ODKTUA",
+  "latHint": "Think new and original - not a long story.",
+  "pivHint": "A NOVEL is a long made-up story - but a NOVEL idea is a new and what one?",
+  "winText": "Brand new. NOVEL was the pivot - a long story to a FRESH idea.",
+  "lossText": "FRESH - new and different. NOVEL was the pivot: a library NOVEL to a NOVEL idea.",
+  "gridString": "SDBLTAHPOONKECIAOHLAFNVKFRDAERSDRULE"
+}

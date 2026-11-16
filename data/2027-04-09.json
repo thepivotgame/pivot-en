@@ -1,0 +1,21 @@
+{
+  "theme": "PLAYHOUSE",
+  "words": [
+    "PROP",
+    "ROLE",
+    "LINE",
+    "CAST",
+    "ACTOR",
+    "SCENE",
+    "STAGE"
+  ],
+  "SIZE": 6,
+  "pivot": "LINE",
+  "target": "ROUTE",
+  "noise": "DN",
+  "latHint": "Think the way a bus or tram travels through town - not an actor's words.",
+  "pivHint": "A LINE is what an actor speaks on stage - but a bus LINE runs along a what through town?",
+  "winText": "On the right track. LINE was the pivot - an actor's words to a bus ROUTE.",
+  "lossText": "ROUTE - a way from one place to another. LINE was the pivot: an actor's LINE to a bus LINE.",
+  "gridString": "ASCENECTPROPTALOCEOGILANRENESTRDEUTO"
+}

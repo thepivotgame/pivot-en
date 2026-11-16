@@ -1,0 +1,21 @@
+{
+  "theme": "SEASHORE",
+  "words": [
+    "CRAB",
+    "DUNE",
+    "SAND",
+    "SURF",
+    "WAVES",
+    "TOWEL",
+    "SHELL"
+  ],
+  "SIZE": 6,
+  "pivot": "CRAB",
+  "target": "TESTY",
+  "noise": "RAOWG",
+  "latHint": "Think grumpy and short-tempered - not a sea creature.",
+  "pivHint": "A CRAB scuttles along the beach - but a person who CRABs about everything is in what kind of mood?",
+  "winText": "Pinched. CRAB was the pivot - a beach creature to a TESTY mood.",
+  "lossText": "TESTY - irritable. CRAB was the pivot: a beach CRAB to a CRAB who grumbles.",
+  "gridString": "CSURFTRAHASOANWEGWBDVNLERAOUYLWTTDES"
+}

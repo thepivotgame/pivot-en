@@ -1,0 +1,21 @@
+{
+  "theme": "ANATOMY",
+  "words": [
+    "NECK",
+    "FOOT",
+    "HAND",
+    "HEAD",
+    "SPINE",
+    "ELBOW",
+    "KNEES"
+  ],
+  "SIZE": 6,
+  "pivot": "HEAD",
+  "target": "CHIEF",
+  "noise": "DNKTA",
+  "latHint": "Think the boss of a company - not a body part.",
+  "pivHint": "Your HEAD sits on your neck - but the HEAD of a company is its ______.",
+  "winText": "In charge. HEAD was the pivot - a body part to the CHIEF.",
+  "lossText": "CHIEF - a leader. HEAD was the pivot: a body HEAD to the HEAD of a firm.",
+  "gridString": "SEENKHPDAEHAIFNCTNNAOKDDELBOWKFCEHTI"
+}

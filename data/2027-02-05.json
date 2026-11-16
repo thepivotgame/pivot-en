@@ -1,0 +1,21 @@
+{
+  "theme": "SLOWCOOKER",
+  "words": [
+    "BEEF",
+    "SOUP",
+    "HEAT",
+    "STEW",
+    "BROTH",
+    "SPICE",
+    "ONION"
+  ],
+  "SIZE": 6,
+  "pivot": "STEW",
+  "target": "WORRY",
+  "noise": "EP",
+  "latHint": "Think fretting over a mistake - not a pot of dinner.",
+  "pivHint": "A STEW simmers in the slow cooker - but to STEW over a mistake means to do what?",
+  "winText": "Losing sleep. STEW was the pivot - a simmering pot to WORRYing.",
+  "lossText": "WORRY - to fret. STEW was the pivot: simmering STEW to STEWing over something.",
+  "gridString": "BSPICERBEEFSONIONOTAEHYUHSTEWPPRWERO"
+}

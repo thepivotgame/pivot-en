@@ -1,0 +1,21 @@
+{
+  "theme": "OUTERSPACE",
+  "words": [
+    "MOON",
+    "STAR",
+    "VOID",
+    "DUST",
+    "ORBIT",
+    "PLUTO",
+    "DWARF"
+  ],
+  "SIZE": 6,
+  "pivot": "PLUTO",
+  "target": "GOOFY",
+  "noise": "LDM",
+  "latHint": "Think a tall clumsy dog - not a dwarf planet.",
+  "pivHint": "PLUTO is a dwarf planet - but PLUTO is also a cartoon dog, a pal of whom?",
+  "winText": "Out of this world. PLUTO was the pivot - a planet to a pal of GOOFY.",
+  "lossText": "GOOFY - the tall Disney dog. PLUTO was the pivot: dwarf planet PLUTO to the cartoon PLUTO.",
+  "gridString": "OTULPDRMOONWBVOIDAILSTARTSUDOFMGDFOY"
+}

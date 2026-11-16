@@ -1,0 +1,21 @@
+{
+  "theme": "SHOE",
+  "words": [
+    "LACE",
+    "TOES",
+    "SOLE",
+    "HEEL",
+    "SIZES",
+    "SUEDE",
+    "CLOGS"
+  ],
+  "SIZE": 6,
+  "pivot": "SOLE",
+  "target": "ALONE",
+  "noise": "NUTKRSW",
+  "latHint": "Think the only one left - not a shoe part.",
+  "pivHint": "The SOLE is the bottom of a shoe - but the SOLE survivor is the only one, left what?",
+  "winText": "One and only. SOLE was the pivot - a shoe bottom to being ALONE.",
+  "lossText": "ALONE - by oneself. SOLE was the pivot: shoe SOLE to the SOLE survivor.",
+  "gridString": "SGOLCOIUARWUZCEKTSEENDOASNSLETHEELSL"
+}

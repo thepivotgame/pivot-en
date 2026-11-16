@@ -1,0 +1,21 @@
+{
+  "theme": "PIZZA",
+  "words": [
+    "MEAT",
+    "HERB",
+    "OVEN",
+    "CHEF",
+    "SLICE",
+    "OLIVE",
+    "SAUCE"
+  ],
+  "SIZE": 6,
+  "pivot": "OLIVE",
+  "target": "PEACE",
+  "noise": "LDM",
+  "latHint": "Think the end of a war - not a pizza topping.",
+  "pivHint": "An OLIVE tops a pizza - but an OLIVE branch is a symbol of ______.",
+  "winText": "Dove-approved. OLIVE was the pivot - a pizza topping to PEACE.",
+  "lossText": "PEACE - freedom from war. OLIVE was the pivot: a pizza OLIVE to an OLIVE branch.",
+  "gridString": "SHLAOOLMELPVIMIRDECVECBNECUASECHEFTE"
+}

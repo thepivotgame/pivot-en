@@ -1,0 +1,21 @@
+{
+  "theme": "BROKER",
+  "words": [
+    "DEAL",
+    "BEAR",
+    "BULL",
+    "SELL",
+    "BONDS",
+    "TRADE",
+    "GAINS"
+  ],
+  "SIZE": 6,
+  "pivot": "TRADE",
+  "target": "CRAFT",
+  "noise": "ELSHB",
+  "latHint": "Think a skilled handwork - not buying shares.",
+  "pivHint": "To TRADE is to buy and sell shares - but a skilled TRADE like plumbing is a hands-on ______.",
+  "winText": "Skilled hands. TRADE was the pivot - shares to a CRAFT.",
+  "lossText": "CRAFT - a skill worked by hand. TRADE was the pivot: share TRADE to a hands-on TRADE.",
+  "gridString": "BTRADEOEBLESNHAUAEDBERLLSNIAGLSTCFRA"
+}

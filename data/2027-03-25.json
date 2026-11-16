@@ -1,0 +1,21 @@
+{
+  "theme": "BOOKSTORE",
+  "words": [
+    "RACK",
+    "READ",
+    "SHOP",
+    "BOOK",
+    "SHELF",
+    "NOVEL",
+    "TITLE"
+  ],
+  "SIZE": 6,
+  "pivot": "TITLE",
+  "target": "CROWN",
+  "noise": "EP",
+  "latHint": "Think a champion's prize - not a book name.",
+  "pivHint": "The TITLE of a book is its name - but to win the TITLE in sport is to take the ______.",
+  "winText": "Champion. TITLE was the pivot - a book's name to the CROWN.",
+  "lossText": "CROWN - the championship prize. TITLE was the pivot: a book TITLE to a sports TITLE.",
+  "gridString": "SRACKRHSHOPEELTITALEVONDFBOOKNPWCEOR"
+}

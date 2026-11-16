@@ -1,0 +1,21 @@
+{
+  "theme": "COUNTDOWN",
+  "words": [
+    "HOLD",
+    "TICK",
+    "LIFT",
+    "FUEL",
+    "ORBIT",
+    "ALARM",
+    "SCRUB"
+  ],
+  "SIZE": 6,
+  "pivot": "SCRUB",
+  "target": "ABORT",
+  "noise": "DHE",
+  "latHint": "Think calling off a launch - not cleaning.",
+  "pivHint": "To SCRUB a floor is to clean it - but to SCRUB a rocket launch means to do what?",
+  "winText": "Mission off. SCRUB was the pivot - cleaning to ABORTing a launch.",
+  "lossText": "ABORT - to call off. SCRUB was the pivot: to SCRUB the floor to SCRUB a launch.",
+  "gridString": "OALARMRHOLDLBURCSIIDLEUFTICKOTEAHRBT"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "TAXDAY",
+  "words": [
+    "DUES",
+    "FORM",
+    "FILE",
+    "DEBT",
+    "AUDIT",
+    "CLERK",
+    "TAXES"
+  ],
+  "SIZE": 6,
+  "pivot": "FILE",
+  "target": "QUEUE",
+  "noise": "ADHL",
+  "latHint": "Think people waiting in line - not a tax form.",
+  "pivHint": "To FILE your taxes is to submit forms - but to walk in single FILE means walking in a what?",
+  "winText": "Next, please. FILE was the pivot - submitting a form to a QUEUE.",
+  "lossText": "QUEUE - a line of people. FILE was the pivot: to FILE a form and walk in single FILE.",
+  "gridString": "ACLERKUDFORMDTUIAHILBELETAXESEUQUEDD"
+}

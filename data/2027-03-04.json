@@ -1,0 +1,21 @@
+{
+  "theme": "STATISTICS",
+  "words": [
+    "MODE",
+    "DATA",
+    "POLL",
+    "MEAN",
+    "TREND",
+    "CHART",
+    "GRAPH"
+  ],
+  "SIZE": 6,
+  "pivot": "MEAN",
+  "target": "CRUEL",
+  "noise": "NTHOYA",
+  "latHint": "Think a bully's nature - not the average.",
+  "pivHint": "The MEAN is the average of numbers - but a MEAN bully is how?",
+  "winText": "Not nice. MEAN was the pivot - an average to CRUEL behaviour.",
+  "lossText": "CRUEL - unkind. MEAN was the pivot: statistical MEAN to a MEAN bully.",
+  "gridString": "TRAHCTRODPANEHLALMNDLRTEDCOGEARYPMUN"
+}

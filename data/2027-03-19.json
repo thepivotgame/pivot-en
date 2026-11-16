@@ -1,0 +1,21 @@
+{
+  "theme": "CHILI",
+  "words": [
+    "MEAT",
+    "HEAT",
+    "BOWL",
+    "BEAN",
+    "ONION",
+    "SPICY",
+    "CUMIN"
+  ],
+  "SIZE": 6,
+  "pivot": "BEAN",
+  "target": "SKULL",
+  "noise": "CI",
+  "latHint": "Think the bony part of your head - not a chili ingredient.",
+  "pivHint": "A BEAN goes in chili - but to bump your BEAN is to hit what?",
+  "winText": "Ouch. BEAN was the pivot - a chili seed to a bumped SKULL.",
+  "lossText": "SKULL - the bony head. BEAN was the pivot: a chili BEAN to slang for a head.",
+  "gridString": "MBEANOEOHSINAWEPMITLAIUOLITCCNLSCYUK"
+}

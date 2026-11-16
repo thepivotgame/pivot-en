@@ -1,0 +1,21 @@
+{
+  "theme": "EASTER",
+  "words": [
+    "EGGS",
+    "LILY",
+    "LAMB",
+    "HUNT",
+    "CHICK",
+    "BUNNY",
+    "CANDY"
+  ],
+  "SIZE": 6,
+  "pivot": "LAMB",
+  "target": "ANGEL",
+  "noise": "PRD",
+  "latHint": "Think a halo and wings - not young sheep.",
+  "pivHint": "A LAMB is a symbol at Easter - but calling a sweet person a LAMB is like calling them an what?",
+  "winText": "Heaven-sent. LAMB was the pivot - young sheep to an ANGEL.",
+  "lossText": "ANGEL - a heavenly being. LAMB was the pivot: an Easter LAMB to a gentle LAMB.",
+  "gridString": "CBUNNYHAEGGSITNUHLCPGDDAKLILYMARENLB"
+}

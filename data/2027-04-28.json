@@ -1,0 +1,21 @@
+{
+  "theme": "ELEVATOR",
+  "words": [
+    "STOP",
+    "LIFT",
+    "RIDE",
+    "DOOR",
+    "FLOOR",
+    "SHAFT",
+    "LOBBY"
+  ],
+  "SIZE": 6,
+  "pivot": "LOBBY",
+  "target": "PLEAD",
+  "noise": "TM",
+  "latHint": "Think making an earnest appeal to a lawmaker - not a hotel entrance.",
+  "pivHint": "A LOBBY is an entrance hall - but to LOBBY a lawmaker is to ______ your case to them.",
+  "winText": "Heard out. LOBBY was the pivot - an entrance hall to PLEADing your case.",
+  "lossText": "PLEAD - to appeal earnestly. LOBBY was the pivot: an entrance LOBBY to LOBBYing a lawmaker.",
+  "gridString": "FSHAFTLOBBYSOIRDMTOAFIPORTETDPDOORLE"
+}

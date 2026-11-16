@@ -1,0 +1,21 @@
+{
+  "theme": "WOODLAND",
+  "words": [
+    "DEER",
+    "ELMS",
+    "FERN",
+    "MOSS",
+    "ACORN",
+    "HAZEL",
+    "BIRCH"
+  ],
+  "SIZE": 6,
+  "pivot": "HAZEL",
+  "target": "BROWN",
+  "noise": "GED",
+  "latHint": "Think the colour of chocolate and tree bark - not a nut tree.",
+  "pivHint": "A HAZEL is a tree - but HAZEL is also the colour of some eyes, a light ______.",
+  "winText": "Eye colour. HAZEL was the pivot - a nut tree to light BROWN.",
+  "lossText": "BROWN - the colour of earth and wood. HAZEL was the pivot: a HAZEL tree to HAZEL eyes.",
+  "gridString": "DMOSSFEBSMLEEIGODRRRBEWNACORNRNHAZEL"
+}

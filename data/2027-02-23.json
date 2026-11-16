@@ -1,0 +1,21 @@
+{
+  "theme": "GAMBLER",
+  "words": [
+    "BETS",
+    "LUCK",
+    "ANTE",
+    "ODDS",
+    "CHIPS",
+    "BLUFF",
+    "POKER"
+  ],
+  "SIZE": 6,
+  "pivot": "POKER",
+  "target": "TONGS",
+  "noise": "DHE",
+  "latHint": "Think a fireside tool - not a card game.",
+  "pivHint": "POKER is a betting card game - but a POKER is also a rod for stirring a fire, kept beside the shovel and what?",
+  "winText": "Fireside. POKER was the pivot - a card game to the fire's TONGS.",
+  "lossText": "TONGS - a gripping tool. POKER was the pivot: card POKER to a fireside POKER.",
+  "gridString": "BPOKERLCHIPSUUANTEFDCENEFTBKHGODDSOS"
+}

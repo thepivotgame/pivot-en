@@ -1,0 +1,21 @@
+{
+  "theme": "POOLSIDE",
+  "words": [
+    "LAPS",
+    "DIVE",
+    "POLO",
+    "SWIM",
+    "TOWEL",
+    "LANES",
+    "FLOAT"
+  ],
+  "SIZE": 6,
+  "pivot": "POLO",
+  "target": "MARCO",
+  "noise": "ESTHV",
+  "latHint": "Think a call in the swimming pool - not a horse sport.",
+  "pivHint": "POLO is played on horseback - but in the pool game, who shouts what before POLO hears an answer?",
+  "winText": "Splash! POLO was the pivot - a horse sport to the pool game with MARCO.",
+  "lossText": "MARCO - the shout in a pool game. POLO was the pivot: horse POLO to MARCO POLO.",
+  "gridString": "TAOLFDOSLAMIWHOPIVEVPSWELANESETOMCAR"
+}

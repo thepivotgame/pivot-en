@@ -1,0 +1,21 @@
+{
+  "theme": "SEAFOOD",
+  "words": [
+    "ROES",
+    "CRAB",
+    "EELS",
+    "CLAM",
+    "PRAWN",
+    "SQUID",
+    "SHELL"
+  ],
+  "SIZE": 6,
+  "pivot": "CLAM",
+  "target": "QUIET",
+  "noise": "RM",
+  "latHint": "Think saying nothing - not shellfish.",
+  "pivHint": "A CLAM is a shellfish that shuts tight - and to CLAM up means to go what?",
+  "winText": "Shut up. CLAM was the pivot - a shellfish to QUIET.",
+  "lossText": "QUIET - silent. CLAM was the pivot: seafood CLAM to CLAMming up.",
+  "gridString": "RCLAMPOCRABREELSTASHELLWSQUIDNMEQRIU"
+}

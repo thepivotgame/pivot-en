@@ -1,0 +1,21 @@
+{
+  "theme": "SAILING",
+  "words": [
+    "KNOT",
+    "WIND",
+    "SAIL",
+    "MAST",
+    "BUOYS",
+    "TACKS",
+    "SKIFF"
+  ],
+  "SIZE": 6,
+  "pivot": "KNOT",
+  "target": "SPEED",
+  "noise": "OAHWL",
+  "latHint": "Think how fast a ship goes - not a tied rope.",
+  "pivHint": "A KNOT ties a rope fast - but at sea a KNOT measures a ship's what?",
+  "winText": "Full steam. KNOT was the pivot - a tied rope to a ship's SPEED.",
+  "lossText": "SPEED - rate of movement. KNOT was the pivot: a sailor's KNOT to a ship's KNOTs.",
+  "gridString": "BKNOTAUWSAILOLCODMYKHNDASKIFFSSWEPET"
+}

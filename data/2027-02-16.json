@@ -1,0 +1,21 @@
+{
+  "theme": "GEOGRAPHY",
+  "words": [
+    "MAPS",
+    "SEAS",
+    "LAND",
+    "ZONE",
+    "GLOBE",
+    "ATLAS",
+    "RIVER"
+  ],
+  "SIZE": 6,
+  "pivot": "ATLAS",
+  "target": "TITAN",
+  "noise": "GHR",
+  "latHint": "Think a giant from Greek myth - not a book of maps.",
+  "pivHint": "An ATLAS is a book of maps - but in Greek myth ATLAS is which giant, holding up the sky?",
+  "winText": "Shouldering it. ATLAS was the pivot - a book of maps to a TITAN.",
+  "lossText": "TITAN - a giant of Greek myth. ATLAS was the pivot: a map ATLAS to ATLAS the giant.",
+  "gridString": "MZONELARAGBAPITTONSVLRLDSEASGTHRSAIN"
+}

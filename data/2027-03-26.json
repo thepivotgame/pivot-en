@@ -1,0 +1,21 @@
+{
+  "theme": "KETTLE",
+  "words": [
+    "CORD",
+    "BOIL",
+    "HEAT",
+    "LIDS",
+    "STEAM",
+    "SPOUT",
+    "WATER"
+  ],
+  "SIZE": 6,
+  "pivot": "BOIL",
+  "target": "SEETH",
+  "noise": "PNW",
+  "latHint": "Think simmering with fury - not hot water.",
+  "pivHint": "To BOIL water is to heat it - but to BOIL with rage means to do what?",
+  "winText": "Steaming. BOIL was the pivot - hot water to SEETHing anger.",
+  "lossText": "SEETH - to be furiously angry. BOIL was the pivot: to BOIL water and to BOIL with rage.",
+  "gridString": "SWATERTPCPEHEBOILEAWRUSAMNDTTTLIDSEH"
+}

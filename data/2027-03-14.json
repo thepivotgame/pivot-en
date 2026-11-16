@@ -1,0 +1,21 @@
+{
+  "theme": "TEXTBOOK",
+  "words": [
+    "UNIT",
+    "TEXT",
+    "PAGE",
+    "FACT",
+    "STUDY",
+    "INDEX",
+    "TOPIC"
+  ],
+  "SIZE": 6,
+  "pivot": "INDEX",
+  "target": "POINT",
+  "noise": "CESW",
+  "latHint": "Think aiming at something - not a book list.",
+  "pivHint": "The INDEX at the back of a book lists topics - but your INDEX finger is the one you what with?",
+  "winText": "That one! INDEX was the pivot - a book list to a finger you POINT with.",
+  "lossText": "POINT - to aim a finger. INDEX was the pivot: a book INDEX to the INDEX finger.",
+  "gridString": "SINDEXTOPICPUNITCADSWETGYNPXOEFACTIE"
+}

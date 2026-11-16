@@ -1,0 +1,21 @@
+{
+  "theme": "FINALE",
+  "words": [
+    "LAST",
+    "ENDS",
+    "BOWS",
+    "DONE",
+    "OUTRO",
+    "FINAL",
+    "CLOSE"
+  ],
+  "SIZE": 6,
+  "pivot": "CLOSE",
+  "target": "MUGGY",
+  "noise": "LKP",
+  "latHint": "Think hot, damp and heavy - not shutting a door.",
+  "pivHint": "To CLOSE a door is to shut it - but CLOSE air feels heavy and what?",
+  "winText": "Sticky. CLOSE was the pivot - shutting to MUGGY air.",
+  "lossText": "MUGGY - hot and damp. CLOSE was the pivot: to CLOSE a door to CLOSE air.",
+  "gridString": "OFINALUCLOSETDALWNROSGODONTPBSMEKGUY"
+}

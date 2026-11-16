@@ -1,0 +1,21 @@
+{
+  "theme": "FISHING",
+  "words": [
+    "HOOK",
+    "REEL",
+    "BOAT",
+    "LAKE",
+    "FLIES",
+    "CATCH",
+    "PERCH"
+  ],
+  "SIZE": 6,
+  "pivot": "PERCH",
+  "target": "TROUT",
+  "noise": "HSNEZ",
+  "latHint": "Think a freshwater fish - not a bird's rest.",
+  "pivHint": "A PERCH is where a bird rests - but a PERCH is also a fish, like a ______.",
+  "winText": "Gone fishing. PERCH was the pivot - a bird's rest to a TROUT.",
+  "lossText": "TROUT - a freshwater fish. PERCH was the pivot: a bird PERCH to the fish PERCH.",
+  "gridString": "FCATCHLBSECOIEORLOEZEAHKSPKRTNTETURO"
+}

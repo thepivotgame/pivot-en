@@ -1,0 +1,21 @@
+{
+  "theme": "WORKBENCH",
+  "words": [
+    "BOLT",
+    "FILE",
+    "RASP",
+    "VICE",
+    "SCREW",
+    "TOOLS",
+    "DRILL"
+  ],
+  "SIZE": 6,
+  "pivot": "RASP",
+  "target": "HUSKY",
+  "noise": "EFAPR",
+  "latHint": "Think a hoarse voice - not a woodwork tool.",
+  "pivHint": "A RASP smooths wood - but a RASP in a voice is a sound that is what?",
+  "winText": "Rough around the edges. RASP was the pivot - a tool to a HUSKY tone.",
+  "lossText": "HUSKY - hoarse. RASP was the pivot: a wood RASP to a RASP in a voice.",
+  "gridString": "SLOOTFCLFILERIRPOCERARBIWDSEAVYHPKUS"
+}

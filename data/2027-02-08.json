@@ -1,0 +1,21 @@
+{
+  "theme": "BRACELET",
+  "words": [
+    "WIRE",
+    "LINK",
+    "BEAD",
+    "GOLD",
+    "PEARL",
+    "CHARM",
+    "CLASP"
+  ],
+  "SIZE": 6,
+  "pivot": "CHARM",
+  "target": "GRACE",
+  "noise": "LDM",
+  "latHint": "Think elegance - not a bracelet bead.",
+  "pivHint": "A CHARM dangles from a bracelet - but a person with CHARM has a pleasing ______.",
+  "winText": "Pure elegance. CHARM was the pivot - a bracelet dangle to GRACE.",
+  "lossText": "GRACE - elegance. CHARM was the pivot: bracelet CHARM to a person's CHARM.",
+  "gridString": "PCHARMELWIREAAILABRSMNGELPDCKAREGOLD"
+}

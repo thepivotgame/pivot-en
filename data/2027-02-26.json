@@ -1,0 +1,21 @@
+{
+  "theme": "WILDERNESS",
+  "words": [
+    "HOWL",
+    "DENS",
+    "PACK",
+    "WOLF",
+    "PINES",
+    "TRAIL",
+    "MOOSE"
+  ],
+  "SIZE": 6,
+  "pivot": "WOLF",
+  "target": "SCARF",
+  "noise": "DHE",
+  "latHint": "Think gulping dinner in a rush - not a howling hunter.",
+  "pivHint": "A WOLF is a wild howling hunter - but to WOLF down food means to do what?",
+  "winText": "Plate empty. WOLF was the pivot - a hunter to SCARFing down dinner.",
+  "lossText": "SCARF - to eat greedily. WOLF was the pivot: a wild WOLF to WOLFing down dinner.",
+  "gridString": "PTRAILIDENSPNHWDAAESOOMCSELWSKHRFCLF"
+}

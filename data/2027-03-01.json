@@ -1,0 +1,21 @@
+{
+  "theme": "MARINA",
+  "words": [
+    "MOOR",
+    "SLIP",
+    "PIER",
+    "BOAT",
+    "MASTS",
+    "SALTY",
+    "YACHT"
+  ],
+  "SIZE": 6,
+  "pivot": "MOOR",
+  "target": "HEATH",
+  "noise": "NDBLO",
+  "latHint": "Think wild, windswept upland - not tying a boat.",
+  "pivHint": "To MOOR a boat is to tie it at the marina - but a MOOR is also a wild upland, like a what?",
+  "winText": "Windswept. MOOR was the pivot - tying a boat to a wild HEATH.",
+  "lossText": "HEATH - open uncultivated land. MOOR was the pivot: to MOOR a boat and a MOOR of wild land.",
+  "gridString": "MMOORDAYSLONSALTYBTCIHHTSHPIERETAOBA"
+}

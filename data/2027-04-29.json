@@ -1,0 +1,21 @@
+{
+  "theme": "TRACTOR",
+  "words": [
+    "BARN",
+    "CROP",
+    "SEED",
+    "PLOW",
+    "FARMS",
+    "FIELD",
+    "WHEEL"
+  ],
+  "SIZE": 6,
+  "pivot": "CROP",
+  "target": "SHEAR",
+  "noise": "YNOFT",
+  "latHint": "Think clipping a sheep's fleece - not a harvest.",
+  "pivHint": "A CROP is a harvest from a farm - but to CROP a sheep's wool means to do what to it?",
+  "winText": "Baa-d hair day. CROP was the pivot - a harvest to wool you SHEAR.",
+  "lossText": "SHEAR - to clip off wool. CROP was the pivot: a farm CROP to CROPping wool.",
+  "gridString": "FNWFBCAIHDARRTEPROMEELNPSYLODORSAWHE"
+}

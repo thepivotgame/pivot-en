@@ -1,0 +1,21 @@
+{
+  "theme": "TELEVISION",
+  "words": [
+    "SETS",
+    "SOAP",
+    "CAST",
+    "SHOW",
+    "DRAMA",
+    "GUIDE",
+    "PILOT"
+  ],
+  "SIZE": 6,
+  "pivot": "SHOW",
+  "target": "PROVE",
+  "noise": "ADHL",
+  "latHint": "Think demonstrating it is true - not a TV program.",
+  "pivHint": "A SHOW is a program on TV - but to SHOW a theory is to do what to it?",
+  "winText": "Evidence in. SHOW was the pivot - a TV program to PROVEing a point.",
+  "lossText": "PROVE - to demonstrate as true. SHOW was the pivot: a TV SHOW to SHOWing a theory.",
+  "gridString": "DGUIDERPILOTASETSAMOHAHLAACOEVPPROWD"
+}

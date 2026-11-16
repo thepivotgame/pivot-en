@@ -1,0 +1,21 @@
+{
+  "theme": "BOTANY",
+  "words": [
+    "LEAF",
+    "STEM",
+    "SEED",
+    "ROOT",
+    "PETAL",
+    "BLOOM",
+    "FLORA"
+  ],
+  "SIZE": 6,
+  "pivot": "FLORA",
+  "target": "FAUNA",
+  "noise": "EKCT",
+  "latHint": "Think the animal half of the pair - not the plants.",
+  "pivHint": "FLORA is the plant life of a region - what is its animal-life partner?",
+  "winText": "Nature's pair. FLORA was the pivot - plants to FAUNA.",
+  "lossText": "FAUNA - animal life. FLORA was the pivot: plant FLORA to FLORA and FAUNA.",
+  "gridString": "PBLOOMESTEMETOORACAROLFFLSEEDTANFAUK"
+}

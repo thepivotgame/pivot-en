@@ -1,0 +1,21 @@
+{
+  "theme": "IRISH",
+  "words": [
+    "HARP",
+    "PUBS",
+    "ERIN",
+    "LUCK",
+    "CELTS",
+    "GREEN",
+    "STOUT"
+  ],
+  "SIZE": 6,
+  "pivot": "HARP",
+  "target": "DWELL",
+  "noise": "AKNTB",
+  "latHint": "Think lingering on a subject - not Ireland's symbol.",
+  "pivHint": "A HARP is Ireland's symbol - but to HARP on a subject means to do what on it?",
+  "winText": "On and on. HARP was the pivot - a national symbol to DWELLing on a point.",
+  "lossText": "DWELL - to linger on a subject. HARP was the pivot: an Irish HARP to HARPing on a topic.",
+  "gridString": "CGREENEHARPILPKTBRTUOTSESBCANLDSLKWE"
+}

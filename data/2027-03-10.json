@@ -1,0 +1,21 @@
+{
+  "theme": "HOCKEY",
+  "words": [
+    "RINK",
+    "ICED",
+    "PUCK",
+    "GOAL",
+    "STICK",
+    "CHECK",
+    "SKATE"
+  ],
+  "SIZE": 6,
+  "pivot": "PUCK",
+  "target": "FAIRY",
+  "noise": "TEDP",
+  "latHint": "Think a winged sprite in the forest - not a hockey disc.",
+  "pivHint": "A PUCK is the disc in hockey - but PUCK in Shakespeare's Midsummer Night's Dream is a mischievous what?",
+  "winText": "Magic dust. PUCK was the pivot - an ice disc to a mischievous FAIRY.",
+  "lossText": "FAIRY - a tiny magical being. PUCK was the pivot: hockey PUCK to Shakespeare's PUCK.",
+  "gridString": "RGOALSISTICKNITDHAKCUPETPEYRCEFDAIKE"
+}

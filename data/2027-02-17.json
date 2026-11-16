@@ -1,0 +1,21 @@
+{
+  "theme": "STRINGS",
+  "words": [
+    "NECK",
+    "PEGS",
+    "FRET",
+    "BOWS",
+    "CHORD",
+    "CELLO",
+    "VIOLA"
+  ],
+  "SIZE": 6,
+  "pivot": "VIOLA",
+  "target": "PANSY",
+  "noise": "DHE",
+  "latHint": "Think a velvety garden flower - not a string instrument.",
+  "pivHint": "A VIOLA is a stringed instrument - but VIOLA is also a flower, a close cousin of the ______.",
+  "winText": "In bloom. VIOLA was the pivot - a string instrument to a PANSY.",
+  "lossText": "PANSY - a velvety garden flower. VIOLA was the pivot: a string VIOLA to the VIOLA flower.",
+  "gridString": "CNDVPFHENIEROCLOGERKELSTDPHAOSBOWSAY"
+}

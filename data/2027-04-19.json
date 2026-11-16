@@ -1,0 +1,21 @@
+{
+  "theme": "POETRY",
+  "words": [
+    "BARD",
+    "LINE",
+    "FOOT",
+    "MUSE",
+    "RHYME",
+    "VERSE",
+    "STYLE"
+  ],
+  "SIZE": 6,
+  "pivot": "MUSE",
+  "target": "DREAM",
+  "noise": "GSHT",
+  "latHint": "Think drifting off in thought - not a poet's inspiration.",
+  "pivHint": "A MUSE inspires a poet - but to MUSE is to be lost in thought, to do what?",
+  "winText": "Eyes drifting. MUSE was the pivot - a poet's inspiration to a mind that will DREAM.",
+  "lossText": "DREAM - to be lost in thought. MUSE was the pivot: a poet's MUSE to MUSING.",
+  "gridString": "RGHTVLHMAEDIYDRABNMSTYLEEFOOTRMUSEES"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "REUNION",
+  "words": [
+    "KIDS",
+    "GAME",
+    "FOOD",
+    "AUNT",
+    "NIECE",
+    "UNCLE",
+    "PHOTO"
+  ],
+  "SIZE": 6,
+  "pivot": "UNCLE",
+  "target": "YIELD",
+  "noise": "FAH",
+  "latHint": "Think giving in during a wrestling match - not a relative.",
+  "pivHint": "Your UNCLE is your parent's brother - but to cry UNCLE in a wrestling match means to do what?",
+  "winText": "I give up. UNCLE was the pivot - a relative to a cry to YIELD.",
+  "lossText": "YIELD - to give in. UNCLE was the pivot: a family UNCLE to crying UNCLE.",
+  "gridString": "KAUNTPIFEHNHDOOFIOSGAMETYALICOUNCLED"
+}

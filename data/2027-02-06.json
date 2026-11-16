@@ -1,0 +1,21 @@
+{
+  "theme": "LUNARYEAR",
+  "words": [
+    "GOAT",
+    "OXEN",
+    "YEAR",
+    "BOAR",
+    "TIGER",
+    "HORSE",
+    "SNAKE"
+  ],
+  "SIZE": 6,
+  "pivot": "SNAKE",
+  "target": "WEAVE",
+  "noise": "OWKTSL",
+  "latHint": "Think threading in and out - not a slithering reptile.",
+  "pivHint": "A SNAKE slithers along the ground - but to SNAKE through traffic means to do what?",
+  "winText": "In and out. SNAKE was the pivot - a reptile to WEAVEing through traffic.",
+  "lossText": "WEAVE - to move in and out. SNAKE was the pivot: a slithering SNAKE to SNAKING through traffic.",
+  "gridString": "TSNAKEIRYEARGOATXWESROHORTLOBKEWVESA"
+}

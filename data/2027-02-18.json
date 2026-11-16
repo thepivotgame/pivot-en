@@ -1,0 +1,21 @@
+{
+  "theme": "LAKE",
+  "words": [
+    "BASS",
+    "REED",
+    "PIER",
+    "SWIM",
+    "CANOE",
+    "WATER",
+    "SHORE"
+  ],
+  "SIZE": 6,
+  "pivot": "BASS",
+  "target": "TENOR",
+  "noise": "DYALI",
+  "latHint": "Think a higher male singing voice - not a fish.",
+  "pivHint": "A BASS is a freshwater fish - but BASS is also a very low male singing voice, deeper than a ______.",
+  "winText": "Sing out. BASS was the pivot - a fish to a TENOR.",
+  "lossText": "TENOR - a high male singing voice. BASS was the pivot: a lake BASS to the deep BASS voice.",
+  "gridString": "CWATERABMYPENLAIIEODESWDEROHSSARTOEN"
+}

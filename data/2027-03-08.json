@@ -1,0 +1,21 @@
+{
+  "theme": "WOODWORK",
+  "words": [
+    "SAWS",
+    "JOIN",
+    "GLUE",
+    "WOOD",
+    "DOWEL",
+    "PLANE",
+    "CLAMP"
+  ],
+  "SIZE": 6,
+  "pivot": "CLAMP",
+  "target": "CRACK",
+  "noise": "DHE",
+  "latHint": "Think getting tough on crime - not a workshop grip.",
+  "pivHint": "A CLAMP grips wood in the shop - but to CLAMP down on crime means to what down on it?",
+  "winText": "Zero tolerance. CLAMP was the pivot - a wood grip to a CRACK down on crime.",
+  "lossText": "CRACK - to act severely. CLAMP was the pivot: a wood CLAMP to a CLAMP down.",
+  "gridString": "SGLUECADOWELWOODJASDAEOMCHCRIPKPLANE"
+}

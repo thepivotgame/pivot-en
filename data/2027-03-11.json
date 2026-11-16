@@ -1,0 +1,21 @@
+{
+  "theme": "PLUMBING",
+  "words": [
+    "PIPE",
+    "DRIP",
+    "LEAK",
+    "TUBE",
+    "VALVE",
+    "BASIN",
+    "FLUSH"
+  ],
+  "SIZE": 6,
+  "pivot": "TUBE",
+  "target": "METRO",
+  "noise": "AG",
+  "latHint": "Think the underground railway - not a pipe.",
+  "pivHint": "A TUBE is a pipe in a plumbing job - but in London the TUBE is the underground ______.",
+  "winText": "Mind the gap. TUBE was the pivot - a pipe to the METRO.",
+  "lossText": "METRO - an underground city railway. TUBE was the pivot: a pipe TUBE to the London TUBE.",
+  "gridString": "BFLUSHAVALVESDRIPLIOGIRENMPATATUBEEK"
+}

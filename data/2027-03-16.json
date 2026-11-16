@@ -1,0 +1,21 @@
+{
+  "theme": "PIANO",
+  "words": [
+    "KEYS",
+    "SOLO",
+    "NOTE",
+    "TUNE",
+    "CHORD",
+    "MINOR",
+    "SCALE"
+  ],
+  "SIZE": 6,
+  "pivot": "MINOR",
+  "target": "CHILD",
+  "noise": "AEGB",
+  "latHint": "Think someone too young to sign a contract - not a sad chord.",
+  "pivHint": "A MINOR chord sounds sad on the piano - but in law a MINOR is a what under adulthood's age?",
+  "winText": "Under age. MINOR was the pivot - a chord to a legal CHILD.",
+  "lossText": "CHILD - a young person. MINOR was the pivot: a MINOR chord to a MINOR in law.",
+  "gridString": "CSCALEHKEYSTOSEAGORONIMNDLUBDLCOTHIE"
+}

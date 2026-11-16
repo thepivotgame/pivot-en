@@ -1,0 +1,21 @@
+{
+  "theme": "VALENTINE",
+  "words": [
+    "HUGS",
+    "ROSE",
+    "LOVE",
+    "KISS",
+    "FLIRT",
+    "CUPID",
+    "SWEET"
+  ],
+  "SIZE": 6,
+  "pivot": "LOVE",
+  "target": "ZILCH",
+  "noise": "TEDP",
+  "latHint": "Think nothing at all - not a heart.",
+  "pivHint": "LOVE is what Valentine's Day celebrates - but in tennis, LOVE means a score of ______.",
+  "winText": "Nothing. LOVE was the pivot - a feeling to ZILCH.",
+  "lossText": "ZILCH - nothing. LOVE was the pivot: Valentine LOVE to LOVE in tennis.",
+  "gridString": "FCUPIDLHLTRDIPUOHCRZSGVITEEWSEKISSLE"
+}

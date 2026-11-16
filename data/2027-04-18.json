@@ -1,0 +1,21 @@
+{
+  "theme": "BIOLOGY",
+  "words": [
+    "GENE",
+    "LIFE",
+    "CELL",
+    "GERM",
+    "TRAIT",
+    "ORGAN",
+    "SPORE"
+  ],
+  "SIZE": 6,
+  "pivot": "GERM",
+  "target": "SPARK",
+  "noise": "EBHT",
+  "latHint": "Think the first flash of an idea - not a microbe.",
+  "pivHint": "A GERM is a tiny microbe - but the GERM of an idea is its first what?",
+  "winText": "Eureka. GERM was the pivot - a microbe to the SPARK of an idea.",
+  "lossText": "SPARK - the first flash of something. GERM was the pivot: a microbe GERM to the GERM of an idea.",
+  "gridString": "TORGANRSPOREAECGNFIHTEKITRGRLLSPAMBL"
+}

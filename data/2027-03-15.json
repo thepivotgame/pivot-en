@@ -1,0 +1,21 @@
+{
+  "theme": "POSTURE",
+  "words": [
+    "NECK",
+    "BACK",
+    "DESK",
+    "SEAT",
+    "CHAIR",
+    "STAND",
+    "HUNCH"
+  ],
+  "SIZE": 6,
+  "pivot": "HUNCH",
+  "target": "GUESS",
+  "noise": "ADHL",
+  "latHint": "Think a stab in the dark - not bent shoulders.",
+  "pivHint": "To HUNCH over a desk is to bend forward - but a HUNCH is also a feeling you act on, much like a what?",
+  "winText": "Gut feeling. HUNCH was the pivot - bent shoulders to a lucky GUESS.",
+  "lossText": "GUESS - an answer without proof. HUNCH was the pivot: to HUNCH over a desk to a HUNCH.",
+  "gridString": "CSTANDHUNCHBASEAAHIECCLSRAKSEDSTGUED"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "CRUISE",
+  "words": [
+    "HULL",
+    "DECK",
+    "MAST",
+    "SAIL",
+    "CREWS",
+    "CABIN",
+    "BERTH"
+  ],
+  "SIZE": 6,
+  "pivot": "BERTH",
+  "target": "SPACE",
+  "noise": "HT",
+  "latHint": "Think room to breathe - not a bunk on a ship.",
+  "pivHint": "A BERTH is a bunk on a ship - but to give someone a wide BERTH means leaving them what?",
+  "winText": "Clear. BERTH was the pivot - a bunk to SPACE.",
+  "lossText": "SPACE - room. BERTH was the pivot: a ship BERTH to a wide BERTH.",
+  "gridString": "CBERTHRADETUEMBECLWASICLSSHANKPTSAIL"
+}

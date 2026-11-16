@@ -1,0 +1,21 @@
+{
+  "theme": "FOOTWEAR",
+  "words": [
+    "HEEL",
+    "LACE",
+    "CLOG",
+    "BOOT",
+    "SKATE",
+    "SUEDE",
+    "CLEAT"
+  ],
+  "SIZE": 6,
+  "pivot": "CLOG",
+  "target": "BLOCK",
+  "noise": "EFAPR",
+  "latHint": "Think stopping up a drain - not a wooden shoe.",
+  "pivHint": "A CLOG is a chunky wooden-soled shoe - but to CLOG a drain means to do what to it?",
+  "winText": "Stuck. CLOG was the pivot - a wooden shoe to a drain you BLOCK.",
+  "lossText": "BLOCK - to obstruct. CLOG was the pivot: a wooden CLOG to CLOGging a drain.",
+  "gridString": "SFCPHBKULEROACEAEOTLADCTEOTAEEKGBCLO"
+}

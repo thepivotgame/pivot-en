@@ -1,0 +1,21 @@
+{
+  "theme": "CANDLELIT",
+  "words": [
+    "MELT",
+    "SOOT",
+    "WICK",
+    "GLOW",
+    "FLAME",
+    "TAPER",
+    "SCENT"
+  ],
+  "SIZE": 6,
+  "pivot": "SCENT",
+  "target": "TRAIL",
+  "noise": "CESW",
+  "latHint": "Think what a bloodhound follows - not a candle's perfume.",
+  "pivHint": "A candle gives off a pleasant SCENT - but a hound follows a SCENT along a ______.",
+  "winText": "Nose down. SCENT was the pivot - a candle's perfume to a hound's TRAIL.",
+  "lossText": "TRAIL - a path left behind. SCENT was the pivot: a candle SCENT to a SCENT that leaves a TRAIL.",
+  "gridString": "FTAPERLNLCSWAEGEWIMCLLMCESOOTKITWRAE"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "COMPOST",
+  "words": [
+    "PEEL",
+    "WORM",
+    "SOIL",
+    "BINS",
+    "GRASS",
+    "WASTE",
+    "HUMUS"
+  ],
+  "SIZE": 6,
+  "pivot": "WORM",
+  "target": "VIRUS",
+  "noise": "GE",
+  "latHint": "Think a computer bug - not a garden creature.",
+  "pivHint": "A WORM wriggles through soil - but a computer WORM is a type of ______.",
+  "winText": "Infected. WORM was the pivot - a soil crawler to a computer VIRUS.",
+  "lossText": "VIRUS - malicious software. WORM was the pivot: garden WORM to a computer WORM.",
+  "gridString": "GWASTERPEELWABINSOSUMUHRSOILSMEUVGRI"
+}

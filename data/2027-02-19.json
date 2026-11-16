@@ -1,0 +1,21 @@
+{
+  "theme": "LAUNDRY",
+  "words": [
+    "LOAD",
+    "SOAP",
+    "FOLD",
+    "IRON",
+    "TOWEL",
+    "SOCKS",
+    "DRYER"
+  ],
+  "SIZE": 6,
+  "pivot": "FOLD",
+  "target": "FLOCK",
+  "noise": "PRD",
+  "latHint": "Think a group of sheep - not folded clothes.",
+  "pivHint": "To FOLD laundry is to lay it flat - but a FOLD is also a pen for a what of sheep?",
+  "winText": "Neatly done. FOLD was the pivot - laundry to a pen holding a FLOCK.",
+  "lossText": "FLOCK - a group of sheep. FOLD was the pivot: to FOLD laundry and a sheep FOLD.",
+  "gridString": "TSOCKSODRYERWPSODIEFOLDRLOADFORCPLKN"
+}

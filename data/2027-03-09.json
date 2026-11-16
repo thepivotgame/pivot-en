@@ -1,0 +1,21 @@
+{
+  "theme": "BISTRO",
+  "words": [
+    "COOK",
+    "BILL",
+    "SOUP",
+    "WINE",
+    "TABLE",
+    "STEAK",
+    "SALAD"
+  ],
+  "SIZE": 6,
+  "pivot": "COOK",
+  "target": "FORGE",
+  "noise": "LDM",
+  "latHint": "Think falsifying the accounts - not preparing dinner.",
+  "pivHint": "To COOK is to prepare a meal - but to COOK the books means to do what to the accounts?",
+  "winText": "Books faked. COOK was the pivot - a meal to a record you FORGE.",
+  "lossText": "FORGE - to counterfeit. COOK was the pivot: to COOK a meal and to COOK the books.",
+  "gridString": "TSTEAKAALSOBBLROWILACUILEDMPNLFDGOEE"
+}

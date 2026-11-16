@@ -1,0 +1,21 @@
+{
+  "theme": "SCULPTURE",
+  "words": [
+    "MOLD",
+    "CLAY",
+    "BUST",
+    "BASE",
+    "STONE",
+    "CARVE",
+    "MODEL"
+  ],
+  "SIZE": 6,
+  "pivot": "BUST",
+  "target": "SMASH",
+  "noise": "GED",
+  "latHint": "Think breaking something with force - not a statue.",
+  "pivHint": "A BUST is a statue of head and shoulders - but to BUST a window means to do what to it?",
+  "winText": "Shattered. BUST was the pivot - a statue to something you SMASH.",
+  "lossText": "SMASH - to break violently. BUST was the pivot: a sculpted BUST to BUSTing something.",
+  "gridString": "SMGACDTSOAECOSRDLMNVUAEOESYBMLBASEHD"
+}

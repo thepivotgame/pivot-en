@@ -1,0 +1,21 @@
+{
+  "theme": "LETTERS",
+  "words": [
+    "FLAP",
+    "DROP",
+    "MAIL",
+    "SLOT",
+    "CARDS",
+    "BOXES",
+    "STAMP"
+  ],
+  "SIZE": 6,
+  "pivot": "MAIL",
+  "target": "ARMOR",
+  "noise": "ENIRYWTL",
+  "latHint": "Think a knight's metal suit - not post.",
+  "pivHint": "MAIL lands in your letterbox - but chain MAIL is the metal what a knight wears?",
+  "winText": "Knight time. MAIL was the pivot - post to ARMOR.",
+  "lossText": "ARMOR - a protective metal covering. MAIL was the pivot: letter MAIL to chain MAIL.",
+  "gridString": "CMTPBWALOOFERRXYLRDENIASSTAMPIAMTROR"
+}

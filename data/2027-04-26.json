@@ -1,0 +1,21 @@
+{
+  "theme": "JEWELLER",
+  "words": [
+    "JADE",
+    "OPAL",
+    "GEMS",
+    "RUBY",
+    "AMBER",
+    "PEARL",
+    "TIARA"
+  ],
+  "SIZE": 6,
+  "pivot": "RUBY",
+  "target": "FORTY",
+  "noise": "MEHI",
+  "latHint": "Think a milestone wedding anniversary number - not a red gem.",
+  "pivHint": "A RUBY is a red gemstone - but a RUBY wedding anniversary marks how many years?",
+  "winText": "Four decades! RUBY was the pivot - a red gem to a marriage of FORTY years.",
+  "lossText": "FORTY - the years behind a RUBY wedding. RUBY was the pivot: a red RUBY to a RUBY anniversary.",
+  "gridString": "APEARLMMJRHIBOPALSEYTIDMRFOTRERUBYEG"
+}

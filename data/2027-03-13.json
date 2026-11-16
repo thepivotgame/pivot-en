@@ -1,0 +1,21 @@
+{
+  "theme": "ACCOUNTANT",
+  "words": [
+    "BOOK",
+    "SLIP",
+    "SUMS",
+    "FEES",
+    "DEBTS",
+    "AUDIT",
+    "ASSET"
+  ],
+  "SIZE": 6,
+  "pivot": "SLIP",
+  "target": "GAFFE",
+  "noise": "HTRD",
+  "latHint": "Think an embarrassing blunder in public - not a paper receipt.",
+  "pivHint": "A SLIP is a pay receipt - but a SLIP of the tongue is a small, embarrassing ______.",
+  "winText": "Oops. SLIP was the pivot - a paper to a public GAFFE.",
+  "lossText": "GAFFE - a clumsy mistake. SLIP was the pivot: a pay SLIP to a SLIP of the tongue.",
+  "gridString": "DASSETEHRLDEBOOKIFTIDUAPSUMSGAFEESFT"
+}

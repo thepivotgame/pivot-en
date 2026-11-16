@@ -1,0 +1,21 @@
+{
+  "theme": "FARMYARD",
+  "words": [
+    "BAAS",
+    "HENS",
+    "OINK",
+    "MOOS",
+    "NEIGH",
+    "CLUCK",
+    "QUACK"
+  ],
+  "SIZE": 6,
+  "pivot": "QUACK",
+  "target": "FRAUD",
+  "noise": "CEG",
+  "latHint": "Think a fake doctor - not a duck sound.",
+  "pivHint": "A QUACK is the sound a duck makes - but a QUACK is also a fake doctor, a medical ______.",
+  "winText": "Fake it. QUACK was the pivot - a duck call to a medical FRAUD.",
+  "lossText": "FRAUD - a deceiver. QUACK was the pivot: a duck QUACK to a QUACK doctor.",
+  "gridString": "NCLUCKEOBCCHIAIAGEGFUNANHQEUKSMOOSRD"
+}

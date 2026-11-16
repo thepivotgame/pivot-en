@@ -1,0 +1,21 @@
+{
+  "theme": "RUNNING",
+  "words": [
+    "FAST",
+    "LAPS",
+    "PACE",
+    "RACE",
+    "RELAY",
+    "SHOES",
+    "TRACK"
+  ],
+  "SIZE": 6,
+  "pivot": "RACE",
+  "target": "TRIBE",
+  "noise": "SWAEND",
+  "latHint": "Think a people with shared customs - not a speed contest.",
+  "pivHint": "A RACE is a contest of speed - but a RACE of people is a group, like a ______.",
+  "winText": "First past the post. RACE was the pivot - a speed contest to a TRIBE.",
+  "lossText": "TRIBE - a community with shared ancestors. RACE was the pivot: a running RACE to a human RACE.",
+  "gridString": "STRACKHWEAEDOLLFCSECAPAESSYPETTBRNSI"
+}

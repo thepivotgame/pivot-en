@@ -1,0 +1,21 @@
+{
+  "theme": "COASTLINE",
+  "words": [
+    "BAYS",
+    "COVE",
+    "SAND",
+    "GULF",
+    "SHORE",
+    "BEACH",
+    "REEFS"
+  ],
+  "SIZE": 6,
+  "pivot": "GULF",
+  "target": "CHASM",
+  "noise": "XEP",
+  "latHint": "Think a wide divide - not a sea inlet.",
+  "pivHint": "A GULF is a large inlet of the sea - but a GULF between two sides is a wide ______.",
+  "winText": "Mind the gap. GULF was the pivot - a sea inlet to a CHASM.",
+  "lossText": "CHASM - a wide gap. GULF was the pivot: a sea GULF to a GULF between sides.",
+  "gridString": "BGULFRASHOREYXCOVESANDAFBEACHSPCESHM"
+}

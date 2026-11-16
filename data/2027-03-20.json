@@ -1,0 +1,21 @@
+{
+  "theme": "WINDY",
+  "words": [
+    "KITE",
+    "FLAP",
+    "SAIL",
+    "GUST",
+    "SOARS",
+    "SPOOL",
+    "SKIES"
+  ],
+  "SIZE": 6,
+  "pivot": "KITE",
+  "target": "EAGLE",
+  "noise": "TYSKR",
+  "latHint": "Think a bird of prey - not a toy on a string.",
+  "pivHint": "A KITE flies on a windy day - but a KITE is also a bird of prey, like an ______.",
+  "winText": "Soaring. KITE was the pivot - a toy to an EAGLE.",
+  "lossText": "EAGLE - a large bird of prey. KITE was the pivot: a toy KITE to the bird KITE.",
+  "gridString": "SEIKSSOPTYAGAAOIKURLLOKSSFRTLTSEELAG"
+}

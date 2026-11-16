@@ -1,0 +1,21 @@
+{
+  "theme": "BEEKEEPING",
+  "words": [
+    "BEES",
+    "CELL",
+    "BUZZ",
+    "HIVE",
+    "QUEEN",
+    "SWARM",
+    "HONEY"
+  ],
+  "SIZE": 6,
+  "pivot": "BUZZ",
+  "target": "RUMOR",
+  "noise": "HT",
+  "latHint": "Think gossip going round town - not a bee's hum.",
+  "pivHint": "A BUZZ is the hum of a bee - but the BUZZ around town is a what that everyone passes on?",
+  "winText": "Word spreads. BUZZ was the pivot - a bee's hum to a RUMOR.",
+  "lossText": "RUMOR - an unconfirmed story. BUZZ was the pivot: a bee BUZZ to the BUZZ in town.",
+  "gridString": "QSWARMUHONEYEBEESCEUHIVENZRTOLRZHMUL"
+}

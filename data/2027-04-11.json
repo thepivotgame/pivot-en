@@ -1,0 +1,21 @@
+{
+  "theme": "ELECTRICIAN",
+  "words": [
+    "WIRE",
+    "VOLT",
+    "FUSE",
+    "AMPS",
+    "CABLE",
+    "SPARK",
+    "METER"
+  ],
+  "SIZE": 6,
+  "pivot": "FUSE",
+  "target": "BLEND",
+  "noise": "AG",
+  "latHint": "Think mixing smoothly together - not a safety wire.",
+  "pivHint": "A FUSE is a safety wire in a circuit - but to FUSE two flavours means to do what to them?",
+  "winText": "Mixed well. FUSE was the pivot - a safety wire to a BLEND.",
+  "lossText": "BLEND - to mix smoothly. FUSE was the pivot: an electrician's FUSE to FUSING flavours.",
+  "gridString": "WAMPSCIVOLTARETEMBESUFDLSPARKEGNBAEL"
+}

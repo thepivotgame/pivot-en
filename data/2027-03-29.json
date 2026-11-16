@@ -1,0 +1,21 @@
+{
+  "theme": "SUNGLASSES",
+  "words": [
+    "LENS",
+    "TINT",
+    "RAYS",
+    "BEAM",
+    "FRAME",
+    "SHADE",
+    "GLARE"
+  ],
+  "SIZE": 6,
+  "pivot": "GLARE",
+  "target": "SCOWL",
+  "noise": "EFAPR",
+  "latHint": "Think an angry frown - not bright sunlight.",
+  "pivHint": "The GLARE of the sun hurts your eyes - but to GLARE at someone means giving them an angry what?",
+  "winText": "Dirty look. GLARE was the pivot - sunlight to a SCOWL.",
+  "lossText": "SCOWL - an angry frown. GLARE was the pivot: sun GLARE to a GLARE at someone.",
+  "gridString": "LBEAMTEFFPSINRRHRNSYARETADMLLSEWECGO"
+}

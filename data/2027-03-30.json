@@ -1,0 +1,21 @@
+{
+  "theme": "LODGING",
+  "words": [
+    "KEYS",
+    "DESK",
+    "ROOM",
+    "BEDS",
+    "LOBBY",
+    "SUITE",
+    "HOTEL"
+  ],
+  "SIZE": 6,
+  "pivot": "HOTEL",
+  "target": "INDIA",
+  "noise": "PSWR",
+  "latHint": "Think a subcontinent in the radio code - not a place to stay.",
+  "pivHint": "A HOTEL is a place to sleep - but in the radio code, H is HOTEL, so what word is I?",
+  "winText": "Roger. HOTEL was the pivot - a place to stay to the code word INDIA.",
+  "lossText": "INDIA - code word for I. HOTEL was the pivot: a HOTEL stay to H, then INDIA.",
+  "gridString": "LSUITEOEYPDRBWTEOBBRSOKEYKMAHDIINDSS"
+}

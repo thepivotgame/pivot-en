@@ -1,0 +1,21 @@
+{
+  "theme": "BLACKBIRD",
+  "words": [
+    "WING",
+    "BEAK",
+    "CROW",
+    "CAWS",
+    "NESTS",
+    "FLOCK",
+    "TREES"
+  ],
+  "SIZE": 6,
+  "pivot": "CROW",
+  "target": "BOAST",
+  "noise": "PYR",
+  "latHint": "Think bragging about a win - not a black bird.",
+  "pivHint": "A CROW is a large black bird - but to CROW about your win means to do what?",
+  "winText": "Full of yourself. CROW was the pivot - a black bird to BOASTing.",
+  "lossText": "BOAST - to brag. CROW was the pivot: a blackbird CROW to CROWing about a win.",
+  "gridString": "NFLOCKEWINGASEERTETCROWBSWACPARBYSOT"
+}
