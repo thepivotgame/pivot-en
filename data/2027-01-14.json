@@ -1,0 +1,21 @@
+{
+  "theme": "CAT",
+  "words": [
+    "PAWS",
+    "PURR",
+    "TAIL",
+    "MEOW",
+    "TABBY",
+    "MOUSE",
+    "CLAWS"
+  ],
+  "SIZE": 6,
+  "pivot": "TAIL",
+  "target": "STALK",
+  "noise": "DHE",
+  "latHint": "Think following a suspect quietly - not a cat's rear.",
+  "pivHint": "A cat's TAIL swishes behind it - but to TAIL a suspect means to do what?",
+  "winText": "On your heels. TAIL was the pivot - a cat's rear to STALKing a suspect.",
+  "lossText": "STALK - to follow stealthily. TAIL was the pivot: a cat's TAIL to TAILing a suspect.",
+  "gridString": "TMOUSEATPAWSBAUMADBIRELAYLROCESHLWTK"
+}

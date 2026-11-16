@@ -1,0 +1,21 @@
+{
+  "theme": "PUDDING",
+  "words": [
+    "SUET",
+    "FIGS",
+    "DATE",
+    "PLUM",
+    "CLOVE",
+    "SPICE",
+    "HOLLY"
+  ],
+  "SIZE": 6,
+  "pivot": "PLUM",
+  "target": "PRIZE",
+  "noise": "PTD",
+  "latHint": "Think a coveted reward - not a fruit.",
+  "pivHint": "A PLUM goes into the Christmas pudding - but a PLUM job is what kind of reward?",
+  "winText": "Top draw. PLUM was the pivot - pudding fruit to a coveted PRIZE.",
+  "lossText": "PRIZE - something highly valued. PLUM was the pivot: pudding PLUM to a PLUM job.",
+  "gridString": "CHPISSLFOPDUOPILTEVCZGLTETADSYPLUMRE"
+}

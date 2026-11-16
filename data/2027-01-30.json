@@ -1,0 +1,21 @@
+{
+  "theme": "CRICKET",
+  "words": [
+    "BAIL",
+    "OVER",
+    "RUNS",
+    "BALL",
+    "PITCH",
+    "STUMP",
+    "SLIPS"
+  ],
+  "SIZE": 6,
+  "pivot": "BAIL",
+  "target": "SCOOP",
+  "noise": "HTRD",
+  "latHint": "Think emptying water from a boat - not a cricket bit.",
+  "pivHint": "A BAIL sits atop cricket stumps - but to BAIL a leaky boat means to do what to the water?",
+  "winText": "Dry decks. BAIL was the pivot - a cricket crosspiece to SCOOPing water.",
+  "lossText": "SCOOP - to lift out with a dipper. BAIL was the pivot: cricket BAIL to BAILing a boat.",
+  "gridString": "PMUTSOIBAILVTHRDIECPOSPRHRUNSCBALLOT"
+}

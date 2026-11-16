@@ -1,0 +1,21 @@
+{
+  "theme": "CHALET",
+  "words": [
+    "LOGS",
+    "BEAM",
+    "ROOF",
+    "SNOW",
+    "STOVE",
+    "CABIN",
+    "WOODS"
+  ],
+  "SIZE": 6,
+  "pivot": "BEAM",
+  "target": "SMILE",
+  "noise": "ADHL",
+  "latHint": "Think a happy face - not a roof timber.",
+  "pivHint": "A BEAM of timber holds up the chalet roof - but to BEAM at someone means to do what?",
+  "winText": "Ear to ear. BEAM was the pivot - roof timber to a broad SMILE.",
+  "lossText": "SMILE - a happy curve of the mouth. BEAM was the pivot: a roof BEAM to BEAMing with a SMILE.",
+  "gridString": "LBEAMCOARHWAGLOOEBSNOWLISDFMINSTOVED"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "CAROLS",
+  "words": [
+    "NOEL",
+    "SING",
+    "HARP",
+    "TUNE",
+    "CHOIR",
+    "VERSE",
+    "PITCH"
+  ],
+  "SIZE": 6,
+  "pivot": "PITCH",
+  "target": "SPIEL",
+  "noise": "ADHL",
+  "latHint": "Think a salesperson's patter - not musical notes.",
+  "pivHint": "PITCH is how high a carol note sounds - but a sales PITCH is a persuasive ______.",
+  "winText": "Smooth talker. PITCH was the pivot - a note's height to a sales SPIEL.",
+  "lossText": "SPIEL - a glib, persuasive speech. PITCH was the pivot: musical PITCH to a sales PITCH.",
+  "gridString": "CVERSEHCTIPNOANATOIGRHUERLLPNLESPIED"
+}

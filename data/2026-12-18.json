@@ -1,0 +1,21 @@
+{
+  "theme": "ORGAN",
+  "words": [
+    "KEYS",
+    "HYMN",
+    "STOP",
+    "PIPE",
+    "ALTAR",
+    "PEDAL",
+    "REEDS"
+  ],
+  "SIZE": 6,
+  "pivot": "PEDAL",
+  "target": "CYCLE",
+  "noise": "OJDN",
+  "latHint": "Think riding a bicycle - not an organ.",
+  "pivHint": "An organist works a PEDAL with the feet - but to PEDAL down a road means to do what on a bike?",
+  "winText": "Wheels turning. PEDAL was the pivot - an organ foot-key to a rider who will CYCLE.",
+  "lossText": "CYCLE - to ride a bicycle. PEDAL was the pivot: organ PEDAL to PEDALing a bike.",
+  "gridString": "AOKRDPLADEPOTHPEYTAYIDNSRMPSELCNEYCJ"
+}

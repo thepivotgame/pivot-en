@@ -1,0 +1,21 @@
+{
+  "theme": "EVERGREEN",
+  "words": [
+    "CONE",
+    "TREE",
+    "SNOW",
+    "PINE",
+    "BOUGH",
+    "CEDAR",
+    "RESIN"
+  ],
+  "SIZE": 6,
+  "pivot": "PINE",
+  "target": "YEARN",
+  "noise": "OWKTSL",
+  "latHint": "Think a deep longing - not an evergreen.",
+  "pivHint": "A PINE is an evergreen tree - but to PINE for someone far away means to do what?",
+  "winText": "Aching heart. PINE was the pivot - evergreen tree to a heart that will YEARN.",
+  "lossText": "YEARN - to long for deeply. PINE was the pivot: evergreen PINE to PINE for someone.",
+  "gridString": "BCEDAROOTREEUNWONSGEWITIHLPOKNNYRESA"
+}

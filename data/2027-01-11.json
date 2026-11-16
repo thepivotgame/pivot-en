@@ -1,0 +1,21 @@
+{
+  "theme": "CHEMISTRY",
+  "words": [
+    "BASE",
+    "ACID",
+    "BOND",
+    "ATOM",
+    "FLASK",
+    "IONIC",
+    "METAL"
+  ],
+  "SIZE": 6,
+  "pivot": "BOND",
+  "target": "AGENT",
+  "noise": "PRD",
+  "latHint": "Think 007's profession - not a chemical link.",
+  "pivHint": "A chemical BOND holds atoms together - but James BOND is a secret what?",
+  "winText": "Shaken, not stirred. BOND was the pivot - a chemical link to a secret AGENT.",
+  "lossText": "AGENT - a spy. BOND was the pivot: a chemical BOND to James BOND.",
+  "gridString": "BBPEAMATOMCESDANITERNGDAFLASKLIONICT"
+}

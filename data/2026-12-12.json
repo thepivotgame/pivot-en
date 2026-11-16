@@ -1,0 +1,21 @@
+{
+  "theme": "MULLED",
+  "words": [
+    "MULL",
+    "STIR",
+    "HEAT",
+    "PORT",
+    "GLASS",
+    "WINES",
+    "ANISE"
+  ],
+  "SIZE": 6,
+  "pivot": "MULL",
+  "target": "THINK",
+  "noise": "ARWPES",
+  "latHint": "Picture a chin-scratching pause - not a winter drink.",
+  "pivHint": "You MULL wine with spices and heat - but to MULL over an idea means to do what?",
+  "winText": "Chin on hand. MULL was the pivot - warm spiced wine to a mind that will THINK.",
+  "lossText": "THINK - to consider carefully. MULL was the pivot: MULLed wine to MULLing something over.",
+  "gridString": "GRPSWHLANISEALNATASEURITSWOMRKTPNHEI"
+}

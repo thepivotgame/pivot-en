@@ -1,0 +1,21 @@
+{
+  "theme": "TOYMAKER",
+  "words": [
+    "GLUE",
+    "WOOD",
+    "SAND",
+    "SAWS",
+    "PLANE",
+    "PAINT",
+    "LATHE"
+  ],
+  "SIZE": 6,
+  "pivot": "WOOD",
+  "target": "GROVE",
+  "noise": "SWAEND",
+  "latHint": "Think a small stand of trees - not carving timber.",
+  "pivHint": "The toymaker carves WOOD - but a WOOD in the countryside is a small ______ of trees.",
+  "winText": "Among the pines. WOOD was the pivot - carving timber to a GROVE.",
+  "lossText": "GROVE - a small stand of trees. WOOD was the pivot: the toymaker's WOOD to a WOOD of trees.",
+  "gridString": "PWOODWLATHESAEIUAANDLNSWEGDATSEGVRNO"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "ESPRESSO",
+  "words": [
+    "BEAN",
+    "CUPS",
+    "SHOT",
+    "FOAM",
+    "ROAST",
+    "LATTE",
+    "GRIND"
+  ],
+  "SIZE": 6,
+  "pivot": "GRIND",
+  "target": "CHORE",
+  "noise": "LD",
+  "latHint": "Think the dull daily routine - not coffee beans.",
+  "pivHint": "You GRIND beans for espresso - but the daily GRIND of work is a tiring ______.",
+  "winText": "Same old. GRIND was the pivot - coffee beans to a daily CHORE.",
+  "lossText": "CHORE - a routine task. GRIND was the pivot: coffee GRIND to the daily GRIND.",
+  "gridString": "FROASTOEBPDOARUECHMCLOASLATTENGRINDH"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "BASKETBALL",
+  "words": [
+    "PASS",
+    "HOOP",
+    "DUNK",
+    "FOUL",
+    "COURT",
+    "GUARD",
+    "SHOTS"
+  ],
+  "SIZE": 6,
+  "pivot": "FOUL",
+  "target": "NASTY",
+  "noise": "EP",
+  "latHint": "Think unpleasant weather - not a rule violation.",
+  "pivHint": "A FOUL is an illegal move in basketball - but FOUL weather is what kind of weather?",
+  "winText": "Stormy mood. FOUL was the pivot - a rule violation to NASTY weather.",
+  "lossText": "NASTY - unpleasant. FOUL was the pivot: basketball FOUL to FOUL weather.",
+  "gridString": "CGUARDOSHOTSUSODFYRAOUOPTPPNUTNESKLA"
+}

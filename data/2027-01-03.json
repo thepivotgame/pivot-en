@@ -1,0 +1,21 @@
+{
+  "theme": "TAILOR",
+  "words": [
+    "HEMS",
+    "CUTS",
+    "SEAM",
+    "PINS",
+    "SUITS",
+    "SKIRT",
+    "CHALK"
+  ],
+  "SIZE": 6,
+  "pivot": "SKIRT",
+  "target": "AVOID",
+  "noise": "MLBNER",
+  "latHint": "Think steering clear - not a garment.",
+  "pivHint": "A SKIRT hangs from the waist - but to SKIRT a problem means to do what to it?",
+  "winText": "Steer clear. SKIRT was the pivot - a garment to AVOIDing a problem.",
+  "lossText": "AVOID - to keep away from. SKIRT was the pivot: tailor's SKIRT to SKIRTing an issue.",
+  "gridString": "SMEHLNUKLAHCIPINSUTRMRBTSEAMTSDAIVEO"
+}

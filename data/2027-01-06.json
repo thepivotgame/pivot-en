@@ -1,0 +1,21 @@
+{
+  "theme": "EPIPHANY",
+  "words": [
+    "STAR",
+    "GOLD",
+    "KING",
+    "GIFT",
+    "CAMEL",
+    "MYRRH",
+    "HEROD"
+  ],
+  "SIZE": 6,
+  "pivot": "STAR",
+  "target": "CELEB",
+  "noise": "DNKTA",
+  "latHint": "Think a famous face on a red carpet - not a night sky.",
+  "pivHint": "A STAR guided the wise men - but a movie STAR is what kind of famous person?",
+  "winText": "Famous face. STAR was the pivot - a sky light to a CELEB.",
+  "lossText": "CELEB - a famous person. STAR was the pivot: a STAR in the sky to a movie STAR.",
+  "gridString": "CHKINGANETAGMYRRHOEDAKOLLTFIGDSBCEEL"
+}

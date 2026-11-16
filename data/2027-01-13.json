@@ -1,0 +1,21 @@
+{
+  "theme": "GOLF",
+  "words": [
+    "PUTT",
+    "IRON",
+    "CLUB",
+    "TEES",
+    "GREEN",
+    "DRIVE",
+    "EAGLE"
+  ],
+  "SIZE": 6,
+  "pivot": "IRON",
+  "target": "PRESS",
+  "noise": "KAB",
+  "latHint": "Think smoothing out wrinkles - not a golf club.",
+  "pivHint": "An IRON is a golf club - but to IRON a shirt is to do what to it?",
+  "winText": "Crisp. IRON was the pivot - a golf club to PRESSing a shirt.",
+  "lossText": "PRESS - to flatten with weight and heat. IRON was the pivot: golf IRON to IRONing a shirt.",
+  "gridString": "GPUTTCRTEESLEVIRDUEAGLEBNORIKEBPASRS"
+}

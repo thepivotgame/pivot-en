@@ -1,0 +1,21 @@
+{
+  "theme": "PETSTORE",
+  "words": [
+    "FISH",
+    "CAGE",
+    "BIRD",
+    "FOOD",
+    "PUPPY",
+    "KITTY",
+    "BUNNY"
+  ],
+  "SIZE": 6,
+  "pivot": "KITTY",
+  "target": "FUNDS",
+  "noise": "KAB",
+  "latHint": "Think a shared pot of money - not a baby cat.",
+  "pivHint": "A KITTY is a baby cat - but a KITTY the group saves is a pool of ______.",
+  "winText": "Chip in. KITTY was the pivot - a baby cat to pooled FUNDS.",
+  "lossText": "FUNDS - money set aside. KITTY was the pivot: a baby KITTY to a shared KITTY.",
+  "gridString": "FKNBBCIOBIUASFORNGHADDNEPUPPYUKITTYS"
+}

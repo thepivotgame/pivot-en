@@ -1,0 +1,21 @@
+{
+  "theme": "SOLSTICE",
+  "words": [
+    "DAWN",
+    "DUSK",
+    "DARK",
+    "YULE",
+    "SHORT",
+    "NIGHT",
+    "LIGHT"
+  ],
+  "SIZE": 6,
+  "pivot": "DAWN",
+  "target": "BIRTH",
+  "noise": "SWAEND",
+  "latHint": "Think the start of something new - not sunrise.",
+  "pivHint": "DAWN follows the longest night - but the DAWN of a new era is its ______.",
+  "winText": "A new beginning. DAWN was the pivot - first light to the BIRTH of an age.",
+  "lossText": "BIRTH - the beginning of something. DAWN was the pivot: morning DAWN to the DAWN of an era.",
+  "gridString": "NTYULEIRWIEDGOGDDSHHUAAHTSWRBTKNIKNR"
+}

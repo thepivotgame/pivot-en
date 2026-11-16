@@ -1,0 +1,21 @@
+{
+  "theme": "HAIR",
+  "words": [
+    "CURL",
+    "COMB",
+    "WAVE",
+    "PART",
+    "BRAID",
+    "BRUSH",
+    "BANGS"
+  ],
+  "SIZE": 6,
+  "pivot": "COMB",
+  "target": "SCOUR",
+  "noise": "HTF",
+  "latHint": "Think searching every corner - not a hairbrush.",
+  "pivHint": "A COMB tidies hair - but to COMB through records means to do what to them?",
+  "winText": "Every corner. COMB was the pivot - a hair tidier to SCOURing records.",
+  "lossText": "SCOUR - to search thoroughly. COMB was the pivot: hair COMB to COMBing through files.",
+  "gridString": "BBANGSRRCOMBAWUHOPIARSFADVLSHRTEUCRT"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "ADVENT",
+  "words": [
+    "DAYS",
+    "DOOR",
+    "HOPE",
+    "WAIT",
+    "CAROL",
+    "LIGHT",
+    "COUNT"
+  ],
+  "SIZE": 6,
+  "pivot": "COUNT",
+  "target": "NOBLE",
+  "noise": "ARWPES",
+  "latHint": "Think a lord of high rank - not a tally.",
+  "pivHint": "To COUNT is to number the days of Advent - but a COUNT in old Europe is what kind of lord?",
+  "winText": "Your lordship. COUNT was the pivot - a tally to a titled NOBLE.",
+  "lossText": "NOBLE - a person of high birth. COUNT was the pivot: to COUNT the days to a COUNT of high rank.",
+  "gridString": "CDAYSHAORPWOROUSAPORANIELIGHTWENLOEB"
+}

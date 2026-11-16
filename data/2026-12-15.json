@@ -1,0 +1,21 @@
+{
+  "theme": "NUTCRACKER",
+  "words": [
+    "TUTU",
+    "SNOW",
+    "KING",
+    "TOYS",
+    "CLARA",
+    "SUGAR",
+    "MOUSE"
+  ],
+  "SIZE": 6,
+  "pivot": "MOUSE",
+  "target": "TIMID",
+  "noise": "AEGB",
+  "latHint": "Think a shy, nervous person - not a rodent.",
+  "pivHint": "A MOUSE squeaks in the Nutcracker's house - but a person called a MOUSE is how?",
+  "winText": "Quiet as. MOUSE was the pivot - a squeaky rodent to a TIMID person.",
+  "lossText": "TIMID - shy and easily frightened. MOUSE was the pivot: a squeaky MOUSE to a MOUSE of a person.",
+  "gridString": "CMKINGLWONSAAGTUTURAGUSBATOYSEDITIME"
+}

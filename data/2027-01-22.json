@@ -1,0 +1,21 @@
+{
+  "theme": "GARAGE",
+  "words": [
+    "TIRE",
+    "BOLT",
+    "LIFT",
+    "JACK",
+    "BRAKE",
+    "TOOLS",
+    "WHEEL"
+  ],
+  "SIZE": 6,
+  "pivot": "JACK",
+  "target": "KNAVE",
+  "noise": "RW",
+  "latHint": "Think a rascal in a deck of cards - not a car lifter.",
+  "pivHint": "A JACK lifts a car - but in a deck of cards the JACK is also called the ______.",
+  "winText": "Rascal. JACK was the pivot - a car lift to a card KNAVE.",
+  "lossText": "KNAVE - a rogue, and the card between ten and queen. JACK was the pivot: car JACK to the card JACK.",
+  "gridString": "BTOOLSRIBLEJAROIEAKELFHCEETTWKWVKRAN"
+}

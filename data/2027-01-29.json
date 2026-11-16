@@ -1,0 +1,21 @@
+{
+  "theme": "SURGERY",
+  "words": [
+    "WARD",
+    "LAMP",
+    "MASK",
+    "SCAR",
+    "NURSE",
+    "GRAFT",
+    "GLOVE"
+  ],
+  "SIZE": 6,
+  "pivot": "GRAFT",
+  "target": "BRIBE",
+  "noise": "DT",
+  "latHint": "Think a payoff slipped to an official - not skin surgery.",
+  "pivHint": "A skin GRAFT moves healthy skin to a wound - but political GRAFT is when an official takes a ______.",
+  "winText": "Palm greased. GRAFT was the pivot - surgery to a BRIBE.",
+  "lossText": "BRIBE - a payment for favors. GRAFT was the pivot: skin GRAFT to political GRAFT.",
+  "gridString": "NGRAFTULWARDROAETMSVBMBAEEDIPSSCARRK"
+}

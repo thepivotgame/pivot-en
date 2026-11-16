@@ -1,0 +1,21 @@
+{
+  "theme": "SNOWPLOW",
+  "words": [
+    "ROAD",
+    "ICED",
+    "SALT",
+    "PLOW",
+    "TRUCK",
+    "BLADE",
+    "CLEAR"
+  ],
+  "SIZE": 6,
+  "pivot": "SALT",
+  "target": "STASH",
+  "noise": "MEHI",
+  "latHint": "Think hiding something away - not road de-icer.",
+  "pivHint": "SALT melts ice on a road - but to SALT money away means to do what with it?",
+  "winText": "Tucked away. SALT was the pivot - road SALT to a STASH.",
+  "lossText": "STASH - to hide away. SALT was the pivot: road SALT to SALTing money away.",
+  "gridString": "TBLADERAELCIUOSMWCCHAOIEKHLDSDSPTTAE"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "AVALANCHE",
+  "words": [
+    "RUSH",
+    "SNOW",
+    "ROAR",
+    "FALL",
+    "SLOPE",
+    "SLIDE",
+    "PEAKS"
+  ],
+  "SIZE": 6,
+  "pivot": "SLIDE",
+  "target": "SLUMP",
+  "noise": "EXTCOA",
+  "latHint": "Think a sudden fall in share prices - not an avalanche.",
+  "pivHint": "A SLIDE of snow thunders down a mountain - but a SLIDE in share prices is a sudden ______.",
+  "winText": "Downhill. SLIDE was the pivot - snow SLIDE to a market SLUMP.",
+  "lossText": "SLUMP - a sudden drop. SLIDE was the pivot: snow SLIDE to a SLIDE in prices.",
+  "gridString": "SKAEPRLLAFOUOXIACSPARDNHEETOEPSMWLOU"
+}

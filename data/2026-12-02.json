@@ -1,0 +1,21 @@
+{
+  "theme": "SLEIGH",
+  "words": [
+    "BELL",
+    "SNOW",
+    "DASH",
+    "RIDE",
+    "FROST",
+    "HORSE",
+    "REINS"
+  ],
+  "SIZE": 6,
+  "pivot": "DASH",
+  "target": "PINCH",
+  "noise": "ARWPES",
+  "latHint": "Think a tiny measure of salt - not a sprint.",
+  "pivHint": "To DASH through the snow is to run fast - but a DASH of salt in a recipe is how small a measure?",
+  "winText": "Just a smidge. DASH was the pivot - a sprint to a PINCH of seasoning.",
+  "lossText": "PINCH - a tiny amount. DASH was the pivot: a sprint through snow to a DASH of salt.",
+  "gridString": "RFROSTIREPNHDSIAOWEHNRWPDASHCIBELLEN"
+}

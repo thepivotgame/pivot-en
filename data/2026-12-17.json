@@ -1,0 +1,21 @@
+{
+  "theme": "ICEFISHING",
+  "words": [
+    "LINE",
+    "BAIT",
+    "LURE",
+    "HOLE",
+    "CATCH",
+    "SHACK",
+    "AUGER"
+  ],
+  "SIZE": 6,
+  "pivot": "LURE",
+  "target": "TEMPT",
+  "noise": "FAH",
+  "latHint": "Think a tasty offer you can't refuse - not fishing bait.",
+  "pivHint": "A fisherman's LURE draws fish to the hook - but to LURE a person means to do what to them?",
+  "winText": "Hook, line and sinker. LURE was the pivot - fishing bait to a TEMPTing offer.",
+  "lossText": "TEMPT - to entice. LURE was the pivot: fishing LURE to LUREing someone in.",
+  "gridString": "CSHACKALBUFETIAGMLCNIEUOHETRHHTAEPET"
+}

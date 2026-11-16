@@ -1,0 +1,21 @@
+{
+  "theme": "CHRISTMAS",
+  "words": [
+    "TREE",
+    "CARD",
+    "GIFT",
+    "STAR",
+    "MERRY",
+    "SANTA",
+    "ANGEL"
+  ],
+  "SIZE": 6,
+  "pivot": "CARD",
+  "target": "COMIC",
+  "noise": "FLK",
+  "latHint": "Think a stand-up performer who gets the laughs - not a greeting.",
+  "pivHint": "A CARD is sent at Christmas - but a person called a real CARD is what kind of character?",
+  "winText": "Life of the party. CARD was the pivot - a greeting to a funny COMIC.",
+  "lossText": "COMIC - a funny person. CARD was the pivot: a Christmas CARD to a real CARD.",
+  "gridString": "MSANTAECNFRSRAGMETRREIEAYDLKFRCLIOCT"
+}

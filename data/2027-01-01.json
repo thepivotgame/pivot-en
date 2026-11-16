@@ -1,0 +1,21 @@
+{
+  "theme": "RESOLUTION",
+  "words": [
+    "GOAL",
+    "DIET",
+    "PLAN",
+    "LEAF",
+    "FRESH",
+    "START",
+    "HABIT"
+  ],
+  "SIZE": 6,
+  "pivot": "LEAF",
+  "target": "THUMB",
+  "noise": "OD",
+  "latHint": "Think flipping pages with a finger - not a tree part.",
+  "pivHint": "Turning over a new LEAF starts the year fresh - but to LEAF through a book is also to what through it?",
+  "winText": "Page by page. LEAF was the pivot - a page to THUMB through a book.",
+  "lossText": "THUMB - to flip through pages. LEAF was the pivot: a new LEAF to LEAFing through a book.",
+  "gridString": "FGOALDRPLANIELEAFESTARTTHABITBDMTOUH"
+}

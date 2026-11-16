@@ -1,0 +1,21 @@
+{
+  "theme": "DOG",
+  "words": [
+    "LEAD",
+    "BONE",
+    "WALK",
+    "BOWL",
+    "FETCH",
+    "SNIFF",
+    "HOUND"
+  ],
+  "SIZE": 6,
+  "pivot": "HOUND",
+  "target": "HARRY",
+  "noise": "KTOCE",
+  "latHint": "Think pestering someone without end - not a hunting dog.",
+  "pivHint": "A HOUND is a hunting dog - but to HOUND someone means to do what to them?",
+  "winText": "No peace. HOUND was the pivot - a hunting dog to HARRYing someone.",
+  "lossText": "HARRY - to pester. HOUND was the pivot: hunting HOUND to HOUNDing someone.",
+  "gridString": "FFINSWELWOBATBETCLCEOAKKHOUNDOYHRAER"
+}

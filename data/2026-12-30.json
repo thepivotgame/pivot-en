@@ -1,0 +1,21 @@
+{
+  "theme": "GLITTER",
+  "words": [
+    "GOLD",
+    "GLOW",
+    "STAR",
+    "FOIL",
+    "BLING",
+    "GLINT",
+    "SHINE"
+  ],
+  "SIZE": 6,
+  "pivot": "SHINE",
+  "target": "EXCEL",
+  "noise": "IVP",
+  "latHint": "Think being brilliant at maths - not a bright light.",
+  "pivHint": "Glitter makes things SHINE - but to SHINE at maths means to do what at it?",
+  "winText": "Top of class. SHINE was the pivot - bright glitter to EXCELling.",
+  "lossText": "EXCEL - to be outstanding. SHINE was the pivot: glittery SHINE to being brilliant, to SHINE at something.",
+  "gridString": "FBLINGOSICLLIPHIEOLVNIEWSTARNXGOLDLE"
+}

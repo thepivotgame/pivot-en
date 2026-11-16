@@ -1,0 +1,21 @@
+{
+  "theme": "STOVE",
+  "words": [
+    "POTS",
+    "PANS",
+    "WOKS",
+    "HEAT",
+    "KNOBS",
+    "STEAM",
+    "RANGE"
+  ],
+  "SIZE": 6,
+  "pivot": "RANGE",
+  "target": "SCOPE",
+  "noise": "DNKTA",
+  "latHint": "Think how far a topic reaches - not a kitchen stove.",
+  "pivHint": "A kitchen RANGE is a big stove - but the RANGE of a subject is its ______.",
+  "winText": "Wide view. RANGE was the pivot - a kitchen stove to a subject's SCOPE.",
+  "lossText": "SCOPE - the extent of a subject. RANGE was the pivot: kitchen RANGE to a RANGE of topics.",
+  "gridString": "KPRNWHNTAAOEOPNNKABOGDSTSTEAMKESSPCO"
+}

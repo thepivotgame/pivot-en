@@ -1,0 +1,21 @@
+{
+  "theme": "TENNIS",
+  "words": [
+    "LOBS",
+    "SETS",
+    "BALL",
+    "ACES",
+    "SERVE",
+    "COURT",
+    "DEUCE"
+  ],
+  "SIZE": 6,
+  "pivot": "DEUCE",
+  "target": "DEVIL",
+  "noise": "FAH",
+  "latHint": "Think a mild oath - not a tennis score.",
+  "pivHint": "DEUCE means forty-all in tennis - but 'what the DEUCE' stands in for 'what the' what?",
+  "winText": "Oh my. DEUCE was the pivot - forty-all to the DEVIL.",
+  "lossText": "DEVIL - the evil one. DEUCE was the pivot: tennis DEUCE to the mild oath 'the DEUCE'.",
+  "gridString": "SCOURTECUEDLRACESOVFLLABEVSETSHDAIEL"
+}

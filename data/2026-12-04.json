@@ -1,0 +1,21 @@
+{
+  "theme": "GIFTS",
+  "words": [
+    "CARD",
+    "TAGS",
+    "BOWS",
+    "WRAP",
+    "SCARF",
+    "SOCKS",
+    "WATCH"
+  ],
+  "SIZE": 6,
+  "pivot": "WRAP",
+  "target": "SHAWL",
+  "noise": "RTOUCCE",
+  "latHint": "Think something draped over the shoulders - not gift paper.",
+  "pivHint": "You WRAP a present in paper - but a WRAP worn around the shoulders is also called a ______.",
+  "winText": "Cozy cover. WRAP was the pivot - gift paper to a SHAWL around the shoulders.",
+  "lossText": "SHAWL - a loose cloth worn over the shoulders. WRAP was the pivot: gift WRAP to a shoulder WRAP.",
+  "gridString": "SWOBACCOETTUAHCTAWRLAKGRFRRSSAWCDOHP"
+}

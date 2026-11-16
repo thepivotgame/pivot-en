@@ -1,0 +1,21 @@
+{
+  "theme": "CANAL",
+  "words": [
+    "GATE",
+    "BOAT",
+    "LOCK",
+    "BANK",
+    "BARGE",
+    "WATER",
+    "REEDS"
+  ],
+  "SIZE": 6,
+  "pivot": "LOCK",
+  "target": "TRESS",
+  "noise": "ADHL",
+  "latHint": "Think a long curl of hair - not a canal gate.",
+  "pivHint": "A canal LOCK raises boats - but a LOCK of hair is a long ______.",
+  "winText": "A curl. LOCK was the pivot - a canal gate to a TRESS of hair.",
+  "lossText": "TRESS - a long curl of hair. LOCK was the pivot: a canal LOCK to a LOCK of hair.",
+  "gridString": "WBOATLAAGAHOTRALSCEGTSTKREEDSRBANKED"
+}

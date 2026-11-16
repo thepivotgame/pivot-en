@@ -1,0 +1,21 @@
+{
+  "theme": "TOYSHOP",
+  "words": [
+    "KITE",
+    "BALL",
+    "DOLL",
+    "GAME",
+    "ROBOT",
+    "TRAIN",
+    "BLOCK"
+  ],
+  "SIZE": 6,
+  "pivot": "TRAIN",
+  "target": "COACH",
+  "noise": "ESPWTL",
+  "latHint": "Think a sideline mentor - not a toy engine.",
+  "pivHint": "A toy TRAIN rolls around the track - but to TRAIN an athlete is to be what to them?",
+  "winText": "Game plan. TRAIN was the pivot - a toy engine to the COACH who guides.",
+  "lossText": "COACH - one who guides and tutors. TRAIN was the pivot: a toy TRAIN to TRAINing as a COACH.",
+  "gridString": "RBLSWLOALEPHBLOCKEOLDCTMTRAINACOKTAG"
+}

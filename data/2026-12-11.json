@@ -1,0 +1,21 @@
+{
+  "theme": "PEPPERMINT",
+  "words": [
+    "CANE",
+    "HOOK",
+    "MINT",
+    "LICK",
+    "CANDY",
+    "SWIRL",
+    "STRIP"
+  ],
+  "SIZE": 6,
+  "pivot": "CANE",
+  "target": "SUGAR",
+  "noise": "EP",
+  "latHint": "Think what sweetens your tea - not a walking stick.",
+  "pivHint": "A candy CANE is a striped sweet - but the tall CANE grass is where we get what for our tea?",
+  "winText": "Sweet. CANE was the pivot - a candy stick to the SUGAR that grows from it.",
+  "lossText": "SUGAR - the sweet crystals we cook with. CANE was the pivot: a candy CANE to the CANE that yields it.",
+  "gridString": "CLICKMASSAOINTWNONERIDHTRIRYPASPLEGU"
+}

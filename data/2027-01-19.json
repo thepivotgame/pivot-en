@@ -1,0 +1,21 @@
+{
+  "theme": "DENTIST",
+  "words": [
+    "GUMS",
+    "NUMB",
+    "FILL",
+    "ACHE",
+    "MOLAR",
+    "CROWN",
+    "FLOSS"
+  ],
+  "SIZE": 6,
+  "pivot": "CROWN",
+  "target": "ROYAL",
+  "noise": "GED",
+  "latHint": "Think kings and queens - not a dental cap.",
+  "pivHint": "A CROWN caps a damaged tooth - but a CROWN on a head means what kind of family?",
+  "winText": "Long live. CROWN was the pivot - a tooth cap to ROYAL blood.",
+  "lossText": "ROYAL - of a king or queen. CROWN was the pivot: tooth CROWN to a king's CROWN.",
+  "gridString": "MCROWNOFLOSSLNUMBAALUGYCRGIDRHEAOFLE"
+}

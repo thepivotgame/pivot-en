@@ -1,0 +1,21 @@
+{
+  "theme": "BOXING",
+  "words": [
+    "ROPE",
+    "BOUT",
+    "BELT",
+    "JABS",
+    "CHAMP",
+    "ROUND",
+    "GLOVE"
+  ],
+  "SIZE": 6,
+  "pivot": "BELT",
+  "target": "WHACK",
+  "noise": "PRD",
+  "latHint": "Think a hard hit - not a champion's strap.",
+  "pivHint": "A boxer's BELT is the champion's prize - but to BELT someone means to do what?",
+  "winText": "Ouch. BELT was the pivot - a champion's strap to a hard WHACK.",
+  "lossText": "WHACK - a hard hit. BELT was the pivot: championship BELT to BELTing someone.",
+  "gridString": "CROUNDHGLOVEAJBPPBMAAODEPBRWULRSCHKT"
+}

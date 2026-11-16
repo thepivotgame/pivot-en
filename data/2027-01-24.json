@@ -1,0 +1,21 @@
+{
+  "theme": "SONGBIRD",
+  "words": [
+    "LARK",
+    "SONG",
+    "WREN",
+    "NEST",
+    "FINCH",
+    "ROBIN",
+    "TRILL"
+  ],
+  "SIZE": 6,
+  "pivot": "LARK",
+  "target": "PRANK",
+  "noise": "ILDEOM",
+  "latHint": "Think a harmless trick - not a songbird.",
+  "pivHint": "A LARK sings at dawn - but a bit of fun is also called a LARK, much like a what?",
+  "winText": "Just joking. LARK was the pivot - a songbird to a PRANK.",
+  "lossText": "PRANK - a harmless trick. LARK was the pivot: a songbird LARK to a LARK for fun.",
+  "gridString": "LNESTLAEESRFRRMOIIKWBNLDKICGLPNHNROA"
+}

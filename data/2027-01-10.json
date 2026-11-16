@@ -1,0 +1,21 @@
+{
+  "theme": "FIREFIGHTER",
+  "words": [
+    "AXES",
+    "PUMP",
+    "HOSE",
+    "SUIT",
+    "SMOKE",
+    "BOOTS",
+    "SIREN"
+  ],
+  "SIZE": 6,
+  "pivot": "PUMP",
+  "target": "PROBE",
+  "noise": "ADHL",
+  "latHint": "Think quizzing a witness - not a fire engine.",
+  "pivHint": "A PUMP forces water through a hose - but to PUMP a witness means to do what?",
+  "winText": "Digging deep. PUMP was the pivot - a fire hose to a witness you PROBE.",
+  "lossText": "PROBE - to question closely. PUMP was the pivot: water PUMP to PUMPing a witness.",
+  "gridString": "STOOBPMIAAHUOHRXLMKEOEBPEPRSNOSUITED"
+}

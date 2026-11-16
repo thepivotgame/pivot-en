@@ -1,0 +1,21 @@
+{
+  "theme": "SCRABBLE",
+  "words": [
+    "TILE",
+    "PLAY",
+    "WORD",
+    "RACK",
+    "VOWEL",
+    "POINT",
+    "SCORE"
+  ],
+  "SIZE": 6,
+  "pivot": "TILE",
+  "target": "SLATE",
+  "noise": "IXFR",
+  "latHint": "Think grey stone on a roof - not a Scrabble piece.",
+  "pivHint": "A Scrabble TILE carries one letter - but a roof TILE is often made of what grey stone?",
+  "winText": "On the roof. TILE was the pivot - a letter piece to SLATE.",
+  "lossText": "SLATE - a grey stone split in layers. TILE was the pivot: Scrabble TILE to a roof TILE.",
+  "gridString": "VPOINTOPLAYIWORDKLEROCSELIAFRETRSLAX"
+}

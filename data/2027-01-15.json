@@ -1,0 +1,21 @@
+{
+  "theme": "KARATE",
+  "words": [
+    "SPAR",
+    "DOJO",
+    "KATA",
+    "KICK",
+    "BLOCK",
+    "CHOPS",
+    "BREAK"
+  ],
+  "SIZE": 6,
+  "pivot": "BREAK",
+  "target": "PAUSE",
+  "noise": "HTRD",
+  "latHint": "Think a short rest in the middle of work - not a snap.",
+  "pivHint": "A karate student can BREAK a board - but a coffee BREAK is a short ______ from work.",
+  "winText": "Coffee time. BREAK was the pivot - a snap to a PAUSE.",
+  "lossText": "PAUSE - a short stop. BREAK was the pivot: BREAKing a board to a coffee BREAK.",
+  "gridString": "BHDRRKLDOEAAOSJPPTCHOPSAKAERBAKICKUT"
+}

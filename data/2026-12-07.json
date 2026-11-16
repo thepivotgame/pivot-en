@@ -1,0 +1,21 @@
+{
+  "theme": "KNITTING",
+  "words": [
+    "WOOL",
+    "LOOP",
+    "PURL",
+    "YARN",
+    "SKEIN",
+    "CABLE",
+    "SCARF"
+  ],
+  "SIZE": 6,
+  "pivot": "YARN",
+  "target": "STORY",
+  "noise": "HE",
+  "latHint": "Think a tall tale by the fire - not knitting wool.",
+  "pivHint": "Knitters work with YARN - but to spin a YARN is to tell a ______.",
+  "winText": "Once upon a time. YARN was the pivot - knitting wool to a STORY.",
+  "lossText": "STORY - an account of events. YARN was the pivot: knitting YARN to spinning a YARN.",
+  "gridString": "WYARNSOYERICOSHOEALRUPKRLOOPSFCABLET"
+}

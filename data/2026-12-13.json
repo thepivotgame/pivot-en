@@ -1,0 +1,21 @@
+{
+  "theme": "SHEPHERD",
+  "words": [
+    "WOOL",
+    "DOGS",
+    "HILL",
+    "LAMB",
+    "SHEEP",
+    "FLOCK",
+    "CROOK"
+  ],
+  "SIZE": 6,
+  "pivot": "CROOK",
+  "target": "THIEF",
+  "noise": "RAOWG",
+  "latHint": "Think a villain who steals - not a staff.",
+  "pivHint": "A shepherd's CROOK is a curved staff - but a CROOK is also what kind of criminal?",
+  "winText": "Sticky fingers. CROOK was the pivot - a shepherd's staff to a THIEF.",
+  "lossText": "THIEF - one who steals. CROOK was the pivot: a shepherd's CROOK to a dishonest CROOK.",
+  "gridString": "SFLOCKHAWORDEIGROOEFLGOWPTSLKELAMBHI"
+}

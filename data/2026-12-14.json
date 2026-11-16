@@ -1,0 +1,21 @@
+{
+  "theme": "CHIMES",
+  "words": [
+    "GONG",
+    "BELL",
+    "TUNE",
+    "TOLL",
+    "CLOCK",
+    "PEALS",
+    "TOWER"
+  ],
+  "SIZE": 6,
+  "pivot": "TOLL",
+  "target": "PRICE",
+  "noise": "ADHL",
+  "latHint": "Think what you pay to cross a bridge - not a bell.",
+  "pivHint": "A bell TOLLs slowly in the chimes - but a bridge TOLL is the ______ you pay to cross.",
+  "winText": "Pay up. TOLL was the pivot - a slow bell to the PRICE of crossing.",
+  "lossText": "PRICE - what you must pay. TOLL was the pivot: a bell's TOLL to a bridge TOLL.",
+  "gridString": "CPEALSLTOWEROGONGBCAULHEKTLELLCPRIDL"
+}

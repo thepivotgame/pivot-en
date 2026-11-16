@@ -1,0 +1,21 @@
+{
+  "theme": "PARTY",
+  "words": [
+    "DIPS",
+    "CAKE",
+    "GAME",
+    "HOST",
+    "DANCE",
+    "PUNCH",
+    "MUSIC"
+  ],
+  "SIZE": 6,
+  "pivot": "HOST",
+  "target": "HORDE",
+  "noise": "PNW",
+  "latHint": "Think an enormous crowd - not a party's welcomer.",
+  "pivHint": "A HOST greets guests at the party - but a HOST of problems means a what of them?",
+  "winText": "Crowds. HOST was the pivot - a party giver to a HORDE of problems.",
+  "lossText": "HORDE - a large crowd. HOST was the pivot: party HOST to a HOST of troubles.",
+  "gridString": "PGAMEHUDPUKONADSASCNRICTHCWCPHNEDOES"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "MLKDAY",
+  "words": [
+    "LOVE",
+    "VOTE",
+    "HOPE",
+    "JUST",
+    "UNITY",
+    "PEACE",
+    "MARCH"
+  ],
+  "SIZE": 6,
+  "pivot": "MARCH",
+  "target": "APRIL",
+  "noise": "GED",
+  "latHint": "Think the month after this one - not a protest walk.",
+  "pivHint": "A MARCH is a walk for a cause - but MARCH is also a month, right before what?",
+  "winText": "Spring on. MARCH was the pivot - a protest walk to the month before APRIL.",
+  "lossText": "APRIL - the fourth month. MARCH was the pivot: a protest MARCH to a spring month.",
+  "gridString": "PMARCHEUNITYALOVEJCGRPDUETOVASEHIPLT"
+}

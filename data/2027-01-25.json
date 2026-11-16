@@ -1,0 +1,21 @@
+{
+  "theme": "POND",
+  "words": [
+    "FROG",
+    "SWAN",
+    "LILY",
+    "DUCK",
+    "GEESE",
+    "ALGAE",
+    "MARSH"
+  ],
+  "SIZE": 6,
+  "pivot": "DUCK",
+  "target": "DODGE",
+  "noise": "PSWR",
+  "latHint": "Think sidestepping a hit - not a pond bird.",
+  "pivHint": "A DUCK paddles on a pond - but to DUCK a punch means to do what?",
+  "winText": "Missed. DUCK was the pivot - a pond bird to a DODGE.",
+  "lossText": "DODGE - to avoid by moving aside. DUCK was the pivot: a pond DUCK to DUCKing a punch.",
+  "gridString": "MFROGLALGAEIRRWPELSWANSYHDDGEODUCKES"
+}

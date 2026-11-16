@@ -1,0 +1,21 @@
+{
+  "theme": "VIGIL",
+  "words": [
+    "STAR",
+    "WAIT",
+    "HUSH",
+    "HOLY",
+    "NIGHT",
+    "WATCH",
+    "CHILD"
+  ],
+  "SIZE": 6,
+  "pivot": "WATCH",
+  "target": "CLOCK",
+  "noise": "EFAPR",
+  "latHint": "Think telling the time - not a night guard.",
+  "pivHint": "To keep WATCH is to stay on guard at the vigil - but a WATCH on your wrist is a small ______.",
+  "winText": "Tick tock. WATCH was the pivot - a night guard to a wrist CLOCK.",
+  "lossText": "CLOCK - a device that tells the time. WATCH was the pivot: keeping WATCH to a wrist WATCH.",
+  "gridString": "WWFCPRAEAHNHTAUIOSCSGLTTHHYDKATCCLOR"
+}

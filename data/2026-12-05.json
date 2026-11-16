@@ -1,0 +1,21 @@
+{
+  "theme": "SANTA",
+  "words": [
+    "SUIT",
+    "SACK",
+    "LIST",
+    "TOYS",
+    "NORTH",
+    "BEARD",
+    "ELVES"
+  ],
+  "SIZE": 6,
+  "pivot": "SACK",
+  "target": "FIRED",
+  "noise": "GALOM",
+  "latHint": "Think losing your job - not a bag of toys.",
+  "pivHint": "Santa carries presents in a SACK - but to get the SACK at work means you were what?",
+  "winText": "Pink slip. SACK was the pivot - Santa's bag to being FIRED.",
+  "lossText": "FIRED - dismissed from a job. SACK was the pivot: Santa's SACK to getting the SACK.",
+  "gridString": "NBEARDOTLAOKROVICMTYEASGHSSUITLDFEIR"
+}

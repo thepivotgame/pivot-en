@@ -1,0 +1,21 @@
+{
+  "theme": "BOARDGAMES",
+  "words": [
+    "TURN",
+    "DICE",
+    "ROLL",
+    "MOVE",
+    "BOARD",
+    "PIECE",
+    "RULES"
+  ],
+  "SIZE": 6,
+  "pivot": "DICE",
+  "target": "MINCE",
+  "noise": "ADHL",
+  "latHint": "Think chopping very fine - not rolling for a six.",
+  "pivHint": "You roll DICE in board games - but to DICE an onion is to cut it small. What cut is even smaller?",
+  "winText": "Chop chop. DICE was the pivot - game cubes to cooking cuts like MINCE.",
+  "lossText": "MINCE - to chop very fine. DICE was the pivot: board game DICE to DICE an onion.",
+  "gridString": "BPIECEOARHLCATOECIRULESDDRLMINDNMOVE"
+}

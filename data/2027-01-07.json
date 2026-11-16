@@ -1,0 +1,21 @@
+{
+  "theme": "OPERA",
+  "words": [
+    "ACTS",
+    "DIVA",
+    "SING",
+    "ARIA",
+    "BOXES",
+    "TENOR",
+    "BRAVO"
+  ],
+  "SIZE": 6,
+  "pivot": "BRAVO",
+  "target": "ALPHA",
+  "noise": "SEOGRC",
+  "latHint": "Think the code word that starts it all - not a cheer.",
+  "pivHint": "BRAVO! is the opera crowd's cheer - but in the radio code, B is BRAVO, and what word stands for A?",
+  "winText": "Roger. BRAVO was the pivot - an opera cheer to the code word ALPHA.",
+  "lossText": "ALPHA - code word for A. BRAVO was the pivot: an opera cry to the code word before it, ALPHA.",
+  "gridString": "BTENOROREGCSXSACTSEDIVAOSARNOAHLARGP"
+}

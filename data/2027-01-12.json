@@ -1,0 +1,21 @@
+{
+  "theme": "PAPERWORK",
+  "words": [
+    "FORM",
+    "SIGN",
+    "PENS",
+    "FILE",
+    "CLERK",
+    "TAXES",
+    "STAMP"
+  ],
+  "SIZE": 6,
+  "pivot": "FORM",
+  "target": "SHAPE",
+  "noise": "LDM",
+  "latHint": "Think outline and figure - not a paper to fill in.",
+  "pivHint": "A FORM has blanks to fill in - but the FORM of a statue is its ______.",
+  "winText": "Well made. FORM was the pivot - a paper to a statue's SHAPE.",
+  "lossText": "SHAPE - outline or figure. FORM was the pivot: paper FORM to the FORM of a statue.",
+  "gridString": "CTAXESLSIGNTENLAMAREFORMKPSDPPFILEHE"
+}

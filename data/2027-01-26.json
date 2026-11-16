@@ -1,0 +1,21 @@
+{
+  "theme": "TEATIME",
+  "words": [
+    "TRAY",
+    "CUPS",
+    "MILK",
+    "SIPS",
+    "SCONE",
+    "LEMON",
+    "STEEP"
+  ],
+  "SIZE": 6,
+  "pivot": "STEEP",
+  "target": "SHEER",
+  "noise": "TVANLIVU",
+  "latHint": "Think a vertical cliff - not tea soaking.",
+  "pivHint": "To STEEP tea is to soak the leaves - but a STEEP cliff is what kind of drop?",
+  "winText": "No handholds. STEEP was the pivot - soaking tea to a SHEER drop.",
+  "lossText": "SHEER - almost vertical. STEEP was the pivot: to STEEP tea to a STEEP cliff.",
+  "gridString": "SPUCEICTRAYUOTELRKNOMELVEASIPSSVMNEH"
+}

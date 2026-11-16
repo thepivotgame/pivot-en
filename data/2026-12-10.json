@@ -1,0 +1,21 @@
+{
+  "theme": "SNOWBOARD",
+  "words": [
+    "EDGE",
+    "FLIP",
+    "JUMP",
+    "SNOW",
+    "BOOTS",
+    "SLOPE",
+    "BOARD"
+  ],
+  "SIZE": 6,
+  "pivot": "BOARD",
+  "target": "PANEL",
+  "noise": "TYSKR",
+  "latHint": "Think a group of experts - not a snowboard.",
+  "pivHint": "You ride a BOARD down the slope - but a BOARD of directors is a ______ of leaders.",
+  "winText": "Round table. BOARD was the pivot - a snowboard to a PANEL of directors.",
+  "lossText": "PANEL - a group who advise or decide. BOARD was the pivot: snow BOARD to a BOARD of directors.",
+  "gridString": "BJUMPEOYKWRDOTOPRGTNIASESLOPELFBPEAN"
+}

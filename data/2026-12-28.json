@@ -1,0 +1,21 @@
+{
+  "theme": "SNOWMAN",
+  "words": [
+    "NOSE",
+    "COAL",
+    "EYES",
+    "PIPE",
+    "SLUSH",
+    "FROST",
+    "SCARF"
+  ],
+  "SIZE": 6,
+  "pivot": "NOSE",
+  "target": "SNOOP",
+  "noise": "DHE",
+  "latHint": "Think prying into other people's business - not a carrot.",
+  "pivHint": "A snowman's NOSE is a carrot - but to NOSE around is to do what to others' business?",
+  "winText": "Curious. NOSE was the pivot - a carrot on a snowman to SNOOPing around.",
+  "lossText": "SNOOP - to pry. NOSE was the pivot: a snowman's NOSE to NOSEing around.",
+  "gridString": "SFROSTLCNOSEUOADOYSAERSEHLHOFSPIPENP"
+}

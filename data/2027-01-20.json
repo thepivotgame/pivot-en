@@ -1,0 +1,21 @@
+{
+  "theme": "LOCKSMITH",
+  "words": [
+    "KEYS",
+    "PICK",
+    "COPY",
+    "SAFE",
+    "CHAIN",
+    "BOLTS",
+    "LATCH"
+  ],
+  "SIZE": 6,
+  "pivot": "PICK",
+  "target": "ELECT",
+  "noise": "FAH",
+  "latHint": "Think voting someone in - not a tool for locks.",
+  "pivHint": "A PICK opens a lock - but to PICK a captain means to do what to them?",
+  "winText": "Chosen. PICK was the pivot - a lock tool to ELECTing a captain.",
+  "lossText": "ELECT - to choose by vote. PICK was the pivot: lock PICK to PICKing a captain.",
+  "gridString": "CBOLTSHPFAEYACITHEIOECAKNPCHKLTYSAFE"
+}

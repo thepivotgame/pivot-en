@@ -1,0 +1,21 @@
+{
+  "theme": "SAUNA",
+  "words": [
+    "ROCK",
+    "BATH",
+    "HEAT",
+    "WOOD",
+    "SWEAT",
+    "BENCH",
+    "STEAM"
+  ],
+  "SIZE": 6,
+  "pivot": "BENCH",
+  "target": "JUDGE",
+  "noise": "ICW",
+  "latHint": "Think a robed figure in court - not a park seat.",
+  "pivHint": "A BENCH is a long seat in the sauna - but the BENCH in court means who?",
+  "winText": "Order. BENCH was the pivot - a long seat to the JUDGE.",
+  "lossText": "JUDGE - a court official. BENCH was the pivot: sauna BENCH to the BENCH in court.",
+  "gridString": "SBENCHWTROCKEIEBDWAHEATOTWJTMOCGUHED"
+}

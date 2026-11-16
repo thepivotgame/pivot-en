@@ -1,0 +1,21 @@
+{
+  "theme": "MIDNIGHT",
+  "words": [
+    "HOUR",
+    "DROP",
+    "BALL",
+    "KISS",
+    "CHEER",
+    "CHIME",
+    "TOAST"
+  ],
+  "SIZE": 6,
+  "pivot": "BALL",
+  "target": "DANCE",
+  "noise": "LKP",
+  "latHint": "Think waltzing in a gown - not a round toy.",
+  "pivHint": "A BALL drops in Times Square at midnight - but a BALL in a ballroom is a formal ______.",
+  "winText": "Twirl. BALL was the pivot - a round drop to a formal DANCE.",
+  "lossText": "DANCE - a social event with music and steps. BALL was the pivot: the Times Square BALL to a formal BALL.",
+  "gridString": "CTOASTHHBALLIOELNPMUDEKCERPORDKISSAE"
+}

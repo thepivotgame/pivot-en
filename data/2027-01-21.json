@@ -1,0 +1,21 @@
+{
+  "theme": "ALLOTMENT",
+  "words": [
+    "DIRT",
+    "ROWS",
+    "HOES",
+    "PEAS",
+    "WORMS",
+    "BEANS",
+    "SPADE"
+  ],
+  "SIZE": 6,
+  "pivot": "SPADE",
+  "target": "CLUBS",
+  "noise": "ARFEPL",
+  "latHint": "Think a card suit - not a garden tool.",
+  "pivHint": "A SPADE digs the garden - but a SPADE is also a card suit, alongside hearts, diamonds and ______.",
+  "winText": "Suited up. SPADE was the pivot - a digger to a suit, CLUBS.",
+  "lossText": "CLUBS - a card suit. SPADE was the pivot: garden SPADE to the SPADE suit.",
+  "gridString": "WRSEBLOAPEASRFASCBMNDIRTSSEOHLROWSPU"
+}

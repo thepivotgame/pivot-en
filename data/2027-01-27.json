@@ -1,0 +1,21 @@
+{
+  "theme": "PIE",
+  "words": [
+    "FILL",
+    "TART",
+    "BAKE",
+    "OVEN",
+    "BERRY",
+    "CRUST",
+    "APPLE"
+  ],
+  "SIZE": 6,
+  "pivot": "CRUST",
+  "target": "ELITE",
+  "noise": "SAVD",
+  "latHint": "Think the top tier of society - not pie pastry.",
+  "pivHint": "The CRUST is the baked shell of a pie - but the upper CRUST of society is its ______.",
+  "winText": "Top drawer. CRUST was the pivot - pie pastry to society's ELITE.",
+  "lossText": "ELITE - the best or top group. CRUST was the pivot: pie CRUST to the upper CRUST.",
+  "gridString": "BCRUSTELPPABRLORSARITVVKYFDEEETELIAN"
+}

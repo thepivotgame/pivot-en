@@ -1,0 +1,21 @@
+{
+  "theme": "CRANBERRY",
+  "words": [
+    "PIES",
+    "TART",
+    "BOGS",
+    "RIPE",
+    "BERRY",
+    "JUICE",
+    "SAUCE"
+  ],
+  "SIZE": 6,
+  "pivot": "JUICE",
+  "target": "POWER",
+  "noise": "AGUNTY",
+  "latHint": "Think battery life - not a fruit drink.",
+  "pivHint": "Cranberry JUICE is a tart drink - but a phone that's low on JUICE is running out of what?",
+  "winText": "Plug in. JUICE was the pivot - cranberry drink to a phone's POWER.",
+  "lossText": "POWER - energy to run a device. JUICE was the pivot: cranberry JUICE to phone JUICE.",
+  "gridString": "BEPIRTECIUJARUEGNRRASYATYSGOBURPEOTW"
+}
